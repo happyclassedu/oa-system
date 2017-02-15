@@ -1,0 +1,44 @@
+.resume {
+    line-height:30px;
+    width:98%;
+}
+
+.resume td {
+    border-bottom:1px dashed #89a8d1;
+    padding-left:25px;
+}
+
+.res_title {
+    text-align:center;
+    background:#f3f6ff;
+}
+.resume a {
+    font-size: 14px;
+    color:#154692;
+    text-decoration:none;
+}
+
+.info_title span {
+    font-size:12px;
+    color:#000000;
+    font-weight:normal;
+}
+
+.com_title {
+    font-size:14px;
+    color:#154692;
+    font-weight:bold;
+    border-bottom:1px dotted #89a8d1;
+    line-height: 50px;
+}
+
+.per_top {
+    width:98%;
+    font-size:12px;
+    border-collapse:collapse;
+}
+
+.per_top td {
+    border:solid 1px #aaccee;
+    padding-left:15px;
+}

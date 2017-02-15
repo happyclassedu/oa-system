@@ -1,0 +1,15 @@
+<!--{ include file="nav.htm" }-->
+<!--列面M开始-->
+<div id="el_cen_cen" class="el_980_cen">
+    <!--{ include file="lefter.htm" }-->
+    <div class="list_m">
+        <!--{ foreach item=index_news from=$ws.list_m }-->
+        <h6><a href="<!--{$index_news.url}-->"><!--{$index_news.name}--></a><!--<span>更多>></span>--></h6>
+        <!--{ foreach item=tmp from=$index_news.news name=arr_index }-->
+        <span><!--{$tmp.atime|date_format:"%Y-%m-%d"}--></span><a href="<!--{$tmp.url}-->"><!--{$tmp.name|truncate_i:16:"…"}--></a>
+        <!--{ foreachelse }-->
+        <!--{ /foreach}-->
+        <!--{ /foreach }-->
+    </div>
+</div>
+<!--列面M结束-->

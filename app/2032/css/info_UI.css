@@ -1,0 +1,64 @@
+/*listnav s*/
+
+#listnav_bg {
+    width: 978px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 8px;
+    background: #FFFFFF;
+}
+
+#listnav_bg h2 {
+    display: block;
+    width: 965px;
+    height: 83px;
+    margin: 0 auto;
+    text-align: right;
+    font-weight: bold;
+    border: 1px #f6de92 solid;
+    background: #FFFFFF url(../img/list_top_bg.gif) no-repeat;
+}
+
+#listnav_bg h2 a {
+    float: right;
+    padding-right: 40px;
+    margin-top: 65px;
+    vertical-align: bottom;
+    color: #000000;
+}
+
+/*listnav e*/
+
+#info_cen {
+     width: 978px;
+     margin: 0 auto;
+     margin-top: -8px;
+     border-width: 0 1px;
+     background-color: #FFFFFF;
+}
+
+#content {
+    float: right;
+    width: 730px;
+    padding-right: 8px;
+}
+
+#content h1 {
+    color: #01609a;
+    line-height: 35px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#content h2 {
+    line-height: 35px;
+    text-align: center;
+    font-weight: normal;
+    border-bottom: 1px solid #f47e0b;
+}
+
+#content #contg {
+    width: 100%;
+    padding-top: 8px;
+}

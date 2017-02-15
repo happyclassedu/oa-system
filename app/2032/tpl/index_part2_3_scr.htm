@@ -1,0 +1,14 @@
+
+<h2>
+    <a href="<!--{$ws.index_links1.url_www}-->"><!--{$ws.index_links1.name}--></a>
+</h2>
+<div id="index_links1">
+    <!--{ foreach item=tmp from=$ws.index_links1.list }-->
+    <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+    <!--{ /foreach }-->    
+</div>
+<div id="index_links2">
+    <!--{ foreach item=tmp from=$ws.index_links2 }-->
+    <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+    <!--{ /foreach }-->
+</div>

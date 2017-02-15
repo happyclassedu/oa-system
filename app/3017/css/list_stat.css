@@ -1,0 +1,17 @@
+#stat_tb {
+    line-height : 25px;
+    font-size : 12px;
+    margin : 0 auto;
+    border : 1px solid #d5d5d5;
+    border-collapse : collapse;
+    border : none;
+    background-color : #FFFFFF;
+}
+
+#stat_tb tr {
+    line-height : 28px;
+}
+
+#stat_tb td {
+    border : solid #F5F5F5 1px;
+}

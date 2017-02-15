@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+            <title>会员中心-三秦品牌网</title>
+            <link type="text/css" rel="stylesheet" href="templates/member/images/index.css">
+                </head>
+                <body>
+                    <div id="header-dh">
+                        <div class="dh-top">
+                            <div style=" width:982px; padding:0px 10px; margin:auto">
+                                <h1><a href="{$xm_global.cfg_basehost}"><img src="{$xm_global.cfg_basehost}/templates/member/images/logo.gif" alt="福建黄页" border="0"></a></h1>
+                                <div class="dh">
+                                    <div style="float:right; text-align:right; width:625px; margin:0px; padding:0px;">
+				{if $userinfo!=""}
+				欢迎您回来！<strong><a href="" class="lj1">{$userinfo.userid}</a></strong>&nbsp;&nbsp;<a href="{$xm_global.cfg_basehost}/user_center.php" title="进入我的管理中心" class="lj1">会员中心</a>&nbsp;&nbsp;<a href="?action=logout" class="lj1">退出</a>&nbsp;&nbsp;{else}<a href="login.php" class="lj1">登录</a>&nbsp;&nbsp;{/if}<a href="" target="_blank" class="lj1">帮助</a>
+                                    </div>
+                                    <ul>
+                                        <LI><A class=tab href="/">首页</A> </LI>
+                                        <LI><A class=tab href="#">品牌资讯</A> </LI>
+                                        <LI><A class=tab href="#">知名品牌</A> </LI>
+                                        <LI><A class=tab href="#">品牌之星</A> </LI>
+                                        <LI><A class=tab href="#">推荐品牌</A> </LI>
+                                        <LI><A class=tab href="#">代理加盟</A>
+                                            <li><a href="{$xm_global.cfg_basehost}/user_center.php" class="ll">会员中心</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="ss">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody><tr>
+                                                <td width="60%">
+                                                    <b>热门关键词：</b>
+
+                                                </td>
+                                                <td width="40%">
+                                                    <FORM name=search_company action="{$xm_global.cfg_basehost}/search.php" method=get>
+                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                            <tbody><tr>
+                                                                    <td width="13%" class="bs12">搜公司</td>
+                                                                    <td width="53%" valign="middle">
+                                                                        <input name="keywords" id="keywords" type="text" size="25" value="">
+                                                                    </td>
+                                                                    <td width="22%"><input name="submit" src="templates/member/images/seach.gif" type="image" width="66" height="23"></td>
+                                                                    <td width="12%"><a href="" target="_blank" class="lj2">高级</a></td>
+                                                                </tr>
+                                                            </tbody></table>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

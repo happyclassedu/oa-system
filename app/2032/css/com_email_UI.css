@@ -1,0 +1,51 @@
+#com_email_cen {
+     width: 978px;
+     margin: 0 auto;
+     margin-top: -8px;
+     border-width: 0 1px;
+     background-color: #FFFFFF;
+}
+
+#content {
+    float: right;
+    width: 730px;
+    padding-right: 8px;
+    background: #FFFFFF;
+}
+
+#content h1 {
+    color: #01609a;
+    line-height: 35px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#content h2 {
+    line-height: 35px;
+    text-align: center;
+    font-weight: normal;
+    border-bottom: 1px solid #f47e0b;
+}
+
+#contg {
+    margin: 0 auto;
+}
+
+#contg table{
+    margin: 0 auto;
+    margin-top: 20px;
+    line-height: 30px;
+    border-collapse:collapse;
+}
+
+#contg table td{
+    padding-left: 20px;
+    border:solid 1px #f90;
+    background:#ffc;
+}
+
+#contg label {
+    width: 30px;
+    margin: 0;
+}

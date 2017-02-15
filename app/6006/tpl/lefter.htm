@@ -1,0 +1,37 @@
+
+<!-- lefter begin-->
+<div class="lefter">
+    <div class="lefter_ads"><a href="#"><img src="../img/ads.jpg" /></a></div>
+    <div id="lefter_news" class="lefter_tab">
+        <h2 id="lefter_news_title">
+            <!--{ foreach item=tmp from=$ws.lefter_news }-->
+            <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+            <!--{ /foreach }-->
+        </h2>
+        <!--{ foreach item=news from=$ws.lefter_news }-->
+        <ul class="lefter_list_info">
+            <!--{ foreach item=tmp from=$news.news }-->
+            <li><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->" target="_blank"><!--{$tmp.name_s|truncate_i:19:"…"}--></a></li>
+            <!--{ foreachelse }-->
+            <!--{ /foreach }-->
+        </ul>
+        <!--{ /foreach }-->
+    </div>
+    <div class="lefter_top">
+        <h2><span><a href="list_26_1.htm">热门企业招聘</a></span></h2>
+        <ul class="lefter_list_info">
+            <!--{ foreach item=tmp name=tmp from=$ws.lefter_qyzp }-->
+            <li class="no<!--{$smarty.foreach.tmp.index+1}-->"><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->" target="_blank"><!--{$tmp.name_s|truncate_i:19:"…"}--></a></li>
+            <!--{ /foreach }-->
+        </ul>
+    </div>
+    <div class="lefter_list">
+        <h2><span><a href="list_30_1.htm">表格下载</a></span></h2>
+        <ul class="lefter_list_info">
+            <!--{ foreach item=tmp from=$ws.lefter_bgxz }-->
+            <li><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->" target="_blank"><!--{$tmp.name_s|truncate_i:19:"…"}--></a></li>
+            <!--{ /foreach }-->
+        </ul>
+    </div>
+</div>
+<!-- lefter end-->

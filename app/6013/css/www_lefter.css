@@ -1,0 +1,40 @@
+
+/* bl_list_left s */
+
+#bl_list_left {
+  float:left;
+  width:230px;
+  padding-left:2px;
+}
+
+#bl_list_left ul {
+  border:1px solid #e2e2e2;
+  background:#f7f7f7;
+  margin-bottom:8px;
+}
+
+#bl_list_left h2 {
+  font-size:14px;
+  line-height:30px;
+  color:#FFFFFF;
+  background:url(../img/bmfw_title.gif) top left repeat-x;
+}
+
+#bl_list_left h2 a {
+  color:#FFFFFF;
+}
+
+#bl_list_left ul li {
+  list-style:none;
+}
+
+#bl_list_left a {
+  width:100%;
+  display:block;
+  color:#000000;
+  text-decoration:none;
+  line-height:28px;
+  margin-left:10px;
+}
+
+/* bl_list_left e */

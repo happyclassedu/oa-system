@@ -1,0 +1,231 @@
+/**
+ * 文件名称：www_index.css
+ * 功能描述：网站首页样式。
+ * 代码作者：孙振强（创建）、郭娟（优化）、王争强（优化）
+ * 创建日期：2010-12-09
+ * 修改日期：2010-12-11
+ * 当前版本：V2.0
+*/
+
+/*index s*/
+/*index_part1 s*/
+#index_part1 {
+    width: 980px;
+    height: 280px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    padding-top: 6px;
+    background: #FFFFFF;
+}
+
+#index_pics {
+    float: left;
+    width: 484px;
+    height: 276px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+#index_pics img {
+    width: 480px;
+    height: 245px;
+    overflow: hidden;
+    margin: 2px;
+}
+
+#index_pics a {
+    width: 480px;
+    height: 26px;
+    overflow: hidden;
+    margin-left: 80px;
+    color: #FF0000;
+    font-weight: bold;
+    text-align: center;
+    line-height: 26px;
+}
+
+#index_news {
+    float: right;
+    width: 484px;
+    height: 276px;
+    overflow: hidden;
+}
+/*index_part1 e*/
+
+/*index_news s*/
+.index_news {
+    border: 1px solid #ccc;
+}
+
+.index_news h2 {
+    width: 100%;
+    height: 49px;
+    overflow: hidden;
+    background: url(../img/newbar_bg.gif) no-repeat;
+}
+
+.index_news h2 a {
+    display: block;
+    float: left;
+    width: 89px;
+    height: 28px;
+    overflow: hidden;
+    margin: 4px 3px;
+    line-height: 30px;
+    text-align: center;
+    background: url('../img/nav_bg.gif') no-repeat;
+}
+
+.index_news .tab_show {
+    color: #FF0000;
+    background: url('../img/nav_bg.gif') right no-repeat;
+}
+
+.index_news ul{
+    width: 100%;
+    overflow: hidden;
+}
+
+.index_news ul li{
+    float:left;
+    width: 450px;
+    height:27px;
+    overflow: hidden;
+    margin-left: 20px;
+    list-style: none;
+    line-height:28px;
+}
+
+.index_news ul a{
+    float: left;
+    width: 390px;
+    overflow: hidden;
+}
+
+.index_news ul span{
+    float: right;
+}
+
+.index_news ul .top{
+    display: block;
+    float: none;
+    width: 400px;
+    height:24px;
+    margin: 0 auto;
+    line-height:20px;
+    color: #FF0000;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: #CCCCCC 1px solid;
+}
+/*index_news e*/
+
+
+/*banner1 s*/
+#banner {
+    width: 980px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+/*banner1 e*/
+
+/*index_part2 s*/
+#index_part2 {
+    width: 980px;
+    height: 280px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+#index_part2_1 {
+    float: left;
+    width: 220px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+#index_part2_1 a {
+    display: block;
+    width: 211px;
+    height: 37px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    line-height: 37px;
+    font-size: 15px;
+    font-weight: bold;
+    background: url(../img/index_lefter_bg.gif) no-repeat;
+}
+
+#index_part2_2 {
+    float: left;
+    width: 484px;
+    height: 278px;
+    overflow: hidden;
+}
+
+#index_part2_3 {
+    float: right;
+    width: 260px;
+    height: 278px;
+    overflow: hidden;
+    margin-left: 4px;
+    border: 1px solid #ccc;
+}
+
+#index_part2_3 h2 {
+    float: left;
+    width: 100%;
+    height: 38px;
+    overflow: hidden;
+    background: url('../img/index_part2_3_bg.gif') no-repeat;
+}
+
+#index_part2_3 h2 a {
+    display: block;
+    margin-top: 12px;
+    margin-left: 12px;
+    color: #FFFFFF;
+}
+
+#index_links1 {
+    float: left;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#index_links1 a {
+    display: block;
+    float: left;
+    width: 86px;
+    height: 35px;
+    overflow: hidden;
+    font-size: 13px;
+    text-align: center;
+}
+
+#index_links2 {
+    float: left;
+    width: 100%;
+    height: 102px;
+    padding-top: 12px;
+    background: url('../img/index_links2_bg.gif') center no-repeat;
+}
+
+#index_links2 a {
+    display: block;
+    width: 202px;
+    height: 26px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    line-height: 27px;
+    text-indent: 40px;
+}
+/*index_part2 e*/
+/*index e*/

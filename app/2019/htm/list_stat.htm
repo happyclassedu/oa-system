@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>户籍婚姻管理——户籍信息管理统计</title>
+    </head>
+    <body>
+        <div id="box_title"> <span id="sys_title">户籍婚姻管理——户籍信息管理统计</span>
+            <div id="box_tools">
+                <input id="btn_refresh"  type="button"  value="刷新"/>
+                &nbsp;&nbsp;
+                <input id="btn_close"  type="button"  value="关闭"/>
+            </div>
+        </div>
+        <table id="list_tb" width="800" border="1" cellspacing="0" cellpadding="0" align="center">
+            <col width="60" align="center" />
+            <col width="100" align="center" />
+            <col width="100" align="center"/>
+            <col width="100" align="center"/>
+            <col width="100" align="center"/>
+            <col width="100" align="center"/>
+            <col width="140" align="center"/>
+            <thead>
+                <tr>
+                    <td colspan="2">类别</td>
+                    <td>户籍在库</td>
+                    <td>户籍转出</td>
+                    <td>户籍借出</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">婚姻状况</td>
+                    <td>已婚</td>
+                    <td><span id="d_0_0"></span></td>
+                    <td><span id="d_0_1"></span></td>
+                    <td><span id="d_0_2"></span></td>
+                </tr>
+                <tr>
+                    <td>未婚</td>
+                    <td><span id="d_1_0"></span></td>
+                    <td><span id="d_1_1"></span></td>
+                    <td><span id="d_1_2"></span></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">生源状况</td>
+                    <td>生源</td>
+                    <td><span id="d_2_0"></span></td>
+                    <td><span id="d_2_1"></span></td>
+                    <td><span id="d_2_2"></span></td>
+                </tr>
+                <tr>
+                    <td>非生源</td>
+                    <td><span id="d_3_0"></span></td>
+                    <td><span id="d_3_1"></span></td>
+                    <td><span id="d_3_2"></span></td>
+                </tr>
+                <tr>
+                    <td rowspan="5">学历状况</td>
+                    <td>博士</td>
+                    <td><span id="d_4_0"></span></td>
+                    <td><span id="d_4_1"></span></td>
+                    <td><span id="d_4_2"></span></td>
+                    <!-- <td rowspan="5">
+                         <ul>
+                             <li><span id="d_4_0"></span></li>
+                             <li><span id="d_5_0"></span></li>
+                             <li><span id="d_6_0"></span></li>
+                             <li><span id="d_7_0"></span></li>
+                             <li><span id="d_8_0"></span></li>
+                         </ul>
+                     </td>-->
+                    <!--  <td rowspan="5">
+                          <ul>
+                              <li><span id="d_4_1"></span></li>
+                              <li><span id="d_5_1"></span></li>
+                              <li><span id="d_6_1"></span></li>
+                              <li><span id="d_7_1"></span></li>
+                              <li><span id="d_8_1"></span></li>
+                          </ul>
+                      </td>-->
+                    <!-- <td rowspan="5">
+                          <ul>
+                             <li><span id="d_4_2"></span></li>
+                             <li><span id="d_5_2"></span></li>
+                             <li><span id="d_6_2"></span></li>
+                             <li><span id="d_7_2"></span></li>
+                             <li><span id="d_8_2"></span></li>
+                         </ul>
+                      </td>-->
+                </tr>
+                <tr>
+                    <td>研究生</td>
+                    <td><span id="d_5_0"></span></td>
+                    <td><span id="d_5_1"></span></td>
+                    <td><span id="d_5_2"></span></td>
+                </tr>
+                <tr>
+                    <td>本科</td>
+                    <td><span id="d_6_0"></span></td>
+                    <td><span id="d_6_1"></span></td>
+                    <td><span id="d_6_2"></span></td>
+                </tr>
+                <tr>
+                    <td>大专</td>
+                    <td><span id="d_7_0"></span></td>
+                    <td><span id="d_7_1"></span></td>
+                    <td><span id="d_7_2"></span></td>
+                </tr>
+                <tr>
+                    <td>其他</td>
+                    <td><span id="d_8_0"></span></td>
+                    <td><span id="d_8_1"></span></td>
+                    <td><span id="d_8_2"></span></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">档案状态</td>
+                    <td>在库</td>
+                    <td><span id="d_9_0"></span></td>
+                    <td><span id="d_9_1"></span></td>
+                    <td><span id="d_9_2"></span></td>
+                </tr>
+                <tr>
+                    <td>不在库</td>
+                    <td><span id="d_10_0"></span></td>
+                    <td><span id="d_10_1"></span></td>
+                    <td><span id="d_10_2"></span></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">合计</td>
+                    <td><span id="d_11_0"></span></td>
+                    <td><span id="d_11_1"></span></td>
+                    <td><span id="d_11_2"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_stat" />
+<script type="text/javascript" src="../js/common.js"></script>

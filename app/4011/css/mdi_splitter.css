@@ -1,0 +1,18 @@
+/* CSS Document */
+
+body {
+    background-image: url(../img/mdi_splitter_bg.gif);
+    background-repeat: repeat-y;
+}
+
+#arrow_box {
+    width: 7px;
+    overflow: hidden;
+    position:absolute;
+    top:expression(eval(document.body.scrollTop)+eval(document.body.clientHeight)/2-50);
+    cursor: pointer;
+}
+
+#arrow {
+    margin-top: -29px;
+}

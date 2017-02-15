@@ -1,0 +1,14 @@
+<div id="bl_list_left">
+    <ul>
+        <h2><a href="<!--{$ws.left_news1_m.url}-->"><!--{$ws.left_news1_m.name}--></a></h2>
+        <!--{ foreach item=tmp from=$ws.left_news1 }-->
+        <li><a href="<!--{$tmp.url}-->"><!--{$tmp.name|truncate_i:18:"…"}--></a></li>
+        <!--{ /foreach }-->
+    </ul>
+    <ul>
+        <h2><a href="<!--{$ws.left_news2_m.url}-->">最新资讯</a></h2>
+        <!--{ foreach item=tmp from=$ws.left_news2 }-->
+        <li><a href="<!--{$tmp.url}-->"><!--{$tmp.name|truncate_i:18:"…"}--></a></li>
+        <!--{ /foreach }-->
+    </ul>
+</div>

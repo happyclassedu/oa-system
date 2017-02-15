@@ -1,0 +1,68 @@
+{include file="header.htm"}
+<div class="mainbox">
+<div class="mainbox" style=" margin-top:5px;text-align:left; height:55px; background:url(templates/images/titlebar.png) no-repeat">
+<span class="m_t"><a href="tour.php">陕西旅游景点</a>{if $navigate.county.name!=""}&gt;&gt;<a href="view.php?city={$navigate.city.id}">{$navigate.city.name}旅游景点</a>&gt;&gt;<a href="view.php?county={$navigate.county.id}">{$navigate.county.name}旅游景点</a>{else}&gt;&gt;<a href="view.php?city={$navigate.city.id}">{$navigate.city.name}旅游景点</a>{/if}</span>
+</div>
+<div class="v_left">
+	<div class="view_block">
+		<div class="local_list">
+			
+		<strong>区域：</strong>{section name=local loop=$local}<a href="view.php?county={$local[local].id}">{$local[local].name}</a>{/section}<br />
+				
+		</div>
+		
+		<ul class="v_list">
+		{section name=list loop=$view_list}
+			<li>
+			<div><a href="scenic.php?id={$view_list[list].id}" title="门票:{$view_list[list].vprice}" target=_blank><img src="{$xm_global.cfg_basehost}{$view_list[list].vpic}" width="160" height="120" alt="{$view_list[list].vname}"/></a></div>
+			<span><a href="scenic.php?id={$view_list[list].id}" target=_blank>{$view_list[list].vname}</a></span>
+			
+			</li>
+				
+		{/section}
+		</ul>
+
+         <div class="v_ad">
+		<div id="ad_1">加载中...</div>
+	     </div>
+		<div style="clear:both">{$pgcode}</div>
+	</div>
+	
+	
+	
+	
+	
+	
+
+
+</div>
+
+
+
+
+
+<div class="v_right">
+	<div class="list1">
+		<div><h3>{if $navigate.county.name!=""}{$navigate.county.name}{else}{$navigate.city.name}{/if}景点排行</h3></div>
+		<ul>
+		{section name=v loop=$view}
+			<LI><IMG src="templates/images/num{$smarty.section.v.index+1}.gif"><A   href="scenic.php?id={$view[v].id}" target=_blank>{$view[v].vname}</A> <SPAN class=first>{$view[v].vclick}次</SPAN> </LI>
+		{/section}	
+		
+		</ul>
+	</div>
+	
+		<div class="list1">
+		<div><h3>{if $navigate.county.name!=""}{$navigate.county.name}{else}{$navigate.city.name}{/if}旅行社</h3></div>
+		<ul>
+		{section name=h loop=$hotel}
+			<LI><IMG src="templates/images/num{$smarty.section.h.index+1}.gif"><A   href="info.php?id={$hotel[h].id}" title="电话:{$hotel[h].ctel}" target=_blank>{$hotel[h].cname|truncate:36:"..."}</A> </LI>
+		{/section}	
+		
+		</ul>
+	</div>
+
+
+</div>
+</div>
+{include file="foot_v.htm"}

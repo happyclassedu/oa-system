@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>列表--新闻中心</title>
+           <link type="text/css" rel="stylesheet" href="../css/www_lefter.css" />
+           <link type="text/css" rel="stylesheet" href="../css/www_list_news.css" />
+    </head>
+    <body>
+	 <div class="sxhb_thou">
+        <!--开始__基本功能区-->
+        <div id="box_title">
+            <!--<h1 id="sys_title">新闻中心--列表</h1>-->
+            <div id="box_tools">
+                <p id="box_search">
+                    <input id="val_search" type="text" />
+                    &nbsp;
+                    <input id="btn_search" type="button" value="搜索"/>
+                </p>
+            </div>
+        </div>
+        <!--结束__基本功能区-->
+        <!--开始__信息列表区-->
+        <table id="list_tb" width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="90%" align="center" />
+            <col width="10%" align="center" />
+            <tbody>
+                <tr>
+                    <td align="left">1</td>
+                    <td align="left">2</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息列表区-->
+        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td id="jpage_box"></td>
+            </tr>
+        </table>
+        <!--<div id="jpage_box" class="dy_page">
+            <a id="info_num" href="#">共12条</a>
+            <a id="page_num" href="#">共2页</a>
+            <a id="page_now" href="#">第1页</a>
+            <a id="page_first" href="{$ws.page.first}">首页</a>
+            <a id="page_prev" href="{$ws.page.prev}">上一页</a>
+            { foreach key=i item=tmp from=$ws.page.num }
+            <a id="page_{$i}" href="{$tmp}">1</a>
+            { /foreach }
+            <a id="page_next" href="{$ws.page.next}">下一页</a>
+            <a id="page_last" href="{$ws.page.last}">尾页</a>
+        </div>-->
+	</div>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_news" />
+<script type="text/javascript" src="../js/common.js"></script>

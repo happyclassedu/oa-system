@@ -1,0 +1,225 @@
+/*
+ * 文件名称：common.css
+ * 功能描述：自定义的公用css文件。
+ * 代码作者：孙振强
+ * 创建日期：2010-01-28
+ * 修改日期：2010-07-10
+ * 当前版本：V3.0
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+body {
+    overflow: hidden;
+    background-color: black;
+}
+
+#mdi_header {
+    width: 100%;
+    height: 96px;
+    overflow: hidden;
+    background-image: url('../img/mdi_header_bg.gif');
+    background-repeat: repeat-x;
+}
+
+#mdi_middle {
+    width: 100%;
+    height: expression(eval(document.body.clientHeight)-128);
+    overflow: hidden;
+    background-color: red;
+}
+
+#mdi_lefter {
+    float: left;
+    width: 180px;
+    height: 100%;
+    overflow: auto;
+    background-color: #DFF3FE;
+}
+
+#mdi_splitter {
+    float: left;
+    width: 7px;
+    height: 100%;
+    overflow: hidden;
+    background-image: url('../img/mdi_splitter_bg.gif');
+    background-repeat: repeat-y;
+}
+
+#mdi_mainer {
+    float: left;
+    width: expression(eval(document.body.clientwidth)-187);
+    height: 100%;
+    overflow: hidden;
+    background-color: orange;
+}
+
+#mdi_footer {
+    width: 100%;
+    height: 32px;
+    overflow: hidden;
+    background-image: url('../img/mdi_footer_bg.gif');
+    background-repeat: repeat-x;
+}
+
+/* splitter s */
+#arrow_box {
+    width: 7px;
+    overflow: hidden;
+    position:absolute;
+    top:expression(eval(document.body.scrollTop)+eval(document.body.clientHeight)/2-100);
+    cursor: pointer;
+}
+
+#arrow {
+    margin-top: -29px;
+}
+/* splitter e */
+
+/* lefter s */
+#left_menu {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 150px;
+}
+
+.level0 {
+    margin-top: 2px;
+    height: 24px;
+    overflow: hidden;
+    list-style-type: none;
+    font-size: 14px;
+    font-family: '����';
+    font-weight: bolder;
+    color: #0742A0;
+    line-height: 26px;
+    text-indent: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-image: url('../img/mdi_lefter_title_bg.gif');
+    background-repeat: no-repeat;
+}
+
+.level1 {
+    margin-top: -1px;
+    height: 31px;
+    list-style-type: none;
+    font-size: 12px;
+    font-family: '����';
+    line-height: 28px;
+    text-indent: 40px;
+    /*letter-spacing: 5px;*/
+    border-top:1px solid #5C82C1;
+    border-bottom:1px solid #5C82C1;
+    cursor: pointer;
+    background-image: url('../img/mdi_lefter_dot1.gif');
+    background-repeat: no-repeat;
+    background-position: 20px 10px;
+    background-color: #FFFFFF;
+}
+
+.level2 {
+    height: 24px;
+    list-style-type: none;
+    font-size: 12px;
+    font-family: '����';
+    line-height: 23px;
+    text-indent: 45px;
+    /*letter-spacing: 5px;*/
+    cursor: pointer;
+    background-image: url('../img/mdi_lefter_dot2.gif');
+    background-repeat: no-repeat;
+    background-position: 25px 10px;
+    background-color: #FFFFFF;
+}
+
+.level0 SPAN {
+    margin: 0px;
+    padding: 0px;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: -2px;
+    left: 8px;
+    cursor: pointer;
+    background-image: url('../img/mdi_dot_block.gif');
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+}
+/* lefter e */
+
+/* header s */
+#sys_name {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+#calendar_box {
+    position: absolute;
+    top: 28px;
+    left: 570px;
+    font-family: "宋体";
+    font-size: 12px;
+    color: #0062AE;
+}
+
+#header_menu {
+    width: 100%;
+    height: 32px;
+    overflow: hidden;
+    position: absolute;
+    top: 64px;
+    background-image: url(../img/mdi_header_menu_bg.gif);
+    background-repeat: repeat-x;
+}
+
+
+#welcome_box {
+    height: 21px;
+    overflow: hidden;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    padding-left: 30px;
+    padding-top: 3px;
+    font-family: "宋体";
+    font-size: 14px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    background-image: url(../img/mdi_dot_t.gif);
+    background-repeat: no-repeat;
+}
+
+#menu_bar {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    padding-left: 30px;
+    background-image: url(../img/mdi_dot_r.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+}
+
+
+#menu_bar span {
+    height: 100%;
+    background-image: url(../img/mdi_header_ico_0.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+    margin-left: 10px;
+    padding-left: 35px;
+    padding-top: 8px;
+    cursor: pointer;
+    font-family: "宋体";
+    font-size: 14px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+/* header e */

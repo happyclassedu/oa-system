@@ -1,0 +1,51 @@
+
+<!-- list begin-->
+<div class="div_976_center">
+    <div id="info_box">
+        <h2 id="nav_box">
+            <span>
+                当前位置：
+                <!--{ foreach item=tmp from=$ws.nav }-->
+                <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>&nbsp;&gt;&gt;&nbsp;
+                <!--{ foreachelse }-->
+                <!--{ /foreach }-->
+            </span>
+        </h2>
+        <table id="tb_list_job" width="98%" align="center" border="0" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                    <td>职务名称</td>
+                    <td>公司名称</td>
+                    <td>工作地址</td>
+                    <td>招聘人数</td>
+                    <td>待遇</td>
+                </tr>
+            </thead>
+            <tbody>
+                <!--{ foreach item=tmp from=$ws.list }-->
+                <tr>
+                    <td><a href="info_job_<!--{$tmp.id}-->.htm" target="_blank"><!--{$tmp.name}--></a></td>
+                    <td><a href="info_com_<!--{$tmp.cid}-->.htm" target="_blank"><!--{$tmp.cname}--></a></td>
+                    <td><!--{$tmp.addr}--></td>
+                    <td><!--{$tmp.num}--></td>
+                    <td><!--{$tmp.pay}--></td>
+                </tr>
+                <!--{ /foreach }-->
+            </tbody>
+        </table>
+        <div id="page_box">
+            <a id="info_num" href="#">共 <!--{$ws.page.info_num}--> 条</a>
+            <a id="page_num" href="#">共 <!--{$ws.page.page_num}--> 页</a>
+            <a id="page_now" href="#">第 <!--{$ws.page.page_now}--> 页</a>
+            <a id="page_first" href="<!--{$ws.page.first}-->">首页</a>
+            <a id="page_prev" href="<!--{$ws.page.prev}-->">上一页</a>
+            <!--{ foreach key=i item=tmp from=$ws.page.num }-->
+            <a id="page_<!--{$i}-->" href="<!--{$tmp}-->"><!--{$i}--></a>
+            <!--{ /foreach }-->
+            <a id="page_next" href="<!--{$ws.page.next}-->">下一页</a>
+            <a id="page_last" href="<!--{$ws.page.last}-->">尾页</a>
+        </div>
+    </div>
+    <!--{ include file="lefter.htm" }-->
+</div>
+<!-- list begin-->

@@ -1,0 +1,498 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+    <HEAD>
+        <META http-equiv=Content-Type content="text/html; charset=utf-8">
+        <TITLE>招聘中心 - 发布职位 - 人才网管理系统php1.0地区版</TITLE>
+        <LINK href="css/www.css" type="text/css" rel=stylesheet>
+</HEAD>
+<BODY>
+ <!--页面顶部-->
+<IFRAME align=middle src="com_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+<TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <td width=188><!--菜单-->
+        <IFRAME align=middle src="com_left.htm" frameBorder=0 width="100%" scrolling=no height=500 name="comright"></IFRAME>
+	</td>
+    <td width=10></td>
+    <td bgColor=#ffffff><!--右侧-->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom background="../img/title1_bg.gif" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <td align=middle width=80 background="../img/title1_bg2.jpg" height=28>
+                    <A class=white href="com_job_publish.htm"><B>发布职位</B></A>
+                </td>
+                <td width=5></td>
+                <td align=middle width=80 background="../img/title1_bg3.jpg">
+                    <A href="com_job_manage.htm">职位信息管理</A>
+                </td>
+                <td>&nbsp;</td>
+              </TR>
+              </TBODY>
+            </TABLE>
+          </td>
+        </TR>
+        <TR>
+          <td height=5></td>
+        </TR>
+        </TBODY>
+      </TABLE>
+      <!--职位信息-->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid"
+          height=25><STRONG>职位信息</STRONG> (<font color=#ff3300>*</font>
+          为必填项)</td></TR>
+        <TR>
+          <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px" height=25>
+              <font color=#777777>为确保贵公司能快速、准确的招聘到合适的人才，请仔细填写发布职位时的各项数据</font>
+          </td>
+        </TR>
+        </TBODY>
+      </TABLE>
+      <TABLE id="info_tb" cellSpacing=1 cellPadding=4 width="100%" bgColor=#dddddd border=0><TBODY>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 职位名称：</td>
+          <td>
+              <input id=txt_JobName style="width: 200px" maxLength=100/>
+          </td>
+        </TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 职位性质：</td>
+          <td>
+            <TABLE id=rbn_JobProperty style="BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+                <td><input id=rbn_JobProperty_0 type=radio CHECKED value=1
+                  name=rbn_JobProperty><LABEL for=rbn_JobProperty_0>全职</LABEL></td>
+                <td><input id=rbn_JobProperty_1 type=radio value=2
+                  name=rbn_JobProperty><LABEL for=rbn_JobProperty_1>兼职</LABEL></td>
+                <td><input id=rbn_JobProperty_2 type=radio value=3
+                  name=rbn_JobProperty><LABEL for=rbn_JobProperty_2>临时</LABEL></td>
+                <td><input id=rbn_JobProperty_3 type=radio value=4   name=rbn_JobProperty><LABEL
+              for=rbn_JobProperty_3>实习</LABEL></td></TR></TBODY></TABLE></td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>职位编号：</td>
+          <td><input id=txt_JobNo style="width: 200px" maxLength=30
+            name=txt_JobNo> <font color=#777777>公司内部的自定编号</font> </td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>招聘部门：</td>
+          <td><select id=ddl_Department style="width: 200px"
+            name=ddl_Department> <option value=0 selected>请选择</option></select>
+            <A href="http://job5.fdkjgz.com/Company/Com_Department.aspx"><U>新增部门</U></A>
+          </td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 有效期限：</td>
+          <td><input id=txt_ValidityDays style="width: 60px" maxLength=3
+            value=90 name=txt_ValidityDays> 天 <span id=rfv_ValidityDays
+            style="DISPLAY: none; COLOR: red" initialvalue=""
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid"
+            display="Dynamic"
+            errormessage="<br><img src=../../img/Icon1.gif align=absbottom> 请填写有效期限！"
+            focusOnError="t" controltovalidate="txt_ValidityDays"><BR><IMG
+            src="../img/Icon1.gif" align=absBottom> 请填写有效期限！</span> <span id=rev_ValidityDays style="DISPLAY: none; COLOR: red"
+            evaluationfunction="RegularExpressionValidatorEvaluateIsValid"
+            display="Dynamic"
+            errormessage="<br><img src=../../img/Icon1.gif align=absbottom> 请填写正确的有效期限！"
+            controltovalidate="txt_ValidityDays"
+            validationexpression="[0-9]{1,3}"><BR><IMG
+            src="../img/Icon1.gif" align=absBottom> 请填写正确的有效期限！</span> <span id=rav_ValidityDays style="DISPLAY: none; COLOR: red"
+            evaluationfunction="RangeValidatorEvaluateIsValid" display="Dynamic"
+            errormessage="<br><img src=../../img/Public/Icon1.gif align=absbottom> 职位有效期限只能是有效的数字！"
+            controltovalidate="txt_ValidityDays" minimumvalue="1"
+            maximumvalue="999"><BR><IMG src="../img/Icon1.gif"
+            align=absBottom> 职位有效期限只能是有效的数字！</span> </td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 招聘人数：</td>
+          <td><input id=txt_Mans style="width: 60px" maxLength=4 value=0
+            name=txt_Mans> 人<font color=#777777>(默认为0,表示若干人)</font> <span id=rfv_Mans style="DISPLAY: none; COLOR: red" initialvalue=""
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid"
+            display="Dynamic"
+            errormessage="<br><img src=../../img/Icon1.gif align=absbottom> 请填写招聘人数！"
+            focusOnError="t" controltovalidate="txt_Mans"><BR><IMG
+            src="../img/Icon1.gif" align=absBottom> 请填写招聘人数！</span> <span id=rev_Mans style="DISPLAY: none; COLOR: red"
+            evaluationfunction="RegularExpressionValidatorEvaluateIsValid"
+            display="Dynamic"
+            errormessage="<br><img src=../../img/Icon1.gif align=absbottom> 请填写正确的招聘人数！"
+            controltovalidate="txt_Mans"
+            validationexpression="[0-9]{1,4}"><BR><IMG
+            src="../img/Icon1.gif" align=absBottom> 请填写正确的招聘人数！</span>
+</td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 职位类别：</td>
+          <td><!--职位类别-->
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR vAlign=top>
+                <td width=200><select id=ddl_JobType style="width: 200px"
+                  onchange=XmlPost_JobTypeBox(this); name=ddl_JobType> <option
+                    value=1002 selected>计算机软件</option> <option
+                    value=1001>计算机硬件</option> <option
+                    value=1003>互联网开发及应用</option> <option
+                    value=1004>IT-管理</option> <option
+                    value=1005>IT-品管/技术支持</option> <option
+                    value=1006>通信技术</option> <option
+                    value=1007>电子/电器/半导体/仪器仪表</option> <option
+                    value=1008>销售管理</option> <option value=1009>销售人员</option>
+                    <option value=1010>销售行政及商务</option> <option
+                    value=1011>客服及技术支持</option> <option
+                    value=1012>财务/审计/税务</option> <option
+                    value=1013>证券/金融/投资</option> <option value=1014>银行</option>
+                    <option value=1015>保险</option> <option
+                    value=1016>生产/营运</option> <option
+                    value=1017>质量/安全管理</option> <option
+                    value=1018>工程/机械/能源</option> <option value=1019>汽车</option>
+                    <option value=1020>技工</option> <option
+                    value=1021>服装/纺织/皮革</option> <option value=1022>采购</option>
+                    <option value=1023>贸易</option> <option
+                    value=1024>物流/仓储</option> <option
+                    value=1025>生物/制药/医疗器械</option> <option
+                    value=1026>化工</option> <option value=1027>医院/医疗/护理</option>
+                    <option value=1028>广告</option> <option
+                    value=1029>公关/媒介</option> <option value=1030>市场/营销</option>
+                    <option value=1031>影视/媒体</option> <option
+                    value=1032>写作/出版/印刷</option> <option
+                    value=1033>艺术/设计</option> <option value=1034>建筑工程</option>
+                    <option value=1035>房地产</option> <option
+                    value=1036>物业管理</option> <option value=1037>人力资源</option>
+                    <option value=1038>高级管理</option> <option
+                    value=1039>行政/后勤</option> <option value=1040>咨询/顾问</option>
+                    <option value=1041>律师/法务</option> <option
+                    value=1042>教师</option> <option value=1043>科研人员</option>
+                    <option value=1044>餐饮/娱乐</option> <option
+                    value=1045>酒店/旅游</option> <option value=1046>美容/健身</option>
+                    <option value=1047>百货/连锁/零售服务</option> <option
+                    value=1048>交通运输服务</option> <option
+                    value=1049>保安/家政/其他服务</option> <option
+                    value=1050>公务员</option> <option value=1051>翻译</option>
+                    <option value=1052>在校学生</option> <option
+                    value=1053>储备干部/培训生/实习生</option> <option
+                    value=1054>兼职</option> <option
+                  value=1055>其他</option></select><BR><select id=lib_JobTypeBox
+                  style="width: 200px" size=6 name=lib_JobTypeBox> <option
+                    value=1002>计算机软件</option> <option value=1105>-
+                    软件工程师</option> <option value=1104>- 高级软件工程师</option> <option
+                    value=1106>- 软件UI设计师/工程师</option> <option value=1107>-
+                    仿真应用工程师</option> <option value=1108>-
+                    ERP实施顾问(ORACLE/SAP)</option> <option value=1109>-
+                    ERP技术开发(ORACLE/SAP)</option> <option value=1110>-
+                    需求工程师</option> <option value=1111>- 系统集成工程师</option> <option
+                    value=1112>- 系统分析员</option> <option value=1113>-
+                    系统工程师</option> <option value=1114>- 系统架构设计师</option> <option
+                    value=1115>- 数据库工程师/管理员</option> <option value=1116>-
+                    计算机辅助设计工程师</option> <option value=1117>-
+                  其他职位</option></select> </td>
+                <td align=middle width=70><input style="width: 55px"  type=button value="添加>>" name=AddJobType><BR><IMG
+                  src="../img/Space5px.gif"><BR><input style="width: 55px"type=button value="<<移除" name=DeleteJobType></td>
+                <td> <input id=hid_JobType type=hidden name=hid_JobType> </td></TR></TBODY></TABLE><span id=rfv_JobType style="DISPLAY: none; COLOR: red" initialvalue=""
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid"
+            display="Dynamic"
+            errormessage="<img src=../../img/Icon1.gif align=absbottom> 请选择职位类别！"
+            focusOnError="t" controltovalidate="lib_JobType"><IMG
+            src="../img/Icon1.gif" align=absBottom> 请选择职位类别！</span> </td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 工作地区：</td>
+          <td><!--工作地区-->
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR vAlign=top>
+                <td width=200><select id=ddl_WorkPlace style="width: 200px"
+                  onchange=XmlPost_WorkPlaceBox(this); name=ddl_WorkPlace>
+                    <option value=1005 selected>广东</option> <option
+                    value=1002>上海</option> <option value=1003>天津</option>
+                    <option value=1001>北京</option> <option
+                    value=1004>重庆</option> <option value=1022>河南</option>
+                    <option value=1006>江苏</option> <option
+                    value=1007>浙江</option> <option value=1008>福建</option>
+                    <option value=1009>湖南</option> <option
+                    value=1010>湖北</option> <option value=1011>山东</option>
+                    <option value=1012>辽宁</option> <option
+                    value=1013>吉林</option> <option value=1014>云南</option>
+                    <option value=1015>四川</option> <option
+                    value=1016>安徽</option> <option value=1017>江西</option>
+                    <option value=1018>黑龙江</option> <option
+                    value=1019>河北</option> <option value=1020>陕西</option>
+                    <option value=1021>海南</option> <option
+                    value=1023>山西</option> <option value=1024>内蒙古</option>
+                    <option value=1025>广西</option> <option
+                    value=1026>贵州</option> <option value=1027>甘肃</option>
+                    <option value=1028>宁夏</option> <option
+                    value=1029>青海</option> <option value=1030>新疆</option>
+                    <option value=1031>西藏</option> <option
+                    value=1032>台湾</option> <option value=1033>香港</option>
+                    <option value=1034>澳门</option> <option
+                  value=1035>国外</option></select><BR><select id=lib_WorkPlaceBox
+                  style="width: 200px" size=6 name=lib_WorkPlaceBox> <option
+                    value=1005>广东</option> <option value=1115>- 广州</option>
+                    <option value=1116>- 深圳</option> <option value=1117>-
+                    珠海</option> <option value=1118>- 汕头</option> <option
+                    value=1119>- 佛山</option> <option value=1120>- 东莞</option>
+                    <option value=1121>- 江门</option> <option value=1122>-
+                    湛江</option> <option value=1123>- 茂名</option> <option
+                    value=1124>- 肇庆</option> <option value=1125>- 惠州</option>
+                    <option value=1126>- 梅州</option> <option value=1127>-
+                    汕尾</option> <option value=1128>- 河源</option> <option
+                    value=1129>- 阳江</option> <option value=1130>- 清远</option>
+                    <option value=1131>- 中山</option> <option value=1132>-
+                    潮州</option> <option value=1133>- 揭阳</option> <option
+                    value=1134>- 韶关</option> <option value=1135>-
+                  云浮</option></select> </td>
+                <td align=middle width=70><input style="width: 55px"  type=button value="添加>>" name=AddWorkPlace><BR><IMG
+                  src="../img/Space5px.gif"><BR><input style="width: 55px"  type=button value="<<移除" name=DeleteWorkPlace></td>
+                <td><input id=hid_WorkPlace  type=hidden name=hid_WorkPlace> </td></TR></TBODY></TABLE><span id=rfv_WorkPlace style="DISPLAY: none; COLOR: red" initialvalue=""
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid"
+            display="Dynamic"
+            errormessage="<img src=../../img/Icon1.gif align=absbottom> 请选择工作地区！"
+            focusOnError="t" controltovalidate="lib_WorkPlace"><IMG
+            src="../img/Icon1.gif" align=absBottom> 请选择工作地区！</span> </td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 职位描述：</td>
+          <td><font color=#777777>请填写职位描述及任职要求等内容，(限3000字 <A
+            onclick="javascript:alert('您输入了'+ document.all.txt_JobDesc.value.length +'个字');"
+            href="javascript:"><font color=#777777>计算字数</font></A>) </font><BR><TEXTAREA id=txt_JobDesc style="width: 470px" name=txt_JobDesc rows=6></TEXTAREA>
+            <span id=rfv_JobDesc style="DISPLAY: none; COLOR: red"
+            initialvalue=""
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid"
+            display="Dynamic"
+            errormessage="<br><img src=../../img/Icon1.gif align=absbottom> 请填写职位描述！"
+            focusOnError="t" controltovalidate="txt_JobDesc"><BR><IMG
+            src="../img/Icon1.gif" align=absBottom> 请填写职位描述！</span> </td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 月薪范围：</td>
+          <td><select id=ddl_MonthPay style="width: 120px" name=ddl_MonthPay>
+              <option value="" selected>请选择</option> <option
+              value=999>1000以下</option> <option value=1999>1000～1999</option>
+              <option value=2999>2000～2999</option> <option
+              value=3999>3000～3999</option> <option
+              value=4999>4000～4999</option> <option
+              value=5999>5000～5999</option> <option
+              value=7999>6000～7999</option> <option
+              value=9999>8000～9999</option> <option
+              value=14999>10000～14999</option> <option
+              value=19999>15000～19999</option> <option
+              value=29999>20000～29999</option> <option
+              value=49999>30000～49999</option> <option
+              value=50000>50000以上</option></select> 人民币 <input id=chk_Astalk
+            type=checkbox name=chk_Astalk>在职位页面中显示为面议 <span id=rfv_MonthPay
+            style="DISPLAY: none; COLOR: red" initialvalue=""
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid"
+            display="Dynamic"
+            errormessage="<br><img src=../../img/Icon1.gif align=absbottom> 请选择月薪范围！"
+            focusOnError="t" controltovalidate="ddl_MonthPay"><BR><IMG
+            src="../img/Icon1.gif" align=absBottom> 请选择月薪范围！</span> </td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>其他待遇：</td>
+          <td><font color=#777777>补助、休假、住房、分红、股票期权等<BR></font><input id=txt_OtherPay style="width: 270px" maxLength=100
+            name=txt_OtherPay> </td></TR></TBODY></TABLE><!--应聘要求-->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid"
+          height=25><STRONG>应聘要求</STRONG> </td></TR>
+        <TR>
+          <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px" height=25><font color=#777777>填写应聘要求可以在求职者搜索职位时更好地搜索到贵企业的职位</font></td></TR></TBODY></TABLE>
+      <TABLE cellSpacing=1 cellPadding=4 width="100%" bgColor=#dddddd  border=0><TBODY>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>学历要求：</td>
+          <td><select id=ddl_Degree style="width: 80px" name=ddl_Degree>
+              <option value=0 selected>不限</option> <option value=80>博士</option>
+              <option value=75>MBA</option> <option value=70>硕士</option> <option
+              value=60>本科</option> <option value=50>大专</option> <option
+              value=40>中专</option> <option value=30>中技</option> <option
+              value=20>高中</option> <option value=10>初中</option></select></td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>工作经验：</td>
+          <td><select id=ddl_WorkYears style="width: 80px" name=ddl_WorkYears>
+              <option value=0 selected>不限</option> <option
+              value=-2>在校学生</option> <option value=-1>应届毕业生</option> <option
+              value=1>1年以上</option> <option value=2>2年以上</option> <option
+              value=3>3年以上</option> <option value=4>4年以上</option> <option
+              value=5>5年以上</option> <option value=8>8年以上</option> <option
+              value=10>10年以上</option></select></td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>性别要求：</td>
+          <td><select id=ddl_Sex style="width: 80px" name=ddl_Sex> <option
+              value=0 selected>不限</option> <option value=1>男</option> <option
+              value=2>女</option></select></td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>年龄范围：</td>
+          <td><select id=ddl_MinAge style="width: 80px" name=ddl_MinAge>
+              <option value=0 selected>不限</option> <option value=18>18</option>
+              <option value=19>19</option> <option value=20>20</option> <option
+              value=21>21</option> <option value=22>22</option> <option
+              value=23>23</option> <option value=24>24</option> <option
+              value=25>25</option> <option value=26>26</option> <option
+              value=27>27</option> <option value=28>28</option> <option
+              value=29>29</option> <option value=30>30</option> <option
+              value=31>31</option> <option value=32>32</option> <option
+              value=33>33</option> <option value=34>34</option> <option
+              value=35>35</option> <option value=36>36</option> <option
+              value=37>37</option> <option value=38>38</option> <option
+              value=39>39</option> <option value=40>40</option> <option
+              value=41>41</option> <option value=42>42</option> <option
+              value=43>43</option> <option value=44>44</option> <option
+              value=45>45</option> <option value=46>46</option> <option
+              value=47>47</option> <option value=48>48</option> <option
+              value=49>49</option> <option value=50>50</option> <option
+              value=51>51</option> <option value=52>52</option> <option
+              value=53>53</option> <option value=54>54</option> <option
+              value=55>55</option> <option value=56>56</option> <option
+              value=57>57</option> <option value=58>58</option> <option
+              value=59>59</option> <option value=60>60</option></select> <select id=ddl_MaxAge style="width: 80px" name=ddl_MaxAge> <option value=0
+              selected>不限</option> <option value=18>18</option> <option
+              value=19>19</option> <option value=20>20</option> <option
+              value=21>21</option> <option value=22>22</option> <option
+              value=23>23</option> <option value=24>24</option> <option
+              value=25>25</option> <option value=26>26</option> <option
+              value=27>27</option> <option value=28>28</option> <option
+              value=29>29</option> <option value=30>30</option> <option
+              value=31>31</option> <option value=32>32</option> <option
+              value=33>33</option> <option value=34>34</option> <option
+              value=35>35</option> <option value=36>36</option> <option
+              value=37>37</option> <option value=38>38</option> <option
+              value=39>39</option> <option value=40>40</option> <option
+              value=41>41</option> <option value=42>42</option> <option
+              value=43>43</option> <option value=44>44</option> <option
+              value=45>45</option> <option value=46>46</option> <option
+              value=47>47</option> <option value=48>48</option> <option
+              value=49>49</option> <option value=50>50</option> <option
+              value=51>51</option> <option value=52>52</option> <option
+              value=53>53</option> <option value=54>54</option> <option
+              value=55>55</option> <option value=56>56</option> <option
+              value=57>57</option> <option value=58>58</option> <option
+              value=59>59</option> <option value=60>60</option></select> </td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>语言能力：</td>
+          <td><select id=ddl_LanguageSign style="width: 80px"
+            name=ddl_LanguageSign> <option value=0 selected>不限</option>
+              <option value=1>英语</option> <option value=2>日语</option> <option
+              value=3>法语</option> <option value=4>德语</option> <option
+              value=5>俄语</option> <option value=6>韩语</option> <option
+              value=7>西班牙语</option> <option value=8>葡萄牙语</option> <option
+              value=9>阿拉伯语</option> <option value=10>意大利语</option> <option
+              value=11>中文普通话</option> <option value=12>粤语</option> <option
+              value=13>上海话</option> <option value=14>闽南语</option></select> <select id=ddl_LanguageLevel style="width: 80px" name=ddl_LanguageLevel>
+              <option value=0 selected>不限</option> <option value=1>一般</option>
+              <option value=2>良好</option> <option value=3>熟练</option> <option
+              value=4>精通</option></select> <span id=lbl_Language
+            style="COLOR: red"></span></td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>简历语言：</td>
+          <td><select id=ddl_ResumeLang style="width: 80px"
+            name=ddl_ResumeLang> <option value=0 selected>不限</option> <option
+              value=1>中文</option> <option value=2>英文</option></select>
+        </td>
+        </TR>
+          </TBODY>
+      </TABLE><!--联系方式-->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid"
+          height=25><STRONG>联系方式</STRONG> </td></TR>
+        <TR>
+          <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px" height=25><font color=#777777>为确保求职者能及时联系到贵公司，建议您填写多种联系方式</font></td></TR></TBODY></TABLE>
+      <TABLE cellSpacing=1 cellPadding=4 width="100%" bgColor=#dddddd  border=0><TBODY>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 联 系 人：</td>
+          <td><input id=txt_Linkman style="width: 200px" maxLength=30 value=刘
+            name=txt_Linkman> <span id=rfv_Linkman
+            style="DISPLAY: none; COLOR: red" initialvalue=""
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid"
+            display="Dynamic"
+            errormessage="<br><img src=../../img/Icon1.gif align=absbottom> 请填写联系人！"
+            focusOnError="t" controltovalidate="txt_Linkman"><BR><IMG
+            src="../img/Icon1.gif" align=absBottom> 请填写联系人！</span> </td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 联系电话：</td>
+          <td><input id=txt_Phone style="width: 200px" maxLength=30
+            value=029-88744485 name=txt_Phone> <input id=chk_PhoneKeep
+            type=checkbox name=chk_PhoneKeep>屏蔽电话 <span id=rfv_Phone
+            style="DISPLAY: none; COLOR: red" initialvalue=""
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid"
+            display="Dynamic"
+            errormessage="<br><img src=../../img/Icon1.gif align=absbottom> 请填写联系电话！"
+            focusOnError="t" controltovalidate="txt_Phone"><BR><IMG
+            src="../img/Icon1.gif" align=absBottom> 请填写联系电话！</span> <span id=rev_Phone style="DISPLAY: none; COLOR: red"
+            evaluationfunction="RegularExpressionValidatorEvaluateIsValid"
+            display="Dynamic"
+            errormessage="<br><img src=../../img/Public/Icon1.gif align=absbottom> 请填写正确的联系电话！"
+            controltovalidate="txt_Phone"
+            validationexpression="[0-9-]{7,20}"><BR><IMG
+            src="../img/Icon1.gif" align=absBottom> 请填写正确的联系电话！</span></td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>传真号码：</td>
+          <td><input id=txt_Fax style="width: 200px" maxLength=30 name=txt_Fax></td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 电子邮箱：</td>
+          <td><input id=txt_Email style="width: 200px" maxLength=100
+            value="xaxixun@126.com" name=txt_Email> <input id=chk_EmailKeep
+            type=checkbox name=chk_EmailKeep>屏蔽邮箱 <span id=rfv_Email
+            style="DISPLAY: none; COLOR: red" initialvalue=""
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid"
+            display="Dynamic"
+            errormessage="<br><img src=../../img/Public/Icon1.gif align=absbottom> 请填写邮箱地址！"
+            focusOnError="t" controltovalidate="txt_Email"><BR><IMG
+            src="../img/Icon1.gif" align=absBottom> 请填写邮箱地址！</span> <span id=rev_Email style="DISPLAY: none; COLOR: red"
+            evaluationfunction="RegularExpressionValidatorEvaluateIsValid"
+            display="Dynamic"
+            errormessage="<br><img src=../../img/Public/Icon1.gif align=absbottom> 请填写正确的邮箱地址！"
+            controltovalidate="txt_Email"
+            validationexpression="[\w\.-]+(\+[\w-]*)?@([\w-]+\.)+[\w-]+"><BR><IMG
+            src="../img/Icon1.gif" align=absBottom> 请填写正确的邮箱地址！</span>
+</td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>邮政编码：</td>
+          <td><input id=txt_PostCode style="width: 200px" maxLength=6
+            value="      " name=txt_PostCode> <span id=rev_PostCode
+            style="DISPLAY: none; COLOR: red"
+            evaluationfunction="RegularExpressionValidatorEvaluateIsValid"
+            display="Dynamic"
+            errormessage="<br><img src=../../img/Public/Icon1.gif align=absbottom> 请填写正确的邮政编码！"
+            controltovalidate="txt_PostCode"
+            validationexpression="[0-9]{6}"><BR><IMG src="../img/Icon1.gif"
+            align=absBottom> 请填写正确的邮政编码！</span> </td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>通讯地址：</td>
+          <td><input id=txt_Address style="width: 270px" maxLength=100
+            value=陕西省西安市高新区 name=txt_Address></td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>面试地址：</td>
+          <td><input id=txt_TestAddress style="width: 270px" maxLength=100
+            name=txt_TestAddress></td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>简历接收：</td>
+          <td><input id=chk_Accept type=checkbox CHECKED
+            name=chk_Accept>将应聘简历同时发送到电子邮箱 </td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>自动回复：</td>
+          <td><input id=chk_AutoReply type=checkbox CHECKED
+            name=chk_AutoReply>自动回复邮件给应聘者 <A
+            href="http://job5.fdkjgz.com/Company/Com_Mail_Template.aspx"
+            target=_blank><U>设置回复邮件模版</U></A> </td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100></td>
+          <td><input id=chk_AllUpdate type=checkbox
+            name=chk_AllUpdate>更新所有招聘信息的联系方式</td></TR>
+          </TBODY></TABLE><!--保存-->
+      <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>&nbsp;</td>
+          <td><input id=btn_Submit style="width: 60px; HEIGHT: 30px"  type="button" value=保存>
+            <span id=lbl_Error style="COLOR: red"></span></td></TR>
+        </TBODY>
+      </TABLE>
+    </td></TR>
+  </TBODY>
+</TABLE><!--页面底部-->
+<IFRAME align=middle src="com_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+</BODY>
+</HTML>
+<input type="hidden" id="g_id" value="info_job_view" />
+<script type="text/javascript" src="../js/common.js"></script>

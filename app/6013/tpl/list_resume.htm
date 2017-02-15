@@ -1,0 +1,52 @@
+<!-- list begin-->
+<div class="bl_960_cen">
+    <div id="info_box">
+        <h2 id="nav_box">
+            <span>
+                当前位置：
+                <!--{ foreach item=tmp from=$ws.nav }-->
+                <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>&nbsp;&gt;&gt;&nbsp;
+                <!--{ foreachelse }-->
+                <!--{ /foreach }-->
+            </span>
+        </h2>
+    <div class="list_resume">
+        <table class="resume" width="98%" align="center" border="0" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                    <td>姓名</td>
+                    <td>性别</td>
+                    <td>学历</td>
+                    <td>毕业学校</td>
+                    <td>专业</td>
+                </tr>
+            </thead>
+            <tbody>
+                <!--{ foreach item=tmp from=$ws.list }-->
+                <tr>
+                    <td><a title="查看“<!--{$tmp.name}-->”的简历" href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a></td>
+                    <td><!--{$tmp.sex}--></td>
+                    <td><!--{$tmp.degree}--></td>
+                    <td><!--{$tmp.univ}--></td>
+                    <td><!--{$tmp.major}--></td>
+                </tr>
+                <!--{ /foreach }-->
+            </tbody>
+        </table>
+        <div id="page_box">
+            <a id="info_num" href="#">共 <!--{$ws.page.info_num}--> 条</a>
+            <a id="page_num" href="#">共 <!--{$ws.page.page_num}--> 页</a>
+            <a id="page_now" href="#">第 <!--{$ws.page.page_now}--> 页</a>
+            <a id="page_first" href="<!--{$ws.page.first}-->">首页</a>
+            <a id="page_prev" href="<!--{$ws.page.prev}-->">上一页</a>
+            <!--{ foreach key=i item=tmp from=$ws.page.num }-->
+            <a id="page_<!--{$i}-->" href="<!--{$tmp}-->"><!--{$i}--></a>
+            <!--{ /foreach }-->
+            <a id="page_next" href="<!--{$ws.page.next}-->">下一页</a>
+            <a id="page_last" href="<!--{$ws.page.last}-->">尾页</a>
+        </div>
+    </div>
+    </div>
+    <!--{include file="lefter`$ws.mk`.htm"}-->
+</div>
+<!-- list begin-->

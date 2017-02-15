@@ -1,0 +1,108 @@
+{include file="member/header.htm"}
+{literal}
+<SCRIPT language=javascript>
+function CheckAll(form)
+{
+  for (var ii=0;ii<form.elements.length;ii++)
+    {
+    var e = form.elements[ii];
+    if (e.Name != "chkAll")
+       e.checked = form.chkAll.checked;
+    }
+}
+function Checked()
+{
+	var jj = 0
+	for(ii=0;ii < document.form.elements.length;ii++){
+		if(document.form.elements[ii].name == "xm[]"){
+			if(document.form.elements[ii].checked){
+				jj++;
+			}
+		}
+	}
+	return jj;
+}
+
+function DelAll()
+{
+	if(Checked()  <= 0){
+		alert("您至少选择1条信息!");
+	}
+	else{
+		if(confirm("确定要删除选择的信息吗？\n此操作不可以恢复！")){
+			form.action="?action=company_list&del=data";
+			form.submit();
+		}
+	}
+}
+
+//-->
+</SCRIPT>
+{/literal}
+<div class="containe-wz">您当前位置： <a href="" class="tt-12">首页</a> &gt;&gt; <a href="" class="tt-12">会员中心</a> &gt;&gt; 我添加的企业 </div>
+<div class="containe">
+<!--左侧栏目-->
+{include file="member/left.htm"}
+<!--右侧栏目-->
+	<div class="rightframe">
+	 	<div class="tjqy">
+			<ul>
+				<li><a href="?action=company_list" target="_self" class="tjqy-lm">等待申核</a></li>
+				<li><a href="?action=company_add" target="_self" class="tjqy-lm1">添加企业</a></li>
+			</ul>
+		</div>
+		<div class="tjqynr">
+				<div class="wxts"><span class="wz-style2"><img src="./templates/member/images/wxts-tb.gif" width="74" height="66" style="float: left; padding-right:10px;">温馨提示：</span> <br>
+				  发布公司联系方式及介绍信息，并通过三秦品牌网到专业编辑审核之后，企业信息将会出现在三秦品牌网上。成功通过审 核后，您将获得10个积分。<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提醒：为了能尽快通过审核，请您认真填写公司信息!</div>
+					<div style=" text-align:center;  font-size:12px; border:1px dashed #cccccc">
+<form name="form" method="post" action="">					
+<table width="100%" border=0 align=center cellpadding=2 cellspacing=1 bordercolor="#799AE1">
+                  <tbody>
+				  <tr style="font-size:14px; font-weight:800; color:#a56f40">
+                    <td width="7%" height="30" align="center" bgcolor="#faf2dd" >编号</td>
+                    <td width="39%" height="30" align="center" bgcolor="#faf2dd">公司名称</td>
+                    <td width="26%" align="center" bgcolor="#faf2dd">公司性质</td>
+                    <td width="14%" align="center" bgcolor="#faf2dd">添加时间</td>
+                    <td width="9%" align="center" bgcolor="#faf2dd">操作</td>
+                    <td width="5%" align="center" bgcolor="#faf2dd"><input id=chkAll
+                  onClick=CheckAll(this.form) type=checkbox
+                  value=checkbox name=chkAll></td>
+                  </tr>
+				  {section name=list loop=$company}
+				  <tr>
+                    <td width="7%" height="25" align="center" bgcolor="#fbf4ea" >{$smarty.section.list.index+1}</td>
+                    <td width="39%" height="25" align="left" bgcolor="#fbf4ea">{$company[list].cname}</td>
+                    <td width="26%" align="center" bgcolor="#fbf4ea">{$company[list].nature}</td>
+                    <td width="14%" align="center" bgcolor="#fbf4ea">{$company[list].injointime}</td>
+                    <td width="9%" align="center" bgcolor="#fbf4ea">
+					<a href="?action=company_add&amp;edit={$company[list].id}">编辑</a> <a href="?action=company_list&amp;del={$company[list].id}">删除</a>					</td>
+                    <td width="5%" align="center" bgcolor="#fbf4ea"><input type=checkbox value={$company[list].id}  name="xm[]" onClick=Checked(form)></td>
+                  </tr>
+				  {/section}
+				  
+				  <tr>
+                    <td width="7%" height="25" align="center" bgcolor="#F5f5f5" >1</td>
+                    <td height="25" colspan="4" align="center" bgcolor="#F5f5f5"></td>
+                    <td width="5%" align="center" bgcolor="#F5f5f5"><input type=button title=删除 onClick=DelAll()  value=删除 name=Submit></td>
+                  </tr>
+                </tbody>
+</table>
+</form>
+
+					
+					
+					
+					
+					
+					
+					</div>
+	  </div>
+	</div>
+</div>
+
+
+{include file="member/footer.htm"}
+<!--null页面结束-->
+</body></html>

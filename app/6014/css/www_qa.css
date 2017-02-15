@@ -1,0 +1,44 @@
+
+#dy_list_cen {
+   width:750px;
+   float:right;
+   overflow:hidden;
+}
+
+
+#dy_szyw {
+  margin-bottom:5px;
+  float:left;
+   width:740px;
+  margin-right:5px;
+  border:1px solid #c6c6c6;
+}
+
+#dy_szyw h1 {
+  font-size:14px;
+  line-height:35px;
+  color:#FFFFFF;
+  padding-left:20px;
+  background:url(../img/list_title_bg.jpg) left top no-repeat;
+}
+
+#dy_szyw table {
+    border-collapse:collapse;
+}
+
+#dy_szyw table tr {
+   line-height:28px;
+}
+
+.szyw_title {
+   text-align:center;
+   font-weight:800;
+   padding:0!important;
+   background:#fee487;
+}
+
+#dy_szyw table tr td {
+    border:solid 1px #c6c6c6;
+	line-height:27px;
+	padding-left:15px;
+}

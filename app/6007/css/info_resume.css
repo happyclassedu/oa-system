@@ -1,0 +1,107 @@
+
+.content-r-down ul li a:link,.content-r-down ul li a:visited{
+	color:#343434;
+	text-decoration:none;
+}
+.content-r-down ul li a:hover{
+	font-weight:800;
+	font-size:13px;
+}
+.content-right{
+	width:747px;
+	padding-top:21px;
+	padding-left:26px;
+	float:left;
+	display:block;
+	_margin-right:-3px;
+}
+.content-r-down,.content-r-down h2,.content-r-down ul{
+	width:747px;
+	float:left;
+}
+.content-r-top{
+	height:35px;
+	line-height:35px;
+	background:url(../img/b1.jpg) no-repeat left;
+	padding-left:33px;
+	width:714px;
+	background:#EEEEEE;
+}
+.content-r-down h2{
+	height:23px;
+	font-size:14px;
+	padding-left:10px;
+	width:737px;
+	background:url(../img/qy-h2.jpg) no-repeat left bottom;
+	padding-top:18px;
+}
+.content-r-down ul{
+	padding-top:21px;
+}
+.content-r-down ul li{
+	height:30px;
+	padding-left:32px;
+	width:715px;
+	background:url(../img/dian.jpg) no-repeat 22px 12px;
+	border-bottom:#747474 1px dotted;
+	line-height:30px;
+}
+/*列表页结束*/
+/*内容页面开始*/
+.content-r-down h3,.content-r-down h4{
+	height:23px;
+	font-size:14px;
+	width:747px;
+	text-align:center;
+	border-bottom:#DFDFDF 1px solid;
+	padding-top:18px;
+}
+.content-r-down h4{
+	font-size:12px;
+	color:#999999;
+	border:none;
+	font-weight:200;
+	padding-bottom:10px;
+}
+.content-r-down .neirong{
+	width:700px;
+	padding:0px 60px 38px 50px;
+}
+.content-r-down .neirong p{
+	text-indent:24px;
+	line-height:35px;
+}
+
+/*投递简历 s*/
+.res_tb {
+    background:url(../img/res.jpg) right bottom no-repeat;
+	line-height:35px;
+	color:#7a7a7a;
+}
+
+.res_tb span {
+	color:#FF0000;
+}
+
+.res_title {
+    text-align:right;
+	color:#000000;
+}
+
+.res_tb input {
+    width:200px;
+	border:1px solid #c7c7c7;
+	background:none;
+}
+
+.res_tb select {
+	border:1px solid #c7c7c7;
+	background:none;
+	width:100px;
+}
+
+.res {
+    width:300px;
+	border:1px solid #c7c7c7;
+	background:none;
+}

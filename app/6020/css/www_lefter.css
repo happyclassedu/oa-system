@@ -1,0 +1,29 @@
+/*left s*/
+#left {
+   float:left;
+   width:200px;
+   height:500px;
+   background:url(../img/left_bg.jpg) left top repeat-x;
+}
+
+#left h1 {
+   line-height:35px;
+   font-size:14px;
+   font:"黑体";
+   color:#FFFFFF;
+   padding-left:40px;
+   margin-top:20px;
+   background:url(../img/left_title.jpg) left center no-repeat;
+}
+#left a {
+   display:block;
+   text-decoration:none;
+   color:#FFFFFF;
+   text-align:center;
+   font:"黑体";
+   margin:10px;
+   border:1px solid #CCCCCC;
+   background:#b3cef9;
+   line-height:40px;
+}
+/*left e*/

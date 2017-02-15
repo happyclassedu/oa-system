@@ -1,0 +1,94 @@
+#bl_search_right {
+  float:right;
+  width:720px;
+  padding-right:2px;
+}
+
+#bl_search_right h3 {
+  font-size:12px;
+  line-height:30px;
+  padding-left:30px;
+  background:url(../img/list_bg.jpg) left top no-repeat;
+}
+
+#bl_search_right h3 a {
+  color:#000000;
+  text-decoration:none;
+}
+.search_nr {
+  padding:5px 20px;
+  border:1px solid #e2e2e2;
+  border-top:none;
+}
+
+.search_nr h1 {
+  font-size:16px;
+  line-height:35px;
+  color:#003366;
+  text-align:center;
+}
+
+.search_nr h6 {
+  font-size:12px;
+  font-weight:normal;
+  text-align:center;
+  line-height:30px;
+  border:solid #0d4e90;
+  border-width: 1px 0;
+}
+
+.search_nr h6 a {
+  color:#000000;
+  text-decoration:none;
+}
+
+.bl_search_btn {
+  width:100%;
+  text-align:right;
+  margin:8px -20px;
+}
+
+.search_nr table {
+  margin:0 auto;
+}
+
+.search_nr table tr {
+  line-height:30px;
+}
+
+.search_nr table a {
+  color:#000000;
+  text-decoration:none;
+}
+
+/* 换行 s
+#page_box {
+    height: 35px;
+    text-align: center;
+}
+
+#page_box a {
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    line-height: 21px;
+    margin: 0 4px;
+    padding: 0 6px;
+    border: #DBDBDB 1px solid;
+    color: #333333;
+    font-size: 12px;
+}
+
+#page_box a:hover {
+    background:#DEF1FF;
+    color: #FF0000;
+    text-decoration:none;
+}
+
+#page_box .page_now {
+    background:#DEF1FF;
+    color: #FF0000;
+    font-weight: 700;
+
+}
+ 换行 e */

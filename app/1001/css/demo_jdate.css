@@ -1,0 +1,9 @@
+.demo{
+    background-image: none;
+    background-color: #ffffff;
+    border:1px solid #ddd;
+    width:500px;
+    height:300px;
+    padding:10px;
+    float:left;
+}

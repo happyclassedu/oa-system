@@ -1,0 +1,20 @@
+
+body { 
+     text-align:center;
+	 }
+* { 
+    font-size:12px;
+	}
+.title { 
+    background:#0099FF; 
+	font-size:14px; 
+	line-height:35px; 
+	color:#FFF; 
+	font-weight:bold; 
+	text-align:left; 
+	padding-left:25px;
+	}
+iframe { 
+    vertical-align:top; 
+	text-align:left;
+	}

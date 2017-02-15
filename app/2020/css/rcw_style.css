@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+   margin:0;
+   padding:0;
+}
+
+body {
+   font-size:12px;
+}
+
+.div_rcw_cen{
+   width:976px;
+   margin:0 auto;
+   overflow:hidden;
+   padding-bottom:8px;
+}
+
+
+/* rcw_top s */
+
+#rcw_index {
+   background:url(../img/Blue1_bg.jpg) repeat-x;
+}
+
+#rcw_top {
+   padding-top:10px;
+}
+
+#rcw_top_left {
+  float:left;
+  width:550px;
+  height:65px;
+}
+
+.rcw_top_cen{
+   width:190px;
+   float:left;
+   padding-top:10px;
+}
+
+.rcw_top_cen a {
+   padding:0 5px;
+   line-height:25px;
+}
+
+.rcw_top_cen A:link {
+	COLOR: #7e817e; TEXT-DECORATION: none
+}
+.rcw_top_cen A:hover {
+	COLOR: #7e817e; TEXT-DECORATION: underline
+}
+
+#rcw_top_rig {
+   float:right;
+   width:220px;
+   height:50px;
+   padding-top:15px;
+   text-align:center;
+   color:#FFFFFF;
+   background:url(../img/rcw_top_rig.jpg) right center no-repeat;
+}
+
+.qydl {
+   float:left;
+   padding-left:10px;
+   margin-top:-4px;
+}
+
+.qydl img {
+   border:none;
+}
+
+#rcw_top_rig span {
+   line-height:18px;
+}
+
+.right_qy {
+   text-align:center;
+}
+
+.right_qy a {
+   color:#FFFFFF;
+   text-decoration:none;
+   padding:0 6px;
+   line-height:20px;
+}
+
+#rcw_menuer {
+   width:100%;
+   float:left;
+   font-size:14px;
+   color:#FFFFFF;
+   font-weight:800;
+   background:url(../img/home/top30_bg.jpg) left center repeat-x;
+}
+
+#rcw_menuer li {
+   display:inline;
+   padding:0 20px;
+   line-height:32px;
+   background:url(../img/Blue30_t1.jpg) left center no-repeat;
+}
+
+#rcw_menuer A {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+
+#rcw_menuer A:hover {
+	COLOR: #ffff00; TEXT-DECORATION: underline
+}
+
+
+/* rcw_top e */
+
+
+
+/* rcw_bottom s */
+.bottom_bg {
+   height:10px;
+   background:url(../img/bottom1_bg.gif) left center repeat-x;
+}
+
+#rcw_bottom {
+   text-align:center;
+   line-height:25px;
+}
+
+#rcw_bottom a:link {
+   color:#000000;
+   text-decoration:none;
+}
+
+#rcw_bottom a:hover {
+   color:#FF0000;
+   text-decoration:none;
+}
+
+/* rcw_bottom s */

@@ -1,0 +1,82 @@
+#list_bill {
+    line-height : 25px;
+    font-size : 12px;
+    margin : 0 auto;
+    border : 1px solid #d5d5d5;
+    border-collapse : collapse;
+    border : none;
+    background-color : #FFFFFF;
+}
+
+#list_bill thead tr{
+    text-align : center;
+    line-height : 35px;
+    font-size : 12px;
+    font-weight : bold;
+    background : url(../img/big_title.gif) repeat-x left top;
+}
+
+#list_bill tbody tr {
+    line-height : 28px;
+}
+
+#list_bill td {
+    border : solid #F5F5F5 1px;
+}
+
+#sys_title_box {
+    padding:10px 0;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+}
+
+#sys_title {
+    color: #000066;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+}
+#list_bill {
+    line-height : 25px;
+    font-size : 12px;
+    margin : 0 auto;
+    border : 1px solid #d5d5d5;
+    border-collapse : collapse;
+    border : none;
+    background-color : #FFFFFF;
+}
+
+#list_bill thead tr{
+    text-align : center;
+    line-height : 35px;
+    font-size : 12px;
+    font-weight : bold;
+    background : url(../img/big_title.gif) repeat-x left top;
+}
+
+#list_bill tbody tr {
+    line-height : 28px;
+}
+
+#list_bill td {
+    border : solid #F5F5F5 1px;
+}
+
+#sys_title_box {
+    padding:10px 0;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+}
+
+#sys_title {
+    color: #000066;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+}
+#search_tb{
+    margin-right: 0px;
+	text-align:right;
+}

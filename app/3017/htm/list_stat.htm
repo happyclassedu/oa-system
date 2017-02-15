@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>医疗保险——医疗缴费统计表</title>
+    </head>
+
+    <body>
+        <div id="box_title"> <span id="sys_title">医疗保险——医疗缴费统计表</span>
+            <div id="box_tools">
+               <span id="box_search">
+                    查看日清单&nbsp;&nbsp;
+                    <input id="d_fee_s" class="search" type="text">日 至
+                    <input id="d_fee_e" class="search" type="text">日 &nbsp;&nbsp;
+                    <input id="btn_search" type="button" value="搜索"/>&nbsp;&nbsp;<input id="btn_reset" type="button" value="清空"/>
+                </span>
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+              </div>
+        </div>
+        <!--开始__信息内容-->
+          <table id="stat_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr>
+            <td>缴费人数共计</td>
+            <td id="d_jf_p">XX人</td>
+            <td>新增缴费人数</td>
+            <td id="d_xz_p">XX人</td>
+            <td>续缴缴费人数</td>
+            <td id="d_xf_p">XX人</td>
+            <td>转入缴费人数</td>
+            <td id="d_zr_p">XX人</td>
+          </tr>
+          <tr>
+            <td>缴费金额共计</td>
+            <td id="d_jf_f">XX元</td>
+            <td>新增缴费金额</td>
+            <td id="d_xz_f">XX元</td>
+            <td>续缴缴费金额</td>
+            <td id="d_xf_f">XX元</td>
+            <td>转入缴费金额</td>
+            <td id="d_zr_f">XX元</td>
+          </tr>
+          <tr>
+            <td>40岁以下人数</td>
+            <td id="d_40_p">&nbsp;</td>
+            <td>41-50岁人数</td>
+            <td id="d_40to50_p">&nbsp;</td>
+            <td>51以上人数</td>
+            <td id="d_50_p">&nbsp;</td>
+            <td>退休人数</td>
+            <td id="d_tx_p">&nbsp;</td>
+          </tr>
+        </table>
+        <!--开始__信息列表-->
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="60" align="center" />
+            <col width="100" align="center" />
+            <col width="100" />
+            <col width="100" />
+            <col width="100" />
+            <col width="100" />
+            <col width="140" />
+            <col width="100" />
+            <thead>
+                <tr class="itb_title">
+                    <td>序号</td>
+                    <td>缴费时间</td>
+                    <td>姓名</td>
+                    <td>身份证号</td>
+                    <td>医保编号</td>
+                    <td>缴费金额</td>
+                    <td>缴费时间段</td>
+                    <td>缴费月数</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td id="jpage_box"></td>
+            </tr>
+        </table>
+        <!--结束__信息列表-->
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_stat" />
+<script type="text/javascript" src="../js/common.js"></script>

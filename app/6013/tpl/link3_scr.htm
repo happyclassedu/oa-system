@@ -1,0 +1,17 @@
+<!-- link3 s -->
+<div class="bl_linking bl_960_cen">
+    <ul>
+        <!--{ foreach item=tmp from=$ws.link3.list }-->
+        <li>
+            <a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->" target="_blank">
+                <!--{ if $tmp.img eq "" }-->
+                <!--{$tmp.name}-->
+                <!--{ else if }-->
+                <img src="doc::<!--{$tmp.img}-->" />
+                <!--{ /if }-->
+            </a>
+        </li>
+        <!--{ /foreach }-->
+    </ul>
+</div>
+<!-- link3 e -->

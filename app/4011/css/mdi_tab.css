@@ -1,0 +1,177 @@
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Document */
+
+/*body {
+
+}*/
+
+#tab_bar {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 29px;
+    background-image: url('../img/tab_bg.png');
+    background-repeat: repeat-x;
+}
+
+#tab_box {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+#tab_box li {
+    top: 0px;
+    left: 0px;
+    position: relative;
+    margin-left: -10px;
+    width: 150px;
+    height: 29px;
+    float: left;
+    text-indent: 20px;
+    line-height: 32px;
+    font-size: 12px;
+    color: #333333;
+    list-style-type: none;
+    z-index: 0;
+}
+
+.tab_show {
+    background-image: url(../img/tab_show_bg.gif);
+    background-repeat: no-repeat;
+    cursor: default;
+    z-index: 100;
+}
+
+.tab_hide {
+    color: #333333;
+    background-image: url(../img/tab_hide_bg.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.tab_over {
+    background-image: url(../img/tab_over_bg.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 0;
+}
+
+#tab_box li span{
+    top: 8px;
+    right: 10px;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    float: left;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.tab_del {
+    background-image: url('../img/tab_del.gif');
+}
+
+.tab_del_over {
+    background-image: url('../img/tab_del_over.gif');
+}
+
+#tab_control {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    width: 100px;
+    height: 29px;
+    background-image: url('../img/tab_bg.png');
+    background-repeat: repeat-x;
+}
+
+#tab_control span {
+    top: 0px;
+    left: 0px;
+    position: relative;
+    margin-left: 10px;
+    width: 23px;
+    height: 23px;
+    float: left;
+    cursor: pointer;
+}
+
+.tab_move_left {
+    background-image: url('../img/tab_move_left.gif');
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+}
+
+.tab_move_left_over {
+    background-image: url('../img/tab_move_left_over.gif');
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+}
+
+.tab_move_right {
+    background-image: url('../img/tab_move_right.gif');
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+}
+
+.tab_move_right_over {
+    background-image: url('../img/tab_move_right_over.gif');
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+}
+
+.tab_del_all {
+    background-image: url('../img/tab_del_all.gif');
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+}
+
+.tab_del_all_over {
+    background-image: url('../img/tab_del_all_over.gif');
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+}
+
+#tab_con {
+    top: 29px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: expression(eval(document.body.clientHeight)-29);
+    z-index: 0;
+}
+
+#tab_con li {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+#tab_con iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#ajax_load {
+    top: 29px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: expression(eval(document.body.clientHeight)-29);
+    background-color: #FFFFFF;
+    filter: Alpha(opacity=91);
+    display: none;
+    z-index: 100;
+}

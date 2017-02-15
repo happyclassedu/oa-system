@@ -1,0 +1,71 @@
+/* login s */
+#dy_login_cen {
+  border:1px solid #c6c6c6;
+  margin:5px 10px;
+}
+
+#dy_login_cen h1 {
+  font-size:14px;
+  line-height:35px;
+  color:#FFFFFF;
+  padding-left:10px;
+  background:url(../img/list_title_bg.jpg) left top no-repeat;
+}
+
+#dy_login_cen table {
+   margin:10px auto;
+}
+
+#dy_login_cen table tr {
+   list-style:none;
+   line-height:30px;
+   text-align:left;
+}
+
+#dy_login_cen table tr td span img {
+  margin-bottom:10px;
+}
+
+#btn_isuser {
+  width:auto!important;
+  color:#FF0000;
+  background:none;
+}
+
+#dy_login_cen table input {
+   width:250px;
+   margin-left:25px;
+}
+
+#dy_login_cen table #btn_isuser {
+   border:none;
+   padding:8px 10px;
+}
+
+#dy_login_cen table select {
+   width:250px;
+   margin-left:25px;
+}
+
+.fl {
+  padding-left:20px;
+  font-weight:800;
+  border-bottom:1px dashed #cccccc;
+  background:#dfeffc;
+}
+
+#dy_login_cen p {
+   text-align:center;
+   margin:8px auto;
+}
+
+#dy_login_cen p input {
+   border:none;
+   padding:8px 33px;
+   background:url(../img/botton.jpg) left top no-repeat;
+}
+
+.bitian {
+   color:#FF0000;
+}
+/* login e */

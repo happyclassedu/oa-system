@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>列表--企业管理</title>
+    </head>
+    <body>
+        <!--开始__基本功能区-->
+        <div id="box_title">
+            <span id="sys_title">网络招聘会--列表</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button" value="刷新" />&nbsp;&nbsp;
+                <input id="btn_close" type="button" value="关闭" />&nbsp;&nbsp;
+            </div>
+        </div>
+        <table id="search_tb"  width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td> 公司名称：</td>
+                <td><input id="d_fname" class="search" type="text" style="width: 380px"></td>
+                <td>用户状态：</td>
+                <td>
+                    <select id="d_user_state" class="search">
+                        <option value="" selected>状态类型</option>
+                        <option value="正常">正常</option>
+                        <option value="审核">审核</option>
+                        <option value="禁用">禁用</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>网络招聘会类型：</td>
+                <td>
+                    <select id="d_i_tmp0" class="search" style="width: 380px">
+                        <option value="" selected>请选择网络招聘会类型</option>
+                        <option value="酒店、物业、商超、百货类网络专场招聘会 时间：2011年1月10-16日">酒店、物业、商超、百货类网络专场招聘会 时间：2011年1月10-16日</option>
+                        <option value="机械、电子、IT通信、营销类网络专场招聘会 时间：2011年1月17-23日">机械、电子、IT通信、营销类网络专场招聘会 时间：2011年1月17-23日</option>
+                        <option value="2011年新年大型综合类网络招聘会 时间：2011年1月24-31日">2011年新年大型综合类网络招聘会 时间：2011年1月24-31日</option>
+                    </select>
+                </td>
+                <td>&nbsp;</td>
+                <td align="right"><input id="btn_search" type="button" value="搜索"/></td>
+            </tr>
+        </table>
+        <!--结束__基本功能区-->
+        <!--开始__信息列表区-->
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="45" align="center" />
+            <col width="100" align="center" />
+            <col width="100" align="center" />
+            <col width="100" align="center" />
+            <col width="100" align="center" />
+            <col width="100" align="center" />
+            <col width="100" align="center" />
+            <col width="165"  align="center" />
+            <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>企业名称</td>
+                    <td>网络招聘会类型</td>
+                    <td>用户状态</td>
+                    <td>注册时间</td>
+                    <td>登录次数</td>
+                    <td>登录时间</td>
+                    <td>操作</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td class="btn_box">
+                        <input class="btn_edit_com" type="button" value="修改" />
+                        <input class="btn_edit_com_pwd" type="button" value="密码" />
+                        <input class="btn_edit_com_setting" type="button" value="设置" />
+                        <input class="btn_del_com" type="button" value="删除" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息列表区-->
+        <!--开始__列表排序区-->
+        <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td id="jpage_box"></td>
+            </tr>
+        </table>
+        <!--开始__结束排序区-->
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_com_other" />
+<script type="text/javascript" src="../js/common.js"></script>

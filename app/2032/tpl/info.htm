@@ -1,0 +1,17 @@
+
+<!--{include file="listnav_bg.htm"}-->
+
+<!--info centent s-->
+<div id="info_cen">
+    <!--content s-->
+    <div id="content">
+        <h1><!--{$ws.info.name}--></h1>
+        <h2>发布时间：<!--{$ws.info.atime|date_format:"%Y年%m月%d日"}-->   信息来源：<!--{$ws.info.source}-->   浏览次数：<!--{$ws.info.hits}--></h2>
+        <div id="contg">
+            <!--{$ws.info.remark}-->
+        </div>
+    </div>
+    <!--content e-->
+    <!--{include file="lefter.htm"}-->
+</div>
+<!--info centent s-->

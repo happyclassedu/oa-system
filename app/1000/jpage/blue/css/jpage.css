@@ -1,0 +1,85 @@
+.blue_page_box {
+	height:29px;
+	font-size:12px;
+	background: url(../img/bg.gif);
+	margin: 0 0 -1px 0;
+	border:1px solid #01223D;
+	border-top:none;
+}
+
+.blue_page_box td {
+	color:#FFFFFF;
+	font-size:12px;
+}
+
+.blue_page_panel {
+	float:left;
+	padding:0 10px 0 10px;
+}
+
+.blue_btn {
+	width: 20px;
+	height: 20px;
+	display: block;
+	cursor: pointer;
+	margin:1px;
+}
+
+.blue_btn_press_un {
+	margin:2px 0 0 2px;
+}
+
+.blue_btn_prev {
+	background: url(../img/prev.gif) no-repeat center;
+}
+
+.blue_btn_prev_disable {
+	background: url(../img/prev_disabled.gif) no-repeat center;
+	cursor:auto;
+}
+
+.blue_btn_next {
+	background: url(../img/next.gif) no-repeat center;
+}
+
+.blue_btn_next_disable{
+	background: url(../img/next_disabled.gif) no-repeat center;
+	cursor:auto;
+}
+
+.blue_btn_no_1 {
+	background: url(../img/first.gif) no-repeat center;
+}
+
+.blue_btn_no_1_disable {
+	background: url(../img/first_disabled.gif) no-repeat center;
+	cursor:auto;
+}
+
+.blue_btn_last {
+	background: url(../img/last.gif) no-repeat center;
+}
+
+.blue_btn_last_disable {
+	background: url(../img/last_disabled.gif) no-repeat center;
+	cursor:auto;
+}
+
+.blue_btn_refresh {
+	background: url(../img/nowait.gif) no-repeat center
+}
+
+.blue_val_page_now {
+	width:30px;
+	height:16px;
+	line-height:16px;
+	text-align:center;
+	border:1px solid #01223D;
+	background:url(../img/text_bg.gif) repeat-x;
+}
+
+.blue_separator {
+	width:2px;
+	height:26px;
+	background: url(../img/separator.gif) no-repeat center;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>信息--员工档案管理--综合人事管理系统</title>
+    </head>
+    <body>
+        <div id="box_title">
+            <span id="sys_title">综合人事管理系统--员工档案管理--<span id="sys_state"></span>信息</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_add" type="button"  value="新增员工"/>&nbsp;&nbsp;
+                <input id="btn_edit" type="button" value="修改员工"/>&nbsp;&nbsp;
+                <input id="btn_del" type="button" value="删除员工"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_info_hm_w" type="button" value="查看员工工作信息"/>&nbsp;&nbsp;
+            </div>
+        </div>
+        <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">一、基本信息</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>员工编号：</td>
+                    <td><input id="d_code" type="text"/></td>
+                    <td>姓名：</td>
+                    <td><input id="d_name" type="text" /></td>
+                    <td>性别：</td>
+                    <td>
+                        <label>
+                            <input id="d_sex_0" name="d_sex" type="radio" style="width:15px;" value="男" />
+                            男
+                        </label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label>
+                            <input id="d_sex_1" name="d_sex" type="radio" style="width:15px;" value="女"/>
+                            女
+                        </label>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td>出生年月：</td>
+                    <td><input id="d_birth" type="text"/></td>
+                    <td>籍贯：</td>
+                    <td><input id="d_native_place" type="text" /></td>
+                    <td>民族：</td>
+                    <td><input id="d_nation" type="text"/></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>身份证号码：</td>
+                    <td><input id="d_idcard" type="text"/></td>
+                    <td>身份证地址：</td>
+                    <td><input id="d_idcard_addr" type="text"/></td>
+                    <td>政治面貌：</td>
+                    <td>
+                        <select id="d_politics">
+                            <option value=""></option>
+                            <option value="共产党员">共产党员</option>
+                            <option value="共青团员">共青团员</option>
+                            <option value="群众">群众</option>
+                            <option value="民主党派">民主党派</option>
+                            <option value="其他">其他</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="tb_title0">
+                    <td colspan="6">二、学历/职称信息</td>
+                </tr>
+                <tr class="tr_1">
+                    <td width="100">学历：</td>
+                    <td>
+                        <select id="d_grad_degree">
+                            <option value=""></option>
+                            <option value="高中">高中</option>
+                            <option value="中专">中专</option>
+                            <option value="技校">技校</option>
+                            <option value="大专">大专</option>
+                            <option value="本科">本科</option>
+                            <option value="硕士">硕士</option>
+                            <option value="博士">博士</option>
+                        </select>
+                    </td>
+                    <td width="100">毕业院校：</td>
+                    <td><input id="d_grad_univ" type="text" /></td>
+                    <td width="100">专业：</td>
+                    <td><input id="d_grad_major" type="text" /></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>毕业时间：</td>
+                    <td><input id="d_grad_date" type="text"/></td>
+                    <td>职称：</td>
+                    <td><input id="d_job_title" type="text" /></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr class="tb_title0">
+                    <td colspan="6">三、联系信息</td>
+                </tr>
+                <tr class="tr_1">
+                    <td width="100">住址：</td>
+                    <td><input id="d_addr" type="text" /></td>
+                    <td width="110">固定电话：</td>
+                    <td><input id="d_tel_0" type="text" /></td>
+                    <td width="100">手机：</td>
+                    <td><input id="d_tel_1" type="text" /></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>紧急联系人：</td>
+                    <td><input id="d_sos_person" type="text"/></td>
+                    <td>紧急联系电话：</td>
+                    <td><input id="d_sos_tel" type="text" /></td>
+                    <td>邮箱：</td>
+                    <td><input id="d_email" type="text" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr id="box_act_url" class="tr_1">
+                <td>
+                    保存后操作：&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input name="act_url" type="radio" value="add"/>继续新增信息</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input name="act_url" type="radio" value="view" checked />查看该信息</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input name="act_url" type="radio" value="close"/>关闭</label>
+                </td>
+            </tr>
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button" value="保存信息">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="btn_cancel" type="button" value="取消保存">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_hm" />
+<script type="text/javascript" src="../js/common.js"></script>

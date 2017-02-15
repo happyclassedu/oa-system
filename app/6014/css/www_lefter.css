@@ -1,0 +1,98 @@
+
+/* 最新视频 s */
+
+#dy_zxsp {
+   width:200px;
+   overflow:hidden;
+   border:1px solid #c6c6c6;
+   margin-bottom:5px;
+}
+
+#dy_zxsp h1 {
+   background:url(../img/zbgg.jpg) left top no-repeat;
+}
+
+#dy_zxsp h1 a {
+   line-height:30px;
+   font-size:14px;
+   font-weight:800;
+   color:#FF0000;
+   padding:5px 0 5px 50px;
+   text-decoration:none;
+}
+
+#dy_zxsp ul {
+   width:230px;
+}
+
+#dy_zxsp ul li {
+   float:left;
+   width:80px;
+   text-align:center;
+   list-style:none;
+   margin:3px 9px;
+}
+
+#dy_zxsp ul li a {
+   text-decoration:none;
+   color:#000000;
+}
+
+/* 最新视频 e */
+/* 热点关注 s */
+#dy_zbgg {
+  border:1px solid #c6c6c6;
+  margin-bottom:5px;
+}
+
+#dy_zbgg h1 a {
+   line-height:28px;
+   font-size:14px;
+   font-weight:800;
+   color:#FF0000;
+   padding:5px 0 0 50px;
+   background:url(../img/zbgg.jpg) left top no-repeat;
+}
+
+#dy_zbgg a {
+   display:block;
+   line-height:27px;
+   margin-left:7px;
+   color:#000000;
+   text-decoration:none;
+}
+
+#dy_zbgg a:hover {
+   color:#FF0000;
+   text-decoration:none;
+}
+
+/* 热点关注 e */
+
+/* 时政要闻 s */
+
+#dy_szyw {
+  float:left;
+   width:740px;
+}
+
+#dy_szyw h1 {
+  font-size:14px;
+  line-height:35px;
+  color:#FFFFFF;
+  padding-left:20px;
+  background:url(../img/list_title_bg.jpg) left top no-repeat;
+}
+
+#dy_szyw a {
+  display:block;
+  line-height:30px;
+  color:#333333;
+  margin:0 15px;
+  padding-left:25px;
+  text-decoration:none;
+  background:url(../img/untitled.bmp) left center no-repeat;
+}
+
+/* 时政要闻 e */
+

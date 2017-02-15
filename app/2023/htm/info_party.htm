@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>党员管理--党员信息登记表</title>
+    </head>
+    <body>
+       <div id="box_title">
+            <span id="sys_title">党员管理--党员信息登记表--<span id="sys_state"></span>信息</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button" value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_add"  type="button" value="新增党员信息"/>&nbsp;&nbsp;
+                <input id="btn_edit" type="button" value="修改党员信息"/>&nbsp;&nbsp;
+                <input id="btn_del" type="button" value="删除党员信息"/>&nbsp;&nbsp;
+                <input id="btn_shift" type="button" value="转出党关系"/>&nbsp;&nbsp;
+                <input id="btn_party_clm" type="button" value="党员材料管理"/>&nbsp;&nbsp;
+                <input id="btn_party_clg" type="button" value="党员材料归档"/>&nbsp;&nbsp;
+                <input id="btn_party_zg" type="button" value="预备党员转正"/>&nbsp;&nbsp;
+                <input id="btn_party_pay" type="button" value="缴纳党费"/>&nbsp;&nbsp;
+                <input id="btn_party_identity" type="button" value="办理党员身份证明"/>&nbsp;&nbsp;
+                <!--<input id="btn_party_bill" type="button" value="缴费票据管理"/>&nbsp;&nbsp;-->
+                <input id="btn_party_print" type="button" value="打印参加转正大会名单"/>&nbsp;&nbsp;
+            </div>
+        </div>
+        <!--开始__信息内容-->
+         <iframe  id="iframe" width="800" height="200" frameborder="0" scrolling="auto" align="center"></iframe>
+          <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">基本信息<input id="d_i_type" type="hidden" value="党员管理"/></td>
+                </tr>
+                <tr class="tr_0">
+                    <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;姓名</td>
+                    <td><input id="d_name" type="text"/></td>
+                    <td>身份证号</td>
+                    <td><input id="d_cardid" type="text"/></td>
+                    <td>民族</td>
+                    <td><input id="d_nation" type="text" /></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>性别</td>
+                    <td>
+                        <select id="d_sex">
+                            <option value="">性别类型</option>
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select>
+                    </td>
+                    <td>出生日期</td>
+                    <td><input id="d_birth" type="text"/></td>
+                    <td>政治面貌</td>
+                    <td>
+                        <select id="d_political">
+                            <option value="">请选择</option>
+                            <option value="共产党员">共产党员</option>
+                            <option value="共青团员">共青团员</option>
+                            <option value="群众">群众</option>
+                            <option value="民主党派">民主党派</option>
+                            <option value="其他">其他</option>
+                        </select>
+                    </td>
+                </tr>
+                   <tr class="tr_0">
+                    <td>文化程度</td>
+                    <td>
+                         <select id="d_degree">
+                            <option value="">请选择</option>
+                            <option value="博士">博士</option>
+                            <option value="研究生">研究生</option>
+                            <option value="本科">本科</option>
+                            <option value="大专">大专</option>
+                            <option value="其他">其他</option>
+                        </select>
+                     </td>
+                    <td>籍贯</td>
+                    <td>
+                        <input id="d_native_place" type="text"/>
+                    </td>
+                    <td>毕业院校</td>
+                    <td><input id="d_univ" type="text"/></td>
+                    
+                </tr>
+                <tr class="tb_title0">
+                    <td colspan="6">党员信息</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>党员材料号</td>
+                    <td><input id="d_party_code" type="text"/></td>
+                    <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;组织（单位）</td>
+                    <td>
+                        <input id="d_unit" type="text"/>
+                    </td>
+                    <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;转入时间</td>
+                    <td><input id="d_shift_to_time" type="text"/></td>
+                </tr>
+                <tr class="tr_1">
+                    <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;入党时间</td>
+                    <td><input id="d_join_time" type="text"/></td>
+                    <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;入党类型</td>
+                    <td>
+                        <select id="d_party_type">
+                            <option value="">选择类型</option>
+                            <option value="正式党员">正式党员</option>
+                            <option value="预备党员">预备党员</option>
+                        </select>
+                    </td>
+                     <td>党内职称</td>
+                    <td>
+                        <input id="d_party_job" type="text"/>
+                    </td>
+                   
+                </tr>
+                 <tr class="tr_0">
+                    <td>流出时间</td>
+                    <td>
+                       <input id="d_shift_out_time" type="text"/>
+                    </td>
+                    <td>党员关系状态</td>
+                    <td>
+                        <select id="d_party_state">
+                            <option value="">选择状态</option>
+                            <option value="在库">在库</option>
+                            <option value="调出">调出</option>
+                            <option value="归档">归档</option>
+                        </select>
+                    </td>
+                    <td>党员材料状态</td>
+                    <td>
+                        <select id="d_party_state0">
+                            <option value="">选择状态</option>
+                            <option value="在库">在库</option>
+                            <option value="调出">调出</option>
+                            <option value="归档">归档</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="tr_0">
+                    <td>党费缴止日期</td>
+                    <td><input id="d_pay_deadtime" type="text"/></td>
+                    <td>介绍人</td>
+                    <td><input id="d_introducer" type="text"/></td>
+                    <td>备注</td>
+                    <td><input id="d_remark" type="text"/></td>
+                </tr>
+                <tr class="tb_title0">
+                    <td colspan="6">联系信息</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>手机</td>
+                    <td><input id="d_tel_0" type="text"/></td>
+                    <td>固定电话</td>
+                    <td><input id="d_tel_1" type="text" value="029-"/></td>
+                    <td>电子邮件</td>
+                    <td><input id="d_email" type="text" /></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>住址</td>
+                    <td><input id="d_addr" type="text"/></td>
+                    <td>QQ号</td>
+                    <td><input id="d_qq" type="text"/></td>
+                    <td>邮政编码</td>
+                    <td><input id="d_postcode" type="text"/></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>紧急联系人</td>
+                    <td colspan="2"><input id="d_sos_person" type="text"/></td>
+                    <td>紧急联系电话</td>
+                    <td colspan="2"><input id="d_sos_tel" type="text"/></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息内容-->
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button" value="保存信息">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="btn_cancel" type="button" value="取消保存">
+                </td>
+            </tr>
+        </table>
+        <table id="hidden_v1"  width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td id="sys_title" align="center">操作日志</td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input id="btn_record" type="button" value="档案管理"/>
+                    <input id="btn_hreg" type="button" value="户籍管理"/>
+                    <input id="btn_agreement" type="button" value="协议报到"/>
+                    <input id="btn_balance" type="button" value="财务结算"/>
+                    <input id="btn_party" type="button" value="党员管理"/>
+                    <input id="btn_base" type="button" value="基本业务"/>
+                    <input id="btn_all" type="button" value="全部业务"/>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="60" align="center" />
+            <col width="90" align="center" />
+            <col width="90" />
+            <col width="100" />
+            <col width="100" />
+            <col width="360" />
+            <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>时间</td>
+                    <td>操作员</td>
+                    <td>业务类型</td>
+                    <td>事件</td>
+                    <td>内容</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>文本</td>
+                    <td>2010-06-28</td>
+                    <td>张彬</td>
+                    <td>党员管理</td>
+                    <td>XX业务</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="hidden_v1" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td id="jpage_box"></td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_party" />
+<script type="text/javascript" src="../js/common.js"></script>

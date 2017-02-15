@@ -1,0 +1,72 @@
+{include file="header.htm"}
+<link type="text/css" rel="stylesheet" href="templates/member/images/index.css">
+<link type="text/css" rel="stylesheet" href="templates/member/images/test.css">
+<div class="containe">
+    <!--左侧栏目-->
+    {include file="member/left.htm"}
+    <!--右侧栏目-->
+    <div class="rightframe">
+        <div class="ggl"><!--公告通知栏off-->
+            <h2>公告通知栏</h2>
+            <div class="gg-bj">
+                <div class="tix"></div>
+                <img src="templates/member/images/xckl.jpg" alt="感谢您对国联黄页网的厚爱和关怀，新年来临之际，祝您全家新年快乐，身体健康，平平安安！
+
+                     ~~~~恭喜发财！！！ "></div>
+            <div class="gg-bottom"></div><!--公告通知栏end-->
+            <div class="del">
+                <div class="hyxx"><!--我的会员信息-->
+                    <h2>我的会员信息</h2>
+                    <div class="xxhybj">
+						登录帐号：<span class="dlh"><a id="menu11" href="" class="all">{$userinfo.userid}</a></span><br>会员类型：普通会员<br>注册时间：{$userinfo.jointime|date_format:"%Y-%m-%d"}<br>上次登录：{if $userinfo.logintime=="0"}【第一次登录】{else}{$userinfo.logintime|date_format:"%Y-%m-%d"}{/if}<br>
+                        积分：10分<br>
+                        <br>
+                    </div>
+                </div>
+                <div class="mpxx"><!--我的名片信息-->
+                    <h2>我审核通过的公司</h2>
+                    <div class="xxmpbj">
+					{section name=join loop=$verify}
+                        <li style="list-style:none">·<a href="{$xm_global.cfg_basehost}/info.php?id={$verify[join].id}" target="_blank" class="lj1">{$verify[join].cname}</a></li>
+					{/section}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dsl">
+            <div class="hyrd"><!--行业热点-->
+                <h2>最新加入企业</h2>
+                <div class="hyrdbj">
+                    <ul>
+							{section name=news loop=$newjoin}
+                        <li>·<a href="{$xm_global.cfg_basehost}/info.php?id={$newjoin[news].id}" target="_blank" class="lj1">{$newjoin[news].cname}</a></li>
+							{/section}
+
+                    </ul>
+                </div>
+            </div>
+            <div class="tjqy"><!--推荐企业-->
+                <h2>最新更新企业</h2>
+                <div class="tjqybj">
+                    <ul>
+
+							{section name=update loop=$update}
+                        <li>·<a href="{$xm_global.cfg_basehost}/info.php?id={$update[update].id}" target="_blank" class="lj1">{$update[update].cname}</a></li>
+							{/section}
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{include file="member/footer.htm"}
+
+<!--null页面结束-->
+
+
+</body></html>

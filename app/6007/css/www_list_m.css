@@ -1,0 +1,40 @@
+/*迷你列表页面开始*/
+.list_m ul {
+	float:left;
+    width:340px;
+	height:160px;
+	padding-top:20px;
+	padding-left:20px;
+	margin-left:10px;
+	background:url(../img/mini_bg.jpg) 15px center no-repeat;
+}
+
+.list_m ul span{
+    float:right;
+}
+.list_m ul li {
+    line-height:23px;
+	padding-left:25px;
+	margin-left:40px;
+	border-bottom:#747474 1px dotted;
+	background:url(../img/dian.jpg) no-repeat 5px 10px;
+}
+
+.list_m ul li a {
+   display:block;
+}
+
+.list_m h6 {
+	float:left;
+    width:20px;
+	padding-top:35px;
+	padding-left:3px;
+    font-size:14px;
+    font-weight:bold;
+
+}
+
+.list_m h6 a {
+    color:#1035a7;
+}
+/*迷你列表页面结束*/

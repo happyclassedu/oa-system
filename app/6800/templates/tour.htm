@@ -1,0 +1,31 @@
+{include file="header.htm"}
+<div class="mainbox" style=" margin-top:5px;text-align:left; height:55px; background:url(templates/images/titlebar.png) no-repeat">
+<span class="m_t">陕西旅游景点、陕西旅游城市、陕西旅游景区</span>
+</div>
+<div class="mainbox">
+		<div class="tour_left">
+			<ul>
+			{section name=list loop=$city_pic}
+				<li>
+				<div><a href="view.php?city={$city_pic[list].city_id}" title="{$city_pic[list].city_name}旅游景点"><img src="{$xm_global.cfg_basehost}{$city_pic[list].pic}" alt="{$city_pic[list].city_name}简介"  width="250px" height="180px" /></a></div>
+				<span><a href="view.php?city={$city_pic[list].city_id}">{$city_pic[list].city_name}旅游景点</a></span>
+				
+				<span><a href="list.php?city={$city_pic[list].city_id}&amp;industry=4">点击查看<b>{$city_pic[list].city_name}酒店、旅社</b>信息</a></span>
+				<span><a href="special.php?city={$city_pic[list].city_id}">{$city_pic[list].city_name}特产</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="brief.php?city={$city_pic[list].city_id}">{$city_pic[list].city_name}简介</span>
+				
+				</li>
+			{/section}
+			
+			</ul>
+		
+		
+		
+		</div>
+		
+		
+		<div class="tour_right">
+			<div id="ad_2">加载中</div>
+		
+		</div>
+</div>
+{include file="foot_v.htm"}

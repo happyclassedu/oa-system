@@ -1,0 +1,31 @@
+/* CSS Document */
+body{ background:url(../img/bg.gif) repeat top left;}
+
+.content{ line-height:25px; 
+       font-size:12px; 
+	   margin:0 auto; 
+	   border:1px solid #d5d5d5;
+	   border-collapse:collapse;
+	   border:none; 
+	   background:#FFFFFF;
+	   }
+.content tr{ line-height:25px;
+          background-color:expression((this.sectionRowIndex%2==0)?"#ffffff":"#f4f4f4")
+}
+.content td{ border:solid #d5d5d5 1px;
+}
+.title{ text-align:center; 
+        line-height:30px; 
+		font-size:14px; 
+		font-weight:bold; 
+		background:url(../img/big_title.gif) repeat-x left top;
+		}
+.seacher{ text-align:left; 
+          background:#e5e5e5; 
+		  line-height:35px; 
+		  padding:5px 40px;
+		  }
+.big_title{ padding:10px 0;
+            text-align:center;
+			font-size:16px;
+			font-weight:bold;}

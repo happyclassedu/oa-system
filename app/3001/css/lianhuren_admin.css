@@ -1,0 +1,41 @@
+/**
+ * 文件名称：ileap_info.css
+ * 功能描述：劳动协管员模块信息内容界面样式。
+ * 代码作者：郭娟（创建）、孙振强（优化）
+ * 创建日期：2010-06-04
+ * 修改日期：2010-06-08
+ * 当前版本：V2.0
+*/
+
+body{
+    /*background:url(../img/bg.gif) repeat top left;*/
+}
+
+#tools_box {
+    padding:10px 0;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+}
+
+#result {
+    text-align: center;
+}
+
+#result_title {
+    width: 750px;
+    text-align: left;
+    text-indent: 10px;
+}
+
+#result_content {
+    width: 750px;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #FFFFCC;
+    border-width: 1px;
+    border-color: #666666;
+    border-style: solid;
+    text-align: left;
+}

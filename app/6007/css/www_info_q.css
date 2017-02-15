@@ -1,0 +1,93 @@
+.msg h1 {
+    text-align:center;
+	font-size:16px;
+	line-height:30px;
+	border-bottom:1px dashed #CCCCCC;
+}
+
+
+.msg table {
+    border-collapse:collapse;
+	font-size:12px;
+	margin:5px auto;
+}
+.msg table td {
+    border:solid 1px #c7c7c7;
+	line-height:27px;
+}
+
+.msg table tr {
+    background-color:expression('#F8F8F8,#EFEFEF'.split(',')[rowIndex%2]); 
+}
+
+.msg_title {
+    text-align:center;
+	font-weight:800;
+	background:#daecf8;
+}
+
+.msg_sr {
+    padding-left:10px;
+}
+
+.msg_sr input {
+    width:300px;
+	height:14px;
+}
+
+.msg_sr textarea {
+   width:300px;
+   margin:3px 0;
+}
+
+#info_tb {
+   width:800px;
+}
+
+.msg_tj input {
+   width:70px;
+   line-height:28px;
+   color:#FFFFFF;
+   font-weight:800;
+   margin:3px 10px;
+   background:#2073d1; 
+   border:1px solid #1c68ca;
+}
+
+
+/* 换页 s */
+.dy_page {
+	float:left;
+	margin-top:10px;
+	margin-left:180px;
+    height: 35px;
+    text-align: center;
+}
+
+.dy_page a {
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    line-height: 21px;
+    margin: 0 4px;
+    padding: 0 6px;
+    border: #DBDBDB 1px solid;
+    color: #333333;
+    font-size: 12px;
+}
+
+.dy_page a:hover {
+    background:#DEF1FF;
+    color: #FF0000;
+    text-decoration:none;
+}
+
+
+.dy_page .page_now {
+    background:#DEF1FF;
+    color: #FF0000;
+    font-weight: 700;
+}
+
+/* 换页 e */
+

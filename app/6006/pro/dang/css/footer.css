@@ -1,0 +1,35 @@
+* {
+    font-size:12px;
+	margin:0;
+}
+
+.div_780_center {
+	width:960px; 
+	MARGIN: 0px auto; 
+	HEIGHT: auto; 
+	OVERFLOW: hidden
+}
+
+#footer {
+    margin:0 auto;
+	
+}
+#footer_line {
+	BACKGROUND: url(../img/2px.jpg) repeat-x;
+	HEIGHT: 15px
+}
+#footer P {
+	TEXT-ALIGN: center; 
+	LINE-HEIGHT: 20px; 
+	width: 960px;
+	FLOAT: left
+}
+#footer_menu {
+	HEIGHT: 30px
+}
+#footer_menu A {
+	MARGIN-LEFT: 10px; 
+	MARGIN-RIGHT: 10px;
+	color:#0066CC;
+	text-decoration:none;
+}

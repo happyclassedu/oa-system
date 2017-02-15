@@ -1,0 +1,67 @@
+{include file="header.htm"}
+<div class="mainbox" style="margin-top:10px;">
+		<div class="s_left">
+				<div class="title">
+        			<div class="title_left"></div>
+        			<div class="title_center">
+            		<span>陕西特产分类</span>
+        			</div>
+        			<div class="title_right"></div>
+   				</div>
+				<div  style="clear:both"></div>
+			<div class="nav_content">
+				{section name=l loop=$select}
+				<h3><a href="special.php?city={$select[l].id}"><span>{$select[l].name}特产</span></a></h3>
+				{/section}
+				<div id="ad_1">加载中...</div>			
+			</div>
+			
+			
+		</div>
+		<div class="s_right">
+		
+		
+						<div class="r_box2">
+							<div class="list_title">
+							 <a href="special.php"><h3>陕西特产</h3>
+							 </a>{if $cityname!="陕西特产"}
+							 <h3>-->{$cityname}</h3>{/if}<span>共计<font color="#FF6600"><b>{$counts}</b></font>件商品</span>
+							</div>
+							
+							<div class="list_content">
+								
+								{section name=list loop=$good_list}
+							  <div class="good_c">
+                                <div class="img">
+                                <a href="product.php?id={$good_list[list].num_iid}" title="{$good_list[list].title|strip_tags}" target="_blank"><img src="{$good_list[list].pic_url}" border="0" width="200px" height="200px" alt="{$good_list[list].title|strip_tags}"></a>
+                                </div>
+                                <div class="name">
+                                <a href="product.php?id={$good_list[list].num_iid}" title="{$good_list[list].title|strip_tags}" style="padding-bottom:3px;" target="_blank">{$good_list[list].title|strip_tags}</a>
+                                </div>
+                                <div class="price">
+                                 &nbsp;&nbsp;本店价格:&nbsp;<a class="price_icson">￥{$good_list[list].price}</a>
+                                </div>
+                                </div>
+								{/section}
+								
+								
+							
+							</div>
+							<div class="list_page">{$pgcode}</div>
+						
+								
+						
+						</div>
+		
+		
+		
+		
+		
+		
+		</div>
+
+
+
+
+</div>
+{include file="foot_s.htm"}

@@ -1,0 +1,29 @@
+#dy_info_cen {
+   width:750px;
+   float:right;
+   overflow:hidden;
+}
+
+#dy_info_nr h1 {
+   font-size:16px;
+   text-align:center;
+   line-height:35px;
+   color:#990000;
+}
+
+#dy_info_nr h2 {
+   font-size:12px;
+   text-align:center;
+   line-height:35px;
+   margin:0 15px;
+   border:dashed #f15129;
+   border-width:1px 0;
+}
+
+#dy_info_nr p {
+   text-align:left;
+   text-indent:2em;
+   line-height:27px;
+   margin:5px 30px;
+}
+

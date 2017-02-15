@@ -1,0 +1,224 @@
+BODY {
+	FONT: 12px/1.5 Tahoma,Helvetica,Arial,'ËÎÌו',sans-serif
+}
+HTML {
+	BACKGROUND: #fff; COLOR: #404040
+}
+LEGEND {
+	BACKGROUND: #fff; COLOR: #404040
+}
+* {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+
+
+LI {
+	LIST-STYLE-TYPE: none
+}
+
+H1 {
+	FONT-SIZE: 18px
+}
+H2 {
+	FONT-SIZE: 16px
+}
+H3 {
+	FONT-SIZE: 14px
+}
+
+
+A {
+	COLOR: #36c; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #f60; TEXT-DECORATION: underline
+}
+
+HTML {
+	OVERFLOW-Y: scroll
+}
+#page {
+	MARGIN-LEFT: auto; WIDTH: 950px; MARGIN-RIGHT: auto
+}
+
+
+
+
+.flow-steps {
+	MARGIN: 20px 0px; OVERFLOW: hidden
+}
+.flow-steps .num3 LI {
+	WIDTH: 301px
+}
+.flow-steps .num4 LI {
+	WIDTH: 222px
+}
+.flow-steps .num5 LI {
+	WIDTH: 175px
+}
+.flow-steps .num6 LI {
+	WIDTH: 143px
+}
+.flow-steps LI {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(flow_steps_bg.png) #e4e4e4 no-repeat 100% 0px; FLOAT: left; PADDING-BOTTOM: 0px; OVERFLOW: hidden; COLOR: #404040; LINE-HEIGHT: 23px; PADDING-TOP: 0px; HEIGHT: 23px; TEXT-ALIGN: center
+}
+.flow-steps LI SPAN {
+	DISPLAY: block
+}
+.flow-steps LI STRONG {
+	DISPLAY: block
+}
+.flow-steps LI .first {
+	BACKGROUND: url(flow_steps_bg.png) #e4e4e4 no-repeat -12px -69px
+}
+.flow-steps LI.last {
+	BACKGROUND-POSITION: 100% -138px
+}
+.flow-steps LI.current {
+	COLOR: #fff; BACKGROUND-COLOR: #f60
+}
+.flow-steps LI.current .first {
+	BACKGROUND-POSITION: -12px -92px; BACKGROUND-COLOR: #f60
+}
+.flow-steps LI.current-prev {
+	BACKGROUND-POSITION: 100% -23px
+}
+.flow-steps LI.done {
+	BACKGROUND-POSITION: 100% -46px; COLOR: #f60; BACKGROUND-COLOR: #ffe6ba
+}
+.flow-steps LI.done .first {
+	BACKGROUND-POSITION: -12px -115px; BACKGROUND-COLOR: #ffe6ba
+}
+.flow-steps LI.last-current {
+	BACKGROUND-POSITION: 100% -161px; COLOR: #fff; BACKGROUND-COLOR: #f60
+}
+
+
+
+
+
+
+.reg-form{
+	MARGIN: 0px auto 20px; WIDTH: 680px
+}
+.reg-form LI.field {
+	BORDER-RIGHT: white 1px solid; PADDING-RIGHT: 14px; BORDER-TOP: white 1px solid; PADDING-LEFT: 14px; PADDING-BOTTOM: 4px; BORDER-LEFT: white 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: white 1px solid; HEIGHT: 46px
+}
+.reg-form LI.hover {
+	BORDER-RIGHT: #d4e8fc 1px solid; BORDER-TOP: #d4e8fc 1px solid; BORDER-LEFT: #d4e8fc 1px solid; BORDER-BOTTOM: #d4e8fc 1px solid; BACKGROUND-COLOR: #f4fcfe
+}
+.reg-form LI.field .input {
+	FLOAT: left; WIDTH: 290px
+}
+.reg-form LI.field .msg {
+	DISPLAY: none; FLOAT: left; WIDTH: 344px
+}
+.reg-form LI.hover .msg {
+	DISPLAY: block
+}
+.reg-form LI.field .show-error {
+	DISPLAY: block
+}
+.reg-form LI.field .show-ok {
+	DISPLAY: block
+}
+.reg-form LI.field .show-tips {
+	DISPLAY: block
+}
+.reg-form LI.field .msg P {
+	DISPLAY: none
+}
+.reg-form LI.field .show-attention .attention {
+	DISPLAY: block
+}
+.reg-form LI.field .show-error .error {
+	DISPLAY: block
+}
+.reg-form LI.field .show-ok .ok {
+	DISPLAY: block
+}
+.reg-form LI.field .show-tips .tips {
+	DISPLAY: block
+}
+.reg-form LI.field .no-activex {
+	DISPLAY: block
+}
+.reg-form LI.field .no-activex INPUT {
+	BACKGROUND: #808080
+}
+.reg-form LI.field LABEL {
+	DISPLAY: block; FONT-SIZE: 14px; FLOAT: left; WIDTH: 75px; LINE-HEIGHT: 26px; HEIGHT: 26px; TEXT-ALIGN: right
+}
+.reg-form LI.field INPUT {
+	BORDER-RIGHT: #a7a6aa 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #a7a6aa 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 14px; PADDING-BOTTOM: 2px; MARGIN: 0px 5px; BORDER-LEFT: #a7a6aa 1px solid; WIDTH: 196px; PADDING-TOP: 2px; BORDER-BOTTOM: #a7a6aa 1px solid; HEIGHT: 20px
+}
+.reg-form LI.field INPUT.error {
+	BORDER-LEFT-COLOR: #ff8080; BORDER-BOTTOM-COLOR: #ff8080; BORDER-TOP-COLOR: #ff8080; BORDER-RIGHT-COLOR: #ff8080
+}
+.reg-form LI.code-field {
+	HEIGHT: 40px
+}
+.reg-form LI.code-field INPUT {
+	VERTICAL-ALIGN: top; WIDTH: 85px
+}
+.reg-form LI.code-field .input {
+	WIDTH: 400px
+}
+.reg-form LI.code-field .input SPAN {
+	MARGIN-LEFT: 10px
+}
+.reg-form LI.code-field .msg {
+	WIDTH: 250px
+}
+.reg-form LI.code-field .code-img {
+	BORDER-RIGHT: #e4e4e4 1px solid; BORDER-TOP: #e4e4e4 1px solid; BORDER-LEFT: #e4e4e4 1px solid; WIDTH: 100px; BORDER-BOTTOM: #e4e4e4 1px solid; HEIGHT: 36px
+}
+.reg-form LI.alipay-field {
+	MARGIN-BOTTOM: 20px
+}
+.reg-form LI.alipay-field .input {
+	MARGIN-LEFT: 95px
+}
+.reg-form LI.submit-field .input {
+	MARGIN-LEFT: 95px
+}
+.reg-form LI.submit-field BUTTON {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-WEIGHT: 700; FONT-SIZE: 14px; BACKGROUND: url(ic_bg.png) no-repeat 0px -114px; BORDER-LEFT: 0px; WIDTH: 222px; CURSOR: pointer; LINE-HEIGHT: 35px; MARGIN-RIGHT: 13px; BORDER-BOTTOM: 0px; HEIGHT: 35px
+}
+.reg-form LI.submit-field BUTTON.disabled {
+	BACKGROUND-POSITION: 0px -186px; CURSOR: not-allowed
+}
+.reg-form LI.field .tools {
+	MARGIN-LEFT: 80px
+}
+
+.reg-form LI.extra {
+	PADDING-LEFT: 95px
+}
+.reg-form LI.extra .extra-content {
+	BORDER-RIGHT: #fc0 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: #fc0 1px solid; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; BORDER-LEFT: #fc0 1px solid; WIDTH: 184px; PADDING-TOP: 2px; BORDER-BOTTOM: #fc0 1px solid; BACKGROUND-COLOR: #fdfddd
+}
+.reg-form LI.extra .extra-content H4 {
+	FONT-WEIGHT: normal; COLOR: #ffa800
+}
+
+
+.reg-form LI.plugin-field {
+	PADDING-LEFT: 95px; MARGIN-BOTTOM: 20px
+}
+.agreements {
+	MARGIN: 0px auto; WIDTH: 680px
+}
+.agreements LI {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 10px; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid; BACKGROUND-COLOR: #f8f8f8
+}
+.agreements LI H3 {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 10px
+}
+.agreements LI .content {
+	BORDER-RIGHT: #e9e9e9 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #e9e9e9 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 0px 10px; OVERFLOW: auto; BORDER-LEFT: #e9e9e9 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #e9e9e9 1px solid; HEIGHT: 90px; BACKGROUND-COLOR: white
+}
+.active{MARGIN: 0px auto ; WIDTH: 680px; font-size:16px; line-height:30px;}
+.active span{ color:#FF0000}
+.active .mid{ margin-top:30px;}
+.active ul { margin-left:100px;}

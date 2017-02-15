@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+        <title>招聘会信息LED播放界面</title>
+        <meta http-equiv="page-enter" content="RevealTrans(Duration=1,Transition=23">
+    </head>
+
+    <body>
+        <div id="play_box">
+            <div id="notice_box">
+                <marquee scrollAmount="2" width="100%" direction="left">
+                    <div id="notice">会场地址：莲湖区人力资源服务中心后楼三楼　　　咨询电话：84283910　　　进城务工、下岗再就业人员求职请到后一楼</div>
+                </marquee>
+            </div>
+            <table width="512" height="40" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="10%" align="right"><img src="../img/xalhrc_logo.png" border="0"></td>
+                    <td class="Title1">企业招聘信息列表</td>
+                    <td width="4%"></td>
+                </tr>
+            </table>
+            <table width="512" border="1" cellpadding="0" cellspacing="0" bordercolor="#FF0080">
+                <col width="40" align="center" />
+                <col width="190" />
+                <col width="90" />
+                <col width="90" />
+                <col width="90" />
+                <tr class="Title2" height="20" align="center">
+                    <td>序号</td>
+                    <td>单 位 名 称</td>
+                    <td>岗位A</td>
+                    <td>岗位B</td>
+                    <td>岗位C</td>
+                </tr>
+            </table>
+            <marquee scrollAmount="1" height="180" direction="up">
+                <table id="info_box" width="512" border="1" cellpadding="0" cellspacing="0" bordercolor="#FF0080">
+                    <col width="40" align="center" />
+                    <col width="190" />
+                    <col width="90" />
+                    <col width="90" />
+                    <col width="90" />
+                    <tbody>
+                        <tr valign="middle" height="20">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </marquee>
+        </div>
+        <br>
+        <br>
+        <div id="diy_box">
+            选择播放
+            <select id="i_phase" style="width:200px; height:18px;">
+                <option value="">请选择</option>
+            </select>
+            招聘会&nbsp;&nbsp;
+            <input id="btn_enter" type="button" value="确定播放"/>
+            <br>
+            <br>
+            <input id="btn_back" type="button" value="返回上级"/>&nbsp;&nbsp;&nbsp;&nbsp; 
+            <input id="btn_refresh" type="button" value="刷新当前"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="btn_notice" type="button" value="隐藏蓝条"/>
+        </div>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="led_player" />
+<script type="text/javascript" src="../js/common.js"></script>
+<link type="text/css" rel="stylesheet" href="../css/led_player.css" />

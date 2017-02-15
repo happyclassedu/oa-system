@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>信息--员工工作信息管理--综合人事管理系统</title>
+    </head>
+    <body>
+        <div id="box_title">
+            <span id="sys_title">综合人事管理系统--员工工作信息管理--<span id="sys_state"></span>信息</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_edit" type="button" value="修改信息"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_view_hm" type="button" value="返回员工档案信息"/>&nbsp;&nbsp;
+            </div>
+        </div>
+        <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">一、员工信息</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>员工编号</td>
+                    <td><input id="d_hm_code" type="text"/></td>
+                    <td>姓名</td>
+                    <td><input id="d_hm_name" type="text" /></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr class="tb_title0">
+                    <td colspan="6">二、工作信息</td>
+                </tr>
+                <tr class="tr_1">
+                    <td>工职状态*</td>
+                    <td>
+                        <select id="d_post_state">
+                            <option value=""></option>
+                            <option value="在职">在职</option>
+                            <option value="离职">离职</option>
+                            <option value="借调">借调</option>
+                            <option value="试用">试用</option>
+                            <option value="见习">见习</option>
+                        </select>
+                    </td>
+                    <td>工作状态</td>
+                    <td>
+                        <select id="d_work_state">
+                            <option value=""></option>
+                            <option value="在岗">在岗</option>
+                            <option value="休假">休假</option>
+                        </select>
+                    </td>
+                    <td>用工形式</td>
+                    <td>
+                        <select id="d_work_form">
+                            <option value=""></option>
+                            <option value="聘用">聘用</option>
+                            <option value="派遣">派遣</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="tr_0">
+                    <td>岗位津贴</td>
+                    <td>
+                        <input id="d_post_pay" type="text"/>
+                    </td>
+                    <td>入职时间</td>
+                    <td><input id="d_join_time" type="text"></td>
+                    <td>学历等级</td>
+                    <td>
+                        <select id="d_grad_level">
+                            <option value="">不限</option>
+                            <option value="1">研究生</option>
+                            <option value="2">重点本科</option>
+                            <option value="3">本科</option>
+                            <option value="4">非普高本</option>
+                            <option value="5">大专</option>
+                            <option value="6">中专</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="tr_0">
+                    <td>备注</td>
+                    <td colspan="5">
+                        <textarea id="d_remark" cols="50" rows="3"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="80" align="center" />
+            <col width="120" />
+            <col width="80" align="center" />
+            <col width="120" />
+            <col width="80" align="center"/>
+            <col width="120" />
+            <col width="200" />
+            <thead>
+                <tr class="tb_title0">
+                    <td colspan="6">三、部门信息&nbsp;&nbsp;&nbsp;&nbsp;<input id="btn_add_hm_t" type="button" value="新增部门"></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>部门：</td>
+                    <td></td>
+                    <td>科室： </td>
+                    <td></td>
+                    <td>岗位： </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button" value="保存信息">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="btn_cancel" type="button" value="取消保存">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_hm_w" />
+<script type="text/javascript" src="../js/common.js"></script>

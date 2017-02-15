@@ -1,0 +1,41 @@
+* {
+    font-size:12px;
+	margin:0;
+}
+
+/* centent s */
+
+#cen_rig {
+     float:right;
+}
+
+#news {
+     line-height:30px;
+	 padding-left:20px;
+	 color:#FFFFFF;
+	 font-size:14px;
+	 font-weight:bold;
+	 background:url(../img/title_bg.gif) right top no-repeat;
+}
+
+#news1_cen a {
+     display:block;
+	 padding-left:15px;
+	 color:#000000;
+	 text-decoration:none;
+	 line-height:22px;
+	 border-bottom:1px dashed #CCCCCC;
+}
+
+#news1_cen span {
+     float:right;
+	 padding-right:10px;
+	 padding-top:6px;
+}
+
+#news1_cen  h6 {
+    text-align:center;
+	line-height:35px;
+	font-weight:normal;
+}
+/* centent e */

@@ -1,0 +1,15 @@
+
+<!--footer s-->
+<div id="flinks_txt">
+    <a href="#">友情链接：</a>
+    <!--{ foreach item=tmp from=$ws.flinks_txt }-->
+    <a href="<!--{$tmp.url}-->" target="_blank"><!--{$tmp.name}--></a>
+    <!--{ /foreach }-->
+</div>
+<div id="footer_menuer">
+    <!--{ foreach item=tmp from=$ws.footer_menu }-->
+    | <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+    <!--{ /foreach }-->
+    |
+</div>
+<!--footer e-->

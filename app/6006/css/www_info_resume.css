@@ -1,0 +1,80 @@
+.resume {
+    line-height:30px;
+    width:98%;
+}
+
+.resume td {
+    border-bottom:1px dashed #89a8d1;
+    padding-left:25px;
+}
+
+.res_title {
+    text-align:center;
+    background:#f3f6ff;
+}
+.resume a {
+    font-size: 14px;
+    color:#154692;
+    text-decoration:none;
+}
+
+.info_title span {
+    font-size:12px;
+    color:#000000;
+    font-weight:normal;
+}
+
+/*投递简历 s*/
+.per_top {
+    background:url(../img/res.jpg) right bottom no-repeat;
+	line-height:35px;
+	color:#7a7a7a;
+}
+
+.per_top span {
+    text-align:right;
+}
+
+.per_top {
+    width:98%;
+    font-size:12px;
+    border-collapse:collapse;
+}
+.per_top td {
+    border:solid 1px #aaccee;
+    padding-left:15px;
+}
+
+.per_top input {
+    width:200px;
+	border:1px solid #c7c7c7;
+	background:none;
+}
+
+.per_top select {
+	border:1px solid #c7c7c7;
+	background:none;
+}
+.tijiao{
+    padding:10px 0;
+}
+.tijiao input {
+    width:80px;
+    padding:3px 0;
+}
+
+.res {
+    width:300px;
+	border:1px solid #c7c7c7;
+	background:none;
+}
+
+.com_title {
+    font-size:14px;
+    color:#154692;
+    font-weight:bold;
+    border-bottom:1px dotted #89a8d1;
+    line-height: 50px;
+}
+
+/*投递简历 e*/

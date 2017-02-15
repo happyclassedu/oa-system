@@ -1,0 +1,76 @@
+/* CSS Document */
+
+body {
+    background-color: #DFF3FE;
+}
+
+#left_menu {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 150px;
+}
+
+.level0 {
+    margin-top: 2px;
+    height: 24px;
+    overflow: hidden;
+    list-style-type: none;
+    font-size: 14px;
+    font-family: '����';
+    font-weight: bolder;
+    color: #0742A0;
+    line-height: 26px;
+    text-indent: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-image: url('../img/mdi_lefter_title_bg.gif');
+    background-repeat: no-repeat;
+}
+
+.level1 {
+    margin-top: -1px;
+    height: 31px;
+    list-style-type: none;
+    font-size: 12px;
+    font-family: '����';
+    line-height: 28px;
+    text-indent: 40px;
+    /*letter-spacing: 5px;*/
+    border-top:1px solid #5C82C1;
+    border-bottom:1px solid #5C82C1;
+    cursor: pointer;
+    background-image: url('../img/mdi_lefter_dot1.gif');
+    background-repeat: no-repeat;
+    background-position: 20px 10px;
+    background-color: #FFFFFF;
+}
+
+.level2 {
+    height: 24px;
+    list-style-type: none;
+    font-size: 12px;
+    font-family: '����';
+    line-height: 23px;
+    text-indent: 45px;
+    /*letter-spacing: 5px;*/
+    cursor: pointer;
+    background-image: url('../img/mdi_lefter_dot2.gif');
+    background-repeat: no-repeat;
+    background-position: 25px 10px;
+    background-color: #FFFFFF;
+}
+
+.level0 SPAN {
+    margin: 0px;
+    padding: 0px;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: -2px;
+    left: 8px;
+    cursor: pointer;
+    background-image: url('../img/mdi_dot_block.gif');
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+}

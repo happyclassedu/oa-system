@@ -1,0 +1,221 @@
+#mdi_header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 64px;
+    overflow: hidden;
+    background-image: url('../img/mdi_header_bg.gif');
+    background-repeat: repeat-x;
+}
+
+#mdi_middle {
+    position: absolute;
+    top: 96px;
+    left: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#mdi_lefter {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 180px;
+    height: 100%;
+    overflow: auto;
+}
+
+#mdi_splitter {
+    position: absolute;
+    top:0px;
+    left:180px;
+    width: 7px;
+    height: 100%;
+    overflow: hidden;
+    background-image: url('../img/mdi_splitter_bg.gif');
+    background-repeat: repeat-y;
+}
+
+#mdi_mainer {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /*width: 100%;*/
+    height: 100%;
+    z-index: -1;
+}
+
+#mdi_footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+    overflow: hidden;
+    background-image: url('../img/mdi_footer_bg.gif');
+    background-repeat: repeat-x;
+}
+
+/* splitter s */
+#mdi_splitter_arrow {
+    position: absolute;
+    top: 45%;
+    width: 7px;
+    height: 51px;
+    overflow: hidden;
+    background-image: url('../img/mdi_splitter_arrow_1.gif');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+/* splitter e */
+
+/* lefter s */
+#left_menu {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 150px;
+}
+
+.level0 {
+    margin-top: 2px;
+    height: 24px;
+    overflow: hidden;
+    list-style-type: none;
+    font-size: 14px;
+    font-family: '����';
+    font-weight: bolder;
+    color: #0742A0;
+    line-height: 26px;
+    text-indent: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-image: url('../img/mdi_lefter_title_bg.gif');
+    background-repeat: no-repeat;
+}
+
+.level1 li {
+    margin-top: -1px;
+    height: 31px;
+    list-style-type: none;
+    font-size: 12px;
+    font-family: '����';
+    line-height: 28px;
+    text-indent: 40px;
+    /*letter-spacing: 5px;*/
+    border-top:1px solid #5C82C1;
+    border-bottom:1px solid #5C82C1;
+    cursor: pointer;
+    background-image: url('../img/mdi_lefter_dot1.gif');
+    background-repeat: no-repeat;
+    background-position: 20px 10px;
+    background-color: #FFFFFF;
+}
+
+.level2 {
+    height: 24px;
+    list-style-type: none;
+    font-size: 12px;
+    font-family: '����';
+    line-height: 23px;
+    text-indent: 45px;
+    /*letter-spacing: 5px;*/
+    cursor: pointer;
+    background-image: url('../img/mdi_lefter_dot2.gif');
+    background-repeat: no-repeat;
+    background-position: 25px 10px;
+    background-color: #FFFFFF;
+}
+
+.level0 SPAN {
+    margin: 0px;
+    padding: 0px;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: -2px;
+    left: 8px;
+    cursor: pointer;
+    background-image: url('../img/mdi_dot_block.gif');
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+}
+/* lefter e */
+
+/* header s */
+#sys_name {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+#calendar_box {
+    position: absolute;
+    top: 28px;
+    left: 570px;
+    font-family: "宋体";
+    font-size: 12px;
+    color: #0062AE;
+}
+
+#mdi_menuer {
+    position: absolute;
+    top: 64px;
+    width: 100%;
+    height: 32px;
+    overflow: hidden;
+    background-image: url(../img/mdi_header_menu_bg.gif);
+    background-repeat: repeat-x;
+}
+
+#mdi_menuer_arrow {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 21px;
+    height: 21px;
+    overflow: hidden;
+    background-image: url('../img/mdi_menuer_arrow_1.gif');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#welcome_box {
+    position: absolute;
+    left: 40px;
+    overflow: hidden;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+#menu_bar {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    padding-left: 30px;
+    background-image: url(../img/mdi_dot_r.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+}
+
+
+#menu_bar span {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    height: 100%;
+    background-image: url(../img/mdi_header_ico_0.gif);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    line-height: 32px;
+    text-indent: 35px;
+    font-family: "宋体";
+    font-size: 14px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+/* header e */

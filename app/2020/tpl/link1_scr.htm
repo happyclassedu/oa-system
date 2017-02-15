@@ -1,0 +1,37 @@
+<!-- link1 b -->
+<div id="rcw_linking" class="div_rcw_cen">
+    <!-- link1_0 b -->
+    <ul>
+        <li class="linking_left"><img src="../img/linking/c1.gif" />
+            <!--{ foreach item=tmp from=$ws.link1_0.list }-->
+        <li>
+            <a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->" target="_blank">
+                <!--{ if $tmp.img eq "" }-->
+                <!--{$tmp.name}-->
+                <!--{ else if }-->
+                <img src="doc::<!--{$tmp.img}-->" />
+                <!--{ /if }-->
+            </a>
+        </li>
+        <!--{ /foreach }-->
+    </ul>
+    <!-- link1_0 e -->
+    <!-- link1_1 b -->
+    <ul>
+       <li class="linking_left"><img src="../img/linking/c2.gif" />
+       <!--{ foreach item=tmp from=$ws.link1_1.list }-->
+      <li>
+          <a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->" target="_blank">
+              <!--{ if $tmp.img eq "" }-->
+              <!--{$tmp.name}-->
+              <!--{ else if }-->
+              <img src="doc::<!--{$tmp.img}-->" />
+              <!--{ /if }-->
+          </a>
+      </li>
+      <!--{ /foreach }-->
+    </ul>
+    <!-- link1_1 e -->
+</div>
+
+<!-- link1 e -->

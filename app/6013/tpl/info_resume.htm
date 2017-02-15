@@ -1,0 +1,72 @@
+<!-- info begin-->
+<div class="bl_960_cen">
+    <div id="info_box">
+        <h2 id="nav_box">
+            <span>
+                当前位置：
+                <!--{ foreach item=tmp from=$ws.nav }-->
+                <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>&nbsp;&gt;&gt;&nbsp;
+                <!--{ foreachelse }-->
+                <!--{ /foreach }-->
+            </span>
+        </h2>
+    <div class="info_resume">
+        <h1 class="info_title"><!--{$ws.info.name}--><span>（<!--{$ws.info.sex}--> 25岁）</span></h1>
+        <div class="info_attribute">发布时间：<!--{$ws.info.atime}-->　　访问次数：<span id="hits">1005</span></div>
+        <div class="info_content">
+            <table class="per_top" widtd="100%" align="center" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td>求 职 位：</td>
+                    <td><!--{$ws.info.joba}--></td>
+                    <td><!--{$ws.info.jobb}--></td>
+                    <td><!--{$ws.info.jobc}--></td>
+                    <td>期望薪资：</td>
+                    <td><!--{$ws.info.wpay}--></td>
+                </tr>
+                <tr>
+                    <td>学　　历：</td>
+                    <td><!--{$ws.info.degree}--></td>
+                    <td>毕业学校：</td>
+                    <td><!--{$ws.info.univ}--></td>
+                    <td>所学专业：</td>
+                    <td><!--{$ws.info.major}--></td>
+                </tr>
+                <tr>
+                    <td>个人特长：</td>
+                    <td colspan="3"><!--{$ws.info.goodat}--></td>
+                    <td>电子邮箱：</td>
+                    <td>610935101@qq.com</td>
+                </tr>
+                <tr>
+                    <td>求 职 信：</td>
+                    <td colspan="5">目前，我的求职意向是前台文员</td>
+                </tr>
+            </table>
+            <p class="com_title">工作经历：</p>
+            <!--{ if $ws.info.fcoma ne "" }-->
+            <p><!--{$ws.info.fbegina}-->——<!--{$ws.info.fenda}-->工作于<!--{$ws.info.fcoma}-->，任<!--{$ws.info.fmajora}-->职务。</p>
+            <!--{ /if }-->
+            <!--{ if $ws.info.fcomb ne "" }-->
+            <p><!--{$ws.info.fbeginb}-->——<!--{$ws.info.fendb}-->工作于<!--{$ws.info.fcomb}-->，任<!--{$ws.info.fmajorb}-->职务。</p>
+            <!--{ /if }-->
+            <!--{ if $ws.info.fcomc ne "" }-->
+            <p><!--{$ws.info.fbeginc}-->——<!--{$ws.info.fendc}-->工作于<!--{$ws.info.fcomc}-->，任<!--{$ws.info.fmajorc}-->职务。</p>
+            <!--{ /if }-->
+            <p><!--{$ws.info.intro}--></p>
+            <p class="com_title">教育经历：</p>
+            <!--{ if $ws.info.ecoma ne "" }-->
+            <p><!--{$ws.info.ebegina}-->——<!--{$ws.info.eenda}-->就读于<!--{$ws.info.ecoma}-->，<!--{$ws.info.emajora}-->。</p>
+            <!--{ /if }-->
+            <!--{ if $ws.info.ecomb ne "" }-->
+            <p><!--{$ws.info.ebeginb}-->——<!--{$ws.info.eendb}-->就读于<!--{$ws.info.ecomb}-->，<!--{$ws.info.emajorb}-->。</p>
+            <!--{ /if }-->
+            <!--{ if $ws.info.ecomc ne "" }-->
+            <p><!--{$ws.info.ebeginc}-->——<!--{$ws.info.eendc}-->就读于<!--{$ws.info.ecomc}-->，<!--{$ws.info.emajorc}-->。</p>
+            <!--{ /if }-->
+        </div>
+        <div id="xid" style="display: none;"><!--{$ws.info.id}--></div>
+    </div>
+    </div>
+     <!--{include file="lefter`$ws.mk`.htm"}-->
+</div>
+<!-- info begin-->

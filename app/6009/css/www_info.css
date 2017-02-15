@@ -1,0 +1,31 @@
+* {
+    font-size:12px;
+	margin:0;
+}
+
+
+/*centent s*/
+
+#cen_rig {
+     float:right;
+}
+
+#info {
+     line-height:30px;
+}
+
+h1 {
+     color:#0033CC;
+	 text-align:center;
+	 line-height:30px;
+	 font-size:14px;
+    
+}
+
+h4 {
+    text-align:center;
+	line-height:30px;
+	border-bottom:1px solid #FFCC00;
+}
+
+/* centent e */

@@ -1,0 +1,393 @@
+<HTML>
+    <HEAD>
+        <META http-equiv=Content-Type content="text/html; charset=UTF-8">
+        <TITLE>紧急招聘 - 人才网站管理系统PHP1.0地区版</TITLE>
+          <LINK href="../css/www.css" type="text/css" rel=stylesheet>
+    </HEAD>
+    <BODY>
+        <!--页面顶部-->
+        <iframe align=middle src="person_header.htm" frameborder=0 width="100%" scrolling=no height=117></iframe>
+        <!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=200><!--左侧--><!--开始-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td width=5 height=30><IMG height=30   src="../img/right1_left.jpg"   width=5></td>
+                                                    <td align=middle width=75   background="../img/right1_t1.jpg"><B><font color=#ffffff>会员登录</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG height=30 src="../img/right1_right.jpg"  width=5></td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-RIGHT: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #a4cbee 1px solid"><!--个人会员信息--><!--会员登录-->
+                                        <DIV id=Login1_pan_UserLogin>
+                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center  border=0>
+                                                <TBODY>
+                                                    <TR><td height=4></td></TR>
+                                                </TBODY></TABLE>
+                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                <TBODY>
+                                                    <TR>
+                                                        <td align=right width=64 height=27><font color=#848484>用户名：</font></td>
+                                                        <td height=27><input class=input_login id=Login1_txt_Username
+                                                                             style="width: 115px" name=Login1:txt_Username> <span id=Login1_rfv_Username style="DISPLAY: none; COLOR: red"
+                                                                             initialvalue=""
+                                                                             evaluationfunction="RequiredFieldValidatorEvaluateIsValid"
+                                                                             display="Dynamic" focusOnError="t"
+                                                                             controltovalidate="Login1_txt_Username"></span></td></TR>
+                                                    <TR>
+                                                        <td align=right width=64 height=27><font color=#848484>密&nbsp;&nbsp;码：</font></td>
+                                                        <td height=27><input class=input_login id=Login1_txt_Password
+                                                                             style="width: 115px" type=password name=Login1:txt_Password>
+                                                            <span id=Login1_rfv_Password style="DISPLAY: none; COLOR: red"
+                                                                  initialvalue=""
+                                                                  evaluationfunction="RequiredFieldValidatorEvaluateIsValid"
+                                                                  display="Dynamic" focusOnError="t"
+                                                                  controltovalidate="Login1_txt_Password"></span></td></TR>
+                                                    <TR align=middle>
+                                                        <td colSpan=2 height=30><input language=javascript
+                                                                                       id=Login1_ibn_Login style="width: 50px; HEIGHT: 20px"
+                                                                                       type=image
+                                                                                       src="../img/button_login.gif"
+                                                                                       border=0 name=Login1:ibn_Login>&nbsp;<A
+                                                                                       href=""><IMG
+                                                                    height=20
+                                                                    src="../img/button_reg.gif"
+                                                                    width=50 border=0></A> </td></TR>
+                                                    <TR align=middle>
+                                                        <td colSpan=2 height=21><IMG height=9
+                                                                                     src="../img/Icon1.gif"
+                                                                                     width=5> <A class=blue20
+                                                                                     href="http://job5.fdkjgz.com/Resume/Register.aspx">注册个人用户</A>
+                                                            <IMG height=9
+                                                                 src="../img/Icon1.gif"
+                                                                 width=5> <A class=blue20
+                                                                 href="http://job5.fdkjgz.com/Public/GetPassword.aspx">找回密码</A></td></TR>
+                                                </TBODY></TABLE>
+                                            <DIV id=Login1_vas_Login style="DISPLAY: none; COLOR: red"
+                                                 showsummary="False" showmessagebox="True"
+                                                 headertext="请输入用户名和密码！"></DIV></DIV></td></TR>
+                            </TBODY></TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY></TABLE><!--结束--><!--开始-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td width=5 height=30><IMG height=30   src="../img/right1_left.jpg"   width=5></td>
+                                                    <td align=middle width=75   background="../img/right1_t1.jpg"><B><font color=#ffffff>热门职位</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG height=30   src="../img/right1_right.jpg"  width=5></td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-RIGHT: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #a4cbee 1px solid"><!--热门职位-->
+                                        <DIV id=demo style="OVERFLOW: hidden; HEIGHT: 176px">
+                                            <DIV id=demo1>
+                                                <TABLE id=Hotjob2_lit_HotJobList style="width: 100%; BORDER-COLLAPSE: collapse" cellSpacing=0  cellPadding=0 border=0>
+                                                    <TBODY>
+                                                        <TR>
+                                                            <td style="HEIGHT: 22px">·<A
+                                                                    href="http://job5.fdkjgz.com/Html/JobDetail/10757.html"
+                                                                    target=_blank>电路板维修员</A> </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 22px">·<A
+                                                                    href="http://job5.fdkjgz.com/Html/JobDetail/10761.html"
+                                                                    target=_blank>设施部经理</A> </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 22px">·<A
+                                                                    href="http://job5.fdkjgz.com/Html/JobDetail/10782.html"
+                                                                    target=_blank>人力资源部经理</A> </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 22px">·<A
+                                                                    href="http://job5.fdkjgz.com/Html/JobDetail/10781.html"
+                                                                    target=_blank>财务主管</A> </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 22px">·<A
+                                                                    href="http://job5.fdkjgz.com/Html/JobDetail/10760.html"
+                                                                    target=_blank>电气工程师</A> </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 22px">·<A
+                                                                    href="http://job5.fdkjgz.com/Html/JobDetail/10752.html"
+                                                                    target=_blank>行政助理</A> </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 22px">·<A
+                                                                    href="http://job5.fdkjgz.com/Html/JobDetail/10751.html"
+                                                                    target=_blank>销售工程师</A> </td></TR>
+                                                    </TBODY></TABLE></DIV>
+                                            <DIV id=demo2></DIV></DIV>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY></TABLE><!--结束--><!--开始-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td width=5 height=30><IMG height=30 src="../img/right1_left.jpg"  width=5></td>
+                                                    <td align=middle width=75   background="../img/right1_t1.jpg"><B><font color=#ffffff>职业指导</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG height=30 src="../img/right1_right.jpg" width=5></td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-RIGHT: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #a4cbee 1px solid">
+                                        <TABLE id=Employment1_lit_Employment
+                                               style="width: 100%; BORDER-COLLAPSE: collapse" cellSpacing=0
+                                               cellPadding=2 border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A
+                                                            href="http://job5.fdkjgz.com/Html/Info/961.html"
+                                                            target=_blank><font color=#333333>三十年职场之三千字心得</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A
+                                                            href="http://job5.fdkjgz.com/Html/Info/962.html"
+                                                            target=_blank><font color=#333333>职场新人如何融入新环境</font></A></td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A
+                                                            href="http://job5.fdkjgz.com/Html/Info/963.html"
+                                                            target=_blank><font color=#333333>企业面试小故事</font></A></td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A
+                                                            href="http://job5.fdkjgz.com/Html/Info/964.html"
+                                                            target=_blank><font color=#333333>技术人才吃香 办公文员过剩</font></A>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A
+                                                            href="http://job5.fdkjgz.com/Html/Info/965.html"
+                                                            target=_blank><font color=#333333>公务员面试：克服紧张焦虑四要</font></A>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A
+                                                            href="http://job5.fdkjgz.com/Html/Info/966.html"
+                                                            target=_blank><font color=#333333>毕业生客串招聘官收获巨大</font></A>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A
+                                                            href="http://job5.fdkjgz.com/Html/Info/967.html"
+                                                            target=_blank><font color=#333333>职场人讲述“群面”经历</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A
+                                                            href="http://job5.fdkjgz.com/Html/Info/968.html"
+                                                            target=_blank><font color=#333333>求职面试十大禁忌 </font></A></td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                            <TBODY>
+                                <TR> <td height=5></td></TR>
+                            </TBODY></TABLE><!--结束--></td>
+                    <td width=10></td>
+                    <td><!--右侧-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td><!--图片广告770*90-->
+                                        <TABLE id=lit_AdsList_770  style="width: 100%; BORDER-COLLAPSE: collapse" cellSpacing=0  cellPadding=0 border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td><A href="http://www.fdkjgz.com/" target=_blank><IMG  height=90  src="../img/urgent1.jpg"     width=770 border=0></A>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                            <TBODY>
+                                <TR> <td height=5></td></TR>
+                            </TBODY></TABLE><!--招聘信息-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td width=11 height=26><IMG height=26  src="../img/right10_left.jpg"  width=11></td>
+                                                    <td style="PADDING-LEFT: 8px; PADDING-TOP: 3px" background="../img/right10_bg.jpg"><STRONG><font color=#333333>紧急职位</font></STRONG></td>
+                                                    <td width=5><IMG height=26   src="../img/right10_right.jpg"  width=5></td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td><!--职位列表-->
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center   border=0>
+                                            <TBODY>
+                                                <TR><td height=2></td></TR>
+                                            </TBODY></TABLE>
+                                        <TABLE id=lit_Job_Urgent  style="width: 100%; BORDER-COLLAPSE: collapse" cellSpacing=0    cellPadding=0 border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE cellSpacing=1 cellPadding=3 width="100%" border=0>
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td align=middle width="10%"><B>编号</B></td>
+                                                                    <td width="26%"><B>职位名称</B></td>
+                                                                    <td width="28%"><B>公司名称</B></td>
+                                                                    <td width="13%"><B>工作地区</B></td>
+                                                                    <td align=middle width="12%"><B>职位月薪</B></td>
+                                                                    <td align=middle><B>发布日期</B></td></TR>
+                                                                <TR>  <td bgColor=#eeeeee colSpan=6   height=1></td></TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE cellSpacing=1 cellPadding=3 width="100%" border=0>
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td align=middle width="10%">N010775</td>
+                                                                    <td width="26%"><A
+                                                                            href="http://job5.fdkjgz.com/Html/JobDetail/10775.html"
+                                                                            target=_blank>服务技术员</A></td>
+                                                                    <td width="28%"><A
+                                                                            href="http://job5.fdkjgz.com/Html/Company/10251.html"
+                                                                            target=_blank>绿之韵国际集团股份有限公司</A></td>
+                                                                    <td width="13%"><span id=lit_Job_Urgent__ctl1_lbl_WorkPlace>北京</span></td>
+                                                                    <td align=middle width="12%"><span id=lit_Job_Urgent__ctl1_lbl_MonthPay>面议</span></td>
+                                                                    <td align=middle>2010-1-30</td></TR>
+                                                                <TR>
+                                                                    <td bgColor=#eeeeee colSpan=6  height=1></td></TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE cellSpacing=1 cellPadding=3 width="100%" border=0>
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td align=middle width="10%">N010782</td>
+                                                                    <td width="26%"><A
+                                                                            href="http://job5.fdkjgz.com/Html/JobDetail/10782.html"
+                                                                            target=_blank>人力资源部经理</A></td>
+                                                                    <td width="28%"><A
+                                                                            href="http://job5.fdkjgz.com/Html/Company/10268.html"
+                                                                            target=_blank>上海联合美亚文化传播有限公司</A></td>
+                                                                    <td width="13%"><span id=lit_Job_Urgent__ctl2_lbl_WorkPlace>广东广州</span></td>
+                                                                    <td align=middle width="12%"><span id=lit_Job_Urgent__ctl2_lbl_MonthPay>面议</span></td>
+                                                                    <td align=middle>2010-1-30</td></TR>
+                                                                <TR>  <td bgColor=#eeeeee colSpan=6 height=1></td></TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE cellSpacing=1 cellPadding=3 width="100%" border=0>
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td align=middle width="10%">N010781</td>
+                                                                    <td width="26%"><A
+                                                                            href="http://job5.fdkjgz.com/Html/JobDetail/10781.html"
+                                                                            target=_blank>财务主管</A></td>
+                                                                    <td width="28%"><A
+                                                                            href="http://job5.fdkjgz.com/Html/Company/10267.html"
+                                                                            target=_blank>安仕达管理软件有限公司</A></td>
+                                                                    <td width="13%"><span id=lit_Job_Urgent__ctl3_lbl_WorkPlace>广东广州</span></td>
+                                                                    <td align=middle width="12%"><span id=lit_Job_Urgent__ctl3_lbl_MonthPay>面议</span></td>
+                                                                    <td align=middle>2010-1-30</td></TR>
+                                                                <TR>  <td bgColor=#eeeeee colSpan=6  height=1></td></TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE cellSpacing=1 cellPadding=3 width="100%" border=0>
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td align=middle width="10%">N010776</td>
+                                                                    <td width="26%"><A
+                                                                            href="http://job5.fdkjgz.com/Html/JobDetail/10776.html"
+                                                                            target=_blank>男女 贵宾服务生 夜场兼职 情感陪护司机 内保 私人伴游</A></td>
+                                                                    <td width="28%"><A
+                                                                            href="http://job5.fdkjgz.com/Html/Company/10252.html"
+                                                                            target=_blank>金元证券广州分公司</A></td>
+                                                                    <td width="13%"><span id=lit_Job_Urgent__ctl4_lbl_WorkPlace>浙江宁波</span></td>
+                                                                    <td align=middle width="12%"><span id=lit_Job_Urgent__ctl4_lbl_MonthPay>6000～7999</span></td>
+                                                                    <td align=middle>2009-12-10</td></TR>
+                                                                <TR>  <td bgColor=#eeeeee colSpan=6  height=1></td></TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE cellSpacing=1 cellPadding=3 width="100%" border=0>
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td align=middle width="10%">N010773</td>
+                                                                    <td width="26%"><A
+                                                                            href="http://job5.fdkjgz.com/Html/JobDetail/10773.html"
+                                                                            target=_blank>BOM管理员</A></td>
+                                                                    <td width="28%"><A
+                                                                            href="http://job5.fdkjgz.com/Html/Company/10251.html"
+                                                                            target=_blank>绿之韵国际集团股份有限公司</A></td>
+                                                                    <td width="13%"><span id=lit_Job_Urgent__ctl5_lbl_WorkPlace>上海</span></td>
+                                                                    <td align=middle width="12%"><span id=lit_Job_Urgent__ctl5_lbl_MonthPay>面议</span></td>
+                                                                    <td align=middle>2009-12-7</td></TR>
+                                                                <TR> <td bgColor=#eeeeee colSpan=6    height=1></td></TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE cellSpacing=1 cellPadding=3 width="100%" border=0>
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td align=middle width="10%">N010752</td>
+                                                                    <td width="26%"><A
+                                                                            href="http://job5.fdkjgz.com/Html/JobDetail/10752.html"
+                                                                            target=_blank>行政助理</A></td>
+                                                                    <td width="28%"><A
+                                                                            href="http://job5.fdkjgz.com/Html/Company/10249.html"
+                                                                            target=_blank>万物集团有限公司</A></td>
+                                                                    <td width="13%"><span id=lit_Job_Urgent__ctl6_lbl_WorkPlace>上海</span></td>
+                                                                    <td align=middle width="12%"><span id=lit_Job_Urgent__ctl6_lbl_MonthPay>面议</span></td>
+                                                                    <td align=middle>2009-12-7</td></TR>
+                                                                <TR> <td bgColor=#eeeeee colSpan=6  height=1></td></TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE cellSpacing=1 cellPadding=3 width="100%" border=0>
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td align=middle width="10%">N010751</td>
+                                                                    <td width="26%"><A
+                                                                            href="http://job5.fdkjgz.com/Html/JobDetail/10751.html"
+                                                                            target=_blank>销售工程师</A></td>
+                                                                    <td width="28%"><A
+                                                                            href="http://job5.fdkjgz.com/Html/Company/10249.html"
+                                                                            target=_blank>万物集团有限公司</A></td>
+                                                                    <td width="13%"><span id=lit_Job_Urgent__ctl7_lbl_WorkPlace>上海</span></td>
+                                                                    <td align=middle width="12%"><span id=lit_Job_Urgent__ctl7_lbl_MonthPay>面议</span></td>
+                                                                    <td align=middle>2009-12-7</td></TR>
+                                                                <TR> <td bgColor=#eeeeee colSpan=6  height=1></td></TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                        <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=right>[<A
+                                                            href="http://job5.fdkjgz.com/Person/Urgent_List.aspx"
+                                                            target=_blank>更多急聘职位</A>]</td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                    </td></TR>
+            </TBODY></TABLE><!--页面底部-->
+        <IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+    </BODY></HTML>
+<input type="hidden" id="g_id" value="list_urgjob" />
+<script type="text/javascript" src="../js/common.js"></script>

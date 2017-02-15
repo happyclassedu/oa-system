@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title><!--{$ws.seo.title}--><!--{$ws.cfg.name_s}--></title>
+        <link type="text/css" rel="stylesheet" href="../css/www.css" rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="../css/www_jmenu.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!--{include file="header`$ws.mk`.htm"}-->
+        <!--{ include file="banner.htm" }-->
+        <div id="cen_box" class="div_center">
+            <!--列面页面右侧开始-->
+            <div id="info_box" class="cen_box_r">
+                <h2 class="nav_box">
+                    <span>
+                        您目前的位置：
+                        <!--{ foreach item=tmp from=$ws.nav }-->
+                        <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>&nbsp;&gt;&gt;&nbsp;
+                        <!--{ foreachelse }-->
+                        <!--{ /foreach }-->
+                    </span>
+                </h2>
+                <!--{include file=$ws.tpl}-->
+            </div>
+            <!--列面页面右侧结束-->
+            <!--{ include file="lefter.htm" }-->
+        </div>
+        <!--{include file="footer`$ws.mk`.htm"}-->
+    </body>
+</html>
+<input type="hidden" id="g_id_www" value="<!--{$ws.act}-->" />
+<script type="text/javascript" language="javascript" src="../js/www.js"></script>

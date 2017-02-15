@@ -1,0 +1,41 @@
+* {
+    font-size :12px;
+	margin:0;
+}
+
+#left {
+	float:left;
+	margin-top:5px;
+	padding:0;
+    width :210px;
+	background :#fff4c7;
+}
+
+#left .login {
+	width:210px;
+    list-style :none;
+	line-height:30px;
+	text-align:center;
+}
+
+.login_title {
+	height:30px;
+    background:url(../img/login_top1.jpg) no-repeat;
+}
+
+.dw_title {
+	line-height:30px;
+	padding-left:25px;
+	font-size:14px;
+	color:#FF0000;
+    background:url(../img/left_top.jpg) no-repeat;
+}
+
+.dwgg {
+	width:210px;
+	float:left;
+	padding-left:10px;
+    list-style :none;
+	line-height:27px;
+	text-align:left;
+}

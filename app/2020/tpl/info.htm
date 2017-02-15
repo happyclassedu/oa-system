@@ -1,0 +1,17 @@
+<div id="rcw_info" class="div_rcw_cen">
+  <div id="rcw_info_left">
+    <ul class="rcw_daohang">
+      <li>当前位置：</li>
+      <!--{ foreach item=tmp from=$ws.nav }-->
+      <li><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a></li>&nbsp;&gt;&gt;&nbsp;
+      <!--{ foreachelse }-->
+      <!--{ /foreach }-->
+    </ul>
+    <div id="rcw_info_nr">
+      <h1><!--{$ws.info.name}--></h1>
+      <h6>作者：<!--{$ws.info.source}--> 时间：<!--{$ws.info.atime}--> 阅读：<!--{$ws.info.hits}--> 次</h6>
+      <!--{$ws.info.remark}-->
+    </div>
+  </div>
+  <!--{ include file="lefter0`$ws.mk`.htm" }-->
+</div>

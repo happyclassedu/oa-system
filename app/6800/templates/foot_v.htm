@@ -1,0 +1,19 @@
+<DIV class=foot>
+{section name=foot loop=$select}
+<A class=baicu href="view.php?city={$select[foot].id}">{$select[foot].name}¬√”Œ</A>&nbsp;&nbsp;&nbsp;&nbsp;
+{/section}
+</DIV>
+<DIV></DIV>
+<DIV class=containe style="COLOR: #bc3204">{$xm_global.cfg_power}<BR><A rel="nofollow" href="http://www.miibeian.gov.cn" 
+target=_blank>{$xm_global.cfg_beian}</A> <script src="http://s11.cnzz.com/stat.php?id=2061364&web_id=2061364" language="JavaScript"></script></DIV>
+{if $ad!=""}
+{section name=ad loop=$ad}
+<div id="span_{$ad[ad].id}">{$ad[ad].code}</div>
+<script type="text/javascript">
+ document.getElementById('ad_{$ad[ad].ad_id}').innerHTML= document.getElementById('span_{$ad[ad].id}').innerHTML;
+ document.getElementById('span_{$ad[ad].id}').innerHTML="";
+</script>
+{/section}
+{/if}
+
+</BODY></HTML>

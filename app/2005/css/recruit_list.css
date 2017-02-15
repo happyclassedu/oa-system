@@ -1,0 +1,66 @@
+/**
+ * 文件名称：recruit_list.css
+ * 功能描述：招聘会信息列表界面样式。
+ * 代码作者：王争强（创建）
+ * 创建日期：2010-06-12
+ * 修改日期：2010-06-12
+ * 当前版本：V2.0
+*/
+
+body {
+    background:url(../img/bg.gif) repeat top left;
+}
+
+#list_table {
+    line-height : 25px;
+    font-size : 12px;
+    margin : 0 auto;
+    border : 1px solid #d5d5d5;
+    border-collapse : collapse;
+    border : none;
+    background-color : #FFFFFF;
+}
+
+#list_table thead tr {
+    text-align : center;
+    line-height : 35px;
+    font-size : 12px;
+    font-weight : bold;
+    background : url(../img/big_title.gif) repeat-x left top;
+}
+
+#list_table tbody tr {
+    line-height : 28px;
+}
+
+#list_table td {
+    border : solid #F5F5F5 1px;
+}
+
+#sys_title_box {
+    padding:10px 0;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+}
+
+#sys_title {
+    color: #000066;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+}
+
+#val_search {
+    text-align:left;
+    background:#e5e5e5;
+    padding:2px 5px;
+}
+
+.val_search {
+    color:black;background-color:#ffff66;
+}
+
+#jpage_box{
+    width:100%
+}

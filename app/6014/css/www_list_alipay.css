@@ -1,0 +1,168 @@
+/* dfzf s */
+#dy_dfzf_cen {
+   float:right;
+   width:750px;
+   padding-right:5px;
+   overflow:hidden;
+}
+
+.dfzf {
+   float:left;
+   width:750px;
+   margin-top:8px;
+   border:1px solid #c6c6c6;
+}
+
+.dfzf h1 {
+  font-size:14px;
+  line-height:35px;
+  color:#FFFFFF;
+  padding-left:10px;
+  background:url(../img/list_title_bg.jpg) left top no-repeat;
+}
+
+/* 搜索 s */
+
+.dfzf p {
+  line-height:30px;
+  text-align:right;
+  margin:5px 20px;
+}
+
+.dfzf p input {
+  margin:0 5px;
+}
+
+.dy_sear {
+  width:90px;
+  padding:8px 0;
+  border:0;
+  background:url(../img/botton.jpg) left top no-repeat;
+}
+/* 搜索 e */
+
+.dfzf table {
+  margin:5px 0;
+  border-collapse:collapse;
+}
+
+.dfzf table tr {
+  line-height:30px;
+  padding-left:10px;
+}
+
+.dfzf table tr td {
+   border:1px solid #c6c6c6;
+   text-align:center;
+}
+
+.dfgl_title {
+   text-align:center;
+   font-weight:800;
+   background:#fee485;
+}
+
+/* 换页 s */
+.dy_page {
+	float:left;
+	margin-top:10px;
+	margin-left:180px;
+    height: 35px;
+    text-align: center;
+}
+
+.dy_page a {
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    line-height: 21px;
+    margin: 0 4px;
+    padding: 0 6px;
+    border: #DBDBDB 1px solid;
+    color: #333333;
+    font-size: 12px;
+}
+
+.dy_page a:hover {
+    background:#DEF1FF;
+    color: #FF0000;
+    text-decoration:none;
+}
+
+
+.dy_page .page_now {
+    background:#DEF1FF;
+    color: #FF0000;
+    font-weight: 700;
+}
+
+/* 换页 e */
+
+
+/* 党费流程 s */
+
+.dflc {
+  width:750px;
+  float:left;
+  border:1px solid #c6c6c6;
+}
+
+.dflc h1 {
+  font-size:14px;
+  line-height:35px;
+  color:#FFFFFF;
+  padding-left:10px;
+  background:url(../img/list_title_bg.jpg) left top no-repeat;
+}
+
+.dflc ul {
+  width:780px!important;
+  border-top:none;
+}
+
+.dflc ul li {
+  width:130px;
+  float:left;
+  line-height:30px;
+  margin:8px 10px;
+  list-style:none;
+  text-align:center;
+}
+
+.dflc ul li a {
+  color:#e87735;
+  font-weight:800;
+  text-decoration:none;
+}
+
+/* 党费流程 e */
+
+.dygl_left {
+   overflow:hidden;
+   border:1px solid #c6c6c6;
+}
+
+.dygl_left img {
+   border:none;
+}
+
+.dygl_left ul {
+   width:160px;
+   margin:0 auto;
+}
+
+.dygl_left ul li {
+   list-style:none;
+   text-align:center;
+   margin:8px 0;
+   border:1px solid #c6c6c6;
+   background:#fcefbf;
+}
+
+.dygl_left ul li a {
+   color:#f15129;
+   font-size:14px;
+   font-weight:800;
+   line-height:35px;
+   text-decoration:none;
+}

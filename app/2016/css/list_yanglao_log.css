@@ -1,0 +1,10 @@
+#d_date_s,
+#d_date_e {
+    width: 80px;
+    text-align: center;
+}
+
+#box_search {
+    font-size: 12px;
+    font-weight: normal;
+}

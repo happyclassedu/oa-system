@@ -1,0 +1,16 @@
+
+.mec_fun {
+    margin-top: 20px;
+    border-collapse:collapse;
+}
+
+.mec_fun td {
+    padding: 5px 10px;
+    border:solid 1px #ccc;
+}
+
+.men_title {
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+}

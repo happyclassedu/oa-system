@@ -1,0 +1,39 @@
+
+<!--{ include file="banner.htm" }-->
+<div id="cen_box" class="div_center">
+    <!--列面页面右侧开始-->
+    <div id="list_box" class="cen_box_r">
+        <h2 class="nav_box">
+            <span>
+                您目前的位置：
+                <!--{ foreach item=tmp from=$ws.nav }-->
+                <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>&nbsp;&gt;&gt;&nbsp;
+                <!--{ foreachelse }-->
+                <!--{ /foreach }-->
+            </span>
+        </h2>
+        <h1 class="info_title"><!--{$ws.info.name}--></h1>
+        <!--{ foreach item=tmp from=$ws.news }-->
+        <ul>
+            <li><span class="info_date">日期：<!--{$tmp.atime|date_format:"%Y-%m-%d"}--> 点击：100 </span><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a></li>
+            <!--{ if $tmp.intro neq $tmp.name && $tmp.intro neq "" }-->
+            <li class="n1"><!--{$tmp.intro}--></li>
+            <!--{ /if }-->
+        </ul>
+        <!--{ /foreach }-->
+        <div id="page_box">
+            <a id="info_num" href="#">共 <!--{$ws.page.info_num}--> 条</a>
+            <a id="page_num" href="#">共 <!--{$ws.page.page_num}--> 页</a>
+            <a id="page_now" href="#">第 <!--{$ws.page.page_now}--> 页</a>
+            <a id="page_first" href="<!--{$ws.page.first}-->">首页</a>
+            <a id="page_prev" href="<!--{$ws.page.prev}-->">上一页</a>
+            <!--{ foreach key=i item=tmp from=$ws.page.num }-->
+            <a id="page_<!--{$i}-->" href="<!--{$tmp}-->"><!--{$i}--></a>
+            <!--{ /foreach }-->
+            <a id="page_next" href="<!--{$ws.page.next}-->">下一页</a>
+            <a id="page_last" href="<!--{$ws.page.last}-->">尾页</a>
+        </div>
+    </div>
+    <!--列面页面右侧结束-->
+    <!--{ include file="lefter.htm" }-->
+</div>

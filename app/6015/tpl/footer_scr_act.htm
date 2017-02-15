@@ -1,0 +1,14 @@
+<!-- footer b -->
+<div id="gd_bottom" class="div_gd_center">
+   <p>　</p>
+   <ul>
+      <!--{ foreach item=tmp from=$ws.footer_menu }-->
+        | <li><a href="<!--{$tmp.url_act}-->"><!--{$tmp.name}--></a></li>
+        <!--{ /foreach }-->
+        |
+   </ul>
+       <!--{assign var="tmp" value=$ws.cfg}-->
+      <span>CopyRight 2010 <!--{$tmp.name}-->，All Tights Reserced</span><br />
+	  <span>电话：<!--{$tmp.tel}-->  联系人：唐先生  地址：文艺南路28号科技一号楼副2号</span>
+</div>
+<!-- footer e -->

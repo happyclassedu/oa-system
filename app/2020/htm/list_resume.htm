@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>我的简历 - 人才网管理系统PHP1.0地区版</title>
+        <link href="../css/www.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+<!--页面顶部-->
+        <IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR>
+                    <td align=middle>
+                        <TABLE cellSpacing=0 cellPadding=0 width=980 border=0>
+                            <TBODY>
+                                <TR vAlign=top>
+                                    <td width=188><!--菜单-->
+                                        <IFRAME align=left src="person_left.htm" frameBorder=0 scrolling=no width="100%" height=500></IFRAME></td>
+                                    <td width=10></td>
+                                    <td bgColor=#ffffff><!--页面-->
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom  background="../img/title1_bg.gif" height=28>
+                                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td align=middle width=80  background="../img/title1_bg2.jpg" height=28>
+                                                                        <A id="a_resume_list" class=white  href="#"><B>我的简历</B></A></td>
+                                                                    <td width=5></td>
+                                                                    <td align=middle width=80 background="../img/title1_bg3.jpg"><A id="a_resume_create"  href="" target="_parent" >新建简历</A></td>
+                                                                    <td width=5></td>
+                                                                    <td align=middle width=80  background="../img/title1_bg3.jpg"><A id="a_resume_letter" href="" target="_parent" >求 职 信</A></td>
+                                                                    <td>&nbsp;</td></TR>
+                                                            </TBODY>
+                                                        </TABLE>
+
+                                                    </td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                        <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 5px">
+                                                        <span style="COLOR: #777777"><span id="d_loginid"></span>：您好，您目前共有&nbsp;<span id="d_info_num"></span>&nbsp;份简历，还可以保存&nbsp;4&nbsp;份；<BR></span>
+                                                    </td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                        <TABLE cellSpacing=1 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR><td bgColor=#aaccef height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE><!--简历列表-->
+                                        <TABLE id="list_tb" cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <col width="10%" align="center"/>
+                                            <col width="10%" align="center"/>
+                                            <col width="10%" align="center"/>
+                                            <col width="10%" align="center"/>
+                                            <col width="10%" align="center"/>
+                                            <col width="10%" align="center"/>
+                                            <col width="10%" align="center"/>
+                                            <col width="30%" align="center"/>
+                                            <thead>
+                                                <TR bgColor=#dbedfb>
+                                                    <td><STRONG>序号</STRONG></td>
+                                                    <td><STRONG>状态</STRONG></td>
+                                                    <td><STRONG>简历名称</STRONG></td>
+                                                    <td><STRONG>默认简历</STRONG></td>
+                                                    <td><STRONG>浏览次数</STRONG></td>
+                                                    <td><STRONG>语言</STRONG></td>
+                                                    <td><STRONG>简历等级</STRONG></td>
+                                                    <td><STRONG>操作</STRONG></td>
+                                                </TR>
+                                            </thead>
+                                            <TBODY>
+                                                <TR>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td class="btn_box">
+                                                        <input class="btn_preview" type="button" value="预览" />
+                                                        <input class="btn_fill" type="button" value="修改" />
+                                                        <input class="btn_edit" type="button" value="设置" />
+                                                        <input class="btn_del_r" type="button" value="删除" />
+                                                    </td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td id="jpage_box"></td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 1px; PADDING-TOP: 3px" height=35><A  id="a_resume_c"  href="#"><IMG
+                                                                height=26 src="../img/button_CreateResume.gif" width=120  border=0></A></td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                    </td>
+                </TR>
+            </TBODY>
+        </TABLE>
+        <!--页面底部-->
+        <IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=220></IFRAME>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_resume" />
+<script type="text/javascript" src="../js/common.js"></script>

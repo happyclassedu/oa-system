@@ -1,0 +1,28 @@
+<div class="msg">
+    <h1>留言详细信息</h1>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td colspan="2" align="center">标题：<!--{$ws.qa.name}--></td>
+      </tr>
+      <tr>
+        <td width="50%">留言时间：<!--{$ws.qa.atime}--></td>
+        <td width="50%">留言状态：<!--{if '2' eq $ws.qa.drwx}-->已处理<!--{ elseif '3' eq $ws.qa.drwx }-->已隐藏<!--{ else }-->未处理<!--{ /if }--></td>
+      </tr>
+      <tr>
+        <td>留 言 者 ：<!--{$ws.qa.q_name}--></td>
+        <td>回复部门：<!--{$ws.qa.org}--></td>
+      </tr>
+      <tr>
+        <td>留言内容：</td>
+        <td>回复内容：</td>
+      </tr>
+      <tr>
+        <td>
+            <!--{$ws.qa.q_intro}-->
+        </td>
+        <td class="msg_sr">
+            <!--{$ws.qa.a_intro}-->
+        </td>
+      </tr>
+    </table>
+</div>

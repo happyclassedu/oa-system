@@ -1,0 +1,63 @@
+<div class="dfzf">
+    <h1>党费管理</h1>
+    <p>
+        <input id="val_search" type="text" />
+        <input id="btn_search" class="dy_sear" type="button" value="搜索" />
+    </p>
+    <table id="list_tb" width="95%" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tr class="dfgl_title">
+            <td>姓名</td>
+            <td>身份证</td>
+            <td>入党时间</td>
+            <td>党费截止日期</td>
+            <td>金额</td>
+            <td>党费状况</td>
+        </tr>
+        <tr>
+            <td>王丽</td>
+            <td>512369874563258745</td>
+            <td>2009-11</td>
+            <td>2011-1</td>
+            <td>12</td>
+            <td>欠费</td>
+        </tr>
+        <tr>
+            <td>王丽</td>
+            <td>512369874563258745</td>
+            <td>2009-11</td>
+            <td>2011-1</td>
+            <td>12</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>王丽</td>
+            <td>512369874563258745</td>
+            <td>2009-11</td>
+            <td>2011-1</td>
+            <td>12</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>王丽</td>
+            <td>512369874563258745</td>
+            <td>2009-11</td>
+            <td>2011-1</td>
+            <td>12</td>
+            <td>正常</td>
+        </tr>
+    </table>
+    <div class="dy_page">
+        <a id="info_num" href="#">共12条</a>
+        <a id="page_num" href="#">共2页</a>
+        <a id="page_now" href="#">第1页</a>
+        <a id="page_first" href="<!--{$ws.page.first}-->">首页</a>
+        <a id="page_prev" href="<!--{$ws.page.prev}-->">上一页</a>
+        <!--{ foreach key=i item=tmp from=$ws.page.num }-->
+        <a id="page_<!--{$i}-->" href="<!--{$tmp}-->">1</a>
+        <!--{ /foreach }-->
+        <a id="page_next" href="<!--{$ws.page.next}-->">下一页</a>
+        <a id="page_last" href="<!--{$ws.page.last}-->">尾页</a>
+    </div>
+</div>
+<input type="hidden" id="g_id" value="list_alipay" />
+<script type="text/javascript" src="../js/common.js"></script>

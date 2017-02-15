@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+    <HEAD>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>发送面试邀请 - 莲湖人才招聘管理系统PHP1.0地区版</title>
+    </HEAD>
+    <body>
+        <table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td height="10"></td>
+            </tr>
+        </table>
+        <table width="500" border="0" align="center" cellpadding="8" cellspacing="2" bgcolor="#cccccc">
+            <tr>
+                <td bgcolor="#f3f3f3">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                        <tr>
+                            <td height="25" valign="bottom" class="font14"><font color="#ff6600"><strong>发送面试邀请</strong></font></td>
+                        </tr>
+                        <tr>
+                            <td>以下是接收本次面试邀请信的求职者姓名</td>
+                        </tr>
+                    </table>
+                    <!--求职者名单-->
+                    <table  width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ebebeb">
+                        <tbody>
+                        <tr>
+                            <td id="d_list_resume" bgcolor="#ffffff" style="PADDING-RIGHT:10px;PADDING-LEFT:10px">
+                                <table  border="0" style="width:100%;">
+                                    <tbody>
+                                    <tr>
+                                        <td><input id="chk_Resume_0" type="checkbox" name="chk_Resume:0" checked="checked" /><label for="chk_Resume_0">张振</label></td><td></td><td></td><td></td><td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td height="10"></td>
+                        </tr>
+                    </table>
+                    <!--邀请信表单-->
+                    <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                        <tr>
+                            <td width="100"><font color="#ff3300">*</font> 面试职位：</td>
+                            <td>
+                                <select id="d_j_id" style="width:200px;">
+                                    <option value="">-选择职位-</option>
+                                    <option value="10906">php</option>
+                                </select>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><font color="#ff3300">*</font> 面试时间：</td>
+                            <td><input id="d_i_time" type="text"  style="width:200px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="PADDING-LEFT:16px">联系电话：</td>
+                            <td><input id="d_i_txt3" type="text"  maxlength="25" style="width:200px;" /></td>
+                        </tr>
+                        <tr>
+                            <td style="PADDING-LEFT:16px">面试地点：</td>
+                            <td><input id="d_i_txt0" type="text"  maxlength="100" style="width:320px;" /></td>
+                        </tr>
+                        <tr>
+                            <td><font color="#ff3300">*</font> 邀 请 信：</td>
+                            <td><textarea id="d_i_txt4" rows="7" style="width:320px;"><!--{求职者}，您好！
+我公司在莲湖人才招聘管理系统PHP1.0地区版(www.lianhu.com)搜索到您的简历，发现您适合我公司正在招聘的{面试职位}，现邀请您参加面试，以下是面试信息：
+
+面试职位：<span id=""></span>{面试职位}
+面试时间：<span id=""></span>{面试时间}
+联 系 人：<span id=""></span>
+联系电话：<span id=""></span>{联系电话}
+面试地点：<span id=""></span>{面试地点}
+
+<span id=""></span>
+<span id=""></span>-->
+<!--2010-10-11--></textarea> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input id="chk_email" name="chk_email" type="checkbox"/>同时发送到求职者邮箱</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input id="btn_send" type="button" value="发送" style="height:25px;width:60px;" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--页面底部-->
+        <table width="500" border="0" align="center" cellpadding="4" cellspacing="0">
+            <tr>
+                <td align="center" style="PADDING-TOP:7px">莲湖人才招聘管理系统-版权所有</td>
+            </tr>
+        </table>
+        <table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td height="10"></td>
+            </tr>
+        </table>
+    </body>
+</HTML>
+<input type="hidden" id="g_id" value="info_resume_tointerview" />
+<script type="text/javascript" src="../js/common.js"></script>

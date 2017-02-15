@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>创建简历 - 自我评价/职业目标 - 人才网站管理系统PHP1.0地区版</title>
+        <link href="../css/www.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <!--页面顶部-->
+        <IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR vAlign=top width=188>
+                    <td width=188><!--菜单-->
+                        <IFRAME align=left src="resume_left.htm" frameBorder=0 scrolling=no width="100%" height=500></IFRAME>
+                    </td>
+                    <td width=10></td>
+                    <td><!--右侧-->
+                        <!--基本信息-->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td height="28" valign="bottom" background="../img/title1_bg.gif" style="padding-left:5px;padding-right:5px;">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td width="180" height="28" align="center" background="../img/title3_bg2.jpg"><font color="#ffffff"><b>自我评价/职业目标</b></font></td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </table></td>
+                            </tr>
+                            <tr>
+                                <td height="5"></td>
+                            </tr>
+                        </table>
+                        <!--求职意向-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid" height=25><STRONG>求职意向</STRONG> (<font color=#ff3300>*</font> 为必填项)</td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <table id="info_tb" cellspacing=1 cellpadding=4 width="100%" bgcolor="#dddddd">
+                            <tbody>
+                                <tr bgcolor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 现从事行业：</td>
+                                    <td><!--期望从事行业-->
+                                        <select id="d_curr_trade" style="width: 220px">
+                                            <option value="" selected>请选择</option>
+                                        </select>
+                                        <span id="d_error_curr_trade"></span>
+                                    </td>
+                                </tr>
+                                <tr bgcolor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 现从事职业：</td>
+                                    <td><!--期望从事职业-->
+                                        <select id="d_curr_big_classification" style="width: 100px">
+                                            <option value="" selected>请选择</option>
+                                        </select>
+                                        &nbsp;
+                                        <select id="d_curr_small_classification" style="width: 110px">
+                                            <option value="" >请选择</option>
+                                        </select>
+                                        <span id="d_error_curr_classification"></span>
+                                    </td>
+                                </tr>
+                                <tr bgcolor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 现职位级别：</td>
+                                    <td>
+                                        <select style="width: 220px" id="d_curr_joblevel">
+                                            <option value="">请选择</option>
+                                            <option value="高级决策层">高级决策层(CEO,EVP,GM...)</option>
+                                            <option selected value="高薪职位">高薪职位(管理类)</option>
+                                            <option value="高薪职位">高薪职位(非管理类)</option>
+                                            <option value="中级职位">中级职位(两年以上工作经验)</option>
+                                            <option value="初级职位">初级职位(两年以下工作经验)</option>
+                                            <option value="实习生">实习生</option>
+                                        </select>
+                                        <span id="d_error_curr_joblevel"></span>
+                                    </td>
+                                </tr>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100>工作年限：</td>
+                                    <td>
+                                        <select id="d_work_term" style="width: 220px">
+                                            <option value=""selected>请选择</option>
+                                            <option value="在校大学生" >在校大学生</option>
+                                            <option value="应届毕业生" >应届毕业生</option>
+                                            <option value="一年以上" >一年以上</option>
+                                            <option value="两年以上" >两年以上</option>
+                                            <option value="三年以上" >三年以上</option>
+                                            <option value="五年以上" >五年以上</option>
+                                            <option value="八年以上" >八年以上</option>
+                                            <option value="十年以上" >十年以上</option>
+                                            <option value="其他" >其他</option>
+                                        </select>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100>是否有海外工作经验：</td>
+                                    <td><select id="d_abroad_state" style="width: 220px">
+                                            <option value="" selected>请选择</option>
+                                            <option value="有">有</option>
+                                            <option value="无">无</option>
+                                        </select>
+                                    </td>
+                                </TR>
+                                <tr bgcolor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 期望从事行业：</td>
+                                    <td><!--期望从事行业-->
+                                        <select id="d_trade" style="width: 220px">
+                                            <option value="" selected>请选择</option>
+                                        </select>
+                                        <span id="d_error_trade"></span>
+                                    </td>
+                                </tr>
+                                <tr bgcolor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 期望从事职业：</td>
+                                    <td><!--期望从事职业-->
+                                        <select id="d_big_classification" style="width: 100px">
+                                            <option value="" selected>请选择</option>
+                                        </select>
+                                        &nbsp;
+                                        <select id="d_small_classification" style="width: 110px">
+                                            <option value="" >请选择</option>
+                                        </select>
+                                        <span id="d_error_classification"></span>
+                                    </td>
+                                </tr>
+                                <tr bgcolor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 期望工作地区：</td>
+                                    <td><!--期望工作地区-->
+                                        <select id="d_addr1" style="width: 100px">
+                                            <option value="" selected>地区不限</option>
+                                        </select>
+                                        &nbsp;
+                                        <select id="d_addr2" style="width: 110px">
+                                            <option value="" selected>不限</option>
+                                        </select>
+                                        <span id="d_error_addr"></span>
+                                    </td>
+                                </tr>
+                                <tr bgcolor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 到岗时间 </td>
+                                    <td><select id="d_post_time" style="width: 220px" >
+                                            <option value="" selected>请选择</option>
+                                            <option value="待定">待定</option>
+                                            <option value="近三天">近三天</option>
+                                            <option value="一周">一周</option>
+                                            <option value="二周">二周</option>
+                                            <option value="一月">一月</option>
+                                            <option value="3月内">3月内</option>
+                                            <option value="其他">其他</option>
+                                        </select>
+                                        <span id="d_error_post_time"></span>
+                                    </td>
+                                </tr>
+                                <tr bgcolor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100>期望薪水(税前)：</td>
+                                    <td><input id="d_money_num"  style="width: 100px" maxlength=8 type="text"/>
+                                        元
+                                        <select id="d_money_type" style="width: 100px" >
+                                            <option value="人民币" selected>人民币</option>
+                                            <option value="美元">美元</option>
+                                            <option value="欧元">欧元</option>
+                                            <option value="英镑">英镑</option>
+                                            <option value="港币">港币</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr bgcolor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100>其他要求：</td>
+                                    <td><font color=#777777>福利要求、食宿、培训机会等，(限200字 <a id="" href="#"><font color=#777777>计算字数</font></a>) </font><br>
+                                        <textarea id="d_other" style="width: 390px" rows=6></textarea>
+                                    </td>
+                                </tr>
+                        </table>
+                        <!--提交按扭-->
+                        <TABLE id="act_tb" cellSpacing=1 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100>&nbsp;</td>
+                                    <td align=left>
+                                        <input id="btn_save" style="width: 60px; HEIGHT: 30px"  type="button" value="保存" />
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                    </td>
+                </TR>
+            </TBODY>
+        </TABLE>
+        <!--页面底部-->
+        <IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=220></IFRAME>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_resume_wish" />
+<script type="text/javascript" src="../js/common.js"></script>

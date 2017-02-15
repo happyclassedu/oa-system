@@ -1,0 +1,84 @@
+
+#jMenu {
+    display:table;
+    position:absolute;
+    margin:0;
+    padding:0;
+	/*padding-left:40px;*/
+	right:0px;
+	z-index:9999;
+}
+/********************/
+/** premier niveau **/
+/********************/
+#jMenu li {
+    display:table-cell;
+    margin:0;
+    float:left;
+}
+#jMenu li a {
+    padding-top:10px;
+	padding-bottom:10px;
+	padding-left:9px;
+	padding-right:9px;
+    display:block;
+    background-color: transparent;
+    color:#fff;
+    font-weight:800;
+    text-transform:uppercase;
+    cursor:pointer;
+    font-size:12px;
+}
+
+#jMenu li a:hover {
+    color:#FFFF00;
+}
+
+/*******************/
+/** second niveau **/
+/*******************/
+#jMenu li ul {
+    display:none;
+    position:absolute;
+    padding:0;
+    margin:0
+}
+#jMenu li ul li {
+    background-color:#ffffff;
+    filter:alpha(opacity=70);
+    display:block;
+	width:140px!important;
+    color:#000000;
+    border-bottom:1px solid #484548;
+    padding:0;
+}
+/*#jMenu li ul li.arrow {
+    background:#ffffff url('../img/arrow_down.png') no-repeat center center;
+    height:6px;
+    filter:alpha(opacity=50);
+    padding:0;
+    border-bottom:none;
+    padding-bottom:10px
+}*/
+#jMenu li ul li a {
+    font-size:12px;
+    font-weight:normal;
+	text-align:center;
+    text-transform:none;
+    color:#000000;
+    /*padding:7px;*/
+    display:block;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+#jMenu li ul li a.isParent {
+    background:#ffffff url('../img/arrow_right.png') no-repeat right center;
+    color:#000000;
+}
+#jMenu li ul li a:hover {
+    background-color:#ffffff;
+    filter:alpha(opacity=50);
+    color:#FF0000;
+    border-top:1px solid #322f32;
+    border-bottom:1px solid #322f32;
+}

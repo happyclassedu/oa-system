@@ -1,0 +1,23 @@
+* {
+    font-size:12px;
+	margin:0;
+}
+
+/*left s*/
+#left_img {
+     border:1px solid #ffa63d;
+	 border-top: none;
+	 float:left;
+}
+
+#left_img p {
+     line-height:30px;
+	 text-align:center;
+	 vertical-align:top;
+	 color:#FFFFFF;
+	 font-size:14px;
+	 font-weight:bold;
+	 background:url(../img/left_title_bg.gif) left top repeat-x;
+}
+
+/*left e*/

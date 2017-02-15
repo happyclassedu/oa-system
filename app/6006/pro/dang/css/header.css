@@ -1,0 +1,25 @@
+* {
+    font-size:12px;
+}
+
+#top_logo {
+      width:780px;
+      margin :0 auto;
+}
+
+#menuer {
+      width:780px;
+	  margin:0 auto;
+	  margin-top:-3px;
+	  line-height:30px;
+	  text-align:center;
+	  background:url(../img/menu_bg.jpg) repeat-x;
+}
+#menuer a {
+      display:inline;
+	  padding:0 15px;
+	  color:#FFFFFF;
+	  font-weight:bold;
+	  font-size:14px;
+	  text-decoration: none;
+}

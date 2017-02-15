@@ -1,0 +1,61 @@
+
+/***---banner-start---***/
+#banner0 {
+	BACKGROUND: #000 no-repeat; OVERFLOW: hidden; width: 980px; POSITION: relative; HEIGHT: 290px;
+}
+#banner0 ul {
+	Z-INDEX: 999; LEFT: 3px; BOTTOM: 0px; POSITION: absolute; TEXT-ALIGN: left;
+}
+#banner0 ul li {
+	DISPLAY: block; FONT-WEIGHT: 900; FONT-SIZE: 12px; FLOAT: left; width: 140px; COLOR: #aaa; FONT-FAMILY: Arial; POSITION: relative; HEIGHT: 50px;
+}
+#banner0 li div {
+	MARGIN-TOP: 5px; DISPLAY: none; PADDING-LEFT: 10px; MARGIN-LEFT: 70px;
+}
+#banner0 li img {
+	BORDER-RIGHT: #fff 1px solid; BORDER-TOP: #fff 1px solid; FILTER: alpha(opacity=60); LEFT: 10px; FLOAT: left; BORDER-LEFT: #fff 1px solid; width: 52px; CURSOR: pointer; MARGIN-RIGHT: 4px; BORDER-BOTTOM: #fff 1px solid; POSITION: absolute; TOP: 5px; HEIGHT: 35px; moz-opacity: 0.6;
+}
+#bg {
+	BORDER-TOP: #999 1px solid; BACKGROUND: #000; FILTER: alpha(opacity=60); width: 100%; BOTTOM: 0px; POSITION: absolute; HEIGHT: 50px; TEXT-ALIGN: right; moz-opacity: 0.6;
+}
+#mask {
+	Z-INDEX: 990; BACKGROUND: url(mask.gif); LEFT: 0px; width: 100%; POSITION: absolute; TOP: 0px; HEIGHT: 100%;
+}
+#back {
+	TEXT-ALIGN: center;
+}
+.gray {
+	FILTER: Gray();
+}
+/***---banner-end---***/
+
+/***---soroll-start---***/
+.soroll {
+   overflow:hidden;
+   height:31px;
+   background:#eff4f8;
+   margin-bottom:8px;}
+
+.soroll h3 {
+   padding-left:15px;
+   color:#990000;
+}
+
+.soroll h3 a {
+   padding-left:15px;
+   text-decoration:none;
+   color:#990000;
+   font-size:13px;
+}
+
+.soroll ul li {
+   overflow:hidden;
+   list-style:none;
+   padding-left:100px;
+   line-height:31px;}
+
+.soroll ul li a:hover {
+   color:#0073ff;
+   font-weight:800;
+}
+/***---soroll-end---***/

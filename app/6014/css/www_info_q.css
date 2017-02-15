@@ -1,0 +1,128 @@
+
+#dy_list_cen {
+   width:750px;
+   float:right;
+   overflow:hidden;
+}
+
+/* 换页 s */
+#page_box {
+    margin-top: 8px;
+    height: 35px;
+    text-align: center;
+}
+
+#page_box a {
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    line-height: 21px;
+    margin: 0 4px;
+    padding: 0 6px;
+    border: #DBDBDB 1px solid;
+	text-decoration:none;
+    color: #333333;
+    font-size: 12px;
+}
+
+#page_box a:hover {
+    background:#DEF1FF;
+    color: #FF0000;
+    text-decoration:none;
+}
+
+
+#page_box .page_now {
+    background:#DEF1FF;
+    color: #FF0000;
+    font-weight: 700;
+
+}
+/* 换页 e */
+
+
+#dy_smzrw {
+  margin-bottom:5px;
+  float:left;
+   width:740px;
+  margin-right:5px;
+  border:1px solid #c6c6c6;
+}
+
+#dy_smzrw h1 {
+  font-size:14px;
+  line-height:35px;
+  color:#FFFFFF;
+  padding-left:20px;
+  background:url(../img/list_title_bg.jpg) left top no-repeat;
+}
+
+#dy_smzrw p {
+  text-align:center;
+  line-height:40px;
+  margin:5px 0;
+}
+
+
+/* 留言回复 s */
+#dy_smzrw table {
+    border-collapse:collapse;
+}
+
+#dy_smzrw table tr {
+   line-height:28px;
+}
+
+.szyw_title {
+   text-align:center;
+   font-weight:800;
+   padding:0!important;
+   background:#fee487;
+}
+
+#dy_smzrw table tr td {
+    border:solid 1px #c6c6c6;
+	line-height:27px;
+	padding-left:15px;
+}
+
+.msg {
+  float:left;
+  width:740px;
+  margin-right:5px;
+}
+
+.msg table {
+    border-collapse:collapse;
+	font-size:12px;
+	margin:5px auto;
+}
+.msg table td {
+    border:solid 1px #c6c6c6;
+	line-height:27px;
+}
+
+.msg_sr {
+    padding-left:10px;
+}
+
+.msg_sr input {
+    width:300px;
+	height:14px;
+}
+
+.msg_sr textarea {
+   width:300px;
+   margin:3px 0;
+}
+
+
+#btn_save,#btn_reset {
+  width:90px;
+  padding:8px 0;
+  margin:8px 0;
+  border:0;
+  background:url(../img/botton.jpg) left top no-repeat;
+}
+
+/* 留言回复 e */

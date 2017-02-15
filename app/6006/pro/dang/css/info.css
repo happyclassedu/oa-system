@@ -1,0 +1,42 @@
+* {
+    font-size:12px;
+	margin:0;
+}
+
+#centent {
+      width:780px;
+	  margin:0 auto;
+}
+
+#left {
+      float:left;
+	  margin:0;
+	  padding:0;
+}
+
+#info {
+     float:right;
+	 width:555px;
+	 margin:0;
+	 vertical-align:top;
+	 background:#fff;
+}
+
+#info h1 {
+	  line-height:30px;
+	  text-align:center;
+	  font-size:16px;
+	  font-weight:bold;
+	  color:#0033CC;
+}
+
+#info h2 {
+	  line-height:30px;
+      border-bottom:1px dashed #CCCCCC;
+	  text-align:center;
+}
+
+#info p {
+      text-indent:2em;
+	  line-height:20px;
+ }

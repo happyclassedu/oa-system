@@ -1,0 +1,48 @@
+
+<!-- info begin-->
+<div class="div_976_center">
+    <div id="info_box">
+        <h2 id="nav_box">
+            <span>
+                当前位置：
+                <!--{ foreach item=tmp from=$ws.nav }-->
+                <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>&nbsp;&gt;&gt;&nbsp;
+                <!--{ foreachelse }-->
+                <!--{ /foreach }-->
+            </span>
+        </h2>
+        <h1 class="info_title"><!--{$ws.info.name}--></h1>
+        <div class="info_attribute">发布时间：<!--{$ws.info.atime}-->　　访问次数：<span id="hits">1005</span></div>
+        <div class="info_content">
+            <p>公司规模：<!--{$ws.info.pnum}-->人</p>
+            <p>公司性质：<!--{$ws.info.pnum}--></p>
+            <p class="com_title">公司简介：</p>
+            <p><!--{$ws.info.intro}--></p>
+            <p class="com_title">公司联系方式：</p>
+            <p>联系人：<!--{$ws.info.linkman}--> </p>
+            <p>联系方式：<span class="tel"><!--{$ws.info.tel}--></span></p>
+            <p>电子邮箱：<!--{$ws.info.email}--></p>
+            <p>公司地址：<!--{$ws.info.address}--></p>
+            <p class="com_title">所有招聘职务：</p>
+            <table class="resume" widtd="98%" align="center" border="0" cellspacing="0" cellpadding="0">
+                <tr class="res_title">
+                    <td>职务名称</td>
+                    <td>招聘人数</td>
+                    <td>工作地址</td>
+                    <td>待遇</td>
+                </tr>
+                <!--{ foreach item=tmp from=$ws.list_job }-->
+                <tr>
+                    <td><a href="info_job_<!--{$tmp.id}-->.htm" target="_blank"><!--{$tmp.name}--></a></td>
+                    <td><!--{$tmp.addr}--></td>
+                    <td><!--{$tmp.num}--></td>
+                    <td><!--{$tmp.pay}--></td>
+                </tr>
+                <!--{ /foreach }-->
+            </table>
+        </div>
+        <div id="xid" style="display: none;"><!--{$ws.info.id}--></div>
+    </div>
+    <!--{ include file="lefter.htm" }-->
+</div>
+<!-- info begin-->

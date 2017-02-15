@@ -1,0 +1,35 @@
+
+<!--{include file="listnav_bg.htm"}-->
+
+<!--list centent s-->
+<div id="list_cen">
+    <!--list s-->
+    <div id="list">
+        <h2><!--{$ws.nav.name}--></h2>
+        <ul>
+            <!--{ foreach item=tmp from=$ws.news }-->
+            <li><span><!--{$tmp.atime|truncate:5:""}--></span><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a></li>
+            <!--{ /foreach}-->
+        </ul>
+        <ul id="page">
+            <li><a href="#">首页</a>
+                |  <a href="#">上一页</a>
+                |  <a href="#"> 1 </a><a href="#"> 2 </a> <a href="#"> 3 </a>
+                |  <a href="#">下一页</a>
+                |  <a href="#">末页</a>
+                跳转到
+                <label>
+                    <select name="select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </label>
+                页
+            </li>
+        </ul>
+    </div>
+    <!--list e-->
+    <!--{include file="lefter.htm"}-->
+</div>
+<!--list centent e-->

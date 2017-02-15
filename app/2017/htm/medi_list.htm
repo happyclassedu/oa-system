@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>医疗保险管理</title>
+</head>
+
+<body>
+<table width="800" align="center" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center">
+          <div style="width:100px; float:left;"><input id="btn_refresh" type="button" value="刷新" />
+          <input id="btn_close" type="button" value="关闭" /></div>
+        <span id="sys_title">医疗保险参保人员列表管理</span></td>
+      </tr>
+      <tr>
+        <td align="center">
+            <input id="btn_add" type="button" value="新增参保人员" />
+            <input id="btn_oh" type="button" value="业务操作管理" />
+            <input id="btn_bill" type="button" value="工作日结清单" />
+            <input id="btn_report" type="button" value="医疗报表" />
+        </td>
+      </tr>
+      <tr>
+        <td><table id="search_table"  width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>姓名：</td>
+              <td><input id="i_name" type="text"/></td>
+              <td>身份证号：</td>
+              <td><input id="i_idcard" type="text" /></td>
+              <td>医保编号：</td>
+              <td><input id="i_medi_code" type="text" /></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>医保状态：</td>
+              <td>
+                    <select id="i_medi_state">
+                        <option value="">不限</option>
+                        <option value="在库">在库</option>
+                        <option value="转出">转出</option>
+                        <option value="退休">退休</option>
+                    </select>
+              </td>
+              <td><p>档案编号：</p>              </td>
+              <td><input id="i_record_code" type="text"/></td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td><span class="btn_box">
+                <input id="btn_search" type="button" value="搜索"  />
+              </span></td>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td><table id="list_table" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+          <thead>
+            <tr>
+              <td>序号</td>
+              <td>姓名</td>
+              <td>出生年月</td>
+              <td>医保编号</td>
+              <td>医保状态</td>
+              <td>身份证号</td>
+              <td>档案号</td>
+              <td>参保时间</td>
+              <td width="80">截止缴费时间</td>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>文本</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="btn_box">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          </tbody>
+        </table></td>
+      </tr>
+      <tr>
+                <td id="jpage_box">
+                    <table class="jpage_page_box" width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <table class="jpage_page_panel" border="0" cellspadding="0" cellspacing="0">
+                                    <tr valign="middle">
+                                        <td><select class="jpage_val_show_num" title="每页显示条数">
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="15">15</option>
+                                                <option value="20">20</option>
+                                                <option value="25">25</option>
+                                                <option value="40">40</option>
+                                            </select>
+                                        </td>
+                                        <td><div class="jpage_separator"></div></td>
+                                        <td><div class="jpage_btn jpage_btn_no_1" title="第一页"></div></td>
+                                        <td><div class="jpage_btn jpage_btn_prev" title="上一页"></div></td>
+                                        <td><div class="jpage_separator"></div></td>
+                                        <td>第&nbsp;<input class="jpage_val_page_now" type="text" title="当前显示的页码"
+                                                          />&nbsp;页 / 共&nbsp;<span class="jpage_val_page_all"></span>&nbsp;页</td>
+                                        <td><div class="jpage_separator"></div></td>
+                                        <td><div class="jpage_btn jpage_btn_next" title="下一页"></div></td>
+                                        <td><div class="jpage_btn jpage_btn_last" title="最末页"></div></td>
+                                        <td><div class="jpage_separator"></div></td>
+                                        <td><div class="jpage_btn jpage_btn_refresh" title="刷新 当前页"></div></td>
+                                        <td><div class="jpage_separator"></div></td>
+                                        <td>共有&nbsp;<span class="jpage_val_info_all"></span>&nbsp;条记录，显示第
+                                            &nbsp;<span class="jpage_val_info_s"></span>&nbsp;条&nbsp;-&nbsp;第&nbsp;<span class="jpage_val_info_e"></span>&nbsp;条记录
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+    </table>
+</body>
+</html>
+<input type="hidden" id="g_id" value="medi_list" />
+<script type="text/javascript" src="../js/common.js"></script>

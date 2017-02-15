@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+    <HEAD>
+        <META http-equiv=Content-Type content="text/html; charset=utf-8">
+        <TITLE>招聘中心 - 帐户信息 - 人才网管理系统php1.0地区版</TITLE>
+        <LINK href="../css/www.css" type="text/css" rel=stylesheet>
+    </HEAD>
+    <BODY>
+        <!--页面顶部-->
+        <IFRAME align=middle src="com_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=188>
+                        <!--菜单-->
+                        <IFRAME align=middle src="com_left.htm" frameBorder=0 width="100%" scrolling=no height=500></IFRAME>
+                    </td>
+                    <td width=10></td>
+                    <td bgColor=#ffffff><!--右侧-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom  background="../img/title1_bg.gif" height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align="middle" width=80 background="../img/title1_bg2.jpg" height=28>
+                                                        <A id="a_com_account" class=white href="#"><B>帐户信息</B></A>
+                                                    </td>
+                                                    <td width=5></td>
+                                                    <td align="middle" width=80 background="../img/title1_bg3.jpg">
+                                                        <A id="a_com_password" href="#">密码修改</A>
+                                                    </td>
+                                                    <td>&nbsp;</td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR> <td height=2></td></TR>
+                            </TBODY>
+                        </TABLE><!--公司帐户-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid"  height=25>
+                                        <STRONG>帐户信息</STRONG>
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE id=lit_Account style="width: 100%; BORDER-COLLAPSE:collapse" cellSpacing=0 cellPadding=0 border=0>
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE id="info_tb" cellSpacing=1 cellPadding=4 width="100%" bgColor=#dddddd border=0>
+                                            <TBODY>
+                                                <TR bgColor=#ffffff>
+                                                    <td style="PADDING-LEFT: 12px"width=80><STRONG>公司名称</STRONG>：</td>
+                                                    <td><span id="d_fname"></span></td>
+                                                </TR>
+                                                <TR bgColor=#ffffff>
+                                                    <td style="PADDING-LEFT: 12px" width=80>
+                                                        <STRONG>用 户 名</STRONG>：
+                                                    </td>
+                                                    <td><span id="d_loginid"></span></td>
+                                                </TR>
+                                                <TR bgColor=#ffffff>
+                                                    <td style="PADDING-LEFT: 12px"
+                                                        width=80><STRONG>用户状态</STRONG>：
+                                                    </td>
+                                                    <td>
+                                                        <font color=#ff0000><span id="d_user_tate"></span></font>
+                                                    </td>
+                                                </TR>
+                                                <TR bgColor=#ffffff>
+                                                    <td style="PADDING-LEFT: 12px" width=80>
+                                                        <STRONG>邮件地址</STRONG>：
+                                                    </td>
+                                                    <td><span id="d_email"></span></td>
+                                                </TR>
+                                                <TR bgColor=#ffffff>
+                                                    <td style="PADDING-LEFT: 12px"><STRONG>注册时间</STRONG>：</td>
+                                                    <td><span id="d_reg_time"></span></td>
+                                                </TR>
+                                                <TR bgColor=#ffffff>
+                                                    <td style="PADDING-LEFT: 12px"><STRONG>最后登录</STRONG>：</td>
+                                                    <td><span id="d_login_time"></span></td>
+                                                </TR>
+                                                <TR bgColor=#ffffff>
+                                                    <td style="PADDING-LEFT: 12px"><STRONG>登录次数</STRONG>：</td>
+                                                    <td><span id="d_login_hits"></span></td>
+                                                </TR>
+                                                <TR bgColor=#ffffff>
+                                                    <td style="PADDING-LEFT: 12px"><STRONG>IP 地址</STRONG>：</td>
+                                                    <td><span id="d_aip"></span></td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                    </td>
+                </TR>
+            </TBODY>
+        </TABLE>
+        <!--页面底部-->
+        <IFRAME align=middle src="com_footer.htm" frameBorder=0 width="100%" scrolling=no height=117>
+        </IFRAME>
+    </BODY>
+</HTML>
+<input type="hidden" id="g_id" value="info_com_account" />
+<script type="text/javascript" src="../js/common.js"></script>

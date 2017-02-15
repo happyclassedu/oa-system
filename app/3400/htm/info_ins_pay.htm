@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>信息管理_养老金计发标准设置</title>
+    </head>
+    <body>
+        <!--开始__基本功能区-->
+        <div id="box_title">
+            <span id="sys_title">养老金计发标准设置--<span id="sys_state"></span>信息</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_add" type="button"  value="新增"/>&nbsp;&nbsp;
+                <input id="btn_edit" type="button" value="修改"/>&nbsp;&nbsp;
+                <input id="btn_del" type="button" value="删除"/>&nbsp;&nbsp;
+                <input id="btn_list" type="button" value="列表"/>
+            </div>
+        </div>
+        <!--结束__基本功能区-->
+        <!--开始__信息内容区-->
+        <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">一、基本信息</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>利率年份</td>
+                    <td>                        
+                        <select id="d_year">
+                            <option value="">请选择……</option>
+                            <option value="2011">2011年</option>
+                        </select>
+                    </td>
+                    <td>养老金计发标准</td>
+                    <td><input id="d_ins_pay" type="text" style="width: 100px;" />元/月</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>备 注</td>
+                    <td colspan="5"><textarea id="d_remark" rows="3"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息内容区-->
+        <!--开始__保存操作区-->
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button" value="保存信息" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="btn_cancel" type="button" value="取消保存" />
+                </td>
+            </tr>
+        </table>
+        <!--结束__保存操作区-->
+    </body>
+</html>
+<input type="hidden" id="act_url" value="view" />
+<input type="hidden" id="g_id" value="info_ins_pay" />
+<script type="text/javascript" src="../js/common.js"></script>

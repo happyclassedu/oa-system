@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>医疗保险系统--业务办理——打印表单</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+<body  style="*:0px;font:14px '宋体';">
+<OBJECT classid="CLSID:8856F961-340A-11D0-A96B-00C04FD705A2" height=0 id=wb name=wb width=0></OBJECT>
+<!-- onLoad=wb.execwb(7,1)
+<input type=button onClick=wb.execwb(7,1) value="打印预览" >
+<input type=button onClick=document.all.wb.ExecWB(6,1) value="打印">
+<input type=button onClick=document.all.wb.ExecWB(8,1) value="打印设置">
+-->
+<div style="letter-spacing:2px;margin-top:0px;width:200px;margin-left:225px;">
+<span id="d_year" style="margin-left:20px;"><?echo $year?></span>
+<span id="d_month" style="margin-left:20px;"><?echo $month?></span>
+<span id="d_day" style="margin-left:20px;"><?echo $day?></span>
+</div>
+<div style="letter-spacing:0px;margin-top:10px;padding-left:83px;width:580px;"><span>西安市莲湖区人才交流服务中心</span><span id="d_pname" style="16px bold '宋体';margin-left:100px;"><?echo $pname?></span><span>　　（养老保险）</span></div>
+<div style="letter-spacing:0px;;margin-top:10px;margin-left:83px;1px solid #B7B7B7;">2701051801201000075550</div>
+<!-- <div style="letter-spacing:3px;">应缴费金额小写<?=$feenum_now?></div>
+<div style="letter-spacing:3px;">缴款人姓名<?=$pname?></div> -->
+<div style="margin-top:25px;font:18px bold '宋体';width:583px;position:relative;">
+<div id="d_final_result" style="letter-spacing:6px;padding-left:60px;;width:370px;position:relative;float:left;"></div>
+<div id="d_feenum_now" style=";letter-spacing:11px;float:right;width:200px;text-align:right"><?=$feenum_now?></div>
+</div>
+</body>
+</html>
+<input type="hidden" id="g_id" value="info_moh_print_c" />
+<script type="text/javascript" src="../js/common.js"></script>

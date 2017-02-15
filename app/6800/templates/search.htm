@@ -1,0 +1,149 @@
+{include file="header.htm"}
+<!--当前位置-->
+<!--广告位-->
+<DIV class=ad1>
+</DIV>
+<DIV class=mainbox-a>
+<DIV class=leftsideBar>
+<DIV><a href="{$url}&amp;industry=''"><IMG height=34 alt=城市分类 
+src="templates/images/all.gif" 
+width=200></a></DIV><!--行业分类 on-->
+<div id="PARENT">
+<ul id="left_nav">
+{section name=left loop=$left_cate}
+  <li><a href="#Menu=ChildMenu{$smarty.section.left.index+1}" onClick="DoMenu('ChildMenu{$smarty.section.left.index+1}')">{$left_cate[left].name}</a>
+  <ul id="ChildMenu{$smarty.section.left.index+1}" class="collapsed">{section name=sub loop=$left_cate[left].sub}
+  <li><a href="{$url}&industry={$left_cate[left].sub[sub].id}##Menu=ChildMenu{$smarty.section.left.index+1}">{$left_cate[left].sub[sub].name}</a></li>
+  {/section}
+  </ul>
+  </li>
+{/section}
+ </ul>
+</div>
+<script language=javascript src="templates/images/nav.js"></script>
+<!--广告位-->
+<!--行业分类 off--></DIV>
+<DIV class=rightContainer>
+<DIV class=fl>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD height=40>
+      <UL id=nav>
+        <LI class="top dqys-cs">搜索结果：</LI>
+        <LI class="top dqys-cs">共搜到<font color=red>{$counts}</font>条记录</LI>
+		<LI class="top dqys-cs" style="margin-left:20px;">搜索关链词&nbsp;&nbsp;<font color=red>{$keywords}</font></LI>
+       </UL></TD></TR>
+  <TR>
+    <TD>{section name=local loop=$local}
+    <A class=lj4 href="?country={$local[local].id}">{$local[local].name}</A>| {/section}
+  </TD></TR></TBODY></TABLE><!--广告位-->
+<DIV style="CLEAR: both; PADDING-TOP: 5px">
+
+</DIV></DIV>
+<DIV class=searchContainer><!--广告位-->
+<DIV>
+
+</DIV>
+
+<DIV class=listContainer>
+<TABLE style="MARGIN: 10px 0px" height=30 cellSpacing=0 cellPadding=0 
+width="100%" bgColor=#f6f6f6 border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle>
+     <div id="ad_1">加载中...</div>
+    </TD></TR>
+    </TBODY></TABLE><!-- 公司循环 -->
+    {section name=company loop=$list}
+<TABLE id=one1 
+style="BORDER-BOTTOM: #cccccc 1px dashed" cellSpacing=0 cellPadding=0 width=560 
+border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=0 width=540 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top>
+            <TABLE style="MARGIN-TOP: 10px" cellSpacing=0 cellPadding=0 
+            width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A class=tt 
+                  href="info.php?id={$list[company].id}" 
+                  target=_blank>{$list[company].cname}</A> </TD></TR>
+              <TR>
+                <TD align=left colSpan=2>
+                  <P class=list-style>电话：{$list[company].ctel}</P>
+                  <P class=list-style>地址：{$list[company].cadd}</P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD height=10>
+      </TD></TR></TBODY></TABLE>{/section}
+<DIV class=fy>
+{if $pgcode==""}
+<script type="text/javascript"><!--
+  google_ad_client = "pub-0404978635986780";
+  google_ad_format = "js_sdo";
+  google_cts_mode ="rs";
+  google_num_cts = "3";
+  google_searchbox_width = 215;
+  google_searchbox_height = 26;
+  google_link_target = 2;
+  google_logo_pos = "left";
+  google_rs_pos = "right";
+  google_ad_height = 35;
+  google_ad_width = 500;
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_sdo.js">
+</script>
+{/if}{$pgcode}</DIV>
+
+</DIV></DIV>
+<!--主题黄页-->
+<DIV class=rightnr><!--公司列表页使用-->
+<DIV class=zthy-top>
+<H2>主题黄页</H2></DIV>
+<DIV class=zthy-bj>
+<div id="ad_2">
+加载中...
+</div>
+</DIV>
+<DIV class=zthy-foot></DIV>
+<DIV class=rightnr></DIV><!--广告位-->
+<DIV class=rightnr>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=bottom align=middle height=60><A href="" 
+      target=_blank><IMG height=55 alt=Thorn 
+      src="templates/images/tjqy1.gif" 
+      width=95 border=0></A></TD>
+    <TD vAlign=bottom align=middle height=60><A href="" 
+      target=_blank><IMG height=55 alt=威鹏集团 
+      src="templates/images/tjqy2.gif" 
+      width=95 border=0></A></TD></TR>
+  <TR>
+    <TD vAlign=bottom align=middle height=60><A href="" 
+      target=_blank><IMG height=55 alt=博大包装 
+      src="templates/images/tjqy3.gif" 
+      width=95 border=0></A></TD>
+    <TD vAlign=bottom align=middle height=60><A 
+      href="" target=_blank><IMG height=55 alt=松凯电子 
+      src="templates/images/tjqy4.gif" 
+      width=95 border=0></A></TD></TR>
+  <TR>
+    <TD vAlign=bottom align=middle height=60><A 
+      href="" target=_blank><IMG height=55 alt=硕美科数码 
+      src="templates/images/tjqy5.gif" 
+      width=95 border=0></A></TD>
+    <TD vAlign=bottom align=middle height=60><A href="" 
+      target=_blank><IMG height=55 alt=步步高电子 
+      src="templates/images/tjqy6.gif" 
+      width=95 border=0></A></TD></TR></TBODY></TABLE></DIV>
+<DIV class=rightnr>
+
+</DIV></DIV></DIV></DIV><!--底部文件-->
+{include file="foot.htm"}

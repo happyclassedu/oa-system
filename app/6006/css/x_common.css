@@ -1,0 +1,55 @@
+#box_header {
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+}
+
+#m_title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #000066;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+#m_tools {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#box_middle {
+    margin: 0 auto;
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+#box_middle ul {
+    float:left;
+    width:630px;
+}
+
+#box_middle li {
+    float:left;
+    width: 188px;
+    height: 20px;
+    overflow: hidden;
+    border:#999999 1px solid;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    line-height: 21px;
+    list-style: none;
+    background: url('../img/dot.gif') no-repeat 5px;
+    background-color: #FFFFCC;
+    text-indent: 20px;
+    cursor: pointer;
+}
+
+.li_over {
+    background-color: #FFCCCC !important;
+    font-size: 14px;
+    font-weight: 800;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>信息--文件管理</title>
+    </head>
+    <body>
+        <!--开始__基本功能区-->
+        <div id="box_title">
+            <span id="sys_title">文件管理--<span id="sys_state"></span>信息</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_add" type="button"  value="新增"/>&nbsp;&nbsp;
+                <input id="btn_edit" type="button" value="修改"/>&nbsp;&nbsp;
+                <input id="btn_del" type="button" value="删除"/>&nbsp;&nbsp;
+                <input id="btn_down" type="button" value="下载文件"/>
+            </div>
+        </div>
+        <!--结束__基本功能区-->
+        <!--开始__信息内容区-->
+        <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">一、基本信息</td>
+                </tr>
+                <tr id="tr_1" class="tr_0">
+                    <td>发布时间</td>
+                    <td><input type="text" id="d_atime"></td>
+                    <td>修改时间</td>
+                    <td><input type="text" id="d_etime"></td>
+                    <td>点击次数</td>
+                    <td><input type="text" id="d_hits"></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>中文名称</td>
+                    <td colspan="5"><input id="d_name" type="text" /></td>
+                </tr>
+                <tr id="tr_2" class="tr_0">
+                    <td>文件类型</td>
+                    <td><input type="text" id="d_file_type"></td>
+                    <td>文件大小</td>
+                    <td><input type="text" id="d_file_size"></td>
+                    <td>创 建 者</td>
+                    <td><input type="text" id="d_uname"></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>文件描述</td>
+                    <td colspan="5"><textarea id="d_intro" rows="6"></textarea></td>
+                </tr>
+                <tr id="tr_3" class="tr_1">
+                    <td>文件上传</td>
+                    <td colspan="5"><input type="file" id="d_upload"></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息内容区-->
+        <!--开始__保存操作区-->
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr id="box_act_url"  class="tr_1">
+                <td>
+                    保存后操作：&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input name="act_url" type="radio" value="add"/>继续新增信息</label>
+                    &nb<sp;&nbsp;&nbsp;&nbsp;
+                    <label><input name="act_url" type="radio" value="list" checked />返回管理列表</label>
+                </td>
+            </tr>
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button" value="保存信息">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="btn_cancel" type="button" value="取消保存">
+                </td>
+            </tr>
+        </table>
+        <!--结束__保存操作区-->
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_file" />
+<script type="text/javascript" src="../js/common.js"></script>

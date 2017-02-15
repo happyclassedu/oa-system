@@ -1,0 +1,11 @@
+
+<!--listnav s-->
+<div id="listnav_bg">
+    <h2>
+        <!--{ foreach item=tmp from=$ws.nav }-->
+        <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>&nbsp;&gt;&gt;&nbsp;
+        <!--{ foreachelse }-->
+        <!--{ /foreach }-->
+    </h2>
+</div>
+<!--listnav e-->

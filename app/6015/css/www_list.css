@@ -1,0 +1,51 @@
+
+#gd_cen_list {
+	float:right;
+    width:750px;
+	overflow:hidden;
+	background:url(../img/nr_bg.gif) left top repeat-y;
+	border-bottom:1px solid #bdb4ae;
+}
+
+#gd_cen_list ul {
+    margin:0 auto;
+	text-align:center;
+}
+
+#gd_cen_list ul li {
+   display:inline;
+   list-style:none;
+   line-height:30px;
+}
+#gd_cen_list ul li a {
+   display:inline!important;
+   padding:0 3px!important;
+}
+
+#gd_cen_list a {
+    display:block;
+	line-height:30px;
+	padding-left:20px;
+}
+
+#gd_cen_list span {
+    float:right;
+	padding-top:5px;
+	padding-right:15px;
+}
+
+#gd_cen_list h5 a{
+    display:inline;
+	font-size:12px;
+	padding:0;
+	color:#FFFFFF;
+}
+
+#gd_cen_list h5 {
+    font-size:12px;
+	padding-left:40px;
+	font-weight:800;
+	color:#FFFFFF;
+	padding-top:3px;
+	background:url(../img/rig_title.gif) left top no-repeat;
+}

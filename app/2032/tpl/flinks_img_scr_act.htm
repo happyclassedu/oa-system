@@ -1,0 +1,10 @@
+
+<!--flinks_img s-->
+<div id="flinks_img">
+    <ul>
+        <!--{ foreach item=tmp from=$ws.flinks_img }-->
+        <li><a href="<!--{$tmp.url_act}-->" title="<!--{$tmp.name}-->" target="_blank"><img src="doc::<!--{$tmp.img}-->" /></a></li>
+        <!--{ /foreach }-->
+    </ul>
+</div>
+<!--flinks_img e-->

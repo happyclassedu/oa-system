@@ -1,0 +1,18 @@
+/*nav s*/
+#nav {
+    height:50px;
+    background:url(../img/top_cd.jpg) left top repeat-x;
+    padding:0;
+    color:#000000;
+    font-weight:800;
+}
+
+
+#nav a {
+    line-height:30px;
+    color:#000000;
+	text-decoration:none;
+}
+
+/*nav e*/
+

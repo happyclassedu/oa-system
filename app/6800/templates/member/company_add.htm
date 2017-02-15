@@ -1,0 +1,277 @@
+{include file="member/header.htm"}
+{literal}
+<script type="text/javascript" language="JavaScript">
+<!--
+var xmlHttp;
+function createXMLHttpRequest() {
+    if (window.ActiveXObject) {
+        xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    else if (window.XMLHttpRequest) {
+        xmlHttp = new XMLHttpRequest();
+    }
+}
+
+function addSelect(sid,elementID) {
+
+createXMLHttpRequest();
+var url = "./admin/include/select.php?sid=" + sid;
+xmlHttp.onreadystatechange = function(){onStateChange()};
+xmlHttp.open("GET", url, true);
+xmlHttp.send(null);
+}
+function onStateChange(oElement){
+    if(xmlHttp.readyState == 4){
+        if(xmlHttp.status == 200){
+   var returntxt=xmlHttp.responseText;
+   		if(returntxt!=""){
+   var htmltxt = '<select name="city" id="city">' + returntxt + '</select>';
+    document.getElementById("citybox").innerHTML=htmltxt;
+	}else{
+	document.getElementById("citybox").innerHTML="";
+	}
+        }
+    }
+}
+
+
+function addSelectindustry(sid,elementID) {
+     createXMLHttpRequest();
+var url = "./admin/include/select1.php?sid=" + sid;
+xmlHttp.onreadystatechange = function(){onStateChangeindustry()};
+xmlHttp.open("GET", url, true);
+xmlHttp.send(null);
+}
+function onStateChangeindustry(eElement){
+    if(xmlHttp.readyState == 4){
+        if(xmlHttp.status == 200){
+   var returntxt=xmlHttp.responseText;
+   if(returntxt!=""){
+   var htmltxt = '<select name="sub_industry" id="sub_industry">' + returntxt + '</select>';
+    document.getElementById("industrybox").innerHTML=htmltxt;
+	}else{
+	document.getElementById("industrybox").innerHTML="";
+	}
+        }
+    }
+}
+
+
+function ClickSubmit(){
+  if (document.form_add.name.value ==""){
+    alert("公司名称为必填项");
+	return false;
+  }
+ 
+  if (document.form_add.province.value =="0"){
+    alert("请选择公司所在的城市");
+	return false;
+  }
+  if (document.form_add.address.value == ""){
+    alert("请正确定填写公司地址");
+	return false;
+  }
+  if (document.form_add.industry.value == "0"){
+    alert("请选择公司所属行业");
+	return false;
+  }
+  if (document.form_add.nature.value == "0"){
+    alert("请选择公司性质");
+	return false;
+  }
+  if (document.form_add.tel.value == ""){
+    alert("请填写公司电话");
+	return false;
+  }
+  if (document.form_add.description.value == ""){
+    alert("请填写公司简介");
+	return false;
+  }
+  return true;
+}
+//-->
+</script>
+{/literal}
+<div class="containe-wz">您当前位置： <a href="" class="tt-12">首页</a> &gt;&gt; <a href="" class="tt-12">会员中心</a> &gt;&gt; 
+  添加企业 </div>
+<div class="containe">
+
+{include file="member/left.htm"}
+
+	<!--右侧栏目-->
+	<div class="rightframe">
+	 	<div class="tjqy">
+			<ul>
+				<li><a href="?action=company_list" target="_self" class="tjqy-lm1">等待申核</a></li>
+				<li><a href="?action=company_add" target="_self" class="tjqy-lm">添加企业</a></li>
+				
+			</ul>
+		</div>
+	  <div class="tjqynr">
+				<div class="wxts"><span class="wz-style2"><img src="./templates/member/images/wxts-tb.gif" width="74" height="66" style="float: left; padding-right:10px;">温馨提示：</span> <br>
+				  发布公司联系方式及介绍信息，并通过三秦品牌网到专业编辑审核之后，企业信息将会出现在三秦品牌网上。成功通过审 核后，您将获得10个积分。<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提醒：为了能尽快通过审核，请您认真填写公司信息!
+</div>
+				<form id="form_add" name="form_add" action="" method="post" onsubmit="return ClickSubmit();">
+	            <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#dfdfdf">
+                  <tbody><tr>
+                    <td width="13%" height="40" align="right" bgcolor="#F5f5f5" class="zt-14" nowrap="nowrap"><span class="zt-14h">*</span>&nbsp;企业名称：</td>
+                    <td height="40" colspan="3" align="left" bgcolor="#F5f5f5">&nbsp;
+                      <input type="text" name="name" id="name" value="{$company.cname}" size="60"></td>
+                    </tr>
+				  
+				  
+				  
+				  <tr>
+                    <td height="40" align="right" bgcolor="#F5f5f5" class="zt-14"><span class="zt-14h">*</span>&nbsp;所在城市：</td>
+                    <td height="40" colspan="3" align="left" bgcolor="#F5f5f5">
+					
+					<div style="float:left; margin-left:12px; display:inline">
+					  <select name="province" size="1" id="province" onChange="addSelect(this.options[this.selectedIndex].value,'city');">
+                        <option value="0">选择城市...</option>
+					    
+					    
+						{section name=city loop=$select}
+						
+					    
+					    <option value="{$select[city].id}" {if $select[city].id==$company.city } selected="selected" {/if}>{$select[city].name}</option>
+					    
+					  
+						{/section}
+                      
+				      
+				      </select>
+					</div>
+                <div id="citybox" style="float:left; padding-left:5px;">
+                {if $county!=""}
+                <select name="city" id="city">
+                {section name=county loop=$county}
+                <option value="{$county[county].id}" {if $county[county].id==$company.local } selected="selected" {/if}>{$county[county].name}</option>
+                {/section}
+                </select>
+                {/if}
+                </div>                    </tr>
+                  <tr>
+                    <td height="40" align="right" bgcolor="#F5f5f5" class="zt-14"><span class="zt-14h">*</span>&nbsp;公司地址：</td>
+                    <td height="40" colspan="3" align="left" bgcolor="#F5f5f5">&nbsp;
+                      <input type="text" name="address" id="address" value="{$company.cadd}" size="50">&nbsp;<span class="zt-14h">*</span>
+                    <span class="zt-14qh">请补充镇、街道、门牌号</span></td>
+                    </tr>
+				  
+				  
+				  
+				  
+				  
+                  <tr>
+                    <td height="40" align="right" bgcolor="#F5f5f5" class="zt-14"><span class="zt-14h">*</span>&nbsp;所属行业：</td>
+                    <td height="40" colspan="3" align="left" bgcolor="#F5f5f5">
+					<div style="float:left; margin-left:12px; display:inline">
+                    <select name="industry" size="1" id="industry" onChange="addSelectindustry(this.options[this.selectedIndex].value,'sub_industry');">
+                        <option value="0">选择行业...</option>
+						{section name=ind loop=$industry}
+						
+					    <option value="{$industry[ind].id}" {if $industry[ind].id==$p_industry.pid } selected="selected" {/if}>{$industry[ind].name}</option>
+					    
+						{/section}
+                 </select>
+                </div>
+                <div id="industrybox" style="float:left; padding-left:5px;">
+                {if $sub_industry!=""}
+                <select name="sub_industry" id="sub_industry">
+                {section name=sub loop=$sub_industry}
+                <option value="{$sub_industry[sub].id}" {if $sub_industry[sub].id==$p_industry.id } selected="selected" {/if}>{$sub_industry[sub].name}</option>
+                {/section}
+                </select>
+                {/if}
+                
+                
+                </div>					</td>
+                    </tr>
+                  
+				  
+				  
+				   <tr>
+                  <td height="40" align="right" bgcolor="#F5f5f5" class="zt-14"><span class="zt-14h">*</span>&nbsp;公司性质：</td>
+                    <td width="38%" height="40" align="left" bgcolor="#F5f5f5">
+					
+					&nbsp;
+					<select id="nature" name="nature">
+					  <option value="0">请选择</option>
+                      <option value="国家机关" {if $company.nature=="国家机关"} selected="selected"{/if}>国家机关</option>
+                      <option value="事业单位" {if $company.nature=="事业单位"} selected="selected"{/if}>事业单位</option>
+                      <option value="国有企业" {if $company.nature=="国有企业"} selected="selected"{/if}>国有企业</option>
+                      <option value="集体企业" {if $company.nature=="集体企业"} selected="selected"{/if}>集体企业</option>
+                      <option value="有限责任公司" {if $company.nature=="有限责任公司"} selected="selected"{/if}>有限责任公司</option>
+                      <option value="股份有限公司" {if $company.nature=="股份有限公司"} selected="selected"{/if}>股份有限公司</option>
+                      <option value="私营企业" {if $company.nature=="私营企业"} selected="selected"{/if}>私营企业</option>
+                      <option value="个体工商户" {if $company.nature=="个体工商户"} selected="selected"{/if}>个体工商户</option>
+                      <option value="港，澳，台商投资企业" {if $company.nature=="港，澳，台商投资企业"} selected="selected"{/if}>港，澳，台商投资企业</option>
+                      <option value="外商投资企业" {if $company.nature=="外商投资企业"} selected="selected"{/if}>外商投资企业</option>
+                      <option value="中外合资经营企业" {if $company.nature=="中外合资经营企业"} selected="selected"{/if}>中外合资经营企业</option>
+                      <option value="外商独资企业" {if $company.nature=="外商独资企业"} selected="selected"{/if}>外商独资企业</option>
+                      <option value="社会团体" {if $company.nature=="社会团体"} selected="selected"{/if}>社会团体</option>
+                      <option value="宗教活动场所" {if $company.nature=="宗教活动场所"} selected="selected"{/if}>宗教活动场所</option>
+                      <option value="农村村民委员会" {if $company.nature=="农村村民委员会"} selected="selected"{/if}>农村村民委员会</option>
+                      <option value="城市居民委员会" {if $company.nature=="城市居民委员会"} selected="selected"{/if}>城市居民委员会</option>
+                    </select>
+					<span class="zt-14qh"></span>            </td>
+                     <td width="13%" height="40" align="right" bgcolor="#F5f5f5" class="zt-14"><span class="zt-14h">*</span>&nbsp;联系电话：</td>
+                    <td width="36%" align="left" bgcolor="#F5f5f5">&nbsp;
+                      <input type="text" name="tel" id="tel" value="{$company.ctel}">
+                    <span class="zt-14qh"></span></td>
+				  <tr>
+                    <td height="40" align="right" bgcolor="#F5f5f5" class="zt-14">注册资金：</td>
+                    <td align="left" bgcolor="#F5f5f5">&nbsp;
+                      <input type="text" name="capital" id="capital" value="{$company.capital}">
+                    <span class="zt-14qh"></span></td>
+                    <td height="40" align="right" bgcolor="#F5f5f5" class="zt-14">公司邮箱：</td>
+                    <td align="left" bgcolor="#F5f5f5">&nbsp;
+                      <input type="text" name="email" id="email" value="{$company.cmail}">
+                    <span class="zt-14qh"></span></td>
+				  </tr>
+                  <tr>
+                    <td height="40" align="right" bgcolor="#F5f5f5" class="zt-14">成立时间：</td>
+                    <td align="left" bgcolor="#F5f5f5">&nbsp;
+                      <input type="text" name="setup" id="setup" value="{$company.setup}" />                      
+                      (如：2010-11-11)
+                    <span class="zt-14qh"></span></td>
+                    <td height="40" align="right" bgcolor="#F5f5f5" class="zt-14">企业网址：</td>
+                    <td align="left" bgcolor="#F5f5f5">&nbsp;
+                      <input type="text" name="web" id="web" value="{$company.cweb}" size="30">
+                    <span class="zt-14qh"></span></td>
+                  </tr>
+				  
+				  
+				  
+                  <tr>
+                    <td height="40" align="right" valign="center" bgcolor="#F5f5f5" class="zt-14"><span class="zt-14h">*</span>&nbsp;公司简介：</td>
+                    <td colspan="3" align="left" bgcolor="#F5f5f5">&nbsp;
+                    <textarea id="description" name="description" cols="85" rows="10">{$company.brief}</textarea>
+
+	                <span id="descriptionTip" name="descriptionTip"></span></td>
+                    </tr>
+                 
+                 
+                  <tr>
+                    <td height="40" align="right" valign="center" bgcolor="#F5f5f5" class="zt-14">主营业务：</td>
+                    <td height="80" colspan="3" align="left" bgcolor="#F5f5f5">&nbsp;
+                    <textarea name="business" id="business" cols="85" rows="10">{$company.products}</textarea> 
+	                <span id="businessTip" name="businessTip"></span></td>
+                    </tr>
+                    
+                  
+                  
+                  <tr>
+                    <td height="60" colspan="4" align="left" bgcolor="#FFFFFF" class="zt-14"><input type="image" src="./templates/member/images/tjqyxx.gif" width="120" height="31" style="padding-left:123px;"></td>
+                  </tr>
+                </tbody></table>
+		<INPUT type=hidden value="xmf1.com" name="xmf1" /></form>
+	  </div>
+	</div>
+</div>
+
+
+{include file="member/footer.htm"}
+<!--null页面结束-->
+</body></html>

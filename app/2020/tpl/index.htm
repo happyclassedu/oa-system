@@ -1,0 +1,190 @@
+<div id="rcw_login" class="div_rcw_cen">
+    <div id="rcw_login_left">
+        <ul class="login_title">
+            <li class="log_titl_left">　</li>
+            <li class="log_titl_cen">会员登录</li>
+        </ul>
+        <div id="rcw_login_bot">
+            <div id="rcw_dl">
+                <ul class="rcw_pass">
+                    <li>用户名：
+                        <input name="" type="text" /></li>
+                    <li>密　码：
+                        <input name="" type="text" /></li>
+                </ul>
+                <input class="login_botton" type="button" value="" />
+                <ul class="rcw_hy">
+                    <li>
+                        <label>
+                            <input type="radio" name="RadioGroup1" value="单选" />个人会员
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="RadioGroup1" value="单选" />企业会员
+                        </label>
+                    </li>
+                    <li>
+                        <a href="#">忘记密码</a>
+                    </li>
+                </ul>
+                <p class="rcw_zc">
+                    <input class="zc_gr" type="button" value="" />
+                    <input class="zc_qy" type="button" value="" />
+                </p>
+            </div>
+            <div id="rcw_search">
+                <select name="">
+                    <option>职能不限</option>
+                </select>
+                <select name="">
+                    <option>职位不限</option>
+                </select>
+                <select name="">
+                    <option>地区不限</option>
+                </select>
+                <select name="">
+                    <option>日期不限</option>
+                </select>
+                <input class="gjz" type="text" value="请输入关键字" />
+                <input class="search_botton" type="button" value="" />
+                <a href="#">全能搜索>>></a>
+            </div>
+        </div>
+    </div>
+    <div id="rcw_zxdt">
+        <h2 id="index_news1_title">
+            <!--{ foreach item=tmp from=$ws.index_news1 }-->
+            <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+            <!--{ /foreach }-->
+        </h2>
+         <!--{ foreach item=index_news from=$ws.index_news1 }-->
+        <ul>
+            <!--{ foreach item=tmp from=$index_news.news name=arr_index }-->
+             <li><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><!--{$tmp.name}--></a> (<!--{$tmp.atime|date_format:"%Y-%m-%d"}-->)</li>
+            <!--{ foreachelse }-->
+            <!--{ /foreach }-->
+        </ul>
+        <!--{ /foreach }-->
+    </div>
+</div>
+<!--{ include file="link0`$ws.mk`.htm" }-->
+<!--  热门招聘  -->
+<div id="rcw_zp" class="div_rcw_cen">
+    <div class="rcw_rmzw">
+        <ul class="rmzw_title">
+            <li class="rmzw_titl_left">　</li>
+            <li class="rmzw_titl_cen"><a href="#">热门职位</a></li>
+        </ul>
+        <ul class="rmzw_nr">
+            <li><a href="#">绿之韵国际集团股份有限公司</a><br /><span>[招聘职位]</span><a href="#">软件工程师</a></li>
+            <li><a href="#">上海联合美亚文化传播有限公司</a><br /><span>[招聘职位]</span><a href="#">软件工程师</a></li>
+            <li><a href="#">安仕达管理软件有限公司</a><br /><span>[招聘职位]</span><a href="#">软件工程师</a></li>
+            <li><a href="#">金元证券广州分公司</a><br /><span>[招聘职位]</span><a href="#">软件工程师</a></li>
+            <li><a href="#">安仕达管理软件有限公司</a><br /><span>[招聘职位]</span><a href="#">软件工程师</a></li>
+            <li><a href="#">金元证券广州分公司</a><br /><span>[招聘职位]</span><a href="#">软件工程师</a></li>
+        </ul>
+    </div>
+    <div class="rcw_zpxx">
+        <div class="rcw_zpxxnr">
+            <ul class="rmzw_title">
+                <li class="zpxx_titl_cen"><a href="<!--{$ws.index_news3_1.url}-->"><!--{$ws.index_news3_1.name}--></a></li>
+            </ul>
+            <!--{ foreach item=tmp from=$ws.index_news3 }-->
+            <span><!--{$tmp.atime|date_format:"%m-%d"}--></span><a href="<!--{$tmp.url}-->"><!--{$tmp.name|truncate_i:16:"…"}--></a>
+            <!--{ /foreach }-->
+        </div>
+        <a class="bl" href="#"><img src="../img/1.gif" width="253" /></a>
+    </div>
+    <div id="rcw_ppqy">
+        <ul class="ppqy_title">
+            <li class="ppqy_titl_left">　</li>
+            <li class="ppqy_titl_cen"><a href="#">品牌企业</a></li>
+        </ul>
+        <a href="#">绿之韵国际集团股份有限公司</a>
+        <a href="#">上海联合美亚文化传播有限公司</a>
+        <a href="#">安仕达管理软件有限公司</a>
+        <a href="#">金元证券广州分公司</a>
+        <a href="#">安仕达管理软件有限公司</a>
+        <a href="#">金元证券广州分公司</a>
+        <a href="#">金元证券广州分公司</a>
+        <a href="#">安仕达管理软件有限公司</a>
+        <a href="#">金元证券广州分公司</a>
+        <a href="#">金元证券广州分公司</a>
+        <a href="#">安仕达管理软件有限公司</a>
+        <a href="#">金元证券广州分公司</a>
+    </div>
+    <div id="rcw_banner"><img src="../img/banner.jpg" /></div>
+</div>
+<div id="rcw_jymx" class="div_rcw_cen">
+    <div id="rcw_rdht">
+        <ul class="rdht_title">
+            <li class="rdht_titl_left">　</li>
+            <li class="rdht_titl_cen"><a href="#">热点话题</a></li>
+        </ul>
+        <div class="rcw_rdhtnr">
+            <!--{ foreach item=tmp from=$ws.index_news4 }-->
+            <a href="<!--{$tmp.url}-->"><!--{$tmp.name|truncate_i:16:"…"}--></a>
+            <!--{ /foreach }-->
+        </div>
+    </div>
+    <div id="rcw_jlzd">
+        <h2 id="index_news2_title">
+            <!--{ foreach item=tmp from=$ws.index_news2 }-->
+            <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+            <!--{ /foreach }-->
+        </h2>
+        <!--{ foreach item=index_news from=$ws.index_news2 }-->
+        <ul class="rcw_jlzdnr">
+            <!--{ foreach item=tmp from=$index_news.news name=arr_index }-->
+            <li><span><!--{$tmp.atime|date_format:"%Y-%m-%d"}--></span><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><!--{$tmp.name|truncate_i:23:"…"}--></a></li>
+            <!--{ foreachelse }-->
+            <!--{ /foreach }-->
+        </ul>
+        <!--{ /foreach }-->
+    </div>
+    <div class="rcw_zxjl">
+        <ul class="zxjl_title">
+            <li class="zxjl_titl_cen"><a href="#">最新求职简历</a></li>
+        </ul>
+        <table align="center" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>姓名</td>
+                <td>性别</td>
+                <td>学历</td>
+                <td>毕业院校</td>
+            </tr>
+            <tr>
+                <td>王佳</td>
+                <td>女</td>
+                <td>本科</td>
+                <td>西北大学</td>
+            </tr>
+            <tr>
+                <td>李雷</td>
+                <td>男</td>
+                <td>硕士</td>
+                <td>西安理工</td>
+            </tr>
+            <tr>
+                <td>张希</td>
+                <td>女</td>
+                <td>本科</td>
+                <td>西安工业学院</td>
+            </tr>
+            <tr>
+                <td>王明</td>
+                <td>男</td>
+                <td>本科</td>
+                <td>西安交通大学</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>男</td>
+                <td>大专</td>
+                <td>陕西工业学院</td>
+            </tr>
+        </table>
+    </div >
+</div>
+<!--{ include file="link1`$ws.mk`.htm" }-->

@@ -1,0 +1,74 @@
+@import url(site.css );
+.v_left{ width:700px; float:left}
+.v_right{ width:270px; float:right}
+.v_left .left_block{ width:698px; height:200px; border:1px solid #CCFFFF; margin-bottom:5px;}
+.v_left .left_block .img{ width:250px; height:180px; float:left; border:1px dashed #999999; margin:5px; padding:5px; }
+.v_left .left_block .ad{ float:right; width:420px;}
+.v_left .left_block .ad .code{ width:100%; text-align:left; float:left; border-bottom:1px solid #CCFFFF; height:28px; line-height:28px; font-size:14px;}
+
+
+
+.v_left .left_block1{ width:698px; border:1px solid #CCFFFF; margin-bottom:5px;height:auto!important; height:400px; min-height:400px;   }
+
+.v_left .left_block1 .title {width:698px; height:28px; text-align:left; border-bottom:1px solid #CCFFFF;margin-bottom:10px; line-height:28px;}
+
+h3{ font-weight:800; padding-left:20px; font-size:18px;}
+.v_left .left_block1 p { padding:10px; text-align:left; font-size:14px;}
+
+.v_right .list1{ width:268px; border:1px solid #CCFFFF; margin-bottom:8px;}
+
+.v_right .list1 div{width:268px; height:28px; text-align:left; border-bottom:1px solid #CCFFFF;line-height:28px;}
+
+
+.list1 ul{PADDING-RIGHT: 4px; PADDING-LEFT: 4px; BACKGROUND: #e8f2f7; PADDING-BOTTOM: 10px; OVERFLOW: hidden; WIDTH: 260px; PADDING-TOP: 10px; HEIGHT: auto; list-style:none}
+
+.list1 ul li {PADDING-RIGHT: 0px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; MARGIN: -4px 0px 0px; OVERFLOW: hidden; WIDTH: 250px; LINE-HEIGHT: 20px; PADDING-TOP: 5px; HEIGHT: 25px}
+
+.list1 ul li img{FLOAT: left; MARGIN: 0px 5px 0px 0px}
+
+.list1 ul li a {FLOAT: left}
+
+.list1 ul li SPAN {
+	FLOAT: right; MARGIN: 0px 10px 0px 0px; COLOR: #0190ce
+}
+.list1 ul li .first {
+	COLOR: #ff0000
+}
+.list1 ul li .second {
+	COLOR: #ff4800
+}
+.list1 ul li .third {
+	COLOR: #ff7e00
+}
+.list1 ul  LI.odd {
+	BACKGROUND: #f1f7fa
+}
+
+.m_t{ font-size:14px; font-weight:800; height:55px; padding-left:25px; line-height:35px;}
+
+.tour_left{ width:850px;float:left}
+.tour_left ul {list-style:none}
+.tour_left ul li{ width:270px; height:280px; float:left; border:1px solid #CCFFFF;margin-right:8px; margin-bottom:30px; }
+.tour_left ul li div{ width:258px;border:1px dashed #999999; margin:5px; padding: 5px 0}
+.tour_left ul li span{ display:block; height:25px; width:260px; text-align:left; padding-left:10px; background:#e8f2f7; border-bottom:1px dashed #CCFFFF; line-height:25px;}
+.tour_left ul li span a { font-size:14px;}
+.tour_right{ width:128px; height:620px; float:right;}
+
+
+
+.view_block{ width:698px; border:1px solid #CCFFFF;}
+.local_list{ width:660px; border:1px solid #ffcc71; margin:10px auto; background:#fdfdf3; text-align:left; padding-left:20px; font-size:14px; line-height:30px;}
+
+.local_list a{ font-size:14px; padding-right:19px; color:3366cc}
+.local_list a:hover{ font-size:14px;}
+.local_list a:visited{ font-size:14px;}
+
+.v_list{ width:564px; margin:10px auto; list-style:none ; float:left;}
+.v_list li { width:170px; height:160px; border-bottom:1px dashed #CCFFFF; margin-top:20px; float:left; margin:5px}
+.v_list li div{ width:170px; height:125px; border:1px dashed #999999; padding-top:5px;}
+.v_ad{width:122px; float:right; margin-right:10px; margin-top:19px;}
+
+
+.page{padding:2px;font-weight:bolder;font-size:12px;}
+.page a{border:1px solid #ccc;padding:0 5px 0 5px;margin:2px;text-decoration:none;color:#333; }
+.page span{padding:0 5px 0 5px;margin:2px;background:#ccc;color:#fff;border:1px solid #ccc;}

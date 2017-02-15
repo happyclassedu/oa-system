@@ -1,0 +1,627 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>企业服务 - 人才网管理系统php1.0地区版</title>
+        <LINK rel=stylesheet type="text/css" href="../css/www.css"/>
+    </head>
+    <body>
+        <IFRAME align=middle src="com_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+        <TABLE border=0 cellSpacing=0 cellPadding=0 width=980 align=center>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=200>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5   height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B><font color=#ffffff>会员登录</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right.jpg" width=5 height=30></td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; BORDER-RIGHT: #a4cbee 1px solid; PADDING-TOP: 3px"><!--企业会员信息--><!--会员登录-->
+                                        <DIV id="d_pan_login">
+                                            <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                                                <TBODY>
+                                                    <TR>
+                                                        <td height=4></td></TR>
+                                                </TBODY>
+                                            </TABLE>
+                                            <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                <TBODY>
+                                                    <TR>
+                                                        <td height=27 width=64 align=right><font color=#848484>用户名：</font></td>
+                                                        <td height=27>
+                                                            <input style="width: 115px" id="d_username"  class=input_login type="text"/>
+                                                            <BR><span id="d_error_username"></span>
+                                                        </td>
+                                                    </TR>
+                                                    <TR>
+                                                        <td height=27 width=64 align=right><font color=#848484>密&nbsp;&nbsp;码：</font></td>
+                                                        <td height=27>
+                                                            <input style="width: 115px" id="d_password" class=input_login type="password"/>
+                                                            <BR><span id="d_error_password"></span>
+                                                        </td>
+                                                    </TR>
+                                                    <TR align=middle>
+                                                        <td height=27 colSpan=2>
+                                                            <input style="width: 50px; HEIGHT: 20px" id="" border=0 src="../img/button_login.gif" type="image"/>&nbsp;
+                                                            <A href="./info_com_register.htm?a=add"><IMG border=0   src="../img/button_reg.gif" width=50 height=20></A>
+                                                        </td>
+                                                    </TR>
+                                                    <TR align=middle>
+                                                        <td height=25 colSpan=2><IMG src="../img/Icon1.gif" width=5 height=9>
+                                                            <A class=blue20 href="./info_com_register.htm?a=add">注册企业用户</A>
+                                                            <IMG src="../img/Icon1.gif" width=5 height=9>
+                                                            <A class=blue20  href="">找回密码</A>
+                                                        </td>
+                                                    </TR>
+                                                </TBODY>
+                                            </TABLE>
+                                        </DIV>
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY></TABLE><!--结束--><!--开始-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td background="../img/right2_t1.jpg" width="75"   height="25" align=middle><B><font color=#ffffff>快速搜索</font></B></td>
+                                                    <!-- <td background="../img/right2_t1.jpg">&nbsp;</td>-->
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #ffc384 1px solid; BORDER-LEFT: #ffc384 1px solid; PADDING-BOTTOM: 3px; PADDING-LEFT: 14px; BORDER-RIGHT: #ffc384 1px solid; PADDING-TOP: 3px"><!--简历搜索-->
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=27 align=left>
+                                                        <select style="width: 170px" id="d_big_classification">
+                                                            <option selected value="">职能不限</option>
+                                                        </select>
+                                                    </td>
+                                                </TR>
+                                                <TR>
+                                                    <td height=27 align=left>
+                                                        <select style="width: 170px" id="d_addr1">
+                                                            <option selected value="">地区不限</option>
+                                                        </select>
+                                                    </td>
+                                                </TR>
+                                                <TR>
+                                                    <td height=27 align=left>
+                                                        <select style="width: 170px" id="d_atime">
+                                                            <option selected value="0">日期不限</option>
+                                                            <option value="1">近一天</option>
+                                                            <option value="2">近两天</option>
+                                                            <option value="3">近三天</option>
+                                                            <option value="7">近一周</option>
+                                                            <option value="14">近两周</option>
+                                                            <option value="30">近一月</option>
+                                                            <option  value="60">近两月</option>
+                                                            <option value="90">近三月</option>
+                                                        </select>
+                                                    </td>
+                                                </TR>
+                                                <TR>
+                                                    <td height=27 align=left>
+                                                        <input style="width: 113px" id="d_key" onClick="this.value='';" value="请输入关键字" maxLength="100">
+                                                        <input style="width: 50px" id="btn_search" value="搜索" type="button">
+                                                    </td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE><!--结束--><!--开始-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5 height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B><font color=#ffffff>企业培训</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right.jpg" width=5 height=30></td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; BORDER-RIGHT: #a4cbee 1px solid; PADDING-TOP: 3px"><!--培训课程-->
+                                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Lesson_New border=0 cellSpacing=0 cellPadding=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href="" target=_blank>行政工作统筹管理高级研修班</A></td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href="" target=_blank>ACCP软件工程师</A></td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href="" target=_blank>C#软件工程师</A></td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href="" target=_blank>思科CCNP资深网络工程师</A></td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href="" target=_blank>企业内部人力资源管理</A></td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href="" target=_blank>《压力与情绪管理》课程</A></td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href="" target=_blank>企业合理避税及涉税风险防范实战</A></td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A  href=""   target=_blank>运营/生产总监COO国际认证课</A></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE><!--开始-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5  height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B><font color=#ffffff>HR资讯</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right.jpg" width=5 height=30></td></TR>
+                                            </TBODY></TABLE></td></TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; BORDER-RIGHT: #a4cbee 1px solid; PADDING-TOP: 3px"><!--热门话题-->
+                                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Hr_Hot border=0
+                                               cellSpacing=0 cellPadding=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td style="PADDING-LEFT: 2px; PADDING-TOP: 2px" height=25 vAlign=top colSpan=2><A href="../Html/Info/426.html" target=_blank><font color=#ff0000>·<U><B> 公务员面试技巧：17类经典 </B></U></font></A></td></TR>
+                                                                <TR vAlign=top>
+                                                                    <td style="PADDING-LEFT: 5px" width=70>
+                                                                        <TABLE border=0 cellSpacing=1 cellPadding=2 bgColor=#dddddd>
+                                                                            <TBODY>
+                                                                                <TR>
+                                                                                    <td bgColor=#ffffff><IMG src="../img/Hr_3.gif" width=65 height=60></td></TR>
+                                                                            </TBODY></TABLE></td>
+                                                                    <td style="PADDING-LEFT: 4px; PADDING-RIGHT: 3px">
+                                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                            <TBODY>
+                                                                                <TR> <td><P><span id=lit_Hr_Hot__ctl0_lbl_Hr_Content>    1、有关“职业目标”问题的应答思路<BR>...</span> <A href="../Html/Info/426.html" target=_blank>[阅读全文]</A></P></td></TR>
+                                                                            </TBODY></TABLE>
+                                                                    </td></TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width=190 align=center>
+                                            <TBODY>
+                                                <TR> <td height=4></td></TR>
+                                                <TR> <td height=1 background="../img/line1.gif"></td></TR>
+                                                <TR>  <td height=4></td></TR>
+                                            </TBODY></TABLE>
+                                        <TABLE border=0 cellSpacing=1 cellPadding=2 width="100%" align=center>
+                                            <TBODY>
+                                                <TR align=middle>
+                                                    <td width="100%">[<A href="">人力管理</A>][<A
+                                                            href="">招聘选拔</A>][<A
+                                                            href="">管理评论</A>]</td></TR>
+                                                <TR align=middle>
+                                                    <td>[<A href="">业绩考核</A>][<A
+                                                            href="">薪酬制度</A>][<A
+                                                            href="">培训发展</A>]</td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=Hr1_lit_Hr border=0
+                                               cellSpacing=0 cellPadding=2>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A href="" target=_blank><font color=#333333>职场新手,你前进的方向有这些</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A href="" target=_blank><font color=#333333>岁末年初，当白领也遭遇讨薪时</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A href="" target=_blank><font color=#333333>不提高薪酬激励员工的15种方</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A href="" target=_blank><font color=#333333>单位不得以民族性别因素歧视劳</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A href="" target=_blank><font color=#333333>一流简历要避免的8大错误</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A href="" target=_blank><font color=#0000ff>逆向思维简历令你与众不同</font></A>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR>   <td height=5></td></TR>
+                            </TBODY>
+                        </TABLE><!--结束--><!--开始-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5   height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B><font color=#ffffff>联系我们</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right.jpg" width=5 height=30></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; BORDER-RIGHT: #a4cbee 1px solid; PADDING-TOP: 3px">
+                                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Contact border=0
+                                               cellSpacing=0 cellPadding=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td height=25 width=50 align=right>电 话：</td>
+                                                                    <td height=25>020-34506590 </td></TR>
+                                                                <TR>
+                                                                    <td height=25 align=right>传 真：</td>
+                                                                    <td height=25>020-34506590 </td></TR>
+                                                                <TR>
+                                                                    <td height=25 align=right>邮 件：</td>
+                                                                    <td height=25><A href="mailto:wrzcnet@wrzc.net">wrzcnet@wrzc.net
+                                                                        </A></td>
+                                                                </TR>
+                                                            </TBODY>
+                                                        </TABLE>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                    </td>
+                    <td width=10>&nbsp;</td>
+                    <td>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BORDER-TOP: #ff8c1f 2px solid; BORDER-left: #ff8c1f 2px solid; BORDER-right: #ff8c1f 2px solid; PADDING-TOP: 6px"
+                                        background="../img/left6_bg2.gif">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR vAlign=top>
+                                                    <td width=380>
+                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td>
+                                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                            <TBODY>
+                                                                                <TR>
+                                                                                    <td style="PADDING-TOP: 2px" width=57 align=middle><IMG
+                                                                                            src="../img/Right1_title1.gif" width=44 height=40></td>
+                                                                                    <td>
+                                                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                                            <TBODY>
+                                                                                                <TR>
+                                                                                                    <td style="PADDING-TOP: 2px" height=20 align=left><B>企业招聘</B> <font color=#666666>Enterprise Recruitment</font></td>
+                                                                                                </TR>
+                                                                                                <TR>
+                                                                                                    <td style="PADDING-TOP: 3px" height=20 align=left>[<A
+                                                                                                            href="">网络招聘</A>][<A
+                                                                                                            href="">招聘VIP</A>][<A
+                                                                                                            href="">现场招聘</A>][<A
+                                                                                                            href="">校园招聘</A>][<A
+                                                                                                            href="">兼职招聘</A>]</td></TR>
+                                                                                            </TBODY></TABLE>
+                                                                                    </td></TR>
+                                                                            </TBODY></TABLE>
+                                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                            <TBODY>
+                                                                                <TR>
+                                                                                    <td style="PADDING-LEFT: 5px; PADDING-TOP: 5px"><font color=#666666>莲湖人才通过互联网全方位为企业客户供各种网上招聘、现场和校园招聘服务，为客户节约招聘成本，实现最优招聘效益..</font>.
+                                                                                        <A class=grey20 href="">更详细</A></td></TR>
+                                                                            </TBODY></TABLE>
+                                                                    </td></TR>
+                                                            </TBODY></TABLE>
+                                                    </td>
+                                                    <td width=10>&nbsp;</td>
+                                                    <td>
+                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td>
+                                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                            <TBODY>
+                                                                                <TR>
+                                                                                    <td style="PADDING-TOP: 2px" width=57 align=middle><IMG src="../img/Right1_title3.gif" width=44 height=40></td>
+                                                                                    <td>
+                                                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                                            <TBODY>
+                                                                                                <TR>
+                                                                                                    <td style="PADDING-TOP: 2px" height=20 align=left><B>猎头服务</B> <font color=#666666>Headhunting Services</font></td></TR>
+                                                                                                <TR>
+                                                                                                    <td style="PADDING-TOP: 3px" height=20 align=left>[<A
+                                                                                                            href="">高级猎头</A>][<A
+                                                                                                            href="">加入高级人才库</A>][<A
+                                                                                                            href="">企业在线下单</A>]</td></TR>
+                                                                                            </TBODY></TABLE>
+                                                                                    </td></TR>
+                                                                            </TBODY></TABLE>
+                                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                            <TBODY>
+                                                                                <TR>
+                                                                                    <td style="PADDING-LEFT: 5px; PADDING-TOP: 5px"><font color=#666666>拥有专业的顾问团队与庞大的高级人才库，致力为客户提供高级管理人才寻访、评估、招聘服务，保证服务的准确和高效..</font>. <A
+                                                                                            class=grey20
+                                                                                            href="">更详细</A></td></TR>
+                                                                            </TBODY>
+                                                                        </TABLE>
+                                                                    </td></TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=6></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR vAlign=top>
+                                                    <td width=380>
+                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td>
+                                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                            <TBODY>
+                                                                                <TR>
+                                                                                    <td style="PADDING-TOP: 2px" width=57 align=middle><IMG
+                                                                                            src="../img/Right1_title2.gif" width=44 height=40></td>
+                                                                                    <td>
+                                                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                                            <TBODY>
+                                                                                                <TR>
+                                                                                                    <td style="PADDING-TOP: 2px" height=20 align=left><B>视频服务</B> <font color=#666666>Video Services</font></td></TR>
+                                                                                                <TR>
+                                                                                                    <td style="PADDING-TOP: 3px" height=20 align=left>[<A
+                                                                                                            href="">企业视频展示</A>][<A
+                                                                                                            href="">视频录制</A>][<A
+                                                                                                            href="">视频面试</A>]</td></TR>
+                                                                                            </TBODY></TABLE>
+                                                                                    </td></TR>
+                                                                            </TBODY>
+                                                                        </TABLE>
+                                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                            <TBODY>
+                                                                                <TR>
+                                                                                    <td style="PADDING-LEFT: 5px; PADDING-TOP: 5px"><font color=#666666>采用最先进的视频解决方案(FMS技术)为企业和求职者实现在线视频招聘面试，同时可在线录制企业视频和直观高效的展示...</font>
+                                                                                        <A class=grey20
+                                                                                           href="">更详细</A></td></TR>
+                                                                            </TBODY></TABLE>
+                                                                    </td></TR>
+                                                            </TBODY>
+                                                        </TABLE>
+                                                    </td>
+                                                    <td width=10>&nbsp;</td>
+                                                    <td>
+                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td>
+                                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                            <TBODY>
+                                                                                <TR>
+                                                                                    <td style="PADDING-TOP: 2px" width=57 align=middle><IMG
+                                                                                            src="../img/Right1_title4.gif" width=44 height=40></td>
+                                                                                    <td>
+                                                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                                            <TBODY>
+                                                                                                <TR>
+                                                                                                    <td style="PADDING-TOP: 2px" height=20 align=left><B>企业培训</B> <font color=#666666>Enterprise Training</font></td></TR>
+                                                                                                <TR>
+                                                                                                    <td style="PADDING-TOP: 3px" height=20 align=left>[<A
+                                                                                                            href="">职业培训</A>][<A
+                                                                                                            href="">企业内训</A>][<A
+                                                                                                            href="">资格认证</A>][<A
+                                                                                                            href="">公开课</A>]</td></TR>
+                                                                                            </TBODY>
+                                                                                        </TABLE>
+                                                                                    </td></TR>
+                                                                            </TBODY></TABLE>
+                                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                            <TBODY>
+                                                                                <TR>
+                                                                                    <td style="PADDING-LEFT: 5px; PADDING-TOP: 5px"><font color=#666666>拥有企业内训公开课等各类课程，已为大量大中型企业及其员工和社会专业人士提供了非常有针对性的培训方案与课程体系...</font>
+                                                                                        <A class=grey20   href="../Train/">更详细</A></td></TR>
+                                                                            </TBODY></TABLE>
+                                                                    </td></TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>   <td><IMG src="../img/left6_bottom.gif" width=770  height=12></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <!--图片广告90*31-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR> <td height=2></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=26 width=11><IMG src="../img/right10_left.jpg" width=11  height=26></td>
+                                    <td style="PADDING-LEFT: 8px; PADDING-TOP: 3px"
+                                        background="../img/right10_bg.jpg"><STRONG><font color=#333333><b>高级人才</b></font></STRONG></td>
+                                    <td style="PADDING-RIGHT: 5px; PADDING-TOP: 3px"
+                                        background="../img/right10_bg.jpg" width=120 align=right><font color=#cccccc>|</font> <A href="">更多</A></td>
+                                    <td width=5><IMG src="../img/right10_right.jpg" width=5   height=26></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR>  <td height=1></td></TR>
+                            </TBODY>
+                        </TABLE><!--高级人才-->
+                        <TABLE border=0 cellSpacing=1 cellPadding=3 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td width="10%" align=middle><B>编号</B></td>
+                                    <td width="6%" align=middle><B>性别</B></td>
+                                    <td width="8%" align=middle><B>学历</B></td>
+                                    <td width="14%"><B>工作年限</B></td>
+                                    <td><B>期望职位</B></td>
+                                    <td width="14%"><B>期望地区</B></td>
+                                    <td width="12%" align=middle><B>发布日期</B></td>
+                                <TR> <td bgColor=#eeeeee height=1 colSpan=7></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Person_Advance  border=0 cellSpacing=0 cellPadding=0>
+                            <TBODY>
+                                <TR>
+                                    <td>&nbsp;</td>
+                                </TR>
+                                <TR>
+                                    <td>&nbsp;</td>
+                                </TR>
+                                <TR>
+                                    <td>&nbsp;</td>
+                                </TR>
+                                <TR>
+                                    <td>&nbsp;</td>
+                                </TR>
+                                <TR>
+                                    <td>&nbsp;</td>
+                                </TR>
+                                <TR>
+                                    <td>&nbsp;</td>
+                                </TR>
+
+                                <TR>
+                                    <td>
+                                        <!--
+                                        <TABLE border=0 cellSpacing=1 cellPadding=3 width="100%">
+                                        <TBODY>
+                                        <TR>
+                                        <td width="10%" align=middle><A href="../Html/AdvancePerson/100010.html"
+                                        target=_blank>N100010 </A></td>
+                                        <td width="6%" align=middle><span id=lit_Person_Advance__ctl9_lbl_Advance_Sex>男</span></td>
+                                        <td width="8%" align=middle><span id=lit_Person_Advance__ctl9_lbl_Advance_Degree>本科</span></td>
+                                        <td width="14%"><span id=lit_Person_Advance__ctl9_lbl_WorkYears>4年以上</span></td>
+                                        <td><span id=lit_Person_Advance__ctl9_lbl_WishJob>人事总监</span></td>
+                                        <td width="14%"><span id=lit_Person_Advance__ctl9_lbl_WorkPlace>广东深圳</span></td>
+                                        <td width="12%" align=middle>2008-4-17 </td></TR>
+                                        <TR>
+                                        <td bgColor=#eeeeee height=1
+                                        colSpan=7></td></TR></TBODY></TABLE>
+                                        -->
+                                    </td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR>
+                                    <td height=6></td></TR>
+                            </TBODY>
+                        </TABLE><!--我们的客户-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=26 width=11><IMG src="../img/right10_left.jpg" width=11  height=26></td>
+                                    <td style="PADDING-LEFT: 8px; PADDING-TOP: 3px"  background="../img/right10_bg.jpg"><STRONG><font color=#333333>案例客户</font></STRONG></td>
+                                    <td style="PADDING-RIGHT: 5px; PADDING-TOP: 3px"
+                                        background="../img/right10_bg.jpg" width=120 align=right><font color=#cccccc>|</font> <A href="">更多</A></td>
+                                    <td width=5><IMG src="../img/right10_right.jpg" width=5    height=26></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <!--图片广告130*45-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="95%" align="center" style="text-align:center; border:1px solid #CCCCCC; margin-bottom:5px;">
+                            <TBODY>
+                                <TR> <td style="width: 12%; HEIGHT: 48px" vAlign=top align=middle><A  href="" target=_blank><img src="../img/com/bai0.jpg" width="120" height="41" border="0"></A> </td>
+                                    <td style="width: 12%; HEIGHT: 48px" vAlign=top align=middle><img src="../img/com/bai08.jpg" width="120" height="41" > </td>
+                                    <td style="width: 12%; HEIGHT: 48px" vAlign=top align=middle><img src="../img/com/bai09.jpg" width="120" height="41" > </td>
+                                    <td style="width: 12%; HEIGHT: 48px" vAlign=top align=middle><A  href="" target=_blank><img src="../img/com/bai0_2010-8-23_9018_143.jpg" width="120" height="41"  border="0"></A> </td>
+                                    <td style="width: 12%; HEIGHT: 48px" vAlign=top align=middle><img src="../img/com/bai0_2010-7-20_111851_802.jpg" width="120" height="41" > </td>
+                                    <td style="width: 12%; HEIGHT: 48px" vAlign=top align=middle><img src="../img/com/bai0_2010-7-20_123041_177.jpg" width="120" height="41" > </td>
+                                </TR>
+                                <TR>
+                                    <td style="width: 12%; HEIGHT: 48px" vAlign=top align=middle><img src="../img/com/bai0_2010-7-20_133434_787.jpg" width="120" height="41" > </td>
+                                    <td style="width: 12%; HEIGHT: 48px" vAlign=top align=middle><img src="../img/com/bai0_2010-7-22_8348_818.jpg" width="120" height="41" > </td>
+                                    <td style="width: 12%; HEIGHT: 48px" vAlign=top align=middle><A href="" target=_blank><img src="../img/com/bai0_2010-7-22_83146_443.jpg" width="120" height="41"  border="0"></A> </td>
+                                    <td style="width: 12%; HEIGHT: 48px" vAlign=top align=middle><A href="" target=_blank><img src="../img/com/bai0_2010-7-22_84312_802.jpg" width="120" height="41"  border="0"></A> </td>
+
+                                    <td style="width: 12%; HEIGHT: 48px" vAlign=top align=middle><img src="../img/com/bai0_2010-7-23_101645_914.jpg" width="120" height="41" > </td>
+                                    <td style="width: 12%; HEIGHT: 48px" vAlign=top align=middle><img src="../img/com/bai0_2010-7-26_994_271.jpg" width="120" height="41" > </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=26 width=11><IMG src="../img/right10_left.jpg" width=11  height=26></td>
+                                    <td style="PADDING-LEFT: 8px; PADDING-TOP: 3px"
+                                        background="../img/right10_bg.jpg"><STRONG><font color=#333333>自荐人才</font></STRONG></td>
+                                    <td style="PADDING-RIGHT: 5px; PADDING-TOP: 3px"
+                                        background="../img/right10_bg.jpg" width=120 align=right><font color=#cccccc>|</font> <A href="Showme.aspx">更多</A></td>
+                                    <td width=5><IMG src="../img/right10_right.jpg" width=5   height=26></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR>
+                                    <td height=1></td></TR></TBODY></TABLE><!--英才自荐-->
+                        <TABLE border=0 cellSpacing=1 cellPadding=3 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td width="10%" align=middle><B>编号</B></td>
+                                    <td width="10%"><B>姓名</B></td>
+                                    <td width="6%" align=middle><B>性别</B></td>
+                                    <td width="8%" align=middle><B>学历</B></td>
+                                    <td width="22%"><B>现从事职位</B></td>
+                                    <td width="34%"><B>求职信</B></td>
+                                    <td align=middle><B>发布日期</B></td></TR>
+                                <TR>
+                                    <td bgColor=#eeeeee height=1   colSpan=7></td></TR>
+                            </TBODY>
+                        </TABLE>
+                    </td></TR>
+            </TBODY>
+        </TABLE><!--页面底部-->
+        <IFRAME align=middle src="com_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_index_com" />
+<script type="text/javascript" src="../js/common.js"></script>

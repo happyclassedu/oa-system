@@ -1,0 +1,472 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>最新人才-人才网管理系统php1.0地区版</title>
+        <LINK href="../css/Style.css" type="text/css" rel=stylesheet>
+    </head>
+    <body>
+        <!--页面顶部-->
+        <IFRAME height=117 src="./com_header.htm" frameBorder=0 width="100%" scrolling=no align=middle></IFRAME><!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=100% bgColor=#ffffff><!--页面左侧--><!--分页控制-->
+                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 5px" width="50%"><span id=lbl_HeadPage>显示<font color=#ff3300>75</font>条，第<font color=#ff3300>1-30</font>条，共<font color=#ff3300>3</font>页</span></td>
+                                    <td style="PADDING-RIGHT: 5px" align=right><A id=hyl_HeadFirst
+                                                                                  style="COLOR: gray">首页</A> <A id=hyl_HeadPrev
+                                                                                  style="COLOR: gray">前页</A> <A id=hyl_HeadNext
+                                                                                  href="">后页</A>
+                                        <A id=hyl_HeadLast
+                                           href="">尾页</A>
+                                        | 跳到 <input id=txt_HeadPageNo style="width: 30px" value=1  name=txt_HeadPageNo> <input id=btn_HeadGo type=submit value=GO name=btn_HeadGo></td></TR>
+                            </TBODY>
+                        </TABLE><!--简历列表-->
+                        <TABLE id=lit_ResumeList style="width: 100%; BORDER-COLLAPSE: collapse"
+                               cellSpacing=0 cellPadding=0 border=0>
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR bgColor=#1a72cc>
+                                                    <td width="5%">&nbsp;</td>
+                                                    <td width="15%"><STRONG><font color=#ffffff>姓  名</font></STRONG></td>
+                                                    <td align=middle width="6%"><STRONG><font color=#ffffff>性别</font></STRONG></td>
+                                                    <td align=middle width="8%"><STRONG><font color=#ffffff>学历</font></STRONG></td>
+                                                    <td width="28%"><STRONG><font color=#ffffff>从事职业</font></STRONG></td>
+                                                    <td width="14%"><STRONG><font color=#ffffff>居住地区</font></STRONG></td>
+                                                    <td width="13%"><STRONG><font color=#ffffff>工作经验</font></STRONG></td>
+                                                    <td align=middle><STRONG><font color=#ffffff>更新日期</font></STRONG></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl1_chk_Resid type=checkbox value=10147    name=lit_ResumeList:_ctl1:chk_Resid></td>
+                                                    <td width="15%"><A    href=""
+                                                                          target=_blank>李晓琳</A><span id=lit_ResumeList__ctl1_lbl_Photo><IMG height=13 alt=照片  src="../img/Icon_Photo.gif"
+                                                                                               width=17 align=absMiddle></span><span id=lit_ResumeList__ctl1_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl1_lbl_Sex>女</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl1_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl1_lbl_CurrentJob>计算机软件</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl1_lbl_WorkPlace>上海</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl1_lbl_WorkYears>在校学生</span></td>
+                                                    <td align=middle>2009-11-17</td></TR>
+                                                <TR> <td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl2_chk_Resid type=checkbox value=10146   name=lit_ResumeList:_ctl2:chk_Resid></td>
+                                                    <td width="15%"><A   href=""
+                                                                         target=_blank>李晓遥</A><span id=lit_ResumeList__ctl2_lbl_Photo></span><span id=lit_ResumeList__ctl2_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl2_lbl_Sex>女</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl2_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl2_lbl_CurrentJob>人事专员</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl2_lbl_WorkPlace>北京</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl2_lbl_WorkYears>3年以上</span></td>
+                                                    <td align=middle>2009-11-5</td></TR>
+                                                <TR><td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl3_chk_Resid type=checkbox value=10145
+                                                                                       name=lit_ResumeList:_ctl3:chk_Resid></td>
+                                                    <td width="15%"><A   href=""
+                                                                         target=_blank>高诚瑞</A><span id=lit_ResumeList__ctl3_lbl_Photo><IMG height=13 alt=照片  src="../img/Icon_Photo.gif"
+                                                                                               width=17 align=absMiddle></span><span id=lit_ResumeList__ctl3_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl3_lbl_Sex>男</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl3_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl3_lbl_CurrentJob>计算机软件</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl3_lbl_WorkPlace>北京</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl3_lbl_WorkYears>应届毕业生</span></td>
+                                                    <td align=middle>2009-11-2</td></TR>
+                                                <TR> <td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl4_chk_Resid type=checkbox value=10138   name=lit_ResumeList:_ctl4:chk_Resid></td>
+                                                    <td width="15%"><A  href=""
+                                                                        target=_blank>廖明</A><span id=lit_ResumeList__ctl4_lbl_Photo></span><span id=lit_ResumeList__ctl4_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl4_lbl_Sex>男</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl4_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl4_lbl_CurrentJob>计算机软件</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl4_lbl_WorkPlace>北京</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl4_lbl_WorkYears>2年以上</span></td>
+                                                    <td align=middle>2008-9-2</td></TR>
+                                                <TR>
+                                                    <td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl5_chk_Resid type=checkbox value=10137   name=lit_ResumeList:_ctl5:chk_Resid></td>
+                                                    <td width="15%"><A  href=""
+                                                                        target=_blank>廖明</A><span id=lit_ResumeList__ctl5_lbl_Photo></span><span id=lit_ResumeList__ctl5_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl5_lbl_Sex>男</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl5_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl5_lbl_CurrentJob>互联网开发及应用</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl5_lbl_WorkPlace>北京</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl5_lbl_WorkYears>3年以上</span></td>
+                                                    <td align=middle>2008-9-2</td></TR>
+                                                <TR> <td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl6_chk_Resid type=checkbox value=10130
+                                                                                        name=lit_ResumeList:_ctl6:chk_Resid></td>
+                                                    <td width="15%"><A   href=""   target=_blank>王建明</A><span id=lit_ResumeList__ctl6_lbl_Photo><IMG height=13 alt=照片  src="../img/Icon_Photo.gif"
+                                                                                               width=17 align=absMiddle></span><span id=lit_ResumeList__ctl6_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl6_lbl_Sex>男</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl6_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl6_lbl_CurrentJob>渠道/分销专员</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl6_lbl_WorkPlace>广东广州</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl6_lbl_WorkYears>2年以上</span></td>
+                                                    <td align=middle>2008-7-29</td></TR>
+                                                <TR> <td bgColor=#dddddd colSpan=8   height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl7_chk_Resid type=checkbox value=10111   name=lit_ResumeList:_ctl7:chk_Resid></td>
+                                                    <td width="15%"><A    href=""
+                                                            target=_blank>高琪</A><span id=lit_ResumeList__ctl7_lbl_Photo></span><span id=lit_ResumeList__ctl7_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl7_lbl_Sex>男</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl7_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl7_lbl_CurrentJob>销售经理</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl7_lbl_WorkPlace>广东广州</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl7_lbl_WorkYears>3年以上</span></td>
+                                                    <td align=middle>2008-4-9</td></TR>
+                                                <TR> <td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl8_chk_Resid type=checkbox value=10093    name=lit_ResumeList:_ctl8:chk_Resid></td>
+                                                    <td width="15%"><A href="" target=_blank>徐会银</A><span id=lit_ResumeList__ctl8_lbl_Photo></span><span id=lit_ResumeList__ctl8_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl8_lbl_Sex>女</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl8_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl8_lbl_CurrentJob>互联网开发及应用</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl8_lbl_WorkPlace>天津</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl8_lbl_WorkYears>1年以上</span></td>
+                                                    <td align=middle>2008-1-18</td></TR>
+                                                <TR><td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl9_chk_Resid type=checkbox value=10092       name=lit_ResumeList:_ctl9:chk_Resid></td>
+                                                    <td width="15%"><A  href=""    target=_blank>王华</A><span id=lit_ResumeList__ctl9_lbl_Photo></span><span id=lit_ResumeList__ctl9_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl9_lbl_Sex>男</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl9_lbl_Degree>中专</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl9_lbl_CurrentJob>IT-品管/技术支持</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl9_lbl_WorkPlace>江苏</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl9_lbl_WorkYears>4年以上</span></td>
+                                                    <td align=middle>2008-1-18</td></TR>
+                                                <TR> <td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl10_chk_Resid type=checkbox value=10091   name=lit_ResumeList:_ctl10:chk_Resid></td>
+                                                    <td width="15%"><A href=""
+                                                                       target=_blank>王梦洁</A><span id=lit_ResumeList__ctl10_lbl_Photo></span><span id=lit_ResumeList__ctl10_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl10_lbl_Sex>女</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl10_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl10_lbl_CurrentJob>IT-管理</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl10_lbl_WorkPlace>安徽</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl10_lbl_WorkYears>2年以上</span></td>
+                                                    <td align=middle>2008-1-18</td></TR>
+                                                <TR><td bgColor=#dddddd colSpan=8 height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl16_chk_Resid type=checkbox value=10085
+                                                            name=lit_ResumeList:_ctl16:chk_Resid></td>
+                                                    <td width="15%"><A
+                                                            href=""     target=_blank>王键</A><span id=lit_ResumeList__ctl16_lbl_Photo></span><span id=lit_ResumeList__ctl16_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl16_lbl_Sex>男</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl16_lbl_Degree>大专</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl16_lbl_CurrentJob>证券/金融/投资</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl16_lbl_WorkPlace>重庆</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl16_lbl_WorkYears>3年以上</span></td>
+                                                    <td align=middle>2008-1-18</td></TR>
+                                                <TR> <td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl17_chk_Resid type=checkbox value=10082   name=lit_ResumeList:_ctl17:chk_Resid></td>
+                                                    <td width="15%"><A href=""
+                                                                       target=_blank>王云</A><span id=lit_ResumeList__ctl17_lbl_Photo></span><span id=lit_ResumeList__ctl17_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl17_lbl_Sex>男</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl17_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl17_lbl_CurrentJob>证券/金融/投资</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl17_lbl_WorkPlace>广东</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl17_lbl_WorkYears>5年以上</span></td>
+                                                    <td align=middle>2008-1-17</td></TR>
+                                                <TR> <td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl18_chk_Resid type=checkbox value=10081  name=lit_ResumeList:_ctl18:chk_Resid></td>
+                                                    <td width="15%"><A  href=""
+                                                                        target=_blank>甘露</A><span id=lit_ResumeList__ctl18_lbl_Photo></span><span id=lit_ResumeList__ctl18_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl18_lbl_Sex>女</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl18_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl18_lbl_CurrentJob>保险</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl18_lbl_WorkPlace>北京</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl18_lbl_WorkYears>2年以上</span></td>
+                                                    <td align=middle>2008-1-17</td></TR>
+                                                <TR> <td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl19_chk_Resid type=checkbox value=10080    name=lit_ResumeList:_ctl19:chk_Resid></td>
+                                                    <td width="15%"><A   href=""
+                                                                         target=_blank>许飞宏</A><span id=lit_ResumeList__ctl19_lbl_Photo></span><span id=lit_ResumeList__ctl19_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl19_lbl_Sex>男</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl19_lbl_Degree>大专</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl19_lbl_CurrentJob>生产/营运</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl19_lbl_WorkPlace>甘肃</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl19_lbl_WorkYears>4年以上</span></td>
+                                                    <td align=middle>2008-1-17</td></TR>
+                                                <TR> <td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl20_chk_Resid type=checkbox value=10079   name=lit_ResumeList:_ctl20:chk_Resid></td>
+                                                    <td width="15%"><A  href=""
+                                                                        target=_blank>李香</A><span id=lit_ResumeList__ctl20_lbl_Photo></span><span id=lit_ResumeList__ctl20_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl20_lbl_Sex>女</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl20_lbl_Degree>中专</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl20_lbl_CurrentJob>质量/安全管理</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl20_lbl_WorkPlace>湖南</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl20_lbl_WorkYears>2年以上</span></td>
+                                                    <td align=middle>2008-1-17</td></TR>
+                                                <TR><td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl21_chk_Resid type=checkbox value=10078   name=lit_ResumeList:_ctl21:chk_Resid></td>
+                                                    <td width="15%"><A  href=""  target=_blank>许庭</A>
+                                                        <span id=lit_ResumeList__ctl21_lbl_Photo></span><span id=lit_ResumeList__ctl21_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl21_lbl_Sex>男</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl21_lbl_Degree>大专</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl21_lbl_CurrentJob>工程/机械/能源</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl21_lbl_WorkPlace>重庆</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl21_lbl_WorkYears>2年以上</span></td>
+                                                    <td align=middle>2008-1-17</td></TR>
+                                                <TR> <td bgColor=#dddddd colSpan=8 height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl22_chk_Resid type=checkbox value=10076   name=lit_ResumeList:_ctl22:chk_Resid></td>
+                                                    <td width="15%"><A href=""
+                                                                       target=_blank>刘小军</A><span id=lit_ResumeList__ctl22_lbl_Photo></span><span id=lit_ResumeList__ctl22_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl22_lbl_Sex>男</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl22_lbl_Degree>硕士</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl22_lbl_CurrentJob>物流/仓储</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl22_lbl_WorkPlace>上海</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl22_lbl_WorkYears>5年以上</span></td>
+                                                    <td align=middle>2008-1-17</td></TR>
+                                                <TR><td bgColor=#dddddd colSpan=8 height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl23_chk_Resid type=checkbox value=10075 name=lit_ResumeList:_ctl23:chk_Resid></td>
+                                                    <td width="15%"><A   href=""  target=_blank>孟涵</A>
+                                                        <span id=lit_ResumeList__ctl23_lbl_Photo></span><span id=lit_ResumeList__ctl23_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl23_lbl_Sex>女</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl23_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl23_lbl_CurrentJob>服装/纺织/皮革</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl23_lbl_WorkPlace>广东</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl23_lbl_WorkYears>5年以上</span></td>
+                                                    <td align=middle>2008-1-17</td></TR>
+                                                <TR><td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl24_chk_Resid type=checkbox value=10074   name=lit_ResumeList:_ctl24:chk_Resid></td>
+                                                    <td width="15%"><A   href=""   target=_blank>江峰</A>
+                                                        <span id=lit_ResumeList__ctl24_lbl_Photo></span><span id=lit_ResumeList__ctl24_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl24_lbl_Sex>男</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl24_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl24_lbl_CurrentJob>生物/制药/医疗器械</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl24_lbl_WorkPlace>北京</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl24_lbl_WorkYears>8年以上</span></td>
+                                                    <td align=middle>2008-1-17</td></TR>
+                                                <TR> <td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl25_chk_Resid type=checkbox value=10073   name=lit_ResumeList:_ctl25:chk_Resid></td>
+                                                    <td width="15%"><A  href=""  target=_blank>刘戴勤</A><span id=lit_ResumeList__ctl25_lbl_Photo></span><span id=lit_ResumeList__ctl25_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl25_lbl_Sex>男</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl25_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl25_lbl_CurrentJob>化工</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl25_lbl_WorkPlace>江苏</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl25_lbl_WorkYears>4年以上</span></td>
+                                                    <td align=middle>2008-1-17</td></TR>
+                                                <TR> <td bgColor=#dddddd colSpan=8   height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width="5%"><input id=lit_ResumeList__ctl30_chk_Resid type=checkbox value=10067 name=lit_ResumeList:_ctl30:chk_Resid></td>
+                                                    <td width="15%"><A href=""
+                                                                       target=_blank>张馨兰</A><span id=lit_ResumeList__ctl30_lbl_Photo></span><span id=lit_ResumeList__ctl30_lbl_Video></span></td>
+                                                    <td align=middle width="6%"><span id=lit_ResumeList__ctl30_lbl_Sex>女</span></td>
+                                                    <td align=middle width="8%"><span id=lit_ResumeList__ctl30_lbl_Degree>本科</span></td>
+                                                    <td width="28%"><span id=lit_ResumeList__ctl30_lbl_CurrentJob>影视/媒体</span></td>
+                                                    <td width="14%"><span id=lit_ResumeList__ctl30_lbl_WorkPlace>福建</span></td>
+                                                    <td width="13%"><span id=lit_ResumeList__ctl30_lbl_WorkYears>1年以上</span></td>
+                                                    <td align=middle>2008-1-16</td></TR>
+                                                <TR> <td bgColor=#dddddd colSpan=8  height=1></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE><!--分页控制-->
+                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 5px" width="50%"><span id=lbl_FootPage>显示<font color=#ff3300>75</font>条，第<font color=#ff3300>1-30</font>条，共<font color=#ff3300>3</font>页</span></td>
+                                    <td style="PADDING-RIGHT: 5px" align=right><A id=hyl_FootFirst  style="COLOR: gray">首页</A>
+                                        <A id=hyl_FootPrev    style="COLOR: gray">前页</A> <A id=hyl_FootNext  href="">后页</A>
+                                        <A id=hyl_FootLast  href="">尾页</A>
+                                        | 跳到 <input id=txt_FootPageNo style="width: 30px" value=1  name=txt_FootPageNo> <input id=btn_FootGo type=submit value=GO name=btn_FootGo></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                            <TBODY>
+                                <TR> <td height=5></td></TR>
+                            </TBODY>
+                        </TABLE><!--全选和操作按扭-->
+                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 9px" align=left width="10%"><input id=chk_All onclick=SetAllChecked(this) type=checkbox name=chk_All>  全选</td>
+                                    <td style="PADDING-RIGHT: 5px" align=right><!--邀请面试--><A    onclick=ResumeFun(1); href=""><IMG height=20  src="../img/button3_1.gif"   width=80 border=0></A> <!--收藏简历-->
+                                        <A onclick=ResumeFun(2);   href=""><IMG height=20  src="../img/button3_2.gif"  width=80 border=0></A> <!--浏览简历--><A onclick=ResumeFun(3);   href="">
+                                            <IMG height=20   src="../img/button3_3.gif" width=80 border=0></A></td></TR>
+                            </TBODY>
+                        </TABLE>
+                    </td>
+                </TR>
+            </TBODY>
+        </TABLE>
+        <!--页面底部-->
+        <IFRAME height=117 src="com_footer.htm" frameBorder=0 width="100%" scrolling=no align=middle></IFRAME>
+    </body>
+</html>

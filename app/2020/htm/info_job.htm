@@ -1,0 +1,520 @@
+<HTML>
+<HEAD>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<TITLE>招聘中心 - 发布职位 - 人才网管理系统php1.0地区版</TITLE>
+<LINK href="../css/www.css" type="text/css" rel=stylesheet>
+</HEAD>
+<BODY>
+ <!--页面顶部-->
+<IFRAME align=middle src="com_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+<TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <td width=188><!--菜单-->
+        <IFRAME align=middle src="com_left.htm" frameBorder=0 width="100%" scrolling=no height=500 name="comright"></IFRAME>
+	</td>
+    <td width=10></td>
+    <td bgColor=#ffffff><!--右侧-->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom background="../img/title1_bg.gif" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <td align=middle width=80 background="../img/title1_bg2.jpg" height=28>
+                    <A id="a_info_job" class="white" href=""><B>发布职位</B></A>
+                </td>
+                <td width=5></td>
+                <td align=middle width=80 background="../img/title1_bg3.jpg">
+                     <A id="a_list_job"  href="">职位列表</A>
+                </td>
+                <td>&nbsp;</td>
+              </TR>
+              </TBODY>
+            </TABLE>
+          </td>
+        </TR>
+        <TR>
+          <td height=5></td>
+        </TR>
+        </TBODY>
+      </TABLE><!--职位信息-->
+      <TABLE id="info_tb" cellSpacing=0 cellPadding=0 width="100%" border=0>
+          <TBODY>
+              <TR>
+                  <td>
+                      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                          <TBODY>
+                              <TR>
+                                  <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid" height=25>
+                                      <STRONG>职位信息</STRONG> (<font color=#ff3300>*</font>为必填项)
+                                  </td>
+                              </TR>
+                              <TR>
+                                  <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px" height=25>
+                                      <font color=#777777>为确保贵公司能快速、准确的招聘到合适的人才，请仔细填写发布职位时的各项数据</font>
+                                  </td>
+                              </TR>
+                          </TBODY>
+                      </TABLE>
+                      <TABLE cellSpacing=1 cellPadding=4 width="100%" bgColor=#dddddd border=0>
+                          <TBODY>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 职位名称：</td>
+                                  <td>
+                                        <input id="d_name" style="width: 230px" maxLength=100 type="text"/>
+                                        <input id="d_cid" type="hidden"/>
+                                        <input id="d_cname" type="hidden"/>
+                                        <span id="d_error_name"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 12px" width=100>
+                                      <font color=#ff3300>*</font> 职位性质：
+                                  </td>
+                                  <td>
+                                      <select id="d_type" style="width: 230px">
+                                          <option value="" selected>请选择</option>
+                                          <option value="家庭用工">家庭用工</option>
+                                          <option value="工厂用工">工厂用工</option>
+                                          <option value="企业用工">企业用工</option>
+                                          <option value="其他">其他</option>
+                                      </select>
+                                      <span id="d_error_type"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 12px" width=100>
+                                      <font color=#ff3300>*</font> 岗位性质：
+                                  </td>
+                                  <td>
+                                      <select id="d_type2" style="width: 230px">
+                                          <option value="" selected>请选择</option>
+                                          <option value="全职">全职</option>
+                                          <option value="兼职">兼职</option>
+                                          <option value="临时">临时</option>
+                                          <option value="实习">实习</option>
+                                          <option value="见习">见习</option>
+                                      </select>
+                                      <span id="d_error_type2"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100>职位编号：</td>
+                                  <td>
+                                      <input id="d_job_num" style="width: 230px" maxLength=30/>
+                                      <font color=#777777>公司内部的自定编号</font>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 12px" width=100>
+                                      <font color=#ff3300>*</font> 招聘时间：
+                                  </td>
+                                  <td>
+                                  <input id="d_begin" style="width: 110px"/>到<input id="d_end" style="width: 110px"/>
+                                  <span id="d_error_begin"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 12px" width=100>
+                                      <font color=#ff3300>*</font> 招聘人数：
+                                  </td>
+                                  <td>
+                                      <input id="d_num" style="width: 230px" maxLength=4 value=0 /> 人
+                                      <span id="d_error_num"><font color=#777777>(默认为0,表示若干人)</font></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 12px" width=100>
+                                      <font color=#ff3300>*</font> 职位类别：
+                                  </td>
+                                  <td>
+                                      <!--职位类别-->
+                                      <select id="d_big_classification" style="width: 115px">
+                                          <option value="" selected>请选择</option>
+                                      </select>
+                                      <select id="d_small_classification" style="width: 115px">
+                                          <option value="" selected>请选择</option>
+                                      </select>
+                                      <span id="d_error_classification"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 12px" width=100>
+                                      <font color=#ff3300>*</font> 工作地区：
+                                  </td>
+                                  <td><!--工作地区-->
+                                      <select id="d_addr1" style="width: 115px">
+                                          <option value="" selected>请选择</option>
+                                      </select>
+                                      <select id="d_addr2" style="width: 115px">
+                                          <option value="" selected>请选择</option>
+                                      </select>
+                                      <span id="d_error_addr"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 12px" width=100>
+                                      <font color=#ff3300>*</font> 职位描述：
+                                  </td>
+                                  <td>
+                                      <font color=#777777>请填写职位描述及任职要求等内容，(限3000字 <A onClick="javascript:alert('您输入了'+ document.all.d_intro.value.length +'个字');" href="javascript:"><font color=#777777>计算字数</font></A>) </font><BR>
+                                      <TEXTAREA id="d_intro" style="width: 350px" rows=6></TEXTAREA>
+                                      <BR />
+                                      <span id="d_error_intro"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 12px" width=100>
+                                      <font color=#ff3300>*</font>薪资金额：
+                                  </td>
+                                  <td>
+                                      <input id="d_pay" style="width: 230px"  value="0"/>人民币
+                                      <span id="d_error_pay"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100><font color=#ff3300>*</font>薪资类型：</td>
+                                  <td>
+                                      <select id="d_pay_type" style="width: 230px">
+                                          <option value="" selected>请选择</option>
+                                          <option value="元/日">按日</option>
+                                          <option value="元/月">按月</option>
+                                          <option value="元/季">按季</option>
+                                          <option value="元/年">按年</option>
+                                      </select>
+                                      <span id="d_error_pay_type"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100><font color=#ff3300>*</font>招聘状态：</td>
+                                  <td>
+                                      <select id="d_zwstate" style="width: 230px">
+                                          <option value="正在招聘中">正在招聘中</option>
+                                          <option value="已招满">已招满</option>
+                                          <option value="暂停招聘">暂停招聘</option>
+                                          <option value="其他">其他</option>
+                                      </select>
+                                      <span id="d_error_zwstate"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100><font color=#ff3300>*</font>所属部门：</td>
+                                  <td>
+                                      <input id="d_org_name" style="width: 230px" />
+                                      <span id="d_error_org_name"></span>
+                                  </td>
+                              </TR>
+                          </TBODY>
+                      </TABLE><!--应聘要求-->
+                      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                          <TBODY>
+                              <TR>
+                                  <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid" height=25>
+                                      <STRONG>应聘要求</STRONG>
+                                  </td>
+                              </TR>
+                              <TR>
+                                  <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px" height=25>
+                                      <font color=#777777>填写应聘要求可以在求职者搜索职位时更好地搜索到贵企业的职位</font>
+                                  </td>
+                              </TR>
+                          </TBODY>
+                      </TABLE>
+                      <TABLE cellSpacing=1 cellPadding=4 width="100%" bgColor=#dddddd border=0>
+                          <TBODY>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100>学历要求：</td>
+                                  <td>
+                                      <select id="d_degree" style="width: 150px">
+                                          <option value="" selected>不限</option>
+                                          <option value="博士">博士</option>
+                                          <option value="MBA">MBA</option>
+                                          <option value="本科">本科</option>
+                                          <option value="大专">大专</option>
+                                          <option  value="中专">中专</option>
+                                          <option value="中技">中技</option>
+                                          <option value="高中">高中</option>
+                                          <option value="初中">初中</option>
+                                      </select>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100>工作经验：</td>
+                                  <td>
+                                      <select id="d_history" style="width: 150px">
+                                          <option value="" selected>不限</option>
+                                          <option value="在校学生">在校学生</option>
+                                          <option value="应届毕业生">应届毕业生</option>
+                                          <option value="1年以上">1年以上</option>
+                                          <option value="2年以上">2年以上</option>
+                                          <option value="3年以上">3年以上</option>
+                                          <option value="4年以上">4年以上</option>
+                                          <option value="5年以上">5年以上</option>
+                                          <option value="8年以上">8年以上</option>
+                                          <option value="10年以上">10年以上</option>
+                                      </select>
+                                  </td>
+                              </TR>
+                               <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100>形象气质：</td>
+                                  <td>
+                                      <select id="d_looks" style="width: 150px">
+                                          <option value="佳">佳</option>
+                                          <option value="良好">良好</option>
+                                          <option value="一般">一般</option>
+                                          <option value="差">差</option>
+                                      </select>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100>
+                                      性别要求：
+                                  </td>
+                                  <td>
+                                      <select id="d_sex" style="width: 150px">
+                                          <option value="" selected>不限</option>
+                                          <option value="男">男</option>
+                                          <option  value="女">女</option>
+                                      </select>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100>年龄范围：</td>
+                                  <td>
+                                      <select id="d_age_1" style="width: 74px">
+                                          <option value="" selected>不限</option>
+                                          <option value=18>18</option>
+                                          <option value=19>19</option>
+                                          <option value=20>20</option>
+                                          <option value=21>21</option>
+                                          <option value=22>22</option>
+                                          <option value=23>23</option>
+                                          <option value=24>24</option>
+                                          <option value=25>25</option>
+                                          <option value=26>26</option>
+                                          <option value=27>27</option>
+                                          <option value=28>28</option>
+                                          <option value=29>29</option>
+                                          <option value=30>30</option>
+                                          <option value=31>31</option>
+                                          <option value=32>32</option>
+                                          <option value=33>33</option>
+                                          <option value=34>34</option>
+                                          <option value=35>35</option>
+                                          <option value=36>36</option>
+                                          <option value=37>37</option>
+                                          <option value=38>38</option>
+                                          <option value=39>39</option>
+                                          <option value=40>40</option>
+                                          <option value=41>41</option>
+                                          <option value=42>42</option>
+                                          <option value=43>43</option>
+                                          <option value=44>44</option>
+                                          <option value=45>45</option>
+                                          <option value=46>46</option>
+                                          <option value=47>47</option>
+                                          <option value=48>48</option>
+                                          <option value=49>49</option>
+                                          <option value=50>50</option>
+                                          <option value=51>51</option>
+                                          <option value=52>52</option>
+                                          <option value=53>53</option>
+                                          <option value=54>54</option>
+                                          <option value=55>55</option>
+                                          <option value=56>56</option>
+                                          <option value=57>57</option>
+                                          <option value=58>58</option>
+                                          <option value=59>59</option>
+                                          <option value=60>60</option>
+                                      </select>
+                                      <select id="d_age_2" style="width: 75px">
+                                          <option value="" selected>不限</option>
+                                          <option value=18>18</option>
+                                          <option value=19>19</option>
+                                          <option value=20>20</option>
+                                          <option value=21>21</option>
+                                          <option value=22>22</option>
+                                          <option value=23>23</option>
+                                          <option value=24>24</option>
+                                          <option value=25>25</option>
+                                          <option value=26>26</option>
+                                          <option value=27>27</option>
+                                          <option value=28>28</option>
+                                          <option value=29>29</option>
+                                          <option value=30>30</option>
+                                          <option value=31>31</option>
+                                          <option value=32>32</option>
+                                          <option value=33>33</option>
+                                          <option value=34>34</option>
+                                          <option value=35>35</option>
+                                          <option value=36>36</option>
+                                          <option value=37>37</option>
+                                          <option value=38>38</option>
+                                          <option value=39>39</option>
+                                          <option value=40>40</option>
+                                          <option value=41>41</option>
+                                          <option value=42>42</option>
+                                          <option value=43>43</option>
+                                          <option value=44>44</option>
+                                          <option value=45>45</option>
+                                          <option value=46>46</option>
+                                          <option value=47>47</option>
+                                          <option value=48>48</option>
+                                          <option value=49>49</option>
+                                          <option value=50>50</option>
+                                          <option value=51>51</option>
+                                          <option value=52>52</option>
+                                          <option value=53>53</option>
+                                          <option value=54>54</option>
+                                          <option value=55>55</option>
+                                          <option value=56>56</option>
+                                          <option value=57>57</option>
+                                          <option value=58>58</option>
+                                          <option value=59>59</option>
+                                          <option value=60>60</option>
+                                      </select>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100>语言能力：</td>
+                                  <td>
+                                      <select id="d_langsign" style="width: 74px">
+                                          <option value="" selected>不限</option>
+                                          <option value="中文普通话">中文普通话</option>
+                                          <option value="粤语">粤语</option>
+                                          <option value="上海话">上海话</option>
+                                          <option value="闽南语">闽南语</option>
+                                          <option value="英语">英语</option>
+                                          <option value="日语">日语</option>
+                                          <option value="法语">法语</option>
+                                          <option value="德语">德语</option>
+                                          <option value="俄语">俄语</option>
+                                          <option value="韩语">韩语</option>
+                                          <option value="西班牙语">西班牙语</option>
+                                          <option value="葡萄牙语">葡萄牙语</option>
+                                          <option value="阿拉伯语">阿拉伯语</option>
+                                          <option value="意大利语">意大利语</option>
+                                         
+                                      </select>
+                                      <select id="d_langlevel" style="width: 75px">
+                                          <option value="" selected>不限</option>
+                                          <option value="一般">一般</option>
+                                          <option value="良好">良好</option>
+                                          <option value="熟练">熟练</option>
+                                          <option value="精通">精通</option>
+                                      </select>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 12px" width=100>其他要求：
+                                  </td>
+                                  <td>
+                                      <font color=#777777>请填写其他职位要求的内容，(限500字 <A onClick="javascript:alert('您输入了'+ document.all.d_other.value.length +'个字');" href="javascript:"><font color=#777777>计算字数</font></A>) </font><BR>
+                                      <TEXTAREA id="d_other" style="width: 350px" rows=6></TEXTAREA>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100>简历语言：</td>
+                                  <td>
+                                      <select id="d_rgift" style="width:150px" >
+                                          <option value="" selected>不限</option>
+                                          <option value="中文">中文</option>
+                                          <option value="英文">英文</option>
+                                      </select>
+                                  </td>
+                              </TR>
+                          </TBODY>
+                      </TABLE>
+                      <!--联系方式-->
+                      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                          <TBODY>
+                              <TR>
+                                  <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid" height=25><STRONG>联系方式</STRONG> </td>
+                              </TR>
+                              <TR>
+                                  <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px" height=25>
+                                      <font color=#777777>为确保求职者能及时联系到贵公司，建议您填写多种联系方式</font>
+                                  </td>
+                              </TR>
+                          </TBODY>
+                      </TABLE>
+                      <TABLE cellSpacing=1 cellPadding=4 width="100%" bgColor=#dddddd border=0>
+                          <TBODY>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 12px" width=100>
+                                      <font color=#ff3300>*</font> 联 系 人：</td>
+                                  <td>
+                                      <input id="d_linkman" style="width: 230px" type="text"/>
+                                      <span id="d_error_linkman"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 联系电话：</td>
+                                  <td>
+                                      <input id="d_tel" style="width: 230px" type="text"/>
+                                      <span id="d_error_tel"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100>传真号码：</td>
+                                  <td>
+                                      <input id="d_fax" style="width: 230px" type="text"/>
+                                      <span id="d_error_fax"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 电子邮箱：</td>
+                                  <td>
+                                      <input id="d_email" style="width: 230px" type="text">
+                                      <span id="d_error_email"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100>邮政编码：</td>
+                                  <td>
+                                      <input id="d_postcode" style="width: 230px" type="text">
+                                      <span id="d_error_postid"></span>
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100>通讯地址：</td>
+                                  <td>
+                                      <input id="d_address" style="width: 230px" type="text">
+                                  </td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100><font color=#ff3300>*</font>面试地址：</td>
+                                  <td><input id="d_testaddr" style="width: 230px" type="text"></td>
+                              </TR>
+                              <TR bgColor=#ffffff>
+                                  <td style="PADDING-LEFT: 24px" width=100><font color=#ff3300>*</font>面试时间：</td>
+                                  <td><input id="d_testtime" style="width: 230px" type="text"></td>
+                              </TR>
+                          </TBODY>
+                      </TABLE>
+                  </td>
+              </TR>
+          </TBODY>
+      </TABLE>
+      <!--保存-->
+      <TABLE id="act_tb" cellSpacing=1 cellPadding=4 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>&nbsp;</td>
+          <td>
+              <input id="btn_save" style="width: 60px; HEIGHT: 30px" type="button" value="保存"/>
+          </td>
+        </TR>
+        </TBODY>
+      </TABLE>
+    </td>
+  </TR>
+  </TBODY>
+</TABLE><!--页面底部-->
+<IFRAME align=middle src="com_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+</BODY>
+</HTML>
+<input type="hidden" id="g_id" value="info_job" />
+<script type="text/javascript" src="../js/common.js"></script>

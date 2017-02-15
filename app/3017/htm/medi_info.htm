@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>医疗保险管理--新增</title>
+    </head>
+
+    <body>
+    <table width="800" align="center" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center">
+                <div style="width:100px; float:left"><input id="btn_refresh" type="button" value="刷新"/>
+              <input id="btn_close" type="button" value="关闭" /></div>
+            <span id="sys_title">新增/查看/修改XXX医疗保险登记表</span></td>
+          </tr>
+          <tr class="view_hidden">
+            <td align="center">
+                <input id="btn_add" type="button" value="新增参保人员信息"/>
+                <input id="btn_edit" type="button" value="修改参保人员信息"/>
+                <input id="btn_del" type="button" value="删除参保人员信息"/>
+                <input id="btn_shift" type="button" value="转入/转出医疗关系"/>
+                <input id="btn_print" type="button" value="打印交款单"/>
+                <input id="btn_pay" type="button" value="医保缴费"/>
+                <input id="btn_mcard" type="button" value="办理/领取医保卡"/>
+                <input id="btn_mtext" type="button" value="办理/领取医保本"/>
+            </td>
+          </tr>
+          <tr>
+            <td><table id="info_table" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tbody>
+                <tr>
+                  <td class="itb_title" colspan="2">参保人员基本信息</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="100">姓名：</td>
+                      <td><input id="i_name" type="text"/></td>
+                      <td width="100">性别：</td>
+                      <td>
+                          <select id="i_sex">
+                              <option value="">不限</option>
+                              <option value="男">男</option>
+                              <option value="女">女</option>
+                          </select>
+                      </td>
+                      <td width="100">档案编号：</td>
+                      <td><input id="i_record_code" type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td>出生年月：</td>
+                      <td><input id="i_birth" type="text"/></td>
+                      <td>身份证号：</td>
+                      <td><input id="i_idcard" type="text"/></td>
+                      <td>档案状态：</td>
+                      <td><input id="i_record_state" type="text"/></td>
+                    </tr>
+                    <tr>
+                      <td>备注：</td>
+                      <td colspan="5"><textarea id="i_remark" rows="4"></textarea></td>
+                    </tr>
+                  </table></td>
+                </tr>
+                <tr class="tr_1">
+                  <td class="itb_title" colspan="2">医保信息</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="100">医保编号：</td>
+                      <td><input id="i_medi_code" type="text"/></td>
+                      <td width="100">银行卡号：</td>
+                      <td><input id="i_bank_idcard" type="text"/></td>
+                      <td width="100">医保类别：</td>
+                      <td>
+                          <select id="i_medi_type">
+                              <option value="">不限</option>
+                              <option value="在职">在职</option>
+                              <option value="军转">军转</option>
+                          </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>医保状态：</td>
+                      <td>
+                          <select id="i_medi_state">
+                              <option value="">不限</option>
+                              <option value="在库">在库</option>
+                              <option value="转出">转出</option>
+                              <option value="退休">退休</option>
+                          </select>
+                      </td>
+                      <td>医保本状态：</td>
+                      <td>
+                          <select id="i_medi_book_state">
+                              <option value="">不限</option>
+                              <option value="未办理">未办理</option>
+                              <option value="已办理">已办理</option>
+                              <option value="已领取">已领取</option>
+                          </select>
+                      </td>
+                      <td>医保卡状态：</td>
+                      <td>
+                          <select id="i_medi_card_state">
+                              <option value="">不限</option>
+                              <option value="未办理">未办理</option>
+                              <option value="已办理">已办理</option>
+                              <option value="已领取">已领取</option>
+                          </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>参保时间：</td>
+                      <td><input id="i_jmedi_time" type="text"/></td>
+                      <td>截止缴费年月：</td>
+                      <td><input id="i_pay_deadtime" type="text" /></td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td class="itb_title">参保信息</td>
+                </tr>
+                <tr>
+                  <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="100">住址：</td>
+                      <td><input id="i_address" type="text"/></td>
+                      <td width="100">固定电话：</td>
+                      <td><input id="i_tel_0" type="text"/></td>
+                      <td width="100">手机：</td>
+                      <td><input id="i_tel_1" type="text"/></td>
+                    </tr>
+                    <tr>
+                      <td>紧急联系人：</td>
+                      <td><input  id="i_sos_person" type="text"/></td>
+                      <td>紧急联系电话：</td>
+                      <td><input id="i_sos_tel" type="text"/></td>
+                      <td>邮箱：</td>
+                      <td><input id="i_email" type="text" /></td>
+                    </tr>
+                  </table></td>
+                </tr>
+              </tbody>
+            </table></td>
+          </tr>
+          <tr>
+              <td align="center"><input id="btn_save" type="button" value="保存信息"></td>
+          </tr>
+          <tr class="view_hidden">
+            <td id="sys_title" align="center">操作日志</td>
+          </tr>
+          <tr class="view_hidden">
+              <td align="center">
+                  <input id="btn_medi" type="button" value="医保管理">
+                  <input id="btn_base" type="button" value="基本业务">
+                  <input id="btn_all" type="button" value="全部业务">
+              </td>
+          </tr>
+          <tr class="view_hidden">
+            <td align="center"><table id="list_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <thead>
+              <tr class="itb_title">
+                <td>序号</td>
+                <td>时间</td>
+                <td>操作员</td>
+                <td>业务类型</td>
+                <td>事件</td>
+                <td>内容</td>
+              </tr>
+              </thead>
+               <tbody>
+              <tr>
+                <td>1</td>
+                <td>2010-07-09 11：17：14 </td>
+                <td>方琰</td>
+                <td>养老管理</td>
+                <td>养老打票</td>
+                <td>续费时间段：2010-01-01--2010-12-01 <br>
+                缴费金额：5755.68元 缴费比率：100%</td>
+              </tr>
+               </tbody>
+            </table></td>
+          </tr>
+           <tr class="view_hidden">
+                <td id="jpage_box">
+                    <table class="jpage_page_box" width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <table class="jpage_page_panel" border="0" cellspadding="0" cellspacing="0">
+                                    <tr valign="middle">
+                                        <td><select class="jpage_val_show_num" title="每页显示条数">
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="15">15</option>
+                                                <option value="20">20</option>
+                                                <option value="25">25</option>
+                                                <option value="40">40</option>
+                                            </select>
+                                        </td>
+                                        <td><div class="jpage_separator"></div></td>
+                                        <td><div class="jpage_btn jpage_btn_no_1" title="第一页"></div></td>
+                                        <td><div class="jpage_btn jpage_btn_prev" title="上一页"></div></td>
+                                        <td><div class="jpage_separator"></div></td>
+                                        <td>第&nbsp;<input class="jpage_val_page_now" type="text" title="当前显示的页码"
+                                                          />&nbsp;页 / 共&nbsp;<span class="jpage_val_page_all"></span>&nbsp;页</td>
+                                        <td><div class="jpage_separator"></div></td>
+                                        <td><div class="jpage_btn jpage_btn_next" title="下一页"></div></td>
+                                        <td><div class="jpage_btn jpage_btn_last" title="最末页"></div></td>
+                                        <td><div class="jpage_separator"></div></td>
+                                        <td><div class="jpage_btn jpage_btn_refresh" title="刷新 当前页"></div></td>
+                                        <td><div class="jpage_separator"></div></td>
+                                        <td>共有&nbsp;<span class="jpage_val_info_all"></span>&nbsp;条记录，显示第
+                                            &nbsp;<span class="jpage_val_info_s"></span>&nbsp;条&nbsp;-&nbsp;第&nbsp;<span class="jpage_val_info_e"></span>&nbsp;条记录
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="medi_info" />
+<script type="text/javascript" src="../js/common.js"></script>

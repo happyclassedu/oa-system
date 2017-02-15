@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>信息列表_养老金计发标准设置</title>
+    </head>
+    <body>
+        <!--开始__基本功能区-->
+        <div id="box_title">
+            <span id="sys_title">养老金计发标准--信息列表</span>
+            <div id="box_tools">
+                <span id="box_search">
+                    <input id="val_search" type="text" />
+                    &nbsp;
+                    <input id="btn_search" type="button" value="搜索"/>
+                </span>
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_add" type="button"  value="新增"/>
+            </div>
+        </div>
+        <!--结束__基本功能区-->
+        <!--开始__信息列表区-->
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="45" align="center" />
+            <col width="100" align="center" />
+            <col width="200" align="center" />
+            <col width="200" />
+            <col width="167"  align="center" />
+            <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>标准年份</td>
+                    <td>养老金计发标准</td>
+                    <td>备注</td>
+                    <td>管理</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="btn_box">
+                        <input class="btn_view" type="button" value="查看" />&nbsp;&nbsp;                       　
+                        <input class="btn_edit" type="button" value="修改" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息列表区-->
+        <!--开始__列表排序区-->
+        <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td id="jpage_box"></td>
+            </tr>
+        </table>
+        <!--开始__结束排序区-->
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_ins_pay" />
+<script type="text/javascript" src="../js/common.js"></script>

@@ -1,0 +1,81 @@
+
+/* bl_list_right s */
+
+#bl_list_right {
+  float:right;
+  width:720px;
+  padding-right:2px;
+}
+
+#bl_list_right h1 {
+  font-size:12px;
+  line-height:30px;
+  padding-left:30px;
+  background:url(../img/list_bg.jpg) left top no-repeat;
+}
+
+#bl_list_right h1 a {
+  color:#000000;
+  text-decoration:none;
+}
+
+#bl_list_right ul {
+  padding:5px 40px;
+  border:solid #e2e2e2;
+  border-width:0 1px;
+}
+
+#bl_list_right ul li {
+  list-style:none;
+}
+
+#bl_list_right ul li a {
+  /*display:block;*/
+  color:#000000;
+  line-height:30px;
+  text-decoration:none;
+}
+
+#bl_list_right ul li a:hover {
+  color:#FF0000;
+}
+
+#bl_list_right span {
+  float:right;
+}
+
+
+/* 换页 s */
+#page_box {
+    height: 35px;
+    text-align: center;
+    border:1px solid #e2e2e2;
+	border-top:none;
+}
+
+#page_box a {
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    line-height: 21px;
+    margin: 0 4px;
+    padding: 0 6px;
+    border: #DBDBDB 1px solid;
+    color: #333333;
+    font-size: 12px;
+}
+
+#page_box a:hover {
+    background:#DEF1FF;
+    color: #FF0000;
+    text-decoration:none;
+}
+
+#page_box .page_now {
+    background:#DEF1FF;
+    color: #FF0000;
+    font-weight: 700;
+
+}
+/* 换页 e */
+/* bl_list_right e */

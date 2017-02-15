@@ -1,0 +1,55 @@
+<div id="news_box">
+    <h2><a class="title" href="<!--{$ws.index_menu1.url}-->"><!--{$ws.index_menu1.name}--></a><a class="more" href="<!--{$ws.index_menu1.url}-->">更多...</a></h2>
+    <div id="news_img_box">
+    </div>
+    <div id="news_txt_box">        
+        <!--{ foreach item=tmp from=$ws.index_news1 }-->
+        <a href="<!--{$tmp.url}-->" target="_blank"><!--{$tmp.name}--></a>
+        <!--{ /foreach }-->
+    </div>
+</div>
+<div id="banner_box">
+    <img src="../img/banner.jpg" alt="" />
+</div>
+<div id="more_box">
+    <div>
+        <!--党建知识-->
+        <h2>
+            <a class="title" href="<!--{$ws.index_menu2.url}-->"><!--{$ws.index_menu2.name}--></a>
+            <a class="more" href="<!--{$ws.index_menu2.url}-->">更多...</a>
+        </h2>
+        <!--{ foreach item=tmp from=$ws.index_news2 }-->
+        <a href="<!--{$tmp.url}-->" target="_blank"><!--{$tmp.name}--></a>
+        <!--{ /foreach }-->
+    </div>
+    <div>
+        <!--党务指南-->
+        <h2>
+            <a class="title" href="<!--{$ws.index_menu3.url}-->"><!--{$ws.index_menu3.name}--></a>
+            <a class="more" href="<!--{$ws.index_menu3.url}-->">更多...</a>
+        </h2>
+        <!--{ foreach item=tmp from=$ws.index_news3 }-->
+        <a href="<!--{$tmp.url}-->" target="_blank"><!--{$tmp.name|truncate_i:20:"…"}--></a>
+        <!--{ /foreach }-->
+    </div>
+    <div>
+        <!--支部建设-->
+        <h2>
+            <a class="title" href="<!--{$ws.index_menu4.url}-->"><!--{$ws.index_menu3.name}--></a>
+            <a class="more" href="<!--{$ws.index_menu4.url}-->">更多...</a>
+        </h2>
+        <!--{ foreach item=tmp from=$ws.index_news4 }-->
+        <a href="<!--{$tmp.url}-->" target="_blank"><!--{$tmp.name}--></a>
+        <!--{ /foreach }-->
+    </div>
+    <div>
+        <!--党员风采-->
+        <h2>
+            <a class="title" href="<!--{$ws.index_menu5.url}-->"><!--{$ws.index_menu3.name}--></a>
+            <a class="more" href="<!--{$ws.index_menu5.url}-->">更多...</a>
+        </h2>
+        <!--{ foreach item=tmp from=$ws.index_news5 }-->
+        <a href="<!--{$tmp.url}-->" target="_blank"><!--{$tmp.name}--></a>
+        <!--{ /foreach }-->
+    </div>
+</div>

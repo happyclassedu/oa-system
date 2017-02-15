@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>招聘会管理</title>
+    </head>
+
+    <body>
+            <div id="box_title"> <span id="sys_title">招聘会职位--列表页面</span>
+            <div id="box_tools">
+                 <span id="box_search">
+                    搜索内容&nbsp;&nbsp;
+                    <input id="d_val_search" class="search" type="text"/> &nbsp;&nbsp;
+                    <input id="btn_search" type="button" value="搜索"/>&nbsp;&nbsp;
+                    <input id="btn_reset" type="button" value="清空"/>
+                </span>
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+              </div>
+        </div>
+        <table id="list_tb" class="content" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="5%" align="center"/>
+            <col width="10%" align="center"/>
+            <col width="10%" align="center"/>
+            <col width="15%" align="center"/>
+            <col width="15%" align="center"/>
+            <col width="10%" align="center"/>
+            <col width="10%" align="center"/>
+            <col width="10%" align="center"/>
+            <col width="5%" align="center"/>
+            <thead>
+                <tr class="title" align="center">
+                    <td>序号</td>
+                    <td>期次名称</td>
+                    <td>时间</td>
+                    <td>招聘会类型</td>
+                    <td>单位名称</td>
+                    <td>岗位A</td>
+                    <td>岗位B</td>
+                    <td>岗位C</td>
+                    <td>管理</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td class="btn_box" align="center">
+                        <input class="btn_view_job" type="button" value="复制" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td id="jpage_box"></td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_job" />
+<script type="text/javascript" src="../js/common.js"></script>

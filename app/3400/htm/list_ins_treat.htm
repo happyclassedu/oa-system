@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>待遇发放管理--待遇记录--列表</title>
+    </head>
+    <body>
+        <div id="box_title">
+            <span id="sys_title">待遇发放管理--待遇记录--列表</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>
+            </div>
+        </div>
+         <table id="search_tb"  width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td>公民身份证号：</td>
+                <td><input id="d_idcard" class="search" type="text"></td>
+                <td>姓名：</td>
+                <td><input id="d_name" class="search" type="text"></td>
+                <td>养老编号：</td>
+                <td><input id="d_ins_code" class="search" type="text"></td>
+                <td>&nbsp;</td>
+                <td><input id="btn_search" type="button" value="搜索"/></td>
+            </tr>
+        </table>
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="50"  align="center"/>
+            <col width="100"  align="center"/>
+            <col width="60"  align="center"/>
+            <col width="100"  align="center"/>
+            <col width="120"  align="center"/>
+            <col width="100" align="center"/>
+            <col width="60" align="center"/>
+            <col width="60" align="center"/>
+            <col width="60" align="center"/>
+            <col width="100" align="center"/>
+            <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>待遇业务</td>
+                    <td>姓名</td>
+                    <td>养老编号</td>
+                    <td>身份证号</td>
+                    <td>养老金标准</td>
+                    <td>发放金额</td>
+                    <td>发放状态</td>
+                    <td>备注</td>
+                    <td>发布时间</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>文本</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td id="jpage_box"></td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_ins_treat" />
+<script type="text/javascript" src="../js/common.js"></script>

@@ -1,0 +1,21 @@
+<!--列表页s-->
+<div id="gd_cen" class="div_gd_center">
+    <!--{include file="lefter`$ws.mk`.htm"}-->
+    <div id="gd_cen_list">
+       <!--{ include file="nav.htm" }-->
+       <!--{ foreach item=tmp from=$ws.news }-->
+       <span><!--{$tmp.atime|date_format:"%Y-%m-%d"}--></span><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+       <!--{ /foreach }-->
+	  <ul>
+	     <li>共<!--{$ws.page.info_num}-->条</li>
+	     <li>当前显示</li>
+	     <li>第<!--{$ws.page.page_now}-->页</li>
+	     <li>共<!--{$ws.page.page_num}-->页</li>
+	     <li><a id="page_first" href="<!--{$ws.page.first}-->">首页</a></li>
+	     <li><a id="page_prev" href="<!--{$ws.page.prev}-->">上页</a></li>
+	     <li><a id="page_next" href="<!--{$ws.page.next}-->">下页</a></li>
+	     <li><a id="page_last" href="<!--{$ws.page.last}-->">尾页</a></li>
+	  </ul>
+  </div>
+</div>
+<!--列表页e-->

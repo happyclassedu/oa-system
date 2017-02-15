@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>创建简历 - 工作经验 - 人才网站管理系统PHP1.0地区版</title>
+        <link href="../css/www.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <!--页面顶部-->
+        <IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                   <TR vAlign=top width=188>
+                    <td width=188><!--菜单-->
+                        <IFRAME align=left src="resume_left.htm" frameBorder=0 scrolling=no width="100%" height=500></IFRAME>
+                    </td>
+                    <td width=10></td>
+                    <td>
+                        <!--职业概况-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom  background="../img/title1_bg.gif" height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width=80 background="../img/title1_bg2.jpg" height=28><font color=#ffffff><B>工作经验</B></font></td>
+                                                    <td>&nbsp;</td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR> <td height=5></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                            <tr>
+                                <td style="PADDING-LEFT:5px"><font color="#777777">请在本页添加/修改工作经验信息；</font></td>
+                            </tr>
+                        </table>
+                        <TABLE id="list_tb" cellSpacing=1 cellPadding=4 width="100%" border=0>
+                            <col width="10%" align="center"/>
+                            <col width="20%" align="center"/>
+                            <col width="10%" align="center"/>
+                            <col width="20%" align="center"/>
+                            <col width="20%" align="center"/>
+                            <col width="10%" align="center"/>
+                            <thead>
+                                <TR bgColor=#dbedfb>
+                                    <td><STRONG>序号</STRONG></td>
+                                    <td><STRONG>工作时间</STRONG></td>
+                                    <td><STRONG>公司名称</STRONG></td>
+                                    <td><STRONG>所从事行业</STRONG></td>
+                                    <td><STRONG>所从事职业</STRONG></td>
+                                    <td><STRONG>操 作</STRONG></td>
+                                </TR>
+                            </thead>
+                            <TBODY>
+                                <TR>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="btn_box">
+                                        <input class="btn_edit" type="button" value="修改" />
+                                        <input class="btn_del" type="button" value="删除" />
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td id="jpage_box"></td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <!--新增/修改工作经验-->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td height="5"></td>
+                            </tr>
+                            <tr>
+                                <td height="28" style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid"><strong><span id="lbl_Operate">新增工作经验</span></strong>
+						(<font color="#ff3300">*</font> 为必填项)</td>
+                            </tr>
+                        </table>
+                        <TABLE id="info_tb" cellSpacing=1 cellPadding=4 width="100%" bgColor="#dddddd">
+                            <TBODY>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 工作时间：</td>
+                                    <td>
+                                        <input id="d_b_time" style="width: 100px" maxLength=50 type="text"/>-<input id="d_e_time" style="width: 110px" maxLength=50 type="text"/>
+                                        <input id="d_r_id" type="hidden"/>
+                                        <input id="d_i_type" type="hidden" value=""/>
+                                        <span id="d_error_time">(后两项不填表示至今)</span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 公司名称：</td>
+                                    <td>
+                                        <input id="d_name" style="width: 210px" maxLength=50 />
+                                        <span id="d_error_name"></span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 所从事行业：</td>
+                                    <td>
+                                        <select id="d_i_txt0" style="width: 210px">
+                                            <option value="" selected>请选择</option>
+                                        </select>
+                                        <span id="d_error_i_txt0"></span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 公司规模：</td>
+                                    <td>
+                                        <select id="d_i_txt1" style="width: 210px">
+                                            <option value="" selected>规模不限</option>
+                                            <option value=9>10人以下</option>
+                                            <option value=49>10～50人</option>
+                                            <option value=199>50～200人</option>
+                                            <option value=499>200～500人</option>
+                                            <option value=999>500～1000人</option>
+                                            <option value=1000>1000人以上</option>
+                                        </select>
+                                        <span id="d_error_i_txt1"></span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 公司性质：</td>
+                                    <td>
+                                        <select id="d_i_txt2" style="width: 210px">
+                                            <option value="" selected>请选择</option>
+                                            <option value="国有企业">国有企业</option>
+                                            <option value="外商独资">外商独资．外企办事处</option>
+                                            <option value="中外合营">中外合营(合资．合作)</option>
+                                            <option value="私营">私营．民营企业</option>
+                                            <option value="上市公司">上市公司</option>
+                                            <option value="股份制企业">股份制企业</option>
+                                            <option value="集体企业">集体企业</option>
+                                            <option value="乡镇企业">乡镇企业</option>
+                                            <option value="行政机关">行政机关</option>
+                                            <option value="社会团体．非盈利机构">社会团体．非盈利机构</option>
+                                            <option value="事业单位">事业单位</option>
+                                            <option value="跨国企业">跨国企业(集团)</option>
+                                            <option value="其他">其他</option>
+                                        </select>
+                                        <span id="d_error_i_txt2"></span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 所从事职业：</td>
+                                    <td>
+                                        <select id="d_i_txt3" style="width: 100px">
+                                            <option value="" selected>请选择</option>
+                                        </select>
+                                        &nbsp;
+                                        <select id="d_i_txt4"  style="width: 100px">
+                                            <option value=""  selected>请选择</option>
+                                        </select>
+                                        <span id="d_error_i_txt"></span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 所在部门：</td>
+                                    <td>
+                                        <input id="d_i_txt5" style="width: 210px" maxLength=50 type="text"/>
+                                        <span id="d_error_i_txt5"></span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100><font color=#ff3300>*</font>工作描述：</td>
+                                    <td>
+                                        <font color="#777777">描述您的职责范围、工作任务及取得的业绩等 (限500字 <a href="javascript:" onclick="javascript:alert('您输入了'+ document.all.d_intor.value.length +'个字');">
+                                                <font color="#777777">计算字数</font></a>) </font>
+                                        <br>
+                                        <textarea id="d_intor" rows="6"  style="width:350px;"></textarea>
+                                        <span id="d_error_intor"></span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100>离职原因：</td>
+                                    <td>
+                                       <input id="d_i_txt6" style="width: 210px" maxLength=50 type="text"/>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100>是否显示在简历中</td>
+                                    <td><!--<input id="i_major_desc" type=checkbox/> -->
+                                        <select id="d_open" style="width: 210px">
+                                            <option value="" >请选择</option>
+                                            <option value="1">是</option>
+                                            <option value="0">否</option>
+                                        </select>
+                                     </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <!--提交按扭-->
+                        <TABLE id="act_tb" cellSpacing=1 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100>&nbsp;</td>
+                                    <td>
+                                        <input id="btn_save" style="HEIGHT: 30px"  type="button" value="保 存"/>
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                    </td>
+                </TR>
+            </TBODY>
+        </TABLE>
+        <!--页面底部-->
+        <IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=220></IFRAME>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_resume_work" />
+<script type="text/javascript" src="../js/common.js"></script>

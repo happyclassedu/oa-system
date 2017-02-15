@@ -1,0 +1,68 @@
+* {
+    font-size:12px;
+	margin:0;
+}
+
+#centent {
+      width:780px;
+	  margin:0 auto;
+}
+
+#left {
+      float:left;
+	  margin:0;
+	  padding:0;
+}
+
+#list {
+     float:right;
+	 width:565px;
+	 margin:0;
+	 overflow:hidden;
+	 vertical-align:top;
+	 background:#fff;
+}
+
+#list h1 {
+	  line-height:27px;
+	  padding-left:70px;
+	  font-size:14px;
+	  border-bottom:1px solid #CCCCCC;
+	  color:#FFFFFF;
+	  background:url(../img/bj_03.gif) left bottom no-repeat;
+}
+
+/*#list ul a{
+      display:block;
+	  width:570px;
+	  line-height:30px;
+	  border-bottom:1px dashed #CCCCCC;
+      color: #000000;
+      text-decoration: none;
+}*/
+#list ul li{
+    float:left;
+    width: 565px;
+    height:27px;
+    overflow: hidden;
+    /*margin:0 20px;*/
+    list-style: none;
+    line-height:28px;
+	border-bottom:1px dashed #CCCCCC;
+	}
+	
+#list ul a {
+    color: #000000;
+    text-decoration: none;
+
+}
+
+#list ul span {
+      float:right;
+}
+
+#list h6 {
+      text-align:center;
+	  font-weight:normal;
+	  line-height:30px;
+}

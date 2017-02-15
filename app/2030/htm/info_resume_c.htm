@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>信息--网站管理</title>
+    </head>
+    <body>
+        <!--开始__基本功能区-->
+        <div id="box_title">
+            <span id="sys_title">网站管理--<span id="sys_state"></span>信息</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_add_resume_c" type="button"  value="新增"/>&nbsp;&nbsp;
+                <input id="btn_edit" type="button" value="修改"/>&nbsp;&nbsp;
+                <input id="btn_del" type="button" value="删除"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_down" type="button" value="简历下载"/>
+            </div>
+        </div>
+        <!--结束__基本功能区-->
+        <!--开始__信息内容区-->
+        <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">一、基本信息</td>
+                </tr>
+                <tr id="tr1" class="tr_0">
+                    <td>发布时间：</td>
+                    <td><input id="d_atime" type="text" /></td>
+                    <td>修改时间：</td>
+                    <td><input id="d_etime" type="text" /></td>
+                    <td>排序：</td>
+                    <td><input id="d_oid" type="text" /></td>
+                </tr>
+                <tr id="tr2" class="tr_1">
+                    <td>网站名称：</td>
+                    <td colspan="3">
+                        <input id="d_ws_name" type="text" />
+                    </td>
+                    <td>网站编号：</td>
+                    <td><input id="d_ws_id" type="text" /></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>应聘职位：</td>
+                    <td><input id="d_joba" type="text" /></td>
+                    <td>姓名：</td>
+                    <td><input id="d_name" type="text" /></td>
+                    <td>性别：</td>
+                    <td>
+                        <select id="d_sex">
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td>出生年月：</td>
+                    <td><input id="d_birth" type="text" /></td>
+                    <td>婚姻状况：</td>
+                    <td>
+                        <select id="d_marry">
+                            <option value="未婚">未婚</option>
+                            <option value="已婚">已婚</option>
+                            <option value="离异">离异</option>
+                        </select>
+                    </td>
+                    <td>毕业院校：</td>
+                    <td><input id="d_univ" type="text" /></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>学历：</td>
+                    <td>
+                        <select id="d_degree">
+                            <option value="大本">大本</option>
+                            <option value="大专">大专</option>
+                            <option value="研究生">研究生</option>
+                            <option value="博士">博士</option>
+                        </select>
+                    </td>
+                    <td>专业：</td>
+                    <td><input id="d_major" type="text" /></td>
+                    <td>毕业时间：</td>
+                    <td><input id="d_gradtime" type="text" /></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>电话：</td>
+                    <td><input id="d_tel" type="text" /></td>
+                    <td>邮件：</td>
+                    <td><input id="d_email" type="text" /></td>
+                    <td>联系地址：</td>
+                    <td><input id="d_addr" type="text" /></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>简历介绍：</td>
+                    <td colspan="5"><textarea id="d_remark" rows="3"></textarea></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>上传附件：</td>
+                    <td colspan="5">
+                        <input id="d_upload" type="file"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息内容区-->
+        <!--开始__保存操作区-->
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+             <tr id="box_act_url"  class="tr_1">
+                <td>
+                    保存后操作：&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input name="act_url" type="radio" value="add"/>继续新增栏目</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input name="act_url" type="radio" value="view" checked />查看该栏目</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input name="act_url" type="radio" value="close"/>关闭</label>
+                </td>
+            </tr>
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button" value="保存信息">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="btn_cancel" type="button" value="取消保存">
+                </td>
+            </tr>
+        </table>
+        <!--结束__保存操作区-->
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_resume_c" />
+<script type="text/javascript" src="../js/common.js"></script>

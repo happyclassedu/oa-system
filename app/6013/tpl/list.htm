@@ -1,0 +1,28 @@
+<div class="bl_960_cen">
+    <div id="bl_list_right">
+        <h1>当前位置：
+            <!--{ foreach item=tmp from=$ws.nav }-->
+            <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>&nbsp;&gt;&gt;&nbsp;
+            <!--{ foreachelse }-->
+            <!--{ /foreach }-->
+        </h1>
+        <ul>
+            <!--{ foreach item=tmp from=$ws.news }-->
+            <li><span><!--{$tmp.atime|date_format:"%Y-%m-%d"}--></span><a href="<!--{$tmp.url}-->"><!--{$tmp.name|truncate_i:46:"…"}--></a></li>
+            <!--{ /foreach }-->
+        </ul>
+        <div id="page_box">
+            <a id="info_num" href="#">共 <!--{$ws.page.info_num}--> 条</a>
+            <a id="page_num" href="#">共 <!--{$ws.page.page_num}--> 页</a>
+            <a id="page_now" href="#">第 <!--{$ws.page.page_now}--> 页</a>
+            <a id="page_first" href="<!--{$ws.page.first}-->">首页</a>
+            <a id="page_prev" href="<!--{$ws.page.prev}-->">上一页</a>
+            <!--{ foreach key=i item=tmp from=$ws.page.num }-->
+            <a id="page_<!--{$i}-->" href="<!--{$tmp}-->"><!--{$i}--></a>
+            <!--{ /foreach }-->
+            <a id="page_next" href="<!--{$ws.page.next}-->">下一页</a>
+            <a id="page_last" href="<!--{$ws.page.last}-->">尾页</a>
+        </div>
+    </div>
+    <!--{include file="lefter`$ws.mk`.htm"}-->
+</div>

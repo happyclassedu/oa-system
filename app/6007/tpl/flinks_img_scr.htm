@@ -1,0 +1,8 @@
+<!--links s-->
+<div id="footer_links" class="div_center">
+    <h2><a href="<!--{$ws.links_menu.url}-->"><!--{$ws.links_menu.name}--></a></h2>
+    <!--{ foreach item=tmp from=$ws.links }-->
+    <a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->" target="_blank"><img src="doc::<!--{$tmp.img}-->" /></a>
+    <!--{ /foreach }-->
+</div>
+<!--links e-->

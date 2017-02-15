@@ -1,0 +1,133 @@
+<div id="bl_center" class="bl_960_cen">
+    <div id="index_pics_box">
+        <ul id="index_pics">
+            <!--{ foreach item=tmp from=$ws.link_pics }-->
+            <li><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><img src="doc::<!--{$tmp.img}-->" /><p><!--{$tmp.name}--></p></a></li>
+            <!--{ /foreach }-->
+        </ul>
+    </div>
+     <div id="xwzx">
+        <h2 id="index_news0_title">
+            <!--{ foreach item=tmp from=$ws.index_news0_m }-->
+            <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+            <!--{ /foreach }-->
+        </h2>
+        <div class="zxjj">
+            <img src="../img/zxjj.gif" />
+            <p>　　这是一方写满了中华文明史，古老而神奇的土地，这是</p>
+            <p>一个洋溢着人类现代文明年轻而开放的新型城区。</p>
+            <p>这，就是碑林区，西安市中心城区之一，辖区面积二十</p>
+            <p>二平方公里，八个街道办事处，一百零三个社区，常住</p>
+            <p>人口八十三万。因区内驰名中外的“碑林”而得名。碑林区历史悠久，古迹众多。有被称为“金石宝库”的西安碑林博物馆。</p>
+            <p>    　　悠久的历史，中心的地理位置，使碑林区不但成为西安政治 <a class="zxxq" href="./info_8138.htm">详情点击</a></p>
+        </div>
+         <div class="zxjj">
+             <!--{ foreach item=tmp from=$ws.index_news0_1 }-->
+             <span><!--{$tmp.atime|date_format:"%Y-%m-%d"}--></span><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><!--{$tmp.name|truncate_i:24:"…"}--></a>
+             <!--{ /foreach }-->
+         </div>
+         <div class="zxjj">
+             <!--{ foreach item=tmp from=$ws.index_news0_2 }-->
+             <span><!--{$tmp.atime|date_format:"%Y-%m-%d"}--></span><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><!--{$tmp.name|truncate_i:24:"…"}--></a>
+             <!--{ /foreach }-->
+         </div>
+         <div class="zxjj">
+             <!--{ foreach item=tmp from=$ws.index_news0_3 }-->
+             <span><!--{$tmp.atime|date_format:"%Y-%m-%d"}--></span><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><!--{$tmp.name|truncate_i:24:"…"}--></a>
+             <!--{ /foreach }-->
+         </div>
+    </div>
+</div>
+<div id="zyxx" class="bl_960_cen">
+    <a><img src="../img/13.gif" /></a> <a href="#">重要信息 | Important Note</a> <a href="#">碑林区政府各部门信息公开目录</a> <a href="#">碑林区平面示意图</a> <a href="#">在线查询</a> <a href="#">档案查询</a>
+</div>
+<!--{include file="banner0`$ws.mk`.htm"}-->
+<div class="bl_960_cen">
+        <!--<h1><a href="{$ws.index_menu0.url}">{$ws.index_menu0.name}</a></h1>
+        <table align="center" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td valign="top"><img src="../img/ldxx.gif" /></td>
+                <td><p>姓名： 庾勇男</p>
+                    <p>职务：纪委书记</p>
+                    <p>职责：负责局党委纪律监察工作</p>
+                    <p>简介： 男，朝鲜族，1965年12月出生，吉林延吉人，1991年…</p></td>
+            </tr>
+        </table>
+		<img src="../img/bl_ad.jpg" />-->
+		<div class="grqz">
+      <h1><a href="#">个人求职</a></h1>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr class="grqz_title">
+    <td>姓名</td>
+    <td>性别</td>
+    <td>学历</td>
+    <td>毕业学校 </td>
+  </tr>
+  <!--{ foreach item=tmp from=$ws.index_resume }-->
+  <tr>
+      <td><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><!--{$tmp.name}--></a></td>
+      <td><a href="<!--{$tmp.url}-->" title="<!--{$tmp.sex}-->"><!--{$tmp.sex}--></a></td>
+      <td><a href="<!--{$tmp.url}-->" title="<!--{$tmp.degree}-->"><!--{$tmp.degree}--></a></td>
+      <td><a href="<!--{$tmp.url}-->" title="<!--{$tmp.univ}-->"><!--{$tmp.univ}--></a></td>
+  </tr>
+  <!--{ /foreach }-->
+</table>
+  </div>
+    <!--{include file="link0`$ws.mk`.htm"}-->
+    <div id="hydl">
+        <h2>会员登录</h2>
+        <ul>
+            <li>用户名：
+                <input id="txt_username"  type="text" />
+            </li>
+            <li>密　码：
+                <input id="txt_password"  type="text" />
+            </li>
+			<li>
+              <input id="btn_r_login" name="btn_r_login" type="radio" checked="checked" value="p" />
+              <label for="btn_r_login">个人会员</label>&nbsp;&nbsp;&nbsp;&nbsp;
+              <input id="btn_r_login_c" name="btn_r_login" type="radio" value="c" />
+              <label for="btn_r_login_c">企业会员</label>
+			</li>
+            <li> 　　
+                <input id="btn_login" type="button" value="登录" />
+                <input id="btn_reg" type="button" value="注册" />
+            </li>
+            <li> <img src="../img/yhxy.gif" /><a href="#">用户服务协议</a> 　　<a href="#">忘记密码？</a> </li>
+        </ul>
+    </div>
+</div>
+<!--{include file="link1`$ws.mk`.htm"}-->
+<div class="bl_960_cen">
+    <div class="bmfw">
+        <h1><a href="#">便民服务</a></h1>
+        <ul>
+            <!--{ foreach item=tmp from=$ws.index_menu2 }-->
+            <li><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a></li>
+            <!--{ /foreach }-->
+        </ul>
+    </div>
+    <div id="zcfg">
+        <h2 id="index_news1_title">
+            <!--{ foreach item=tmp from=$ws.index_news1 }-->
+            <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+            <!--{ /foreach }-->
+        </h2>
+        <!--{ foreach item=index_news from=$ws.index_news1 }-->
+        <ul>
+            <!--{ foreach item=tmp from=$index_news.news name=arr_index }-->
+            <li><span><!--{$tmp.atime|date_format:"%Y-%m-%d"}--></span><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><!--{$tmp.name|truncate_i:24:"…"}--></a></li>
+            <!--{ foreachelse }-->
+            <!--{ /foreach }-->
+        </ul>
+        <!--{ /foreach }-->
+    </div>
+    <div id="zxzp">
+        <h2><a href="#">最新招聘</a></h2>
+        <ul class="xwzx">
+            <!--{ foreach item=tmp from=$ws.link_coms }-->
+            <li><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->" target="_blank"><!--{$tmp.name_s|truncate_i:18:"…"}--></a></li>
+            <!--{ /foreach }-->
+        </ul>
+    </div>
+</div>

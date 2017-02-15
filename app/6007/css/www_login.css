@@ -1,0 +1,27 @@
+.login_box {
+    background: #EEEEEE;
+}
+
+.login_box span {
+    display: block;
+    height:35px;
+    padding-left:25px;
+    background: url('../img/dot2.gif') no-repeat 14px 16px;
+    color: #666666;
+    font-size: 12px;
+
+}
+
+.login_box table {
+    border-collapse:collapse;
+	font-size:12px;
+	margin:5px auto;
+}
+.login_box table td {
+    border:solid 1px #c7c7c7;
+	line-height:27px;
+}
+
+.login_box table tr {
+    background-color:expression('#F8F8F8,#EFEFEF'.split(',')[rowIndex%2]); 
+}

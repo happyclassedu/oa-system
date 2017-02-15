@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+    <HEAD>
+        <META http-equiv=Content-Type content="text/html; charset=utf-8">
+        <TITLE>我的简历 - 附加信息 -人才网管理系统php1.0地区版</TITLE>
+<LINK href="../css/www.css" type="text/css" rel="stylesheet">
+</HEAD>
+<BODY>
+<!--页面顶部-->
+<IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+<!--页面主体-->
+<TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <td width=188><!--菜单-->
+         <IFRAME align=left src="resume_left.htm" frameBorder=0 scrolling=no width="100%" height=500></IFRAME>
+    </td>
+    <td width=10></td>
+    <td bgColor=#ffffff><!--右侧-->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom  background="../img/title1_bg.gif" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <td align=middle width=80 background="../img/title1_bg2.jpg" height=28>
+                    <font color=#ffffff><B>附加信息</B></font>
+                </td>
+                <td>&nbsp;</td>
+              </TR>
+              </TBODY>
+            </TABLE>
+          </td>
+        </TR>
+        <TR>
+          <td height=5></td></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td style="PADDING-LEFT: 5px"><font color=#777777>请在本页添加/修改附加信息；</font></td></TR></TBODY></TABLE>
+      <TABLE cellSpacing=1 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td bgColor=#aaccef height=1></td>
+        </TR>
+        </TBODY>
+      </TABLE>
+        <!--附加信息列表-->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td height=5></td></TR>
+        <TR>
+        <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid" height=28>
+            <STRONG><span id=lbl_Operate>新增附加信息</span></STRONG> (<font color=#ff3300>*</font> 为必填项)</td>
+        </TR>
+        </TBODY>
+      </TABLE>
+      <TABLE cellSpacing=1 cellPadding=4 width="100%" bgColor=#dddddd
+        border=0><TBODY>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff0000>*</font> 主 题：</td>
+          <td>
+              <select id="d_add_topic" style="width: 200px">
+                  <option value="" selected>请选择</option>
+                  <option value="兴趣爱好">兴趣爱好</option>
+                  <option value="获得荣誉">获得荣誉</option>
+                  <option value="特长">特长</option>
+                  <option value="特殊技能">特殊技能</option>
+                  <option value="著作/论文">著作/论文</option>
+                  <option value="专利">专利</option>
+                  <option value="宗教信仰">宗教信仰</option>
+                  <option value="其他">其他</option>
+              </select>
+              <span id="d_error_add_topic"></span>
+        </td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff0000>*</font> 内 容：</td>
+          <td><font color=#777777>请详细填写相关内容 (限1500字 <A href="javascript:" onclick="javascript:alert('您输入了'+ document.all.d_add_content.value.length +'个字');"><font color=#777777>计算字数</font></A>) </font><BR>
+            <TEXTAREA id="d_add_content" style="width: 450px" rows=12></TEXTAREA>
+            <BR><span id="d_error_add_content"></span>
+        </td>
+        </TR>
+        <!--<TR bgColor=#ffffff>
+        <td style="PADDING-LEFT: 24px" width=100>是否显示在简历中</td>
+        <td><input id="i_major_desc" type=checkbox/>
+            <select id="d_open" style="width: 100px">
+                <option value="" >请选择</option>
+                <option value="1">是</option>
+                <option value="0">否</option>
+            </select>
+        </td>
+        </TR>-->
+         </TBODY>
+      </TABLE>
+     <!--新增-->
+      <TABLE id="act_tb" cellSpacing=1 cellPadding=4 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td style="PADDING-LEFT: 24px" width=100>&nbsp;</td>
+          <td align=left>
+             <input id="btn_save" style="width: 60px; HEIGHT: 30px"  type="button" value="保存"/>
+          </td>
+        </TR>
+        </TBODY>
+      </TABLE>
+      <!--修改-->
+      <!--页面左侧 结束-->
+    </td>
+  </TR>
+  </TBODY>
+</TABLE>
+<!--页面底部-->
+<IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+</BODY>
+</HTML>
+<input type="hidden" id="g_id" value="info_resume_other" />
+<script type="text/javascript" src="../js/common.js"></script>

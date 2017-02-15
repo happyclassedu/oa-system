@@ -1,0 +1,17 @@
+<!-- link1 s -->
+<div class="bl_linkads bl_960_cen">
+    <ul>
+        <!--{ foreach item=tmp from=$ws.link1.list }-->
+        <li>
+            <a href="<!--{$tmp.url_act}-->" title="<!--{$tmp.name}-->" target="_blank">
+                <!--{ if $tmp.img eq "" }-->
+                <!--{$tmp.name}-->
+                <!--{ else if }-->
+                <img src="doc::<!--{$tmp.img}-->" />
+                <!--{ /if }-->
+            </a>
+        </li>
+        <!--{ /foreach }-->
+    </ul>
+</div>
+<!-- link1 e -->

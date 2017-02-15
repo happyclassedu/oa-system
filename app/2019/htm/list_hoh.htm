@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>业务操作</title>
+    </head>
+    <body>
+        <div id="box_title">
+            <span id="sys_title">户籍业务操作列表管理</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_add_hreg" type="button"  value="新增户籍人员"/>&nbsp;&nbsp;
+                <input id="btn_bill" type="button" value="工作日结清单统计"/>&nbsp;&nbsp;
+                <input id="btn_stat" type="button" value="户籍信息统计"/>
+            &nbsp;&nbsp;&nbsp;&nbsp;            </div>
+    </div>
+        <!--开始__信息内容-->
+        <table id="search_tb"  width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="80"align="center"/>
+            <col width="100"/>
+            <col width="80" align="center"/>
+            <col width="100"/>
+            <col width="80" align="center"/>
+            <col width="100"/>
+            <col width="50"/>
+            <tbody>
+                
+                <tr class="tr_0">
+                    <td>姓名：</td>
+                    <td><input id="d_pname" class="search" type="text" /></td>
+                    <td>操作员：</td>
+                    <td><input id="d_uname" class="search"  type="text" /></td>
+                    <td>业务名称(事件)：</td>
+                    <td><input id="d_yname" class="search" type="text"  />
+                    </td>
+                    <td><input id="btn_search"   type="button"  value="搜索"/></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息内容-->
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="60" align="center"/>
+            <col width="90"/>
+            <col width="90"/>
+            <col width="90"/>
+            <col width="100"/>
+            <col width="100"/>
+            <col width="270"/>
+            <thead>
+          <tr>
+            <td>序号</td>
+            <td>时间</td>
+            <td>姓名</td>
+            <td>操作员</td>
+            <td>业务类型</td>
+            <td>事件</td>
+            <td>内容</td>
+            </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            </tr>
+            </tbody>
+        </table>
+         <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td id="jpage_box"></td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_hoh" />
+<script type="text/javascript" src="../js/common.js"></script>

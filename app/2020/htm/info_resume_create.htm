@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+    <HEAD>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <TITLE>创建简历 - 简历属性 - 人才网站管理系统PHP1.0地区版</TITLE>
+        <LINK href="../css/www.css" type="text/css" rel=stylesheet>
+    </HEAD>
+<BODY>
+ <!--页面顶部-->
+<IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+<!--页面主体-->
+  <TABLE cellSpacing=0 cellPadding=0 width=980 border=0 align="center">
+        <TBODY>
+        <TR vAlign=top>
+		  <td width=188><IFRAME align=left src="per_left.htm" frameBorder=0 scrolling=no width="100%" height=500></IFRAME></td>
+		  <td width=10></td>
+          <td width=770 bgColor=#ffffff>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom
+                background="../img/title1_bg.gif" height=28>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                        <td align=middle width=80  background="../img/title1_bg3.jpg" height=28>
+                            <A id="a_resume_basic"  href="#">我的简历</A></td>
+                        <td width=5></td>
+                        <td align=middle width=80 background="../img/title1_bg2.jpg"><A id="a_resume_create"  class=white  href="#">新建简历</A></td>
+                        <td width=5></td>
+                        <td align=middle width=80  background="../img/title1_bg3.jpg"><A id="a_resume_letter" href="#">求 职 信</A></td>
+                        <td>&nbsp;</td>
+                    </TR>
+                    </TBODY>
+                  </TABLE>
+                </td>
+              </TR>
+              </TBODY>
+            </TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid"
+                height=25><STRONG>简历属性</STRONG> (<font color=#ff3300>*</font>
+                  为必填项)</td></TR>
+              <TR>
+                <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px"
+                  height=25><font color=#777777>您在网软志成人才招聘网站管理系统ASP.NET2.0地区版最多可以创建5份简历</font></td></TR></TBODY></TABLE>
+            <TABLE id="info_tb" cellSpacing=1 cellPadding=4 width="100%" bgColor=#dddddd
+            border=0>
+              <TBODY>
+              <TR vAlign=top bgColor=#ffffff>
+                <td style="PADDING-LEFT: 12px; PADDING-TOP: 7px"
+                  width=120><font color=#ff3300>*</font> 简历名称：</td>
+                <td width="642">
+                    <input id="d_p_id" type="hidden"/>
+                    <input id="d_rname" style="width: 200px" maxLength=50 type="text"/>
+                    <span id="d_rname"></span>
+                </td>
+              </TR>
+              <TR vAlign=top bgColor=#ffffff>
+                <td style="PADDING-LEFT: 12px; PADDING-TOP: 7px"
+                  width=120><font color=#ff3300>*</font> 简历语言：</td>
+                <td> 
+                    <select style="width: 200px" id="d_rgift">
+                        <option value="" selected>请选择</option>
+                        <option value="cn">中文</option>
+                        <option value="en">英文</option>
+                    </select>
+                    <span id="d_rgift"></span>
+                </td>
+              </TR>
+              <TR bgColor=#ffffff>
+                <td style="PADDING-LEFT: 24px" width=120>公开设置：</td>
+                <td>
+                    <select style="width: 200px" id="d_rptype">
+                        <option value="" selected>请选择</option>
+                        <option value="所有公开">对所有公开</option>
+                        <option value="网站公开">对网站公开</option>
+                        <option value="完全保密">完全保密</option>
+                    </select>
+                </td>
+              </TR>
+              <TR bgColor=#ffffff>
+                <td style="PADDING-LEFT: 24px" width=120>默认简历：</td>
+                <td><!--<input id="d_resume_def_state" type="checkbox" style="width: 15px" value="0"/>-->
+                    <select style="width: 200px" id="d_resume_def_state">
+                        <option value="0">设置为默认发送简历</option>
+                    </select>
+                    <!--设置为默认发送简历-->
+                </td>
+              </TR>
+              </TBODY>
+            </TABLE>
+            <TABLE id="act_tb" cellSpacing=1 cellPadding=4 width="100%" border=0>
+              <TBODY>
+              <TR bgColor=#ffffff>
+                <td style="PADDING-LEFT: 24px" width=100>&nbsp;</td>
+                <td>
+                    <input id="btn_save" style="HEIGHT: 30px" type="button" value=保存>
+                </td>
+              </TR>
+              </TBODY>
+            </TABLE>
+          </td>
+          <td>&nbsp; </td>
+        </TR>
+        </TBODY>
+  </TABLE><!--页面底部-->
+<IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=220></IFRAME>
+</BODY></HTML>
+<input type="hidden" id="g_id" value="info_resume_create" />
+<script type="text/javascript" src="../js/common.js"></script>
+

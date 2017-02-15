@@ -1,0 +1,89 @@
+/*lefter s*/
+#lefter {
+    float: left;
+    width: 250px;
+    overflow: hidden;
+    background: #fff4c7;
+    line-height:30px;
+}
+
+#lefter h2 {
+    height: 30px;
+    padding-left: 25px;
+    color: #FF0000;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+#login_box h2 {
+    background:url(../img/login_title.jpg) no-repeat;
+}
+
+#login_box ul {
+    list-style :none;
+    text-align: center;
+}
+
+#login_box li {
+    height: 30px;
+    overflow: hidden;
+}
+
+#login_id,
+#login_pw {
+    width: 150px;
+}
+
+#btn_login,
+#btn_reg {
+    width: 70px;
+    height: 20px;
+    margin: 0 15px;
+}
+
+#notice_box h2 {
+    background: url(../img/lefter_title.jpg) no-repeat;
+}
+
+#notice_box h2 a {
+    color: #FF0000;
+}
+
+#notice_box ul {
+    list-style :none;
+    text-align:left;
+    text-indent: 4px;
+}
+
+#notice_box li {
+    height: 29px;
+    overflow: hidden;
+    border-bottom: 1px dashed #e1e0e0;
+}
+
+#pics_box img {
+    width: 250px;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+#linkus_box h2 {
+    background: url(../img/lefter_title.jpg) no-repeat;
+}
+
+#linkus_box h2 a {
+    color: #FF0000;
+}
+
+#linkus_box ul {
+    list-style :none;
+    text-align:left;
+    text-indent: 10px;
+}
+
+#linkus_box li {
+    height: 29px;
+    overflow: hidden;
+    border-bottom: 1px dashed #e1e0e0;
+}
+/*lefter e*/

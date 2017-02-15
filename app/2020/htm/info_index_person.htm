@@ -1,0 +1,1163 @@
+
+<HTML>
+    <HEAD>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <TITLE>职位搜索--人才网站管理系统PHP1.0地区版</TITLE>
+        <LINK href="../css/www.css" type="text/css" rel=stylesheet>
+    </HEAD>
+    <BODY>
+        <!--页面顶部-->
+        <IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR vAlign=top>
+                    <td>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td width=5 height=30><IMG height=30   src="../img/right1_left.jpg"   width=5></td>
+                                                    <td align=middle width=75 background="../img/right1_t1.jpg">
+                                                        <B><font color=#ffffff>会员登录</font></B>
+                                                    </td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG height=30  src="../img/right1_right.jpg"  width=5></td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR>
+                                    <td style="BORDER-RIGHT: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; BORDER-BOTTOM: #a4cbee 1px solid">
+                                        <!--个人会员信息-->
+                                        <DIV id="d_pan_login">
+                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                                                <TBODY>
+                                                    <TR>
+                                                        <td height=4></td>
+                                                    </TR>
+                                                </TBODY>
+                                            </TABLE>
+                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                <TBODY>
+                                                    <TR>
+                                                        <td align=right width=64 height=27><font color=#848484>用户名：</font></td>
+                                                        <td height=27><input class=input_login id="d_username"  style="width: 115px"/><BR><span id="d_error_username" ></span></td>
+                                                    </TR>
+                                                    <TR>
+                                                        <td align=right width=64 height=27><font color=#848484>密&nbsp;&nbsp;码：</font></td>
+                                                        <td height=27><input class=input_login id="d_password" style="width: 115px" type="password"><BR><span id="d_error_password"></span></td>
+                                                    </TR>
+                                                    <TR align=middle>
+                                                        <td colSpan=2 height=30><input id="btn_login" style="width: 50px; HEIGHT: 20px" type="image"  src="../img/button_login.gif"  border="0" onClick="m_info_login()"/>&nbsp;<input id="btn_reg" style="width: 50px; HEIGHT: 20px" type="image"  src="../img/button_reg.gif"  border="0">&nbsp;</td>
+                                                    </TR>
+                                                    <TR align=middle>
+                                                        <td colSpan=2 height=21><IMG height=9  src="../img/Icon1_2.gif" width=5><A class=blue20  href="./info_person_register.htm?a=add">注册个人用户</A><IMG height=9 src="../img/Icon1_2.gif" width=5><A class=blue20   href="#">找回密码</A></td>
+                                                    </TR>
+                                                </TBODY>
+                                            </TABLE>
+                                        </DIV>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                            <TBODY>
+                                <TR>
+                                    <td height=5></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td width=5 height=30><IMG height=30 src="../img/right1_left.jpg"   width=5></td>
+                                                    <td align=middle width=75 background="../img/right1_t1.jpg"><B><font color=#ffffff>紧急招聘</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG height=30  src="../img/right1_right.jpg"    width=5></td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-RIGHT: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; BORDER-BOTTOM: #a4cbee 1px solid"><!--紧急招聘-->
+                                        <DIV id=demo style="OVERFLOW: hidden; HEIGHT: 192px">
+                                            <DIV id=demo1>
+                                                <TABLE id=lit_Job_Urgent   style="width: 100%; BORDER-COLLAPSE: collapse" cellSpacing=0   cellPadding=0 border=0>
+                                                    <TBODY>
+                                                        <TR>
+                                                            <td style="HEIGHT: 24px">·<A
+                                                                    href=""
+                                                                    target=_blank>服务技术员</A> <font color=#777777 size=1>[<span id=lit_Job_Urgent__ctl0_lbl_JobNew_Date>1-30</span>]</font>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 24px">·<A
+                                                                    href=""
+                                                                    target=_blank>人力资源部经理</A> <font color=#777777 size=1>[<span id=lit_Job_Urgent__ctl1_lbl_JobNew_Date>1-30</span>]</font>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 24px">·<A
+                                                                    href=""
+                                                                    target=_blank>财务主管</A> <font color=#777777 size=1>[<span id=lit_Job_Urgent__ctl2_lbl_JobNew_Date>1-30</span>]</font>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 24px">·<A
+                                                                    href=""
+                                                                    target=_blank>男女 贵宾服务生 夜场兼</A> <font color=#777777
+                                                                    size=1>[<span id=lit_Job_Urgent__ctl3_lbl_JobNew_Date>12-10</span>]</font>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 24px">·<A
+                                                                    href=""
+                                                                    target=_blank>BOM管理员</A> <font color=#777777 size=1>[<span id=lit_Job_Urgent__ctl4_lbl_JobNew_Date>12-7</span>]</font>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 24px">·<A
+                                                                    href=""
+                                                                    target=_blank>行政助理</A> <font color=#777777 size=1>[<span id=lit_Job_Urgent__ctl5_lbl_JobNew_Date>12-7</span>]</font>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 24px">·<A
+                                                                    href=""
+                                                                    target=_blank>销售工程师</A> <font color=#777777 size=1>[<span id=lit_Job_Urgent__ctl6_lbl_JobNew_Date>12-7</span>]</font>
+                                                            </td></TR>
+                                                    </TBODY></TABLE>
+                                            </DIV>
+                                            <DIV id=demo2></DIV></DIV>
+                                    </td>
+                                </TR>
+                            </TBODY></TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                            <TBODY>
+                                <TR>
+                                    <td height=5></td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td width=5 height=30><IMG height=30 src="../img/right1_left.jpg"  width=5></td>
+                                                    <td align=middle width=75  background="../img/right1_t1.jpg"><B><font color=#ffffff>培训课程</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG height=30  src="../img/right1_right.jpg"  width=5></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-RIGHT: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; BORDER-BOTTOM: #a4cbee 1px solid"><!--职位会讯-->
+                                        <TABLE id=lit_Lesson_New  style="width: 100%; BORDER-COLLAPSE: collapse" cellSpacing=0    cellPadding=0 border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A
+                                                            href=""
+                                                            target=_blank>行政工作统筹管理高级研修班</A>
+                                                    </td>
+                                                </TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A
+                                                            href=""
+                                                            target=_blank>企业内部人力资源管理</A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A
+                                                            href=""
+                                                            target=_blank>《压力与情绪管理》课程</A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A
+                                                            href=""
+                                                            target=_blank>企业合理避税及涉税风险防范实战</A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A
+                                                            href=""
+                                                            target=_blank>运营/生产总监COO国际认证课</A>
+                                                    </td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td width=5 height=30><IMG height=30  src="../img/right1_left.jpg"  width=5></td>
+                                                    <td align=middle width=75  background="../img/right1_t1.jpg"><B><font color=#ffffff>职业指导</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG height=30   src="../img/right1_right.jpg" width=5></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-RIGHT: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; BORDER-BOTTOM: #a4cbee 1px solid"><!--热门话题-->
+                                        <TABLE id=lit_Employment_Hot   style="width: 100%; BORDER-COLLAPSE: collapse" cellSpacing=0    cellPadding=0 border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td style="PADDING-LEFT: 2px; PADDING-TOP: 2px" vAlign=top
+                                                                        colSpan=2 height=25><A
+                                                                            href=""
+                                                                            target=_blank><font color=#ff0000>·<U><B>博客网：坚持草根路线    数字</B></U></font>
+                                                                        </A>
+                                                                    </td>
+                                                                </TR>
+                                                                <TR vAlign=top>
+                                                                    <td style="PADDING-LEFT: 5px" width=70>
+                                                                        <TABLE cellSpacing=1 cellPadding=2 bgColor=#dddddd   border=0>
+                                                                            <TBODY>
+                                                                                <TR>
+                                                                                    <td bgColor=#ffffff><IMG height=60   src="../img/Employment_2.gif"     width=65></td></TR>
+                                                                            </TBODY></TABLE>
+                                                                    </td>
+                                                                    <td style="PADDING-RIGHT: 3px; PADDING-LEFT: 4px">
+                                                                        <TABLE cellSpacing=0 cellPadding=0 width="100%"    border=0>
+                                                                            <TBODY>
+                                                                                <TR>
+                                                                                    <td><span id=lit_Employment_Hot__ctl0_lbl_Hr_Content>不管是主动选择的结果，还是新浪名人博客效应下的被迫...</span>
+                                                                                        <A href="" target=_blank>[阅读全文]</A></td>
+                                                                                </TR>
+                                                                            </TBODY></TABLE>
+                                                                    </td></TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                        <TABLE cellSpacing=0 cellPadding=0 width=190 align=center    border=0><TBODY>
+                                                <TR><td height=4></td></TR>
+                                                <TR><td background="../img/line1.gif"  height=1></td></TR>
+                                                <TR><td height=4></td></TR>
+                                            </TBODY></TABLE>
+                                        <TABLE cellSpacing=1 cellPadding=2 width="100%" align=center   border=0>
+                                            <TBODY>
+                                                <TR align=middle>
+                                                    <td>[<A
+                                                            href="">简历指导</A>][<A
+                                                            href="">面试宝典</A>][<A
+                                                            href="">职业规划</A>]</td></TR>
+                                                <TR align=middle>
+                                                    <td>[<A
+                                                            href="">求职实录</A>][<A
+                                                            href="">薪酬福利</A>][<A
+                                                            href="">职场观察</A>]</td></TR>
+                                            </TBODY></TABLE>
+                                        <TABLE id=Employment1_lit_Employment style="width: 100%; BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=2 border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A
+                                                            href=""
+                                                            target=_blank><font color=#333333>三十年职场之三千字心得</font></A>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A
+                                                            href=""
+                                                            target=_blank><font color=#333333>职场新人如何融入新环境</font></A>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A
+                                                            href=""
+                                                            target=_blank><font color=#333333>企业面试小故事</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A
+                                                            href=""
+                                                            target=_blank><font color=#333333>公务员面试：克服紧张焦虑四要</font></A>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A
+                                                            href=""
+                                                            target=_blank><font color=#333333>毕业生客串招聘官收获巨大</font></A>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 24px">·<A
+                                                            href=""
+                                                            target=_blank><font color=#333333>职场人讲述“群面”经历</font></A>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                            <TBODY>
+                                <TR>  <td height=5></td></TR>
+                            </TBODY></TABLE>
+                    </td>
+                    <td width=10></td>
+                    <td width=770><!--页面右侧-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 8px" height=28 background="../img/left2_bg.gif">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="PADDING-TOP: 5px" height=28 background="../img/left2_t1.gif" width=85 align=middle><B><font color=#ff6600>快速搜索</font></B></td>
+                                                    <td width=5>&nbsp;</td>
+                                                    <td style="PADDING-TOP: 5px" background="../img/left2_t2.jpg" width=85 align=middle><B><A id="a_info_adsearch" href="" target="_parent">全能搜索</A></B></td>
+                                                    <td>&nbsp;</td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-LEFT: #027bc5 2px solid; PADDING-LEFT: 5px; BORDER-RIGHT: #027bc5 2px solid; PADDING-TOP: 8px">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td>
+                                                                        <TABLE border=0 cellSpacing=0 cellPadding=2 width="100%">
+                                                                            <TBODY>
+                                                                                <TR vAlign=top>
+                                                                                    <td height=30 width=50 align=right>职 能：</td>
+                                                                                    <td height=30>
+                                                                                        <select style="width: 300px" id="d_big_classification">
+                                                                                            <option selected value="0">职位不限</option>
+                                                                                        </select>
+                                                                                        &nbsp;职 位：
+                                                                                        <select style="width: 240px" id="d_small_classification">
+                                                                                            <option selected value="0">不限</option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </TR>
+                                                                                <TR vAlign=top>
+                                                                                    <td height=30 width=50 align=right>省 份：</td>
+                                                                                    <td height=30>
+                                                                                        <select style="width: 300px" id="d_addr1">
+                                                                                            <option selected value="0">地区不限</option>
+                                                                                        </select>
+                                                                                        &nbsp;地 区：
+                                                                                        <select style="width: 240px" id="d_addr2" >
+                                                                                            <option selected value="0">不限</option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </TR>
+                                                                                <TR vAlign=top>
+                                                                                    <td height=30 width=50 align=right>行 业：</td>
+                                                                                    <td height=30>
+                                                                                        <select style="width: 300px" id="d_trade">
+                                                                                            <option selected value="0">行业不限</option>
+                                                                                        </select>
+                                                                                        &nbsp;日 期：
+                                                                                        <select style="width: 240px" id="d_job_day">
+                                                                                            <option selected value="0">日期不限</option>
+                                                                                            <option value="1">近一天</option>
+                                                                                            <option value="2">近两天</option>
+                                                                                            <option value="3">近三天</option>
+                                                                                            <option value="7">近一周</option>
+                                                                                            <option value="14">近两周</option>
+                                                                                            <option value="30">近一月</option>
+                                                                                            <option  value="60">近两月</option>
+                                                                                            <option value="90">近三月</option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </TR>
+                                                                                <TR>
+                                                                                    <td height=30 width=55 align=right>名 称：</td>
+                                                                                    <td height=30>
+                                                                                        <input style="width: 514px" id="d_key" onClick="this.value='';" value="请输入关键字" maxLength="100" >
+                                                                                        <input name="d_key_class"  value="name" CHECKED type="radio" />职位
+                                                                                        <input name="d_key_class"  value="fname" type="radio" />公司
+                                                                                    </td>
+                                                                                </TR>
+
+                                                                                <TR>
+                                                                                    <td width=55 align=right>&nbsp;</td>
+                                                                                    <td height=24 vAlign=bottom>
+                                                                                        <A id="btn_search" href="javascript:"><IMG border=0 src="../img/Button_Search.gif" width=100 height=18></A>
+                                                                                    </td>
+                                                                                </TR>
+                                                                            </TBODY></TABLE>
+                                                                    </td>
+
+                                                                </TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                 <td>
+                                   <IMG src="../img/left2_bottom.gif" width=770 height=12></td>
+                                </TR>
+                            </TBODY></TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                            <TBODY>
+                                <TR>
+                                    <td height=8></td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                            <TBODY>
+                                <TR><td height=2></td></TR>
+                            </TBODY>
+                        </TABLE><!--招聘职位-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td width=5><IMG height=28  src="../img/left1_left.gif"   width=5></td>
+                                    <td style="PADDING-LEFT: 3px"  background="../img/left1_bg2.gif">
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td class=a101 id=al01 onclick=asecBoard(1); align=middle width=85 height=28>热门职位</td>
+                                                    <td width=5></td>
+                                                    <td class=a102 id=al02 onclick=asecBoard(2); align=middle  width=85>最新职位</td>
+                                                    <td>&nbsp;</td></TR>
+                                            </TBODY>
+                                        </TABLE>
+
+                                    </td>
+                                    <td width=5><IMG height=28  src="../img/left1_right.gif"  width=5></td>
+                                </TR>
+                            </TBODY></TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; BORDER-LEFT: #dddddd 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #dddddd 1px solid"><!--热门职位-->
+                                        <DIV id="abx01" style="display:block;">
+                                            <TABLE id=lit_Job_Hot style="width: 100%; BORDER-COLLAPSE: collapse"  cellSpacing=0 cellPadding=0 border=0>
+                                                <TBODY>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href=""
+                                                                                                      target=_blank>虎拜车友俱乐部有限公司</A></td>
+                                                                        <td><A
+                                                                                href=""
+                                                                                target=_blank>电路板维修员</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href=""
+                                                                                                      target=_blank>虎拜车友俱乐部有限公司</A></td>
+                                                                        <td><A
+                                                                                href=""
+                                                                                target=_blank>设施部经理</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href=""
+                                                                                                      target=_blank>上海联合美亚文化传播有限公司</A></td>
+                                                                        <td><A href=""
+                                                                               target=_blank>人力资源部经理</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE></td>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10267.html"
+                                                                                                      target=_blank>安仕达管理软件有限公司</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10781.html"
+                                                                                target=_blank>财务主管</A>
+                                                                        </td></TR>
+                                                                </TBODY></TABLE>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10250.html"
+                                                                                                      target=_blank>虎拜车友俱乐部有限公司</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10760.html"
+                                                                                target=_blank>电气工程师</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10249.html"
+                                                                                                      target=_blank>万物集团有限公司</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10752.html"
+                                                                                target=_blank>行政助理</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10249.html"
+                                                                                                      target=_blank>万物集团有限公司</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10751.html"
+                                                                                target=_blank>销售工程师</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td>
+                                                        <td>
+
+                                                        </td></TR>
+                                                </TBODY></TABLE>
+                                        </DIV><!--最新职位-->
+                                        <DIV id="abx02" style="DISPLAY: none">
+                                            <TABLE id=lit_Job_New style="width: 100%; BORDER-COLLAPSE: collapse"
+                                                   cellSpacing=0 cellPadding=0 border=0>
+                                                <TBODY>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10301.html"
+                                                                                                      target=_blank>美国欣凯公司上海代表处</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10905.html"
+                                                                                target=_blank>办公室文员</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10301.html"
+                                                                                                      target=_blank>美国欣凯公司上海代表处</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10904.html"
+                                                                                target=_blank>售后技术支持人员</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10301.html"
+                                                                                                      target=_blank>美国欣凯公司上海代表处</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10903.html"
+                                                                                target=_blank>销售精英</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10300.html"
+                                                                                                      target=_blank>上海元鑫进出口贸易有限公司</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10902.html"
+                                                                                target=_blank>会计</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10300.html"
+                                                                                                      target=_blank>上海元鑫进出口贸易有限公司</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10901.html"
+                                                                                target=_blank>CSR（客服代表</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10300.html"
+                                                                                                      target=_blank>上海元鑫进出口贸易有限公司</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10900.html"
+                                                                                target=_blank>前台接待</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10298.html"
+                                                                                                      target=_blank>香港博威亚洲有限公司上海代表处</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10890.html"
+                                                                                target=_blank>Marketing Man</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10298.html"
+                                                                                                      target=_blank>香港博威亚洲有限公司上海代表处</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10889.html"
+                                                                                target=_blank>Secretary</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10298.html"
+                                                                                                      target=_blank>香港博威亚洲有限公司上海代表处</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10888.html"
+                                                                                target=_blank>Senior Engine</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE></td>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10297.html"
+                                                                                                      target=_blank>上海强人物流有限公司</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10887.html"
+                                                                                target=_blank>人力资源部经理</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10297.html"
+                                                                                                      target=_blank>上海强人物流有限公司</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10886.html"
+                                                                                target=_blank>客服助理</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10297.html"
+                                                                                                      target=_blank>上海强人物流有限公司</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10885.html"
+                                                                                target=_blank>财务助理</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10296.html"
+                                                                                                      target=_blank>广州天力叉车装配维修有限公司</A></td>
+                                                                        <td><A
+                                                                                href="http://job5.fdkjgz.com/Html/JobDetail/10884.html"
+                                                                                target=_blank>会计</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10296.html"
+                                                                                                      target=_blank>广州天力叉车装配维修有限公司</A></td>
+                                                                        <td><A href="http://job5.fdkjgz.com/Html/JobDetail/10883.html" target=_blank>仓管</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10296.html"
+                                                                                                      target=_blank>广州天力叉车装配维修有限公司</A></td>
+                                                                        <td><A    href="http://job5.fdkjgz.com/Html/JobDetail/10882.html"  target=_blank>售后服务工程师-山东</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12  href="http://job5.fdkjgz.com/Html/Company/10295.html"  target=_blank>科比传动技术（上海）有限公司</A></td>
+                                                                        <td><A   href="http://job5.fdkjgz.com/Html/JobDetail/10881.html"  target=_blank>电子零件工程师</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12   href="http://job5.fdkjgz.com/Html/Company/10295.html"  target=_blank>科比传动技术（上海）有限公司</A></td>
+                                                                        <td><A  href="http://job5.fdkjgz.com/Html/JobDetail/10880.html"   target=_blank>应用销售工程师</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12    href="http://job5.fdkjgz.com/Html/Company/10295.html"  target=_blank>科比传动技术（上海）有限公司</A></td>
+                                                                        <td><A  href="http://job5.fdkjgz.com/Html/JobDetail/10879.html"  target=_blank>维保工程师</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12  href="http://job5.fdkjgz.com/Html/Company/10294.html"  target=_blank>上海先锋商泰电子技术有限公司</A></td>
+                                                                        <td><A    href="http://job5.fdkjgz.com/Html/JobDetail/10877.html"  target=_blank>韩语翻译</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td>
+                                                        <td style="width: 50%; HEIGHT: 24px">
+                                                            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                                                <TBODY>
+                                                                    <TR>
+                                                                        <td width="55%" height=24>·<A class=blue12
+                                                                                                      href="http://job5.fdkjgz.com/Html/Company/10294.html"
+                                                                                                      target=_blank>上海先锋商泰电子技术有限公司</A></td>
+                                                                        <td><A    href="http://job5.fdkjgz.com/Html/JobDetail/10876.html"  target=_blank>C/C++软件工程师</A></td>
+                                                                    </TR>
+                                                                </TBODY></TABLE>
+                                                        </td></TR>
+                                                </TBODY></TABLE>
+                                        </DIV>
+                                    </td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                            <TBODY>
+                                <TR> <td height=8></td></TR>
+                            </TBODY></TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-TOP: 3px" height=25>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td width=11 height=26><IMG height=26   src="../img/right10_left.jpg"    width=11></td>
+                                                    <td style="PADDING-LEFT: 8px; PADDING-TOP: 3px"  background="../img/right10_bg.jpg"><STRONG>职能搜索</STRONG></td>
+                                                    <td style="PADDING-LEFT: 8px; PADDING-TOP: 3px" align=right  width=120  background="../img/right10_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG height=26  src="../img/right10_right.jpg"  width=5></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="PADDING-TOP: 3px"><!--职能搜索-->
+                                        <TABLE id=lit_Search_JobType
+                                               style="width: 99%; BORDER-COLLAPSE: collapse" cellSpacing=0
+                                               cellPadding=2 align=center border=0>
+                                            <TBODY>
+                                                <tr>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif">
+                                                        <a href="list_search.htm?a=list?a=list&jobtype=1000,0" target=_blank>计算机硬件</a>
+                                                    </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif">
+                                                        <a href="list_search.htm?a=list?a=list&jobtype=1001,0" target=_blank>计算机软件</a>
+                                                    </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1003,0" target=_blank>互联网开发及应用</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1004,0" target=_blank>IT-管理</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1005,0" target=_blank>IT-品管/技术支持</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1006,0" target=_blank>通信技术</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1007,0" target=_blank>电子/电器/半导体/仪器仪表</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1008,0" target=_blank>销售管理</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1009,0" target=_blank>销售人员</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1010,0" target=_blank>销售行政及商务</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1011,0" target=_blank>客服及技术支持</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1012,0" target=_blank>财务/审计/税务</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1013,0" target=_blank>证券/金融/投资</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1014,0" target=_blank>银行</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1015,0" target=_blank>保险</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1016,0" target=_blank>生产/营运</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1017,0" target=_blank>质量/安全管理</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1018,0" target=_blank>工程/机械/能源</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1019,0" target=_blank>汽车</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1020,0" target=_blank>技工</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1021,0" target=_blank>服装/纺织/皮革</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1022,0" target=_blank>采购</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1023,0" target=_blank>贸易</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1024,0" target=_blank>物流/仓储</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1025,0" target=_blank>生物/制药/医疗器械</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1026,0" target=_blank>化工</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1027,0" target=_blank>医院/医疗/护理</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1028,0" target=_blank>广告</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1029,0" target=_blank>公关/媒介</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1030,0" target=_blank>市场/营销</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1031,0" target=_blank>影视/媒体</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1032,0" target=_blank>写作/出版/印刷</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1033,0" target=_blank>艺术/设计</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1034,0" target=_blank>建筑工程</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1035,0" target=_blank>房地产</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1036,0" target=_blank>物业管理</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1037,0" target=_blank>人力资源</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1038,0" target=_blank>高级管理</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1039,0" target=_blank>行政/后勤</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1040,0" target=_blank>咨询/顾问</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1041,0" target=_blank>律师/法务</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1042,0" target=_blank>教师</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1043,0" target=_blank>科研人员</a> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                            href="list_search.htm?a=list?jobtype=1044,0" target=_blank>餐饮/娱乐</a> </td>
+                                                </tr>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-TOP: 3px" height=25>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td width=11 height=26><IMG height=26  src="../img/right10_left.jpg"    width=11></td>
+                                                    <td style="PADDING-LEFT: 8px; PADDING-TOP: 3px"   background="../img/right10_bg.jpg"><STRONG>行业搜索</STRONG></td>
+                                                    <td width=5><IMG height=26  src="../img/right10_right.jpg"   width=5></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="PADDING-TOP: 3px"><!--行业搜索-->
+                                        <TABLE id=lit_Search_Trade   style="width: 99%; BORDER-COLLAPSE: collapse" cellSpacing=0  cellPadding=2 align=center border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif">
+                                                        <A href="list_search.htm?a=list?a=list&trade=1001,0" target=_blank>互联网·电子商务</A>
+                                                    </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1002,0" target=_blank>计算机软件</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1003,0" target=_blank>计算机硬件·网络设备</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1004,0" target=_blank>IT服务·系统集成</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1005,0" target=_blank>电子·微电子</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1006,0" target=_blank>通信(设备·运营·增值服务)</A>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1007,0" target=_blank>家电业</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1008,0" target=_blank>批发·零售</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1009,0" target=_blank>贸易·商务·进出口</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1010,0" target=_blank>仪器·仪表·工业自动化·电气</A>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1011,0" target=_blank>能源(电力·石油)·水利</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1012,0" target=_blank>石化·化工·采掘·冶炼·矿产</A>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1013,0" target=_blank>制药·生物工程</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1014,0" target=_blank>环保</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1015,0" target=_blank>机械制造·机电·重工</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1016,0" target=_blank>汽车·摩托车(制造·维护·配件·销售·服务)</A>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1017,0" target=_blank>广告·会展·公关</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1018,0" target=_blank>媒体·出版·影视制作</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1019,0" target=_blank>艺术·文化传播</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1020,0" target=_blank>快速消费品(食品·饮料·粮油·日化·烟酒…)</A>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1021,0" target=_blank>耐用消费品(服饰·纺织·家具…)</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1022,0" target=_blank>专业服务(顾问·咨询·财会·法律·审计)</A>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1023,0" target=_blank>金融业(银行·保险·证券·基金·期货·投资)</A>
+                                                    </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1024,0"
+                                                            target=_blank>房地产开发·建筑与工程·服务(中介·物业·监理·设计)</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1025,0" target=_blank>家居·室内设计·装潢</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1026,0" target=_blank>旅游·酒店·餐饮服务</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1027,0" target=_blank>交通·运输·物流</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1028,0" target=_blank>娱乐·运动·休闲</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1029,0" target=_blank>办公设备·用品</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1030,0" target=_blank>印刷·包装·造纸</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1031,0"
+                                                            target=_blank>生产·制造·加工(金属·建材·塑胶·玻璃·陶瓷…)</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1032,0" target=_blank>教育·培训·科研·院校</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1033,0" target=_blank>医卫·保健·美容</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1034,0" target=_blank>中介服务(人才·商标·专利·留学)</A>
+                                                    </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1035,0" target=_blank>政府·非营利机构</A> </td>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1036,0" target=_blank>农·林·牧·副·渔业</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?trade=1037,0" target=_blank>其他</A> </td>
+                                                    <td></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-TOP: 3px" height=25>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=26 width=11><IMG src="../img/right10_left.jpg" width=11
+                                                                                height=26></td>
+                                                    <td style="PADDING-LEFT: 8px; PADDING-TOP: 3px"
+                                                        background="../img/right10_bg.jpg"><STRONG>地区搜索</STRONG></td>
+                                                    <td width=5><IMG src="../img/right10_right.jpg" width=5 height=26></td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="PADDING-TOP: 3px"><!--地区搜索-->
+                                        <TABLE style="width: 99%; BORDER-COLLAPSE: collapse" id=lit_Search_Place border=0 cellSpacing=0 cellPadding=2 align=center>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?a=list&workplace=1000,0" target=_blank>北京</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?a=list&workplace=1001,0" target=_blank>天津</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1002,0" target=_blank>上海</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1003,0" target=_blank>重庆</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1004,0" target=_blank>河南</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1005,0" target=_blank>山西</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1006,0" target=_blank>内蒙</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1007,0" target=_blank>辽宁</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1008,0" target=_blank>吉林</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1009,0" target=_blank>黑龙江</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1010,0" target=_blank>江苏</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1011,0" target=_blank>浙江</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1012,0" target=_blank>安徽</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1013,0" target=_blank>福建</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1014,0" target=_blank>江西</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1015,0" target=_blank>山东</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1016,0" target=_blank>广东</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1017,0" target=_blank>广西</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1018,0" target=_blank>海南</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1019,0" target=_blank>河南</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?a=list&workplace=1020,0" target=_blank>湖北</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1021,0" target=_blank>湖南</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1023,0" target=_blank>陕西</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1024,0" target=_blank>甘肃</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1025,0" target=_blank>青海</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1026,0" target=_blank>宁夏</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1027,0" target=_blank>新疆</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1028,0" target=_blank>四川</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1029,0" target=_blank>贵州</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1030,0" target=_blank>云南</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1031,0" target=_blank>西藏</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1032,0" target=_blank>台湾</A> </td></TR>
+                                                <TR>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1033,0" target=_blank>香港</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                            href="list_search.htm?a=list?workplace=1034,0" target=_blank>澳门</A> </td>
+                                                    <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif">
+                                                        <A href="list_search.htm?a=list?workplace=1035,0" target=_blank>国外</A> </td>
+                                                    <td></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                        <!--左侧结束--></td>
+                </TR></TBODY></TABLE><!--页面底部-->
+        <IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+    </BODY>
+</HTML>
+<input type="hidden" id="g_id" value="info_index_person" />
+<script type="text/javascript" src="../js/common.js"></script>>

@@ -1,0 +1,72 @@
+
+.sxhb_thou {
+   width:960px;
+   margin:0 auto;
+   margin-bottom:5px;
+   overflow:hidden;
+   background:#FFFFFF;
+   border:1px solid #c6c6c6;
+}
+
+#box_title h1 {
+  font-size:14px;
+  line-height:35px;
+  color:#FFFFFF;
+  padding-left:10px;
+  background:url(../img/list_title_bg.jpg) left top no-repeat;
+}
+
+table a {
+  color:#000000;
+  text-decoration:none;
+  line-height:30px;
+}
+
+#box_tools {
+  float:right;
+  padding-right:50px;
+}
+
+#btn_search {
+  width:90px;
+  padding:8px 0;
+  border:0;
+  background:url(../img/botton.jpg) left top no-repeat;
+}
+
+/* 换页 s */
+.dy_page {
+	float:left;
+	margin-top:10px;
+	margin-left:180px;
+    height: 35px;
+    text-align: center;
+}
+
+.dy_page a {
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    line-height: 21px;
+    margin: 0 4px;
+    padding: 0 6px;
+    border: #DBDBDB 1px solid;
+    color: #333333;
+    font-size: 12px;
+}
+
+.dy_page a:hover {
+    background:#DEF1FF;
+    color: #FF0000;
+    text-decoration:none;
+}
+
+
+.dy_page .page_now {
+    background:#DEF1FF;
+    color: #FF0000;
+    font-weight: 700;
+}
+
+/* 换页 e */
+

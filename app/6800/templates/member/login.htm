@@ -1,0 +1,58 @@
+{include file=header.htm}
+<link type="text/css" rel="stylesheet" href="templates/member/images/test.css">
+<div class="containe-wz">您当前位置： <a href="{$xmglobal.cfg_basehost}" class="tt-12">首页</a> &gt;&gt; 会员登录</div>
+<div class="containe">
+    <!-- 注册向导 off -->
+    <form id="loginform" name="loginform" action="" method="post" >
+        <input type="hidden" name="sURL" value="member">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td width="490" align="left" valign="top" style="padding:10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td height="40" colspan="3" class="zt-14h">欢迎登录三秦品牌网!</td>
+                                </tr>
+                                <tr>
+                                    <td width="20%" height="40" align="right" class="zt-14">用户名：</td>
+                                    <td height="40" colspan="2" class="zt-14"><input type="text" name="username" id="username"  style="width:160px;height:16"></td>
+                                </tr>
+                                <tr>
+                                    <td height="40" align="right" class="zt-14">密&nbsp;&nbsp;码：</td>
+                                    <td height="40" colspan="2" class="zt-14"><input type="password" name="password" id="password" style="width:160px;height:16"></td>
+                                </tr>
+                                <tr>
+                                    <td height="40" align="right" class="zt-14">&nbsp;</td>
+                                    <td height="40" colspan="2" class="zt-14"><label><input name="isAutoLogin" type="checkbox" id="isAutoLogin" value="1" checked="checked">在此计算机上记住用户名</label></td>
+                                </tr>
+                                <tr>
+                                    <td height="40">&nbsp;</td>
+                                    <td width="22%" height="40"><input name="submit" src="templates/member/images/login.gif" type="image" width="98" height="31"></td>
+                                    <td width="58%" class="wz-style2"><a href="" target="_blank" class="tt">忘记密码？</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td width="490" align="left" valign="top" bgcolor="#fbf1db" style="padding:10px;"><span class="wz-style2">还没有三秦品牌网帐号？ 您只需花费1分钟！</span><br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;<a href="register.php"><img src="templates/member/images/mfzc.gif" alt="免费注册三秦品牌网" width="187" height="43" border="0"></a><br>
+                        <br>
+                        <span class="wz-style2">
+                            <ul>
+                                <li>千万级企业信息，专业编辑团队更新维护，准确可靠！</li>
+                                <li>用户自主维护企业黄页信息，编辑严格审核，确保数据真实准确！</li>
+                                <li>大而全的行业分类，精确到国民经济每个细分行业；覆盖全省所有区县。</li>
+                                <li>海量联系人信息，提供的不仅仅是黄页数据！</li>
+                            </ul>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="hidden" name="operation" id="operation" value="sysLoginMember">
+    </form>
+</div>
+{include file=foot.htm}	
+<!--null页面结束-->
+</body>
+</html>

@@ -1,0 +1,77 @@
+
+/* bl_list_right s */
+
+#info_box {
+  float:right;
+  width:720px;
+  padding-right:2px;
+}
+
+#info_box h2 {
+  font-size:12px;
+  line-height:30px;
+  padding-left:30px;
+  background:url(../img/list_bg.jpg) left top no-repeat;
+}
+
+#info_box h2 a {
+  color:#000000;
+  text-decoration:none;
+}
+
+.info_resume {
+  padding:5px 40px;
+  border:1px solid #e2e2e2;
+  border-top:none;
+}
+
+.info_content {
+  width:90%;
+  margin:0 auto;
+}
+
+.info_content table {
+  margin:0 auto;
+  width:100%;
+  margin-top:5px;
+  border-collapse:collapse;
+}
+
+.info_content table tr td {
+  border:1px solid #e2e2e2;
+  line-height:28px;
+}
+
+.resume thead tr {
+  background:#f7f7f7;
+  text-align:center;
+}
+
+.info_title {
+  font-size:14px;
+  text-align:center;
+}
+
+
+.info_attribute {
+  font-size:12px;
+  font-weight:normal;
+  text-align:center;
+  line-height:30px;
+  border:solid #0d4e90;
+  border-width: 1px 0;
+}
+
+.info_attribute a {
+  color:#000000;
+  text-decoration:none;
+}
+
+.info_content p {
+  line-height:28px;  
+}
+
+.com_title {
+  background:#f7f7f7;
+  border-bottom:1px solid #e2e2e2;
+}

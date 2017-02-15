@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>信息--待遇停发</title>
+    </head>
+    <body>
+        <!--开始__基本功能区-->
+        <div id="box_title">
+            <span id="sys_title">待遇停发--<span id="sys_state"></span>信息</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_add" type="button"  value="新增"/>&nbsp;&nbsp;
+                <input id="btn_edit" type="button" value="修改"/>&nbsp;&nbsp;
+            </div>
+        </div>
+        <!--结束__基本功能区-->
+        <!--开始__信息内容区-->
+        <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" align="center" />
+            <col width="100" align="center" />
+            <col width="165" align="center" />
+            <col width="100" align="center"/>
+            <col width="165" align="center" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">个人基本信息
+                        <input id="d_name" type="hidden"/>
+                        <input id="d_idcard" type="hidden"/>
+                        <input id="d_type_1" type="hidden"/>
+                    </td>
+                </tr>
+                <tr class="tr_0">
+                    <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;身份证号码</td>
+                    <td><input id="t_idcard" type="button" value="请点击选择参保人" /></td>
+                    <td>姓名：</td>
+                    <td><input id="t_name" type="text"/></td>
+                    <td>性别：</td>
+                    <td><input id="t_sex" type="text"/></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>养老编码：</td>
+                    <td><input id="t_ins_base" type="text"/></td>
+                    <td>所在街道：</td>
+                    <td><input id="t_org_1" type="text"/></td>
+                    <td>所在社区：</td>
+                    <td><input id="t_org_2" type="text"/></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>残疾等级：</td>
+                    <td><input id="t_disability" type="text"/></td>
+                    <td>代缴银行卡号：</td>
+                    <td><input id="t_bankcard" type="text"/></td>
+                    <td>第一电话：</td>
+                    <td><input id="t_tel_1" type="text"/></td>
+                </tr>
+                <tr class="tb_title0">
+                    <td colspan="6">待遇停发信息</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>所属年月</td>
+                    <td>
+                        <input id="d_send_date" type="text"/>
+                    </td>
+                    <td>发放状态</td>
+                    <td>
+                        <select id="d_state_2">
+                            <option value="">请选择</option>
+                            <option value="正常">正常</option>
+                            <option value="暂停">暂停</option>
+                            <option value="终止">终止</option>
+                        </select>
+                    </td>
+                    <td>备注</td>
+                    <td><input id="d_remark" type="text"/></td>
+                </tr>
+                <tr class="tb_title0">
+                    <td colspan="6">经办机构信息</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>经办人</td>
+                    <td><input id="t_bname" type="text"/></td>
+                    <td>经办机构</td>
+                    <td><input id="t_borg" type="text"/></td>
+                    <td>经办日期</td>
+                    <td><input id="t_bdate" type="text"/></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息内容区-->
+        <!--开始__保存操作区-->
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button" value="保存信息">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="btn_cancel" type="button" value="取消保存">
+                </td>
+            </tr>
+        </table>
+        <!--结束__保存操作区-->
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_treat_halt" />
+<script type="text/javascript" src="../js/common.js"></script>

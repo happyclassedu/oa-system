@@ -1,0 +1,18 @@
+<!-- link0 s -->
+<div class="fwzn">
+        <h2>　</h2>
+        <ul>
+            <!--{ foreach item=tmp from=$ws.link0.list }-->
+        <li>
+            <a href="<!--{$tmp.url_act}-->" title="<!--{$tmp.name}-->" target="_blank">
+                <!--{ if $tmp.img eq "" }-->
+                <!--{$tmp.name}-->
+                <!--{ else if }-->
+                <img src="doc::<!--{$tmp.img}-->" />
+                <!--{ /if }-->
+            </a>
+        </li>
+        <!--{ /foreach }-->
+        </ul>
+    </div>
+<!-- link0 e -->

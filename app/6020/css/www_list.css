@@ -1,0 +1,82 @@
+#cen_list  {
+   width:770px;
+   float:right;
+}
+#cen_list h6{
+   font-size:12px;
+   line-height:30px;
+   border-bottom:2px solid #5273a7;
+}
+#cen_list  h6 a {
+   color:#000000;
+   font-weight:800;
+   text-decoration:none;
+   border:0;
+}
+#cen_list a {
+   display:block;
+   line-height:30px;
+   padding-left:40px;
+   text-decoration:none;
+   color:#333333;
+   border-bottom:1px dashed #999999;
+}
+
+#cen_list a:hover {
+   font-weight:800;
+}
+
+#cen_list span {
+   float:right;
+   padding-right:30px;
+   padding-top:8px;
+}
+
+#cen_list p {
+   width:770px;
+   text-align:center;
+   line-height:30px;
+}
+
+#cen_list p a {
+   display:inline;
+   border:none;
+   padding:0 8px;
+   line-height:30px;
+}
+
+/* 换页 s */
+.page_box {
+	float:left;
+	margin-top:10px;
+	margin-left:180px;
+    height: 35px;
+    text-align: center;
+}
+
+.page_box a {
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    line-height: 21px;
+    margin: 0 4px;
+    padding: 0 6px;
+    border: #DBDBDB 1px solid;
+    color: #333333;
+    font-size: 12px;
+}
+
+.page_box a:hover {
+    background:#DEF1FF;
+    color: #FF0000;
+    text-decoration:none;
+}
+
+
+.page_box .page_now {
+    background:#DEF1FF;
+    color: #FF0000;
+    font-weight: 700;
+}
+
+/* 换页 e */

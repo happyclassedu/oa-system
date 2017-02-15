@@ -1,0 +1,101 @@
+<HTML>
+    <HEAD>
+        <TITLE>意见反馈 - 人才网站管理系统PHP1.0地区版</TITLE>
+        <META http-equiv=Content-Type content="text/html; charset=utf-8">
+        <LINK href="../css/Style.css" type="text/css" rel="stylesheet">
+    </HEAD>
+<BODY>
+ <!--页面顶部-->
+<IFRAME align="middle" src="header.htm" frameBorder="0" width="100%" scrolling="no" height="117"></IFRAME>
+<!--页面主体-->
+<TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <td width=160 height="240px">
+      <IFRAME align=middle src="left.htm" frameBorder=0 width="100%" scrolling=no height=240></IFRAME>
+    </td>
+    <td width=10>&nbsp;</td>
+    <td>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td width=25><IMG height=30 
+            src="../img/Right1_left(1).jpg" 
+            width=25></td>
+          <td background="../img/Right1_bg(1).jpg"><STRONG>意见反馈</STRONG></td>
+          <td width=25><IMG height=30 
+            src="../img/Right1_right(1).jpg" 
+            width=25></td></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <td height=5></td></TR></TBODY></TABLE>
+      <TABLE cellSpacing=1 cellPadding=4 width="100%" bgColor=#dfdfdf 
+        border=0><TBODY>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=80><font color=#ff0000>*</font>姓名：</td>
+          <td><input id=txt_Realname2 style="width: 350px" name=txt_Realname2>
+            <span id=rfv_Typeid style="DISPLAY: none; COLOR: red" initialvalue="" 
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid" 
+            display="Dynamic" errormessage="<br>请选择反馈类型！" focusOnError="t" 
+            controltovalidate="ddl_Typeid"><BR>请选择反馈类型！</span></td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=80><font color=#ff0000>*</font> 
+            联系电话：</td>
+          <td><input id=txt_Realname3 style="width: 350px" name=txt_Realname3>
+            <span id=rfv_Memo style="DISPLAY: none; COLOR: red" initialvalue="" 
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid" 
+            display="Dynamic" errormessage="<br>请输入反馈内容！" focusOnError="t" 
+            controltovalidate="txt_Memo"><BR>请输入反馈内容！</span></td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=80>Email：</td>
+          <td><input style="width: 350px" name=txt_Realname> 
+            <span id=rfv_Realname style="DISPLAY: none; COLOR: red" 
+            initialvalue="" 
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid" 
+            display="Dynamic" errormessage="<br>请输入您的称呼方式！" focusOnError="t" 
+            controltovalidate="txt_Realname"><BR>请输入您的称呼方式！</span></td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=80> 
+            邮政编码：</td>
+          <td><input id=txt_Email style="width: 350px" name=txt_Email> <span id=rfv_Email style="DISPLAY: none; COLOR: red" initialvalue="" 
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid" 
+            display="Dynamic" errormessage="<br>请输入邮件地址！" focusOnError="t" 
+            controltovalidate="txt_Email"><BR>请输入邮件地址！</span> <span id=rev_Email 
+            style="DISPLAY: none; COLOR: red" 
+            evaluationfunction="RegularExpressionValidatorEvaluateIsValid" 
+            display="Dynamic" errormessage="<br>请输入正确的邮件地址！" 
+            controltovalidate="txt_Email" 
+            validationexpression="[\w\.-]+(\+[\w-]*)?@([\w-]+\.)+[\w-]+"><BR>请输入正确的邮件地址！</span></td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=80>联系地址：</td>
+          <td><input id=txt_Phone style="width: 350px" name=txt_Phone></td></TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px">内容：</td>
+          <td><TEXTAREA id=textarea style="width: 350px" name=textarea rows=6></TEXTAREA></td>
+        </TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=80>验证码：</td>
+          <td><input id=txt_QQ style="width: 350px" 
+      name=txt_QQ></td></TR>
+        <TR bgColor=#ffffff>
+          <td colspan="2" align="center"><input style="width: 55px" value=提交></td>
+          </TR>
+      </TBODY></TABLE>
+      <TABLE cellSpacing=1 cellPadding=4 width="100%" bgColor=#ffffff 
+        border=0><TBODY>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=80>&nbsp;</td>
+          <td><span id=lbl_Error 
+  style="COLOR: red"></span></td>
+        </TR>
+          </TBODY>
+      </TABLE>
+    </td>
+  </TR>
+  </TBODY>
+</TABLE>
+<!--页面底部-->
+<IFRAME align=middle src="footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+</BODY>
+</HTML>

@@ -1,0 +1,26 @@
+/**
+ * 文件名称：index_i.css
+ * 功能描述：index_i页面CSS文件。
+ * 代码作者：孙振强（创建）
+ * 创建日期：2010-06-10
+ * 修改日期：2010-07-10
+ * 当前版本：V2.0
+*/
+
+#info_tb {
+    border: none;
+}
+
+#info_tb tbody tr {
+    line-height: 50px;
+}
+
+#info_tb tbody td {
+    border: solid #F5F5F5 1px;
+    padding-left: 15px;
+}
+
+#info_tb tbody input {
+    float: left;
+    margin: 5px;
+}

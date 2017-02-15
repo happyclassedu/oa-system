@@ -1,0 +1,430 @@
+
+#bl_center {
+  padding-top:5px;
+}
+
+/* 新闻资讯 s */
+
+#index_pics_box {
+  float:left;
+  width:452px;
+}
+
+.zxjj {
+  height:211px;
+}
+
+.zxjj p {
+  line-height:30px;
+  margin:0 5px;
+}
+
+.zxjj .zxxq {
+  float:right;
+  clear:both; 
+  position:relative;
+  color:#FF0000;
+  text-decoration:none;
+}
+
+*html .zxxq {
+  top:-30px;
+}/* IE6 */ 
+*+html .zxxq {
+  top:-30px;
+} /* IE7 */ 
+
+
+.zxjj a {
+  color:#000000;
+  display:block;
+  line-height:30px;
+  margin:0px 28px;
+  text-decoration:none;
+}
+
+.zxjj span {
+  float:right;
+  margin-right:25px;
+}
+
+#xwzx {
+  width:500px;
+  float:right;
+  border:1px solid #dedacf;
+}
+
+#xwzx h2 {
+  background:#ececec;
+  border-bottom:1px solid #dedacf;
+}
+
+#xwzx img {
+  float:right;
+  margin:5px 10px;
+  border:1px solid #CCCCCC;
+}
+
+#xwzx h2 a {
+  font-size:13px;
+  color:#333333;
+  line-height:30px;
+  text-align:center;
+  padding:7px 15px 9px 15px;
+  text-decoration:none;
+  border-right:1px solid #dedacf;
+}
+
+#xwzx h2 a:hover {
+  background:#ffffff;
+  border-top:1px solid #dedacf;
+  border-bottom:0;
+}
+
+#zcfg ul,.xwzx {
+  height:187px;
+}
+
+.xwzx ul li {
+  list-style:none;
+  line-height:30px;
+}
+
+.xwzx a {
+  display:block;
+  color:#000000;
+  /*line-height:30px;*/
+  margin-left:15px;
+  text-decoration:none;
+}
+
+.xwzx a:hover {
+  color:#FF0000;
+}
+
+.xwzx span {
+  float:right;
+  margin-top:8px;
+  margin-right:25px;
+}
+
+#hydl {
+  float:right;
+  width:235px;
+  margin-right:1px;
+}
+#hydl h2 {
+  line-height:33px;
+  font-size:14px;
+  padding-left:35px;
+  background:url(../img/login_title.gif) left top no-repeat;
+}
+
+#hydl img {
+  border:0;
+}
+
+#hydl ul {
+  border:1px solid #dedacf;
+  border-top:none;
+  padding:7.5px;
+}
+
+#hydl ul li {
+  line-height:29px;
+  text-align:center;
+  list-style:none;
+}
+
+#hydl ul li a {
+  color:#FF0000;
+  line-height:30px;
+  text-decoration:none;
+}
+
+/* 新闻资讯 e */
+
+#zyxx a {
+  color:#FF0000;
+  line-height:35px;
+  font-weight:800;
+  margin:0px 28px;
+  text-decoration:none;
+}
+
+#zyxx a img {
+  border:none;
+ /* margin:8px -10px 8px 20px;*/
+}
+
+.bl_linkads ul {
+  width:980px;
+  float:left;
+  margin-bottom:5px;
+}
+
+.bl_linking ul {
+  width:980px;
+  float:left;
+  padding-left:8px;
+  margin-bottom:5px;
+}
+
+.bl_linkads ul li {
+  float:left;
+  list-style:none;
+  margin:5px 5px 0 0;
+  border:1px solid #dedacf;
+}
+
+.bl_linking ul li {
+  float:left;
+  list-style:none;
+  margin:5px 6px 0 0;
+  border:1px solid #dedacf;
+}
+
+.bl_linkads ul li img,.bl_linking ul li img {
+  border:none;
+}
+
+/* 领导信息 s */
+
+.ldfc {
+  width:280px;
+  float:left;
+  margin-left:2px;
+  border:1px solid #dedacf;
+}
+
+.ldfc a {
+  display:block;
+  line-height:28px;
+  color:#000000;
+  text-decoration:none;
+}
+
+.ldfc table {
+  width:275px;
+  margin:0 auto;
+}
+
+.ldfc h1 {
+  font-size:14px;
+  background:#ececec;
+  padding-left:15px;
+}
+
+.ldfc p {
+  line-height:25px;
+  padding:0 8px;
+}
+
+
+
+/* 领导信息 e */
+
+/* 个人求职 s */
+
+.grqz {
+  width:280px;
+  float:left;
+  margin-left:2px;
+}
+
+.grqz a {
+  display:block;
+  line-height:28px;
+  color:#000000;
+  text-decoration:none;
+}
+
+.grqz h1 {
+  font-size:14px;
+  padding-left:40px;
+  background:url(../img/grqz_title.jpg) left top no-repeat;
+}
+
+.grqz table {
+  margin:0 auto;
+  border:1px solid #dedacf;
+  border-top:none;
+}
+
+.grqz table tr {
+  line-height:28px;
+  text-align:center;
+  border-bottom:1px dashed #dedacf;
+}
+
+.grqz table tr a {
+  color:#003366;
+}
+
+.grqz table tr a:hover {
+  color:#FF0000;
+}
+
+.grqz_title {
+  text-align:center;
+  font-weight:800;
+}
+ 
+
+
+/* 个人求职 e */
+/* 服务指南 s */
+.fwzn {
+  width:430px;
+  float:left;
+  padding-left:5px;
+  overflow:hidden;
+}
+
+.fwzn h2 {
+  line-height:38px;
+  background:url(../img/fwzn_title.gif) left top no-repeat;
+}
+
+.fwzn ul li {
+  float:left;
+  list-style:none;
+  margin:6px 0;
+}
+
+.fwzn img {
+  border:0;
+}
+
+/* 服务指南 e */
+/* 便民服务 s */
+
+.bmfw {
+  width:280px;
+  float:left;
+  margin-left:2px;
+  border:1px solid #dedacf;
+  overflow:hidden;
+}
+
+.bmfw h1 {
+  font-size:14px;
+  line-height:30px;
+  width:100%;
+  background:url(../img/bmfw_title.gif) left top repeat-x;
+}
+
+.bmfw h1 a {
+  color:#FFFFFF;
+  background:none;
+}
+
+.bmfw ul {
+  padding-left:50px;
+  padding-top:2px;
+}
+
+.bmfw ul li {
+  float:left;
+  list-style:none;
+  padding:5px 0;
+}
+
+.bmfw a {
+  line-height:28px;
+  width:90px;
+  padding:9px 25px;
+  color:#000000;
+  text-decoration:none;
+  background:url(../img/bmfw_title.gif) left bottom no-repeat;
+}
+
+/* 便民服务 e */
+/* 政策法规 s */
+#zcfg {
+  width:425px;
+  float:left;
+  margin-left:5px;
+  border:1px solid #dedacf;
+
+}
+
+#zcfg h2  {
+  background:url(../img/bmfw_title.gif) top left repeat-x;
+}
+
+#zcfg h2 a {
+  font-size:13px;
+  color:#ffffff;
+  line-height:32px;
+  text-align:center;
+  padding:8px 15px 12px 15px;
+  text-decoration:none;
+  border-right:1px solid #dedacf;
+}
+
+#zcfg h2 a:hover {
+  background:#ffffff;
+  color:#000000;
+  border-top:1px solid #dedacf;
+  border-bottom:0;
+}
+
+#zcfg ul li {
+  list-style:none;
+  line-height:30px;
+}
+
+#zcfg ul li a {
+  /*display:block;*/
+  color:#000000;
+  margin-left:15px;
+  text-decoration:none;
+}
+
+#zcfg ul li a:hover {
+  color:#FF0000;
+}
+
+#zcfg ul li span {
+  float:right;
+  margin-right:25px;
+}
+
+
+/* 政策法规 e */
+
+#zxzp {
+  float:right;
+  width:235px;
+  margin-right:1px;
+  border:1px solid #dedacf;
+}
+
+#zxzp h2  {
+  font-size:14px;
+  line-height:30px;
+  width:100%;
+  background:url(../img/bmfw_title.gif) left top repeat-x;
+}
+
+#zxzp ul li {
+  list-style:none;
+  line-height:30px;
+}
+
+#zxzp h2 a {
+  color:#FFFFFF;
+  margin-left:5px;
+  background:none;
+  text-decoration:none;
+}
+
+#btn_login,#btn_reg {
+  width:93px;
+  line-height:30px;
+  min-height:30px;
+  border:none;
+  background:url(../img/bmfw_title.gif) bottom left no-repeat;
+
+}

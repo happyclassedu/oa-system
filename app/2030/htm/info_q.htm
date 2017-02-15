@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>信息--提出问题</title>
+    </head>
+    <body>
+        <!--开始__基本功能区-->
+        <div id="box_title">
+            <span id="sys_title">
+                留言信息管理--留言信息
+                <input id="d_ws_id" type="hidden"/>
+                <input id="d_ws_name" type="hidden"/>
+            </span>
+        </div>
+        <!--结束__基本功能区-->
+        <!--开始__信息内容区-->
+        <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">
+                        留言板
+                    </td>
+                </tr>
+                <tr class="tr_0">
+                    <td>留言标题：</td>
+                    <td colspan="3">
+                        <input id="d_name" type="text" />
+                    </td>
+                    <td>留言时间：</td>
+                    <td>
+                        <input id="d_atime" type="text" />
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td>留言者：</td>
+                    <td>
+                        <input id="d_q_name" type="text" />
+                    </td>
+                    <td>性别：</td>
+                    <td>
+                        <select id="d_sex">
+                            <option value="1" title="男">男</option>
+                            <option value="0" title="女">女</option>
+                        </select>
+                    </td>
+                    <td>联系电话：</td>
+                    <td><input id="d_tel" type="text" /></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>电子邮箱：</td>
+                    <td><input id="d_email" type="text" /></td>
+                    <td>地址：</td>
+                    <td colspan="3"><input id="d_addr" type="text" /></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>留言内容：</td>
+                    <td colspan="5"><textarea id="d_q_intro" rows="3"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息内容区-->
+        <!--开始__保存操作区-->
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button" value="保存信息">
+                </td>
+            </tr>
+        </table>
+        <!--结束__保存操作区-->
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_q" />
+<script type="text/javascript" src="../js/common.js"></script>

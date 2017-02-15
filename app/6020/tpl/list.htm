@@ -1,0 +1,22 @@
+<!--{ include file="nav.htm" }-->
+<!--列表页s-->
+<div id="el_cen_cen" class="el_980_cen">
+   <!--{ include file="lefter.htm" }-->
+  <div id="cen_list">
+     <h6><a href="<!--{$ws.list.url}-->"><!--{$ws.list.name}--></a></h6>
+     <!--{ foreach item=tmp from=$ws.news }-->
+     <span><!--{$tmp.atime|date_format:"%Y-%m-%d"}--></span><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+     <!--{ /foreach }-->
+     <div id="page_box">
+	     <a id="page_first" href="<!--{$ws.page.first}-->">首页</a>
+		 <a id="page_prev" href="<!--{$ws.page.prev}-->">上一页</a>
+         <!--{ foreach key=i item=tmp from=$ws.page.num }-->
+         <a  id="page_<!--{$i}-->" href="<!--{$tmp}-->"><!--{$i}--></a>
+         <!--{ /foreach }-->
+         …… 
+		 <a  id="page_next" href="<!--{$ws.page.next}-->">下一页</a>
+		 <a id="page_last" href="<!--{$ws.page.last}-->">尾页</a>
+	</div>
+  </div>
+</div>
+<!--列表页e-->

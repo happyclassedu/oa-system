@@ -1,0 +1,24 @@
+<div id="cen_box" class="div_center">
+    <!--列面页面右侧开始-->
+    <div id="info_box" class="cen_box_r">
+        <h2 class="nav_box">
+            <span>
+                您目前的位置：
+                <!--{ foreach item=tmp from=$ws.nav }-->
+                <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>&nbsp;&gt;&gt;&nbsp;
+                <!--{ foreachelse }-->
+                <!--{ /foreach }-->
+            </span>
+        </h2>
+        <div class="list_m">
+            <!--{ foreach item=tmp from=$ws.list_link }-->
+            <a href="<!--{$tmp.url_act}-->" title="<!--{$tmp.name}-->" target="_blank"><img src="doc::<!--{$tmp.img}-->" /></a>
+            <!--{ /foreach }-->
+        </div>
+    </div>
+    <!--列面页面右侧结束-->
+    <!--{ include file="lefter.htm" }-->
+</div>
+
+
+

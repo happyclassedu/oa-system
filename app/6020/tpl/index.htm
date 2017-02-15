@@ -1,0 +1,28 @@
+<!--index s-->
+<div id="el_cen_cen" class="el_980_cen">
+  <div class="el_cen_left">
+      <h2>解决方案</h2>
+      <!--{ foreach item=tmp from=$ws.index_news0 }-->
+      <span><!--{$tmp.atime|date_format:"%Y-%m-%d"}--></span><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->" target="_blank"><!--{$tmp.name_s}--> </a>
+      <!--{ /foreach }-->
+  </div>
+  <div class="el_cen_cen">
+     <h2>产品中心</h2>
+	 <img src="../img/wzgl.gif" />
+  </div>
+  <div class="el_cen_right">
+      <!--{ foreach item=tmp from=$ws.index_menu1 }-->
+      <a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->" target="_blank"><!--{$tmp.name}--> </a>
+      <!--{ /foreach }-->
+  </div>
+</div>
+<div class="el_980_cen div_auto_1">
+    <div class="div_jcarousel_1">
+        <ul >
+            <!--{ foreach item=tmp from=$ws.index_links }-->
+            <li><a href="<!--{$tmp.url}-->" width="100" height="100" title="<!--{$tmp.name}-->" target="_blank"><img src="doc::<!--{$tmp.img}-->" /> </a></li>
+            <!--{ /foreach }-->
+        </ul>
+    </div>
+</div>
+<!--index e-->

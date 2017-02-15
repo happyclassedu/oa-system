@@ -1,0 +1,16 @@
+<div id="dy_cen_left">
+    <div id="dy_zxsp">
+        <h1><a href="#">最新视频</a></h1>
+        <ul>
+            <!--{ foreach item=tmp from=$ws.lefter_news0}-->
+            <li><a href="<!--{$tmp.url_act}-->"><img src="../img/right_ph.gif" width="60" /><br /><!--{$tmp.name}--></a></li>
+            <!--{ /foreach }-->
+        </ul>
+    </div>
+    <div id="dy_zbgg">
+        <h1><a href="#">热点视频</a></h1>
+        <!--{ foreach item=tmp from=$ws.lefter_news1}-->
+        <a href="<!--{$tmp.url_act}-->"><!--{$tmp.name}--></a>
+        <!--{ /foreach }-->
+    </div>
+</div>

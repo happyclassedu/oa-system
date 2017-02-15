@@ -1,0 +1,78 @@
+/**
+ * 文件名称：ileap_card.css
+ * 功能描述：劳动协管员模块信息工作证界面样式。
+ * 代码作者：郭娟（创建）、孙振强（优化）
+ * 创建日期：2010-06-08
+ * 修改日期：2010-06-08
+ * 当前版本：V2.0
+*/
+
+#job_card_info_box {
+    position:absolute;
+    margin-top : 0;
+    margin-left: 0;
+}
+
+#i_name,
+#i_sex,
+#i_code,
+#i_addr_1,
+#i_addr_2 {
+    width: 500px;
+    font-size: 16pt;
+    font-family: "华文行楷";
+    position:absolute;
+    left: 100px;
+}
+
+#i_name {
+    top : 128px;
+}
+
+#i_sex {
+    top : 176px;
+}
+
+#i_code {
+    top : 224px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#i_addr_1 {
+    top : 272px;
+    left: 95px;
+    letter-spacing : 17px;
+}
+
+#i_addr_2 {
+    top : 320px;
+    left: 95px;
+}
+
+.i_addr_2_11 {
+    letter-spacing : -2px;
+}
+
+.i_addr_2_12 {
+    letter-spacing : -4px;
+}
+
+#i_photo {
+    position:absolute;
+    top : 115px;
+    left: 200px;
+}
+
+#sys_title_box {
+    padding:10px 0;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+}
+
+#sys_title {
+    color: #000066;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+}

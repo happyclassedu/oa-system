@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+    <HEAD>
+        <META http-equiv=Content-Type content="text/html;charset=utf-8">
+        <TITLE>招聘中心 - 营业执照 - 人才网管理系统php1.0地区版</TITLE>
+        <LINK href="../css/www.css" type="text/css" rel="stylesheet">
+    </HEAD>
+    <BODY>
+        <!--页面顶部-->
+        <IFRAME align=middle src="com_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+        <!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=188><!--菜单-->
+                        <IFRAME align=middle src="com_left.htm" frameBorder=0 width="100%" scrolling=no height=500></IFRAME>
+                    </td>
+                    <td width=10></td>
+                    <td bgColor=#ffffff><!--右侧-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom
+                                        background="../img/title1_bg.gif" height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR height=28>
+                                                    <td align=middle width=80
+                                                        background="../img/title1_bg3.jpg">
+                                                        <A id="a_com_basic">基本信息</A>
+                                                    </td>
+                                                    <td width=5></td>
+                                                    <td align=middle width=80
+                                                        background="../img/title1_bg3.jpg">
+                                                        <A id="a_com_contact"><B><font color="#ffffff">联系方式</font></B></A>
+                                                    </td>
+                                                    <td width=5>&nbsp;</td>
+                                                    <td align=middle width=80
+                                                        background="../img/title1_bg3.jpg">
+                                                        <A id="a_com_logo"><B><font color="#ffffff">公司图片</font></B></A>
+                                                    </td>
+                                                    <td width=5>&nbsp;</td>
+                                                    <td align=middle width=80
+                                                        background="../img/title1_bg2.jpg">
+                                                        <A id="a_com_cert" class="white"><B><font color="#ffffff">营业执照</font></B></A>
+                                                    </td>
+                                                    <td width=5>&nbsp;</td>
+                                                    <td align=middle width=80
+                                                        background="../img/title1_bg3.jpg">
+                                                        <A id="a_com_mailtpl"><B><font color="#ffffff">邮件模板</font></B></A>
+                                                    </td>
+                                                    <td>&nbsp;</td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR>
+                                    <td height=5></td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <!---营业执照-->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td height="28" style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid"><strong>营业执照</strong>
+                                    (<font color="#ff3300">*</font> 为必填项)</td>
+                            </tr>
+                            <tr>
+                                <td height="25" style="PADDING-LEFT: 12px; PADDING-TOP: 3px"><font color="#777777">营业执照只作为网站核实贵公司真实性的材料，不在网站页面显示<br>
+                                        通过网站核实后的营业执照不能删除，如需要删除请与网站客服人员联系</font></td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#dddddd">
+                            <tr bgcolor="#ffffff">
+                                <td width="100" style="PADDING-LEFT:12px"><font color="#ff3300">*</font> 营业执照：</td>
+                                <td><input name="txt_Licence" type="text" maxlength="20" id="txt_Licence" style="width:240px;" />
+                                    <span id=""></span>
+                                </td>
+                            </tr>
+                            <tr bgcolor="#ffffff">
+                                <td width="100" style="PADDING-LEFT:12px"><font color="#ff3300">*</font> 编辑图片：</td>
+                                <td><font color="#777777">图片必须是JPG或者GIF格式，大小不能超过500K<br>
+                                        图片应该处理成大小为450 x 300 像素<br>
+                                    </font>
+                                    <input name="txt_CertUrl" type="text" id="txt_CertUrl" style="width:240px;" />
+                                    <input name="btn_UpLoad" type="button" id="btn_UpLoad" value="上传图片" onClick="window.open('../Public/UpLoadFile.aspx?FormName=Form1&amp;EditName=txt_CertUrl&amp;ImageName=img_Cert&amp;ExtName=jpg&amp;UpPath=Company_Cert','','status=no,scrollbars=no,top=20,left=110,width=420,height=165')" />
+                                    <span id=""></span>
+                                </td>
+                            </tr>
+                            <tr bgcolor="#ffffff">
+                                <td width="100" style="PADDING-LEFT:24px">执照图片：</td>
+                                <td><img src="../Uploadfiles/Default/CompanyCert.gif" id="img_Cert" width="450" height="300" name="img_Cert" /></td>
+                            </tr>
+                        </table>
+                        <!--保存-->
+                        <TABLE id="act_tb" cellSpacing=1 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR vAlign=top bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100>&nbsp;</td>
+                                    <td>
+                                        <input id="btn_save" style="width: 60px; HEIGHT: 30px" type="button" value="保存"/>
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                    </td>
+                </TR>
+            </TBODY>
+        </TABLE>
+        <!--页面底部-->
+        <IFRAME align=middle src="com_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+    </BODY>
+</HTML>
+<input type="hidden" id="g_id" value="info_com_cert" />
+<script type="text/javascript" src="../js/common.js"></script>

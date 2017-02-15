@@ -1,0 +1,27 @@
+
+<!-- list_link b-->
+<div id="list_link">
+    <h2 id="nav_box">
+        <span>
+            当前位置：
+            <!--{ foreach item=tmp from=$ws.nav }-->
+            <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>&nbsp;&gt;&gt;&nbsp;
+            <!--{ foreachelse }-->
+            <!--{ /foreach }-->
+        </span>
+    </h2>
+    <ul>
+        <!--{ foreach item=tmp from=$ws.link }-->
+        <li>
+            <a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->" target="_blank">
+                <!--{ if $tmp.img eq "" }-->
+                <span><!--{$tmp.name}--></span>
+                <!--{ else if }-->
+                <img src="doc::<!--{$tmp.img}-->" />
+                <!--{ /if }-->
+            </a>
+        </li>
+        <!--{ /foreach }-->
+    </ul>
+</div>
+<!-- list_link e-->

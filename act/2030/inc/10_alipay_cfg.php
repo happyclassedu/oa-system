@@ -1,0 +1,1 @@
+<?php  $partner = "2088501903055905"; $key = "7g67mozzmengs9ek2c3u4hfqavv9c8iu"; $seller_email = "public@82208299.com"; $notify_url = ""; $notify_url = ""; $show_url = ""; $mainname = "西安而立科技有限责任公司"; $sign_type = "MD5"; $_input_charset = "utf-8"; $transport = "http"; ?>

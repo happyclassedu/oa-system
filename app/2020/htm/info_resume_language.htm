@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>我的简历 - 语言能力 - 人才网站管理系统PHP1.0地区版</title>
+        <LINK rel=stylesheet type="text/css" href="../css/www.css"/>
+    </head>
+    <body>
+        <!--页面顶部-->
+        <IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=188 ><!--菜单-->
+                        <IFRAME align=left src="resume_left.htm" frameBorder=0 scrolling=no width="100%" height=500></IFRAME></td>
+                    <td width=10></td>
+                    <td bgColor=#ffffff><!--右侧-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom background="../img/title1_bg.gif" height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width=80 background="../img/title1_bg2.jpg" height=28>
+                                                        <font color=#ffffff><B>语言能力</B></font>
+                                                    </td>
+                                                    <td>&nbsp;</td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR> <td height=5></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 5px"><font color=#777777>请在本页语言能力；</font>
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=1 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR><td bgColor=#aaccef height=1></td></TR>
+                            </TBODY>
+                        </TABLE>
+                         <TABLE id="list_tb" cellSpacing=1 cellPadding=4 width="100%" border=0>
+                            <col width="10%" align="center"/>
+                            <col width="10%" align="center"/>
+                            <col width="10%" align="center"/>
+                            <col width="20%" align="center"/>
+                            <col width="20%" align="center"/>
+                            <col width="30%" align="center"/>
+                            <thead>
+                                <TR bgColor=#dbedfb>
+                                    <td><STRONG>序号</STRONG></td>
+                                    <td><STRONG>语言</STRONG></td>
+                                    <td><STRONG>掌握程度</STRONG></td>
+                                    <td><STRONG>读写能力</STRONG></td>
+                                    <td><STRONG>听说能力</STRONG></td>
+                                    <td><STRONG>操 作</STRONG></td>
+                                </TR>
+                            </thead>
+                            <TBODY>
+                                <TR>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="btn_box">
+                                        <input class="btn_edit" type="button" value="修改" />
+                                        <input class="btn_del" type="button" value="删除" />
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td id="jpage_box"></td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <!--新增/修改语言能力-->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td height="5"></td>
+                            </tr>
+                            <tr>
+                                <td height="28" style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid"><strong><span id="lbl_Operate">新增语言能力</span></strong>
+                                    (<font color="#ff3300">*</font> 为必填项)</td>
+                            </tr>
+                        </table>
+                        <TABLE id="info_tb" cellSpacing=1 cellPadding=4 width="100%" bgColor=#dddddd border=0>
+                            <TBODY>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100>
+                                        <font color=#ff0000>*</font> 语言：</td>
+                                    <td>
+                                        <select id="d_name" style="width: 350px">
+                                            <option value="" selected>请选择</option>
+                                            <option value="英语">英语</option>
+                                            <option value="日语">日语</option>
+                                            <option value="法语">法语</option>
+                                            <option value="德语">德语</option>
+                                            <option value="俄语">俄语</option>
+                                            <option value="韩语">韩语</option>
+                                            <option value="西班牙语">西班牙语</option>
+                                            <option value="葡萄牙语">葡萄牙语</option>
+                                            <option value="阿拉伯语">阿拉伯语</option>
+                                            <option value="意大利语">意大利语</option>
+                                            <option value="中文普通话">中文普通话</option>
+                                            <option value="粤语">粤语</option>
+                                            <option value="上海话">上海话</option>
+                                            <option value="闽南语">闽南语</option>
+                                        </select>
+                                         <input id="d_r_id" type="hidden"/>
+                                        <input id="d_i_type" type="hidden" value=""/>
+                                        <span id="d_error_name"></span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff0000>*</font> 掌握程度：</td>
+                                    <td>
+                                        <select id="d_i_txt0" style="width: 350px">
+                                            <option value=""  selected>请选择</option> 
+                                            <option value="一般">一般</option>
+                                            <option  value="良好">良好</option>
+                                            <option value="熟练">熟练</option>
+                                            <option value="精通">精通</option>
+                                        </select>
+                                        <span id="d_error_i_txt0"></span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100>
+                                        <font color=#ff0000>*</font> 读写能力：
+                                    </td>
+                                    <td>
+                                        <select id="d_i_txt1" style="width: 350px">
+                                            <option value=""  selected>请选择</option>
+                                            <option value="一般">一般</option>
+                                            <option value="良好">良好</option>
+                                            <option value="熟练">熟练</option>
+                                            <option value="精通">精通</option>
+                                        </select>
+                                        <span id="d_error_i_txt1"></span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff0000>*</font> 听说能力：</td>
+                                    <td>
+                                        <select id="d_i_txt2" style="width: 350px">
+                                            <option value=""  selected>请选择</option>
+                                            <option value="一般">一般</option>
+                                            <option value="良好">良好</option>
+                                            <option value="熟练">熟练</option>
+                                            <option value="精通">精通</option>
+                                        </select>
+                                        <span id="d_error_i_txt2"></span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100>是否显示在简历中</td>
+                                    <td>
+                                        <select id="d_open" style="width: 100px">
+                                            <option value="" >请选择</option>
+                                            <option value="1">是</option>
+                                            <option value="0">否</option>
+                                        </select>
+                                     </td>
+                                </TR>
+                   </TBODY>
+                   </TABLE>
+                    <!--新增-->  
+                            <TABLE id="act_tb" cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                <TBODY>
+                                    <TR>
+                                        <td style="PADDING-LEFT: 24px" width=100>&nbsp;</td>
+                                        <td align=left>
+                                            <input id="btn_save" style="width: 60px; HEIGHT: 30px"  type="button" value="保存"/>
+                                        </td>
+                                    </TR>
+                                </TBODY>
+                            </TABLE>
+                    <!--修改-->
+                    <!--页面左侧 结束-->
+                    </td>
+                </TR>
+            </TBODY>
+        </TABLE><!--页面底部-->
+        <IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=220></IFRAME>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_resume_language" />
+<script type="text/javascript" src="../js/common.js"></script>

@@ -1,0 +1,15 @@
+#contg img {
+    float: left;
+}
+
+#contg h4 p {
+    padding-left: 120px;
+    line-height: 27px;
+    text-indent: 2em;
+    font-weight: normal;
+}
+
+#contg p {
+    text-indent: 2em;
+    line-height: 27px;
+}

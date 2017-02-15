@@ -1,0 +1,30 @@
+#lt_rep {
+  border:1px solid #4392d6;
+}
+
+#lt_rep h3 {
+  line-height:30px;
+  padding-left:15px;
+  font-size:13px;
+  color:#FFFFFF;
+  background:url(../img/nv.png) left bottom repeat-x;
+  border-bottom:1px solid #cdcdcd;
+}
+
+#lt_rep textarea {
+  width:650px;
+}
+
+#lt_rep table tr {
+  line-height:30px;
+}
+
+#btn_save {
+  border:0;
+  width:68px!important;
+  line-height:33px;
+  height:35px;
+  margin:10px;
+  margin-left:150px;
+  background:url(../img/search_bt.jpg) left top no-repeat;
+}

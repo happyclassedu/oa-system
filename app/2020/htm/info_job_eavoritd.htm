@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>我的职位 - 申请职位 - 人才网站管理系统PHP1.0地区版</title>
+        <link href="../css/www.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <!--页面顶部-->
+        <IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no  height=117></IFRAME><!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=188><!--菜单-->
+                        <IFRAME align=left src="person_left.htm" frameBorder=0 scrolling=no width="100%"
+                                height=500></IFRAME></td>
+                    <td width=10></td>
+                    <td bgColor=#ffffff><!--右侧-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom  background="../img/title1_bg.gif" height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width=80  background="../img/title1_bg2.jpg" height=28>
+                                                        <A id="" class=white  href="#"><B>申请职位</B></A>
+                                                    </td>
+                                                    <td>&nbsp;</td></TR>
+                                            </TBODY>
+                                        </TABLE>
+
+                                    </td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td height="25" style="PADDING-LEFT: 13px; PADDING-TOP:3px;">
+                                    <b><font color="#ff4400">选择职位</font></b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20" style="PADDING-LEFT: 12px;">
+                                    <font color="#777777">选择您要申请的职位，可同时申请多个职位( 24小时内不能重复申请同一个职位 )</font>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="1" cellpadding="0">
+                            <tr>
+                                <td height="1" bgcolor="#AACCEF"></td>
+                            </tr>
+                        </table>
+                        <!--职位列表-->
+                        <TABLE  style="width: 100%; BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 border=0>
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE id="list_job" cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <col width="5%" align="center"/>
+                                            <col width="20%" align="center"/>
+                                            <col width="20%" align="center"/>
+                                            <col width="20%" align="center"/>
+                                            <col width="20%" align="center"/>
+                                            <col width="15%" align="center"/>
+                                            <thead>
+                                                <TR bgColor=#dbedfb>
+                                                    <td>
+                                                        <input id="d_checkbox_all" name="d_checkbox_all" type="checkbox"/>
+                                                    </td>
+                                                    <td><STRONG>序号</STRONG></td>
+                                                    <td><STRONG>职位名称</STRONG></td>
+                                                    <td><STRONG>公司名称</STRONG></td>
+                                                    <td><STRONG>工作地区</STRONG></td>
+                                                    <td><STRONG>操作</STRONG></td>
+                                                </TR>
+                                            </thead>
+                                            <TBODY>
+                                                <TR>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                 <!--   <td class="btn_box">
+                                                        <input class="btn_job_look" type="button" value="浏览" />
+                                                    </td>-->
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                  <!--                      <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td id="jpage_box"></td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>-->
+                                        <!--操作按扭-->
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                                            <tr>
+                                                <td height="10"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="PADDING-LEFT:12px;">
+                                                    <strong><font color="#ff4400">选择简历</font></strong><br>
+                                                    <font color="#777777">
+                                                        以下是您保存的简历，请选择一份适合该职位的完整简历，点击“申请”寄给该公司；
+                                                    </font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="1" cellpadding="0">
+                                            <tr>
+                                                <td height="1" bgcolor="#AACCEF"></td>
+                                            </tr>
+                                        </table>
+                                        <TABLE id="list_resume" cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <col width="5%" align="center"/>
+                                            <col width="20%" align="center"/>
+                                            <col width="30%" align="center"/>
+                                            <col width="30%" align="center"/>
+                                            <col width="15%" align="center"/>
+                                            <thead>
+                                                <TR bgColor=#dbedfb>
+                                                    <td>&nbsp;</td>
+                                                    <td><STRONG>序号</STRONG></td>
+                                                    <td><STRONG>简历名称</STRONG></td>
+                                                    <td><STRONG>简历语言</STRONG></td>
+                                                    <td><STRONG>操作</STRONG></td>
+                                                </TR>
+                                            </thead>
+                                            <TBODY>
+                                                <TR>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                   <!-- <td class="btn_box">
+                                                        <input class="btn_resume_look" type="button" value="浏览" />
+                                                    </td>-->
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                                            <tr>
+                                                <td height="25" style="PADDING-LEFT:12px;PADDING-TOP:8px">
+                                                    <input id="d_checbox_letter" type="checkbox" /><strong>
+                                                        <font color="#ff4400">附求职信</font></strong>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                                            <tr>
+                                                <td style="PADDING-LEFT:12px;PADDING-TOP:3px">
+                                                    <font color="#777777">
+                                                        我们建议您在递交简历的同时附上一封求职信，可以大大提高您的求职成功率；
+                                                    </font>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="25" style="PADDING-LEFT:12px;PADDING-TOP:3px">
+                                                    选择已有的求职信
+                                                    <select id="d_sel_letter" disabled="disabled" style="width:200px;">
+                                                        <option selected="selected" value="">请选择求职信</option>
+                                                    </select>
+                                                    <input id="d_l_id" type="hidden"/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="25" style="PADDING-LEFT:12px;PADDING-TOP:3px">
+                                                    <textarea id="d_intor" rows="8" disabled="disabled" style="width:650px;"></textarea>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <TABLE cellSpacing=2 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle>
+                                                        <input id="btn_app_job" type="button" value="立即申请"/>
+                                                        <input id="btn_app_close" type="button" value="取消申请">
+                                                    </td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                        <!--页面左侧 结束-->
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                    </td></TR>
+            </TBODY>
+        </TABLE><!--页面底部-->
+        <IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=220></IFRAME>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_job_eavoritd" />
+<script type="text/javascript" src="../js/common.js"></script>

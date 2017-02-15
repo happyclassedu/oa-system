@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>党员业务--党员票据管理</title>
+    </head>
+    <body>
+        <div id="box_title">
+            <span id="sys_title">党员业务--党员票据管理</span>
+            <div id="box_tools">
+                <span id="box_search">
+                    查看日清单&nbsp;&nbsp;
+                    <input id="d_i_date0" class="search" type="text">日 至
+                    <input id="d_i_date1" class="search" type="text">日 &nbsp;&nbsp;
+                    <input id="btn_search" type="button" value="搜索"/>&nbsp;&nbsp;<input id="btn_reset" type="button" value="清空"/>
+                </span>
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_list_party_blog" type="button" value="浏览票本记录"/>&nbsp;&nbsp;
+                <input id="btn_info_party_blog" type="button" value="新增票本费用"/>&nbsp;&nbsp;
+                <input id="btn_list_party_ulog" type="button" value="浏览使用记录"/>&nbsp;&nbsp;
+                <input id="btn_info_party_ulog" type="button" value="新增党费使用"/>&nbsp;&nbsp;
+            </div>
+        </div>
+        <iframe  id="iframe" width="800" height="200" frameborder="0" scrolling="auto" align="center"></iframe>
+        <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td align="center">党缴费纪录表</td>
+            </tr>
+        </table>
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>票本编号</td>
+                    <td>票据编号</td>
+                    <td>票本起止日期</td>
+                    <td>党费总计</td>
+                    <td>备注</td>
+                </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+            </tbody>
+        </table>
+        <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td align="center">党费使用记录</td>
+            </tr>
+        </table>
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>使用日期</td>
+                    <td>金额</td>
+                    <td>接收人</td>
+                    <td>所用事物</td>
+                    <td>备注</td>
+                </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+            </tbody>
+        </table>
+         <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">党员票据统计</td>
+                </tr>
+                <tr class="tr_0">
+                  <td>收据总计:</td>
+                  <td><span id="d_receipt_s"></span></td>
+                  <td>使用总计：</td>
+                  <td><span id="d_upay_s"></span></td>
+                  <td>当前余额：</td>
+                  <td><span id="d_balance_s"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_party_bill" />
+<script type="text/javascript" src="../js/common.js"></script>

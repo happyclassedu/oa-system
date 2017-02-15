@@ -1,0 +1,20 @@
+
+<!--{assign var="tmp" value=$ws.link.info}-->
+<!-- link b -->
+<div id="<!--{$ws.act}-->" class="div_976_center">
+    <h2><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a></h2>
+    <ul>
+        <!--{ foreach item=tmp from=$ws.link.list }-->
+        <li>
+            <a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->" target="_blank">
+                <!--{ if $tmp.img eq "" }-->
+                <!--{$tmp.name}-->
+                <!--{ else if }-->
+                <img src="doc::<!--{$tmp.img}-->" />
+                <!--{ /if }-->
+            </a>
+        </li>
+        <!--{ /foreach }-->
+    </ul>
+</div>
+<!-- link e -->

@@ -1,0 +1,7 @@
+<h5>
+    您的位置：
+    <!--{ foreach item=tmp from=$ws.nav }-->
+    <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>&nbsp;&gt;&gt;&nbsp;
+    <!--{ foreachelse }-->
+    <!--{ /foreach }-->
+</h5>

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>劳动保障协理员管理--内容页面</title>
+    </head>
+
+    <body>
+        <div id="sys_title_box">
+            <span id="sys_state"></span><span id="sys_title">劳动保障协理员管理--内容页面</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="btn_add" type="button" value="新增"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="btn_refresh" type="button" value="刷新"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <table id="info_table" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr>
+                    <td class="itb_title" colspan="6">一、基本信息</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>姓　　名</td>
+                    <td><input id="i_ileap_name" type="text" /></td>
+                    <td>编　　号</td>
+                    <td colspan="2"><input id="i_ileap_code" type="text" /></td>
+                    <td rowspan="5" align="center"><img id="i_photo_img" width="100" height="140" src="../img/photo.jpg" /></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>性　　别</td>
+                    <td><input id="i_sex" type="text" /></td>
+                    <td>身份证号</td>
+                    <td colspan="2"><input id="i_cardid" type="text" /></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>民　　族</td>
+                    <td><input id="i_minzu" type="text" /></td>
+                    <td>学　　历</td>
+                    <td colspan="2">
+                        <select id="i_degree">
+                            <option value=""></option>
+                            <option value="博士">博士</option>
+                            <option value="研究生">研究生</option>
+                            <option value="本科">本科</option>
+                            <option value="大专">大专</option>
+                            <option value="中专及以下">中专及以下</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td>出生年月</td>
+                    <td><input id="i_birth" type="text" /></td>
+                    <td>毕业院校</td>
+                    <td colspan="2"><input id="i_univ" type="text" /></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>年　　龄</td>
+                    <td><input id="i_age" type="text" /></td>
+                    <td>专　　业</td>
+                    <td colspan="2"><input id="i_major" type="text" /></td>
+                </tr>
+                <tr>
+                    <td class="itb_title" colspan="6">二、工作信息</td>
+                </tr>
+                <tr class="tr_1">
+                    <td>岗　　位</td>
+                    <td><input id="i_job_name" type="text" /></td>
+                    <td>岗位性质</td>
+                    <td><input id="i_job_type" type="text" /></td>
+                    <td width="100">工作地点</td>
+                    <td width="200"><input id="i_job_addr" type="text" /></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>工作证地点</td>
+                    <td><input id="i_job_addr_card" type="text" /></td>
+                    <td>街　　办</td>
+                    <td><input id="i_job_addr_0_name" type="text" /></td>
+                    <td>社　　区</td>
+                    <td><input id="i_job_addr_1_name" type="text" /></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>备　　注</td>
+                    <td colspan="5"><textarea id="i_remark" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="itb_title" colspan="6">三、联系方式</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>座　　机</td>
+                    <td><input id="i_tel" type="text" /> </td>
+                    <td>手　　机</td>
+                    <td><input id="i_mobil" type="text" /></td>
+
+                    <td>Ｑ　　Ｑ</td>
+                    <td><input id="i_qq" type="text" /></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>电子邮箱</td>
+                    <td><input id="i_email" type="text" /> </td>
+                    <td>住　　址</td>
+
+                    <td><input id="i_addr" type="text" /></td>
+                    <td>邮　　编</td>
+                    <td><input id="i_post_code" type="text" /></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="btn_box" colspan="6">
+                        <input id="btn_preview" type="button" value="打印工作证" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_edit" type="button" value="修改信息" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_save" type="button" value="保存信息" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_cancel" type="button" value="取消修改" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_del" type="button" value="删除信息" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_close" type="button" value="关闭信息" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_list" type="button" value="返回列表" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="ileap_info" />
+<script type="text/javascript" src="../js/common.js"></script>
+<link type="text/css" rel="stylesheet" href="../css/ileap_info.css" />

@@ -1,0 +1,31 @@
+
+
+#info_tb {
+        line-height : 35px;
+		border : 1px #1c68ca solid;
+		border-bottom : none; 
+	 }
+#act_tb {
+		border : 1px #1c68ca solid;
+		border-top : none; 
+		height : 40px;
+     }
+.tb_title0 {
+        text-align : center;
+     }
+.login_title {
+        background : url(../img/login_title_bg.gif) left top repeat-x;
+		text-align : left;
+		font-size : 14px;
+		font-weight : bold;
+		color : #FFFFFF;
+     }
+.login_title td {	 
+		padding-left : 40px;
+	 }
+#btn_login {
+        background : url(../img/Button_Login.gif) no-repeat;
+		width : 55px; 
+		height : 25px;
+		border : none;
+     }

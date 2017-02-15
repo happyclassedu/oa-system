@@ -1,0 +1,133 @@
+<div class="dy_960_cen">
+    <div id="dy_login_cen">
+        <h1>会员注册</h1>
+        <table id="info_tb" width="800" align="center" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td colspan="2" class="fl">注册信息</td>
+            </tr>
+            <tr>
+                <td align="right"><span class="bitian">*</span> 用 户 名：</td>
+                <td>
+                    <input id="d_loginid"  type="text" /><input id="btn_isuser"  type="button" value="检测用户是否存在"/><span id="d_error_loginid"></span>
+                    <input id="d_ws_id" type="hidden"/>
+                    <input id="d_ws_name" type="hidden"/>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><span class="bitian">*</span> 密　    码：</td>
+                <td>
+                    <input id="d_loginpw"  type="password" /><span id="d_error_loginpw"></span>	</td>
+            </tr>
+            <tr>
+                <td align="right"><span class="bitian">*</span> 确认密码：</td>
+                <td>
+                    <input id="d_loginpw_r"  type="password" /><span id="d_error_loginpw_r"></span>	</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="fl">基本信息</td>
+            </tr>
+            <tr>
+                <td align="right"><span class="bitian">*</span> 姓　　名：</td>
+                <td>
+                    <input id="d_name"  type="text"  /><span id="d_error_name"></span>	</td>
+            </tr>
+            <tr>
+                <td align="right"><span class="bitian">*</span> 身份证号：</td>
+                <td>
+                    <input id="d_idcard" type="text"/><span id="d_error_idcard"></span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">性　　别：</td>
+                <td>
+                    <select id="d_sex">
+                        <option value="">性别类型</option>
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">出生日期：      </td>
+                <td>
+                    <input id="d_birth" type="text"/></td>
+            </tr>
+            <tr>
+                <td align="right">民　　族：</td>
+                <td>
+                    <input id="d_nation" type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">籍　　贯：</td>
+                <td>
+                    <input id="d_native" type="text" />
+                </td>
+            </tr>
+             <tr>
+                <td align="right">毕业院校：</td>
+                <td>
+                    <input id="d_univ" type="text"  />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="fl">党员信息</td>
+            </tr>
+            <tr>
+                <td align="right">所属支部：</td>
+                <td>
+                    <input id="d_party_branch" type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">入党时间：</td>
+                <td>
+                    <input id="d_jparty_time" type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="fl">联系方式</td>
+            </tr>
+            <tr>
+                <td align="right"><span class="bitian">*</span> 工作单位：</td>
+                <td>
+                    <input id="d_cname" type="text" />
+                    <span id="d_error_cname"></span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><span class="bitian">*</span> 固定电话：</td>
+                <td>
+                    <input id="d_tel0" type="text" />
+                    <span id="d_error_tel0"></span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><span class="bitian">*</span> 移动电话：</td>
+                <td>
+                    <input id="d_tel1" type="text"/>
+                    <span id="d_error_tel1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><span class="bitian">*</span> 电子邮箱：</td>
+                <td>
+                    <input id="d_email" type="text"/>
+                    <span id="d_error_email"></span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Q　　Q：</td>
+                <td>
+                    <input id="d_qq" type="text"/>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <input id="btn_save" name="提交" type="button" value="提交" />
+            <input id="btn_reset" name="重置" type="button" value="重置" />
+        </p>
+    </div>
+</div>
+<input type="hidden" id="g_id" value="info_register" />
+<script type="text/javascript" src="../js/common.js"></script>

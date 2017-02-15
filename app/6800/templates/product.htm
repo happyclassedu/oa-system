@@ -1,0 +1,100 @@
+{include file="header.htm"}
+{literal}
+<script type="text/javascript" language="JavaScript">
+<!--
+function count(){
+var count=document.getElementById("count");
+var price=document.getElementById("price");
+var tall=count.value*price.value;
+document.getElementById("tall").innerHTML=tall;
+}
+
+
+//-->
+</script>
+{/literal}
+<div class="mainbox" style="margin-top:10px;">
+		<div class="s_left">
+				<div class="title">
+        			<div class="title_left"></div>
+        			<div class="title_center">
+            		<span>陕西特产分类</span>
+        			</div>
+        			<div class="title_right"></div>
+   				</div>
+				<div  style="clear:both"></div>
+			<div class="nav_content">
+				{section name=l loop=$select}
+				<h3><a href="special.php?city={$select[l].id}"><span>{$select[l].name}特产</span></a></h3>
+				{/section}
+				
+				<div id="ad_1">加载中...</div>				
+			</div>
+			
+			
+		</div>
+		{if $special_info==""}
+		<div class="s_right">
+		 		<div class="product_top">
+					 <div class="p_img">
+					 	<div class="spic"><a href="{$info.click_url}"><img src="{$info.pic_url}" width="310px" height="310px" border="0" alt="{$special_info.sname}" /></a></div>
+				  </div>
+					 <div class="p_bom">
+					 	<h3>{$info.title}</h3>
+				    <ul>	<li>淘宝价格：<span class="price">{$info.price}</span>元</li>
+							<li>运费：平邮：{$info.post_fee}&nbsp;&nbsp;&nbsp;快递：{$info.express_fee}&nbsp;&nbsp;&nbsp;EMS：{$info.ems_fee}</li>
+							<li>掌柜名称：{$info.nick}</li>
+							<li>卖家信誉：<img src="templates/images/level_{$info.seller_credit_score}.gif"></li>
+							<li>所在地区：{$info.state}{$info.city}</li>
+							
+						</ul>
+				<!--	<div class="pom_ad">
+						<div id="ad_2">加载中...</div>
+					</div>-->
+					 <div class="count">
+					 	<div class="c_left">
+							<ul>
+								<li>我要购买：<input name="count" id="count"  type="text" onkeyup="count()" value="1"/>&nbsp;件&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                                总计：<span id="tall">{$info.price}</span>&nbsp;元(不包括快递费用)
+                                
+                                </li>
+								<li>库存数量：{$info.num}<input name="prcie" id="price"  type="hidden" value="{$info.price}"/></li>
+														
+							</ul>						
+						</div> 
+ 					  </div>
+					  
+<div class="tb-action">
+<div  class="tb-btn-buy" ><a id="J_LinkBuy" data-addFastBuy="true" href="{$info.click_url}" title="点击此按钮，到淘宝店购买。" >立即购买<b></b></a></div>
+<div class="tb-btn-add"><a href="{$info.shop_click_url}" title="到淘宝店逛逛" id="J_LinkAdd">加入购物车<b></b></a></div>
+</div>
+					 
+					 
+					 
+					 
+					 </div>
+				
+				</div>
+				
+				<div class="product_des">
+					<div class="d_title"><span>详细说明</span></div>
+					<div class="p_content">{$info.desc}</div>
+				
+				</div>
+						
+
+		
+		
+		
+		
+		
+		</div>
+
+		{/if}
+
+
+
+
+</div>
+{include file="foot_s.htm"}

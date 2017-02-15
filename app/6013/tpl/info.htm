@@ -1,0 +1,15 @@
+<div class="bl_960_cen">
+    <div id="bl_info_right">
+        <h3>当前位置： <!--{ foreach item=tmp from=$ws.nav }-->
+                <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>&nbsp;&gt;&gt;&nbsp;
+                <!--{ foreachelse }-->
+                <!--{ /foreach }-->
+        </h3>
+        <div class="info_nr">
+            <h1><!--{$ws.info.name}--></h1>
+            <h6>发布时间：<!--{$ws.info.atime}-->  发布机构：<a href="#"><!--{$ws.info.source}--></a>  访问次数：<span id="hits"><!--{$ws.info.hits}--></span></h6>
+            <!--{$ws.info.remark}-->
+        </div>
+    </div>
+    <!--{include file="lefter`$ws.mk`.htm"}-->
+</div>

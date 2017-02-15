@@ -1,0 +1,97 @@
+{include file="header.htm"}
+<DIV class=mainbox-a><!--左边内容开始-->
+    <DIV class=leftbox><!--行业分站开始-->
+        <DIV class="newjoin">
+            <DIV class="jointitle">
+                <H2>知名品牌</H2>
+            </DIV>
+            <DIV class="joinnr">
+                <DIV class="newlist">
+	{section name="new" loop=$newjoin}
+                    <SPAN><a href="info.php?id={$newjoin[new].id}" target=_blank title="{$newjoin[new].cname}">{$newjoin[new].cname}</A></SPAN>
+	{/section}
+                    <div  style="clear:both"></div>
+                </DIV>
+            </DIV>
+        </DIV>
+        <DIV class="newjoin" style="margin-top:8px;">
+            <DIV class="jointitle">
+                <H2>品牌之星</H2>
+            </DIV>
+            <DIV class="joinnr">
+                <DIV class="newlist">
+	{section name="new" loop=$newupdate}
+                    <SPAN><a href="info.php?id={$newupdate[new].id}" target=_blank title="{$newupdate[new].cname}">{$newupdate[new].cname}</A></SPAN>
+	{/section}
+                    <div  style="clear:both"></div>
+                </DIV>
+            </DIV>
+        </DIV>
+        <DIV class=leftboxin>
+            <!--行业分站结束--><!--热门分类搜索开始-->
+            <!--热门分类搜索结束-->
+            <DIV class=hyfz>
+                <DIV class=fz>
+                    <span style="width:125px; text-align:center"><a rel="nofollow" href="#" target=_blank><img class=adsIMG alt="" width="145" border="0" src="./img/1.jpg"></a></span>
+                    <span style="width:125px; text-align:center"><a rel="nofollow" href="#" target=_blank><img class=adsIMG alt="" width="145" border="0" src="./img/2.jpg"></a></span>
+                    <span style="width:125px; text-align:center"><a rel="nofollow" href="#" target=_blank><img class=adsIMG alt="" width="145" border="0" src="./img/3.jpg"></a></span>
+                    <span style="width:125px; text-align:center"><a rel="nofollow" href="#" target=_blank><img class=adsIMG alt="" width="145" border="0" src="./img/5.gif"></a></span>
+                    <span style="width:125px; text-align:center"><a rel="nofollow" href="#" target=_blank><img class=adsIMG alt="" width="145" border="0" src="./img/7.gif"></a></span>
+                    <!--                    {section name=ad loop=$index_ad}
+                                        <span style="width:125px; text-align:center"><a rel="nofollow" href="{$index_ad[ad].targeturl}" target=_blank><img class=adsIMG src="{$xm_global.cfg_basehost}{$index_ad[ad].picdir}" width="145" border="0"></A></span>
+                                        {/section}-->
+                </DIV></DIV>
+            <!--列表开始-->
+            <div style="padding-left:20px;" align='left' id=ad_1></div>
+
+        </DIV>
+    </DIV>
+    <!--列表结束-->
+    <!--左边内容结束-->
+    <!--右边内容开始-->
+    <DIV class=rightbox>
+        <DIV class=qyfwdh>
+            {if $userinfo==""}
+            <form id="loginform" name="loginform" action="{$xm_global.cfg_basehost}/login.php" method="post" >
+                <input type="hidden" name="sURL" value="member">
+                <DIV class=title>
+                    <H2>会员登录</H2></DIV>
+                <DIV class=con-bg>
+                    用户名：<input   type="text" name="username" style="width:100px;height:18px;vertical-align:middle"/><br />
+                    密&nbsp;&nbsp;码：<input   type="password" name="password"  style="width:100px;height:18px; vertical-align:middle"/><br /><hr/>
+                    <input type="submit" value="登录" style="vertical-align:middle" />&nbsp;&nbsp;<input type="button" onClick="location.href='register.php'" value="注册" style="vertical-align:middle"/> &nbsp;&nbsp;<a href="#">忘记密码</a>
+                    <input type="hidden" name="operation" id="operation" value="sysLoginMember">
+                    </form>
+                </DIV>
+                {else}
+
+                <DIV class=title>
+                    <H2>会员信息</H2></DIV>
+                <DIV class=con-bg>
+
+                </DIV>
+
+
+                {/if}
+                <DIV class=bottom-fw></DIV></DIV>
+        <DIV class=dqzthy>
+            <DIV class=title>
+                <H2>推荐品牌</H2>
+            </DIV>
+            <DIV class=con-bg style="text-align:center">
+	{section name="new" loop=$newupdate}
+                <SPAN><a href="info.php?id={$newupdate[new].id}" target=_blank title="{$newupdate[new].cname}">{$newupdate[new].cname}</a></SPAN>
+	{/section}
+            </DIV>
+            <DIV class=bottom-fw></DIV>
+        </DIV></DIV><!--右边内容结束--><div style="clear:both"></div></DIV><!--合作伙伴-->
+<DIV class=yqlj>
+    <DIV class=title-yq></DIV>
+    <DIV class=title-wz>{$link}</DIV>
+</DIV>
+<!--底搜索开始-->
+<!--<DIV class=containe>
+
+</DIV>-->
+<!--底搜索结束--><!--底文件-->
+{include file="foot.htm"}

@@ -1,0 +1,167 @@
+body {
+    font-size:12px;
+	background:#ddd9ce;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+.bl_960_cen {
+    width:960px;
+	margin:0 auto;
+	padding-bottom:5px;
+	overflow:hidden;
+	height:100%;
+	background:#FFFFFF;
+}
+
+a,img {
+  border:0;
+}
+
+ul li {
+  list-style:none;
+}
+
+.bl_990_cen {
+    width:982px;
+	margin:0 auto;
+	overflow:hidden;
+	height:100%;
+    background:url(../img/bl_menuer.jpg) top left no-repeat;
+}
+
+/* 公共类 */
+
+#bl_logo {
+	padding-bottom:0px;
+}
+
+/* menuer s */
+
+.bl_menuer{
+  background:url(../img/menuer_bg.jpg) top left repeat-x;
+}
+
+#bl_menuer {
+  line-height:35px;
+  text-align:right;
+  padding-right:10px;
+  /*background:url(../img/bl_menuer.jpg) left top repeat-x;*/
+}
+
+#bl_menuer li {
+  display:inline;
+}
+
+#bl_menuer li a {
+  color:#FFFFFF;
+  font-size:14px;
+  text-decoration:none;
+  padding:10px 15px;
+}
+
+#bl_menuer li a:hover {
+   background:#ececec;
+   color:#000000;
+}
+
+/* menuer e */
+
+/* bl_search s */
+#bl_search {
+   width:960px;
+   margin:0 auto;
+   background:#ffffff url(../img/search.jpg) left top no-repeat;
+}
+
+#bl_search ul{
+  margin:0 16px;
+}
+
+#bl_search input {
+  margin:0 8px;
+}
+
+.btn_search {
+  width:78px;
+  border:none;
+  line-height:25px;
+  min-height:25px;
+  background:url(../img/btn_sea.jpg) left center no-repeat;
+}
+
+#bl_search ul li {
+  display:inline;
+  list-style:none;
+  line-height:40px;
+}
+
+.bl_search_zc {
+  position:absolute;
+  right:200px;
+  margin-top:-20px;
+  float:right;
+}
+
+.bl_search_zc a {
+  color:#666666;
+  margin:0 15px;
+  text-decoration:none;
+}
+
+/* bl_search e */
+
+#bl_footer {
+   border-top:5px solid #549cc6;
+}
+
+#bl_footer p {
+   text-align:center;
+   line-height:30px;
+}
+
+#bl_footer p a {
+   color:#000000;
+   margin:0 3px;
+   text-decoration:none;
+}
+
+/* 友情链接 s */
+
+.yqlink h1 {
+  font-size:14px;
+  background:url(../img/linking_bg.jpg) left top no-repeat;
+  line-height:30px;
+  padding-left:50px;
+}
+
+.yqlink ul {
+  float:left;
+  width:100%;
+  padding:10px;
+  border:1px solid #dedacf;
+  border-top:none;
+}
+
+.yqlink ul li {
+  float:left;
+  display:inline;
+  width:80px;
+  text-align:center;
+  margin:5px 10px;
+  line-height:30px;
+}
+
+.yqlink a {
+  color:#000000;
+  text-decoration:none;
+}
+
+.yqlink a:hover {
+  color:#FF0000;
+}
+
+/* 友情链接 e */

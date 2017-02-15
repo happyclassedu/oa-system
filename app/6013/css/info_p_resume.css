@@ -1,0 +1,48 @@
+
+
+.p_resume {
+  border:1px solid #e2e2e2;
+  border-top:none;
+}
+
+#box_title {
+  font-size:12px;
+  line-height:30px;
+  padding-left:50px;
+  font-weight:800;
+  background:url(../img/linking_bg.jpg) left top no-repeat;
+}
+
+#info_tb {
+  margin-top:5px;
+}
+
+#info_tb tr {
+  line-height:30px;
+}
+
+.tb_align {
+  text-align:right;
+}
+
+.title_bg {
+  background:#d0e9fc;
+  font-weight:bold;
+  margin-left:15px;
+}
+
+.tr_0 {
+  background:#ececec;
+}
+
+.resume_title {
+  text-align:center;
+}
+
+#info_tb {
+  border:1px solid #dfdcd3;
+}
+
+#act_tb {
+  margin:8px 0;
+}

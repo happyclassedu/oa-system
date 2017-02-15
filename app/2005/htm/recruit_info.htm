@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>招聘会信息管理</title>
+    </head>
+
+    <body>
+        <div id="sys_title_box">
+            <span id="sys_state"></span><span id="sys_title">招聘会信息管理--内容页面</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="btn_add" type="button" value="新增"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="btn_refresh" type="button" value="刷新"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <table id="info_table" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="300" />
+            <col width="100" align="center" />
+            <col width="300" />
+            <tbody>
+                <tr>
+                    <td class="itb_title" colspan="6">一、基本信息</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>期次名称</td>
+                    <td>
+                        <select id="i_fid">
+                            <option value="">请选择</option>
+                            <option value="0">2010-0905</option>
+                        </select>
+                    </td>
+                    <td>公司名称</td>
+                    <td><input id="i_com_name" type="text"/></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>公司简称</td>
+                    <td>
+                        <input id="i_com_name_s" type="text"/>
+                    </td>
+                    <td>公司性质</td>
+                    <td>
+                        <input id="i_com_property" type="text" />
+                    </td>   
+                </tr>
+                <tr class="tr_0">
+                    <td>岗位A</td>
+                    <td><input id="i_job_a" type="text"/></td>
+                    <td>岗位B</td>
+                    <td><input id="i_job_b" type="text" /></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>岗位C</td>
+                    <td>
+                       <input id="i_job_c" type="text"/>
+                    </td>
+                    <td>岗位数</td>
+                    <td>
+                       <input id="i_job_num" type="text"/>
+                    </td>
+                </tr>
+                 <tr class="tr_0">
+                    <td>招聘人数</td>
+                    <td>
+                       <input id="i_recruit_num" type="text"/>
+                    </td>
+                    <td>是否公开</td>
+                    <td>
+                        <select id="i_state">
+                        <option value="">请选择</option>
+                        <option value="1">公 开</option>
+                        <option value="0">不公开</option>
+                        </select>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="btn_box" colspan="6">
+                        <input id="btn_copy" type="button" value="复制信息" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_edit" type="button" value="修改信息" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_save" type="button" value="保存信息" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_cancel" type="button" value="取消修改" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_del" type="button" value="删除信息" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_close" type="button" value="关闭信息" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_list" type="button" value="返回列表" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="recruit_info" />
+<script type="text/javascript" src="../js/common.js"></script>

@@ -1,0 +1,75 @@
+/*list_box b*/
+.info_title {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #154692;
+    font-size: 20px;
+    line-height:30px;
+    text-align: center;
+}
+/*文章标题*/
+#list_box ul{
+    width: 95%;
+    margin: 0 auto;
+    padding-top:15px;
+    border-bottom: #CCCCCC 1px dashed;
+}
+
+#list_box ul li{
+    background:none;
+    width:100%;
+    height:25px;
+    list-style: none;
+}
+
+#list_box .n1{
+    height:auto;
+    line-height:18px;
+    text-indent: 2em;
+}
+
+#list_box a {
+    font-size: 14px;
+    /*font-weight: 800;*/
+}
+
+.info_date{
+    float: right;
+    /*right: 0px;*/
+    color: #999999;
+    /*position: absolute;*/
+}
+
+#page_box {
+    margin-top: 8px;
+    height: 35px;
+    text-align: center;
+}
+
+#page_box a {
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    line-height: 21px;
+    margin: 0 4px;
+    padding: 0 6px;
+    border: #DBDBDB 1px solid;
+    color: #333333;
+    font-size: 12px;
+}
+
+#page_box a:hover {
+    background:#DEF1FF;
+    color: #FF0000;
+    text-decoration:none;
+}
+
+
+#page_box .page_now {
+    background:#DEF1FF;
+    color: #FF0000;
+    font-weight: 700;
+
+}
+/*list_box e*/

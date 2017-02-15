@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>我的职位 - 面试通知 -人才网站管理系统PHP1.0地区版</title>
+        <link href="../css/www.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <!--页面顶部-->
+        <IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=188><!--菜单-->
+                        <IFRAME align=left src="person_left.htm" frameBorder=0 scrolling=no width="100%" height=500></IFRAME></td>
+                    <td width=10></td>
+                    <td bgColor=#ffffff><!--右侧-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom   background="../img/title1_bg.gif"    height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width=80
+                                                        background="../img/title1_bg3.jpg" height=28><A id="a_job_list"  href="" target="_parent" >职位列表</A></td>
+                                                    <td width=5></td>
+                                                    <td align=middle width=80
+                                                        background="../img/title1_bg3.jpg"><A id="a_job_favorite"  href="" target="_parent" >职位收藏</A></td>
+                                                    <td width=5></td>
+                                                    <td align=middle width=80
+                                                        background="../img/title1_bg3.jpg"><A id="a_job_applist"  href="" target="_parent" >申请记录</A></td>
+                                                    <td width=5></td>
+                                                    <td align=middle width=80
+                                                        background="../img/title1_bg2.jpg"><A class=white  id="a_job_invite"  href="" target="_parent" ><B>面试通知</B></A></td>
+                                                    <td>&nbsp;</td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 5px"><font color=#777777><span id=lbl_Page>收到邀请 <span id="d_info_num">0</span> 份，共 <span id="d_page_num">0</span> 页</span></font></td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=1 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR> <td bgColor=#aaccef height=1></td></TR>
+                            </TBODY>
+                        </TABLE><!--访问列表-->
+                         <TABLE id="list_tb" cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <col width="5%" align="center"/>
+                            <col width="7%" align="center"/>
+                            <col width="7%" align="center"/>
+                            <col width="10%" align="center"/>
+                            <col width="15%" align="center"/>
+                            <col width="15%" align="center"/>
+                            <col width="15%" align="center"/>
+                            <col width="15%" align="center"/>
+                            <col width="10%" align="center"/>
+                            <thead>
+                                <TR bgColor=#dbedfb>
+                                   <td>
+                                        <input id="d_checkbox_all" name="d_checkbox_all" type="checkbox"/>
+                                    </td>
+                                    <td><STRONG>序号</STRONG></td>
+                                    <td><STRONG>状态</STRONG></td>
+                                    <td><STRONG>面试职位</STRONG></td>
+                                    <td><STRONG>公司名称</STRONG></td>
+                                    <td><STRONG>面试时间</STRONG></td>
+                                    <td><STRONG>面试地址</STRONG></td>
+                                    <td><STRONG>邀请时间</STRONG></td>
+                                    <td><STRONG>操作</STRONG></td>
+                                </TR>
+                            </thead>
+                            <TBODY>
+                                <TR>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="btn_box">
+                                        <input class="btn_veiw_jobs" type="button" value="浏览"/>
+                                        <input class="btn_del_jobs" type="button" value="删除">
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td id="jpage_box"></td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td align=middle height=40>
+                                        <input id="btn_veiw_job" type="button" value="浏览职位"/>
+                                        <input id="btn_del_job" type="button" value="删除职位">
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="BORDER-TOP: #d3d3d3 1px solid; PADDING-LEFT: 5px; PADDING-TOP: 3px" vAlign=bottom height=28>
+                                        <STRONG>操作说明</STRONG><BR>
+                                        <font color=#777777>面试通知用于保存企业发送来的面试邀请，点击阅读可查看详细的面试邀请信息；<BR>
+                                            状态为 <IMG height=12 src="../img/Icon4_UnRead.gif" width=14 align=absMiddle> 表示该信息未被阅读，
+                                            <IMG height=12 src="../img/Icon4_Read.gif" width=14 align=absMiddle> 表示该信息已被阅读；</font>
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <!--页面左侧 结束--></td>
+                </TR>
+            </TBODY>
+        </TABLE><!--页面底部-->
+        <IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=220></IFRAME>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_job_invite" />
+<script type="text/javascript" src="../js/common.js"></script>

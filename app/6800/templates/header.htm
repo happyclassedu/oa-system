@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+    <HEAD>
+        <META http-equiv=Content-Type content="text/html; charset=gb2312">
+        <TITLE>{$seo.title}</TITLE>
+        <META name=description content="{$seo.description}">
+        <META name=keywords content="{$seo.keywords}">
+        <META name=copyright content="三秦品牌网   http://www.3qpinpai.com">
+        <LINK href="templates/images/search-dq.css" type="text/css" rel="stylesheet">
+        <LINK href="templates/images/ymPrompt.css" type="text/css" rel="stylesheet">
+        <LINK href="templates/images/zjym.css" type="text/css" rel="stylesheet">
+        <LINK href="templates/images/location.css" type="text/css" rel="stylesheet">
+    </HEAD>
+    <BODY>
+        <DIV class=mainbox>
+            <H1><A title=三秦品牌网 href="{$xm_global.cfg_basehost}"><IMG src="templates/images/logo.gif"></A></H1>
+            <DIV style="FLOAT: right; WIDTH: 700px">
+                <DIV class=menu-top>
+                    <div style="float:right; text-align:right; width:625px; margin:0px; padding:0px;">{if $userinfo!=""}欢迎您回来！
+                        <strong><a href="{$xm_global.cfg_basehost}/user_center.php" class="lj1" style="color:#FF0000">{$userinfo.userid}</a></strong>&nbsp;&nbsp;
+                        <a href="{$xm_global.cfg_basehost}/user_center.php?action=logout" class="lj1">退出</a>&nbsp;&nbsp;{else}
+                        <a href="login.php" class="lj1">登录</a>&nbsp;&nbsp;{/if}
+                        <a href="#" onClick="javascript:window.external.AddFavorite('http://www.3qpinpai.com','三秦品牌网——陕西第一品牌网');" class="lj1">收藏</a>&nbsp;&nbsp;
+                        <a href="#" class="lj1">帮助</a>
+                    </div>
+                </DIV>
+                <DIV class="menu">
+                    <UL>
+                        <LI><A class=tab href="/">首页</A></LI>
+                        <LI><A class=tab href="#">品牌资讯</A></LI>
+                        <LI><A class=tab href="#">知名品牌</A></LI>
+                        <LI><A class=tab href="#">品牌之星</A></LI>
+                        <LI><A class=tab href="#">推荐品牌</A></LI>
+                        <LI><A class=tab href="#">代理加盟</A></LI>
+                    </UL>
+                </DIV>
+            </DIV>
+        </DIV>
+        <DIV class=mainbox>
+            <DIV class=search>
+                <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                        <TR>
+                            <TD>
+                                <FORM name=search_company action="search.php" method=get>
+                                    <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                        <TBODY>
+                                            <TR>
+                                                <TD width="10%" height=48>
+                                                    <IMG height="42" src="templates/images/search-title.jpg" width="72" alt="">
+                                                </TD>
+                                                <TD width="48%">
+                                                    <INPUT id="keywords" style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 400px; LINE-HEIGHT: 22px; PADDING-TOP: 0px; HEIGHT: 22px" value="{$keywords}" name="keywords">
+                                                </TD>
+                                                <TD width="13%">
+                                                    <select name="k_city">
+                                                        <option value="0">请选择城市</option>{section name=s loop=$select}
+                                                        <option value="{$select[s].id}">{$select[s].name}</option>{/section}
+                                                    </select>
+                                                </TD>
+                                                <TD width="13%"><INPUT type="image" height="28" width="80" src="templates/images/search-an.jpg" border="0"></TD>
+                                                <TD width="16%"></TD>
+                                            </TR>
+                                        </TBODY>
+                                    </TABLE>
+                                </FORM>
+                            </TD>
+                        </TR>
+                    </TBODY>
+                </TABLE>
+            </DIV>
+        </DIV>

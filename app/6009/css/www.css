@@ -1,0 +1,53 @@
+* {
+    font-size:12px;
+	margin:0;
+}
+
+/*menuer s*/
+#menuer {
+    width:630px;
+	text-align:right;
+	padding-right:30px;
+	line-height:30px;
+	background:url(../img/top_bg.gif) center right no-repeat;
+}
+
+#menuer a {
+	margin:0 20px;
+	color:#FFFFFF;
+	text-decoration:none;
+
+}
+/*menuer e*/
+
+#login {
+     line-height:40px;
+	 text-align:right;
+	 padding-right:20px;
+     background:url(../img/login.gif) center right no-repeat;
+}
+
+#centent {
+     width:780px;
+	 margin:0 auto;
+}
+
+
+
+/*footer s*/
+#footer_bg {
+     background:url(../img/footer.gif) center center no-repeat;
+	 height:15px;
+}
+
+#footer_link {
+     text-align:center;
+}
+
+#footer_link a {
+     padding:0 10px;
+	 line-height:30px;
+	 color:#000;
+	 text-decoration:none;
+}
+/*footer e*/

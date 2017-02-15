@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>业务办理--打印参加转正大会名单</title>
+</head>
+    <body>
+        <!--开始__信息内容-->
+        <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">业务办理--打印参加转正大会名单</td>
+                </tr>
+                <tr class="tr_0">
+                    <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;业务名称</td>
+                    <td>
+                        <input id="d_name" type="text"/>
+                        <input id="d_i_type" type="hidden"/>
+                        <input id="d_operating_record" type="hidden"/>
+                        <input id="d_uid" type="hidden"/>
+                        <input id="d_bid" type="hidden"/>
+                    </td>
+                    <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;操作员</td>
+                    <td><input id="d_uname" type="text" /></td>
+                    <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;办理时间</td>
+                    <td><input id="d_atime" type="text"/></td>
+                </tr>
+                <tr class="tr_1">
+                  <td>备注</td>
+                  <td colspan="3"><input id="d_remark" type="text"/></td>
+                  <td>期次</td>
+                  <td>
+                      <select id="d_i_txt0">
+                            <option value="">期次类型</option>
+                      </select>
+                  </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息内容-->
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button" value="业务办理">
+                </td>
+            </tr>
+        </table>
+    </body>
+    <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>时间</td>
+                    <td>姓名</td>
+                    <td>性别</td>
+                    <td>党员材料号</td>
+                    <td>毕业院校</td>
+                    <td>党员类型</td>
+                    <td>入党时间</td>
+                    <td>电话</td>
+                    <td>备注</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息内容-->
+        <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_excel" type="button" value="excel导出">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_party_print" />
+<script type="text/javascript" src="../js/common.js"></script>
+

@@ -1,0 +1,118 @@
+@import url("site.css");
+/*左侧框架*/
+.leftframe{ float:left; width:180px; margin:0px; padding:0px; overflow:hidden;}
+.leftframe .hyxx{ float:left; width:180px; padding:0px; margin:0px; overflow:hidden;}
+.leftframe .hyxx h2{ width:165px; background: url(http://file.uei114.com/www/200812/19/left-title-top.gif) no-repeat; height:30px; line-height:38px; padding:0px 0px 0px 15px; margin:0px; color:#fe6601; font-size:14px; font-weight:bold; text-align:left; display:block;}
+.leftframe .hyxx .xx-bj{ width:160px; background: url(http://file.uei114.com/www/200812/19/left-title-bj.gif) repeat-y; line-height:38px; padding:10px; margin:0px; overflow: hidden;}
+.leftframe .hyxx .xx-bj ul{ width:160px; padding:0px; margin:0px; list-style-type:none; font-size:14px;}
+.leftframe .hyxx .xx-bj ul li{ width:160px; float:left; list-style-type:none; margin:0px 0px 10px 0px;}
+.leftframe .hyxx .xx-bj ul li a{height:24px; line-height:24px; color:#333333; font-size:14px; text-decoration:none; text-align:left; padding:0px 0px 0px 10px; display:block;}
+.leftframe .hyxx .xx-bj ul li a:hover{ background:url(http://file.uei114.com/www/200812/19/djgh-an.gif) no-repeat; height:24px; line-height:24px; text-decoration:none; color:#333333; padding:0px 0px 0px 10px;  display:block;}
+.leftframe .hyxx .xx-bj ul li a.hg{ background:url(http://file.uei114.com/www/200812/19/hg-an.gif) no-repeat; height:24px; line-height:24px; color:#333333; font-size:14px; text-decoration:none; text-align:left; padding:0px 0px 0px 10px; display:block;}
+.leftframe .hyxx .xx-bj ul li a.hg:hover{ background:url(http://file.uei114.com/www/200812/19/djgh-an.gif) no-repeat; height:24px; line-height:24px; text-decoration:none; color:#333333; padding:0px 0px 0px 10px;  display:block;}
+.hys{ color:#754205; font-size:14px; font-weight:bold; font-size:14px;}
+.leftframe .hyxx .xx-bottom{ width:180px; margin:0px; padding:0px; background:url(http://file.uei114.com/www/200812/19/left-title-bottom.gif) no-repeat; height:4px;}
+/*右侧框架*/
+.rightframe{ float:right; width:786px; margin:0px; padding:0px; overflow:hidden;}
+.rightframe .ggl{ width:786px; margin:0px; padding:0px; overflow:hidden;}
+/*公告通知栏*/
+.rightframe .ggl h2{ background:url(http://file.uei114.com/www/200812/19/gg-top.gif) no-repeat; height:40px; line-height:40px; font-size:14px; font-weight: bold; color:#fb6600; display:block;}
+.rightframe .ggl .gg-bj{ background:url(http://file.uei114.com/www/200812/19/gg-bj.gif) repeat-y; padding:0px 10px 10px 10px; text-align:left; overflow:hidden; height:120px;}
+.rightframe .ggl .gg-bj .tix{ border-top:1px #CCCCCC dashed; padding-bottom:10px;}
+.rightframe .ggl .gg-bottom{ background:url(http://file.uei114.com/www/200812/19/gg-bootom.gif) no-repeat; height:5px;}
+/*我的会员信息*/
+.rightframe .del{width:786px; padding-top:10px!important; padding-top:0px; margin:0px; overflow:hidden;}
+.rightframe .del .hyxx{ float:left; width:388px; margin:0px; padding:0px; overflow:hidden;}
+.rightframe .del .hyxx h2{ background:url(http://file.uei114.com/www/200812/19/lm-top.gif) no-repeat; height:31px; line-height:31px; padding-left:15px; font-size:14px; color:#754205; text-align:left; display:block;}
+.rightframe .del .hyxx .xxhybj{ border:1px solid #ddcdac; width:366px; padding:10px; text-align:left;}
+/*我的名片信息*/
+.rightframe .del .mpxx{ float:right; width:388px; margin:0px; padding:0px; overflow:hidden;}
+.rightframe .del .mpxx h2{ background:url(http://file.uei114.com/www/200812/19/lm-top.gif) no-repeat; height:31px; line-height:31px; padding-left:15px; font-size:14px; color:#754205; text-align:left; display:block;}
+.rightframe .del .mpxx .xxmpbj{ border:1px solid #ddcdac; width:366px; padding:10px; text-align:left;}
+/*我的国联状态*/
+.rightframe .zt{width:786px; padding-top:10px; margin:0px; overflow:hidden;}
+.rightframe .zt h2{ width:771px; background:url(http://file.uei114.com/www/200812/19/lm1-top.gif) no-repeat; line-height:30px; height:30px; text-align:left; padding-left:15px; font-size:14px; color:#754205; font-weight:bold; display:block;}
+.rightframe .zt .ztnr{ border:1px solid #ddcdac; padding:764px; padding:10px; text-align:left;}
+
+/*行业热点*/
+.rightframe .dsl{width:786px; padding-top:10px; margin:0px; overflow:hidden;}
+.rightframe .dsl .hyrd{ float:left; width:388px; margin:0px; padding:0px; overflow:hidden;}
+.rightframe .dsl .hyrd h2{ background:url(http://file.uei114.com/www/200812/19/lm-top.gif) no-repeat; height:31px; line-height:31px; padding-left:15px; font-size:14px; color:#754205; text-align:left; font-weight:bold; display:block;}
+.rightframe .dsl .hyrd .hyrdbj{ border:1px solid #ddcdac; width:376px; padding:5px; text-align:left;}
+.rightframe .dsl .hyrd .hyrdbj ul{ width:376px; padding:0px; margin:0px; text-align:left; list-style-type:none;}
+.rightframe .dsl .hyrd .hyrdbj ul li{ width:376px; padding:0px; margin:0px; text-align:left; list-style-type:none;}
+/*推荐企业*/
+.rightframe .dsl .tjqy{ float:right; width:388px; margin:0px; padding:0px; overflow:hidden;}
+.rightframe .dsl .tjqy h2{ background:url(http://file.uei114.com/www/200812/19/lm-top.gif) no-repeat; height:31px; line-height:31px; padding-left:15px; font-size:14px; color:#754205; text-align:left; font-weight:bold; display:block;}
+.rightframe .dsl .tjqy .tjqybj{ border:1px solid #ddcdac; width:376px; padding:5px; text-align:left; overflow:hidden;}
+.rightframe .dsl .tjqy .tjqybj ul{ width:376px; padding:0px; margin:0px; text-align:left; list-style-type:none;}
+.rightframe .dsl .tjqy .tjqybj ul li{ width:376px; padding:0px; margin:0px; text-align:left; list-style-type:none;}
+ /*登录信息*/
+.rightframe .dlxx{width:786px; padding-top:10px; margin:0px; overflow:hidden;}
+.rightframe .dlxx h2{ width:771px; background:url(http://file.uei114.com/www/200812/19/lm1-top.gif) no-repeat; line-height:30px; height:30px; text-align:left; padding-left:15px; font-size:14px; color:#754205; font-weight:bold; display:block;}
+.rightframe .dlxx .dlnr{ border:1px solid #ddcdac; padding:10px; text-align:left;}
+/*说明信息*/
+.rightframe .dlxx .dlnr .smwz{ border-bottom:1px dashed #CCCCCC; overflow:hidden;}
+.rightframe .dlxx .dlnr .smwz .wznr{ background:url(http://file.uei114.com/www/200812/19/yh.gif) no-repeat; font-size:14px; font-weight:bold; color:#fe6601; padding-left:30px;}
+/*修改密码*/
+.rightframe .dlxx .dlnr .xgmm{ width:744px; padding:0px; border:1px solid #cccccc; margin-top:20px; overflow:hidden;}
+.rightframe .dlxx .dlnr .xgmm .bt{ background:#fcf1db; height:30px; line-height:30px;}
+.rightframe .dlxx .dlnr .xgmm .bt h2{ float:left; width:200px; background:#fcf1db; height:30px; line-height:30px; padding-left:15px; font-size:12px; color:#754306; font-weight:bold;}
+.rightframe .dlxx .dlnr .xgmm .xgnr{ width:722px; padding:10px; margin:0px;}
+/*联系信息*/
+.rightframe .dlxx .dlnr .xgmm .bt .gd{ float:right; width:60px; padding-top:3px;}
+/*我的名片*/
+.mymp{ width:550px; padding:1px; border:1px solid #cccccc; background:#ffffff; overflow:hidden}
+.mymp .mpbj{ background:#f2f2f2; padding:10px; overflow:hidden}
+/*我的名片夹*/
+.rightframe .dlxx .dlnr .xgmm .xgnr .mympj{ width:722px; padding:0px; margin:0px;}
+.rightframe .dlxx .dlnr .xgmm .xgnr .mympj .mpjtle{padding:1px; border:1px solid #cccccc; background:#ffffff; height:32px; line-height:32px; }
+.rightframe .dlxx .dlnr .xgmm .xgnr .mympj .mpjtle .mpjbj{  background:url(http://file.uei114.com/www/200812/19/xjt.gif) 675px 5px no-repeat #f2f2f2 ;  text-align:left; height:32px; line-height:32px; padding-left:15px;}
+.rightframe .dlxx .dlnr .xgmm .xgnr .mympj .mpjtle .mpjbj .hover{  background: url(http://file.uei114.com/www/200812/19/sjt.gif) 660px 5px no-repeat #f2f2f2 ;}
+
+.rightframe .dlxx .dlnr .xgmm .xgnr .mympj .mpjbotnr{ border:1px solid #cccccc; border-top:none; padding:10px; background:#ffffff;}
+/*页码*/
+.rightframe .dlxx .dlnr .xgmm .xgnr .ym{ width:722px; height:30px; margin-top:10px;}
+.rightframe .dlxx .dlnr .xgmm .xgnr .ym a.sz{ background: url(http://file.uei114.com/www/200812/19/sz-2.gif) no-repeat; width:24px; line-height:24px; height:24px; font-size:16px; font-weight:bold; color:#805318; text-decoration:none; display:block; }
+.rightframe .dlxx .dlnr .xgmm .xgnr .ym a.sz:hover{ background: url(http://file.uei114.com/www/200812/19/sz-1.gif) no-repeat; width:24px; line-height:24px; height:24px; font-size:16px; font-weight:bold; color:#805318; text-decoration:none; display:block;  }
+.rightframe .dlxx .dlnr .xgmm .xgnr .ym a.qr{ width:24px; background: url(http://file.uei114.com/www/200812/19/sz-1.gif) no-repeat; line-height:24px; height:24px; font-size:16px; font-weight:bold; color:#805318; text-decoration:none; display:block;  }
+
+.rightframe .dlxx .dlnr .xgmm .xgnr .ym a.fy{ background: url(http://file.uei114.com/www/200812/19/xyy.gif) no-repeat; width:51px; line-height:24px; height:24px; font-size:12px; font-weight:bold; color:#805318; text-decoration:none; display:block; }
+.rightframe .dlxx .dlnr .xgmm .xgnr .ym a.bfy{ background:url(http://file.uei114.com/www/200812/19/wxz.gif) no-repeat;width:51px; line-height:24px; height:24px; font-size:12px; font-weight:bold; color:#805318; text-decoration:none; display:block; }
+
+.rightframe .dlxx .dlnr .xgmm .xgnr .ym a.qr:hover{ background: url(http://file.uei114.com/www/200812/19/xyy.gif) no-repeat; width:51px; line-height:24px; height:24px; font-size:12px; font-weight:bold; color:#805318; text-decoration:none; display:block;  }
+/*我添加的企业*/
+.rightframe .tjqy{ width:786px; padding:0px; margin:0px; overflow:hidden;}
+.rightframe .tjqy ul{ float:left; width:786px; padding:0px; margin:0px; list-style-type:none;}
+.rightframe .tjqy ul li{ float:left; width:121px; padding:0px 3px 0px 0px; margin:0px; list-style-type:none;}
+.rightframe .tjqy ul li a.tjqy-lm{ background:url(http://file.uei114.com/www/200812/19/djqy-lm.gif) no-repeat; width:121px; height:30px; line-height:30px; font-size:14px; font-weight:bold; color:#754205; text-decoration:none; display:block;}
+.rightframe .tjqy ul li a.tjqy-lm1{ background:url(http://file.uei114.com/www/200812/19/djqy-lm.gif) no-repeat; width:121px; height:30px; line-height:30px; font-size:14px; color:#754205; text-decoration:none; display:block;}
+.rightframe .tjqy ul li a.qytj-lm{ background:url(http://file.uei114.com/www/200812/19/tjqy-lm2.gif) no-repeat; width:91px; height:30px; line-height:30px; font-size:14px; font-weight:bold; text-decoration:none; color:#754205; display:block;}
+.rightframe .tjqy ul li a.qytj-lm1{ background:url(http://file.uei114.com/www/200812/19/tjqy-lm2.gif) no-repeat; width:91px; height:30px; line-height:30px; font-size:14px; color:#754205; text-decoration:none; display:block;}
+.rightframe .tjqynr{ width:764px; padding:10px; margin:0px; border:1px solid #ddcdac; background:#FFFFFF;}
+.rightframe .tjqynr .wxts{ padding:0px; margin:0px 0px 10px 0px; border-bottom:1px dashed #CCCCCC; text-align:left; overflow:hidden;}
+.rightframe .tjqynr .scfl{ padding:0px; margin:0px 0px 10px 0px; border:1px solid #CCCCCC; text-align:left; overflow:hidden;}
+.rightframe .tjqynr .scfl h2{ height:30px; line-height:30px;background:#fcf1db; height:30px; line-height:30px; padding-left:15px; font-size:12px; color:#754306; font-weight:bold; display:block;}
+
+.rightframe .tjqynr a.sz{ background: url(http://file.uei114.com/www/200812/19/sz-2.gif) no-repeat; width:24px; line-height:24px; height:24px; font-size:16px; font-weight:bold; color:#805318; text-decoration:none; display:block; }
+.rightframe .tjqynr a.sz:hover{ background: url(http://file.uei114.com/www/200812/19/sz-1.gif) no-repeat; width:24px; line-height:24px; height:24px; font-size:16px; font-weight:bold; color:#805318; text-decoration:none; display:block;  }
+.rightframe .tjqynr a.qr{ background: url(http://file.uei114.com/www/200812/19/sz-1.gif) no-repeat; line-height:24px; height:24px; font-size:16px; font-weight:bold; color:#805318; text-decoration:none; display:block;  }
+
+.rightframe .tjqynr a.fy{ background: url(http://file.uei114.com/www/200812/19/xyy.gif) no-repeat; width:51px; line-height:24px; height:24px; font-size:12px; font-weight:bold; color:#805318; text-decoration:none; display:block; }
+.rightframe .tjqynr a.bfy{ background:url(http://file.uei114.com/www/200812/19/wxz.gif) no-repeat;width:51px; line-height:24px; height:24px; font-size:12px; font-weight:bold; color:#805318; text-decoration:none; display:block; }
+.Layer1{position:absolute;width:110px; line-height:20px;z-index:1; border:#dfdfdf solid 1px; background-color:#fbf1db; margin:0px 0px 0px 630px !important; margin:0px 0px 0px 252px; text-align:left; padding:0px 10px 0px 10px;}
+
+/*最新更新企业*/
+.rightframe .new-qy{width:764px; padding-top:10px; margin:0px; overflow:hidden;}
+.rightframe .new-qy .gxqy{ float:left; width:377px; margin:0px; padding:0px; overflow:hidden;}
+.rightframe .new-qy .gxqy h2{ background:url(http://file.uei114.com/www/200812/19/lmfy-top.gif) no-repeat; height:31px; line-height:31px; padding-left:15px; font-size:14px; color:#754205; text-align:left; font-weight:bold; display:block;}
+.rightframe .new-qy .gxqy .hyrdbj{ border:1px solid #ddcdac; width:365px; padding:5px; text-align:left;}
+.rightframe .new-qy .gxqy .hyrdbj ul{ width:365px; padding:0px; margin:0px; text-align:left; list-style-type:none;}
+.rightframe .new-qy .gxqy .hyrdbj ul li{ width:365px; padding:0px; margin:0px; text-align:left; list-style-type:none;}
+
+/*我添加的企业*/
+.rightframe .new-qy .tjrqy-fy{ float:right; width:377px; margin:0px; padding:0px; overflow:hidden;}
+.rightframe .new-qy .tjrqy-fy h2{ background:url(http://file.uei114.com/www/200812/19/lmfy-top.gif) no-repeat; height:31px; line-height:31px; padding-left:15px; font-size:14px; color:#754205; text-align:left; font-weight:bold; display:block;}
+.rightframe .new-qy .tjrqy-fy .tjqybj{ border:1px solid #ddcdac; width:365px; padding:5px; text-align:left; overflow:hidden;}
+.rightframe .new-qy .tjrqy-fy .tjqybj ul{ width:365px; padding:0px; margin:0px; text-align:left; list-style-type:none;}
+.rightframe .new-qy .tjrqy-fy .tjqybj ul li{ width:365px; padding:0px; margin:0px; text-align:left; list-style-type:none;}

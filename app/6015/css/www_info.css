@@ -1,0 +1,50 @@
+
+#gd_cen_info {
+	float:right;
+    width:750px;
+	overflow:hidden;
+	background:url(../img/nr_bg.gif) left top repeat-y;
+	border-bottom:1px solid #bdb4ae;
+}
+
+#gd_cen_info h5 a{
+    display:inline;
+	font-size:12px;
+	line-height:28px;
+	padding:0;
+	color:#FFFFFF;
+}
+
+#gd_cen_info h5 {
+    font-size:12px;
+	padding-left:40px;
+	font-weight:800;
+	color:#FFFFFF;
+	padding-top:3px;
+	background:url(../img/rig_title.gif) left top no-repeat;
+}
+
+#gd_cen_info h1 {
+   text-align:center;
+   line-height:30px;
+   color:#FF0000;
+   font-size:14px;
+}
+
+
+#gd_cen_info h2 {
+   text-align:center;
+   line-height:30px;
+   margin:6px 20px;
+   border: dashed #CCCCCC;
+   border-width:1px 0;
+}
+
+#gd_cen_info_nr {
+   margin:6px 20px;
+}
+
+#gd_cen_info_nr p {
+   line-height:30px;
+   text-indent:2em;
+}

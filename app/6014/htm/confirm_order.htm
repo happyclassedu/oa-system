@@ -1,0 +1,61 @@
+<html>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>支付宝即时支付</title>
+        <style type="text/css">
+            .font_content{
+                font-family:"宋体";
+                font-size:14px;
+                color:#FF6600;
+            }
+            .font_title{
+                font-family:"宋体";
+                font-size:16px;
+                color:#FF0000;
+                font-weight:bold;
+            }
+            table{
+                border: 1px solid #CCCCCC;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="info_tb" align="center" width="350" cellpadding="5" cellspacing="0">
+            <tr>
+                <td align="center" class="font_title" colspan="2">订单确认</td>
+            </tr>
+            <tr>
+                <td class="font_content" align="right">订单号：</td>
+                <td class="font_content" align="left"><span id="d_out_trade_no"></span></td>
+            </tr>
+            <tr>
+                <td class="font_content" align="right">付款总金额：</td>
+                <td class="font_content" align="left"><span id="d_total_fee"></span></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                   <!-- <input id="d_service" type="hidden"/>
+                    <input id="d_payment_type" type="hidden"/>
+                    <input id="d_partner" type="hidden"/>
+                    <input id="d_seller_email" type="hidden"/>
+                    <input id="d_return_url" type="hidden"/>
+                    <input id="d_notify_url" type="hidden"/>
+                    <input id="d__input_charset" type="hidden"/>
+                    <input id="d_show_url" type="hidden"/>
+                    <input id="d_out_trade_no" type="hidden"/>
+                    <input id="d_subject" type="hidden"/>
+                    <input id="d_body" type="hidden"/>
+                    <input id="d_total_fee" type="hidden"/>
+                    <input id="d_paymethod" type="hidden"/>
+                    <input id="d_sign" type="hidden"/>
+                    <input id="d_sign" type="hidden"/>
+                    <input id="d_sign_type" type="hidden"/>-->
+                    <input id="btn_confirm" type='button' value="支付宝确认付款"/>
+                    <span id="d_url"></span>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="confirm_order" />
+<script type="text/javascript" src="../js/common.js"></script>

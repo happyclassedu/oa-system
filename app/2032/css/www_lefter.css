@@ -1,0 +1,45 @@
+
+/*left_menrer s*/
+#left_menuer {
+    float: left;
+    width: 220px;
+    margin-left: 4px;
+    text-align: center;
+    background:url(../img/left_middle_bg.gif) left top repeat-y;
+}
+
+#left_menuer a {
+    display: block;
+    font-weight: bold;
+    line-height: 35px;
+    background: url('../img/left_middle_bg1.gif') no-repeat center bottom ;
+}
+
+#left_menuer h2 {
+    width: 220px;
+    height: 75px;
+    margin: 0;
+    background: url(../img/left_title_bg.gif) no-repeat;
+}
+
+#left_menuer h2 a {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    background: none;
+}
+
+#left_menuer img {
+    display: block;
+    width: 90px;
+    height: 23px;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+#left_menuer .menuer_bottom {
+    width: 220px;
+    background: url(../img/left_bottom_bg.gif) left bottom no-repeat;
+}
+/*left_menrer e*/
+

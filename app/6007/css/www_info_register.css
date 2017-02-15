@@ -1,0 +1,26 @@
+.content-r-down h3 {
+  display: block;
+  line-height:35px;
+  padding-left:25px;
+  background:  #EEEEEE url('../img/dot2.gif') no-repeat 14px 16px;
+  color: #666666;
+  font-weight:800;
+  font-size: 12px;
+}
+
+.lf_login table {
+  padding:10px 60px 20px 50px;
+  background:url(../img/customer.jpg) right bottom no-repeat;
+}
+
+.lf_login table tr {
+  line-height:30px;
+}
+
+.login_title {
+  text-align:right;
+}
+
+#btn_isuser {
+  width:70px!important;
+}

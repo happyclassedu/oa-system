@@ -1,0 +1,225 @@
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>信息--参保人员管理--医疗保险系统</title>
+    </head>
+    <body>
+        <div id="box_title">
+            <span id="sys_title">医疗保险系统--参保人员管理--<span id="sys_state"></span>信息</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_add" type="button" value="新增参保人员信息"/>&nbsp;&nbsp;
+                <input id="btn_edit" type="button" value="修改参保人员信息"/>&nbsp;&nbsp;
+                <input id="btn_del" type="button" value="删除参保人员信息"/>&nbsp;&nbsp;
+                <input id="btn_shift" type="button" value="转入/转出医疗关系"/>&nbsp;&nbsp;
+                <input id="btn_print" type="button" value="打印交款单"/>&nbsp;&nbsp;
+                <input id="btn_pay" type="button" value="医保缴费"/>&nbsp;&nbsp;
+                <input id="btn_mcard" type="button" value="办理/领取医保卡"/>&nbsp;&nbsp;
+                <input id="btn_mtext" type="button" value="办理/领取医保本"/>&nbsp;&nbsp;
+                <input id="btn_retire" type="button" value="退休"/>&nbsp;&nbsp;
+                <input id="btn_apply" type="button" value="医保报销"/>&nbsp;&nbsp;
+            </div>
+        </div>
+        <!--开始__信息内容-->
+        <iframe id="iframe" width="800" height="200" frameborder="0" scrolling="auto" align="center" style="display: none;"></iframe>
+        <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">参保人员基本信息</td>
+                </tr>
+                <tr class="tr_0">
+                    <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;姓名</td>
+                    <td><input id="d_name" type="text"/></td>
+                    <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;身份证号</td>
+                    <td><input id="d_idcard" type="text"/></td>
+                    <td>性别</td>
+                    <td>
+                        <select id="d_sex">
+                              <option value="">请选择</option>
+                              <option value="男">男</option>
+                              <option value="女">女</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;出生年月</td>
+                    <td><input id="d_birth"  type="text"/></td>
+                    <td>档案编号</td>
+                    <td><input id="d_record_code" type="text" /></td>
+                    <td>档案状态</td>
+                    <td><input id="d_record_state" type="text"/></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>备注：</td>
+                    <td colspan="5"><textarea id="d_remark" rows="4"></textarea></td>
+                </tr>
+                 <tr class="tb_title0">
+                    <td colspan="6">医保信息 <span id="d_month_num" style="color:red"></span></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>医保编号</td>
+                      <td><input id="d_medi_code" type="text"/></td>
+                      <td>银行卡号</td>
+                      <td><input id="d_bank_idcard" type="text"/></td>
+                      <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;医保类别</td>
+                      <td>
+                          <select id="d_medi_type">
+                              <option value="">请选择</option>
+                              <option value="在职">在职</option>
+                              <option value="军转">军转</option>
+                              <option value="退休">退休</option>
+                          </select>
+                      </td>
+                </tr>
+                <tr class="tr_0">
+                    <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;医保状态</td>
+                      <td>
+                          <select id="d_medi_state">
+                              <option value="">请选择</option>
+                              <option value="在库">在库</option>
+                              <option value="转出">转出</option>
+                          </select>
+                      </td>
+                      <td>医保本状态</td>
+                      <td>
+                          <select id="d_medi_book_state">
+                              <option value="">请选择</option>
+                              <option value="未办理">未办理</option>
+                              <option value="已办理">已办理</option>
+                              <option value="已领取">已领取</option>
+                          </select>
+                      </td>
+                      <td>医保卡状态</td>
+                      <td>
+                          <select id="d_medi_card_state">
+                              <option value="">请选择</option>
+                              <option value="未办理">未办理</option>
+                              <option value="已办理">已办理</option>
+                              <option value="已领取">已领取</option>
+                          </select>
+                      </td>
+                </tr>
+                <tr class="tr_1">
+                    <td><span style="color:red;font-weight:bolder;">*</span>&nbsp;参保时间</td>
+                    <td><input id="d_jmedi_time" type="text"/></td>
+                    <td>截止缴费年月</td>
+                    <td><input id="d_pay_deadtime" type="text" /></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                 <tr class="tb_title0">
+                    <td colspan="6">原参保信息</td>
+                </tr>
+               <tr class="tr_0">
+                    <td>原参保时间</td>
+                    <td><input id="d_ori_medi_time" type="text"/></td>
+                    <td>原缴费截止时间</td>
+                    <td>
+                      <input id="d_ori_pay_deadtime" type="text"/>
+                    </td>
+                    <td>原缴费年限</td>
+                    <td><input id="d_ori_pay_fyear" type="text" /></td>
+                </tr>
+                 <tr class="tr_1">
+                    <td>原参保单位</td>
+                    <td colspan="5"><input id="d_ori_medi_unit" type="text"/></td>
+                </tr>
+                 <tr class="tr_0">
+                    <td>原参保机构</td>
+                    <td colspan="5"><input id="d_ori_medi_org" type="text"/></td>
+                </tr>
+                 <tr class="tb_title0">
+                    <td colspan="6">参保信息</td>
+                </tr>
+                <tr class="tr_0">
+                  <td>住址</td>
+                  <td><input id="d_address" type="text"/></td>
+                  <td>固定电话</td>
+                  <td><input id="d_tel_0" type="text"/></td>
+                  <td>手机</td>
+                  <td><input id="d_tel_1" type="text"/></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>紧急联系人</td>
+                    <td><input  id="d_sos_person" type="text"/></td>
+                    <td>紧急联系电话</td>
+                    <td><input id="d_sos_tel" type="text"/></td>
+                    <td>邮箱</td>
+                    <td><input id="d_email" type="text" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息内容-->
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button" value="保存信息">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="btn_cancel" type="button" value="取消保存">
+                </td>
+            </tr>
+        </table>
+        <table id="hidden_v1"  width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr>
+              <td>&nbsp;</td>
+          </tr>
+         <tr>
+            <td id="sys_title" align="center">操作日志</td>
+          </tr>
+          <tr>
+            <td align="center">
+            <input id="btn_medi" type="button"  value="医保管理"/>
+            <input id="btn_base" type="button"  value="基本业务"/>
+            <input id="btn_all" type="button"  value="全部业务"/>
+            </td>
+          </tr>
+          <tr>
+              <td>&nbsp;</td>
+          </tr>
+        </table>
+         <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="60" align="center" />
+            <col width="140" align="center" />
+            <col width="100" />
+            <col width="100" />
+            <col width="100" />
+            <col width="300" />
+            <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>时间</td>
+                    <td>操作员</td>
+                    <td>业务类型</td>
+                    <td>事件</td>
+                    <td>内容</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>文本</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+         <table id="hidden_v2" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td id="jpage_box"></td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_medi" />
+<script type="text/javascript" src="../js/common.js"></script>

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>信息--网站管理</title>
+    </head>
+    <body>
+        <!--开始__基本功能区-->
+        <div id="box_title">
+            <span id="sys_title">网站管理--<span id="sys_state"></span>信息</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;
+                <input id="btn_edit" type="button" value="修改设置"/>&nbsp;&nbsp;
+                <input id="btn_www" type="button" value="访问网站" title="直接访问网站" />&nbsp;&nbsp;｜&nbsp;
+                <input id="btn_list_menu" type="button" value="栏目管理"/>&nbsp;&nbsp;
+                <input id="btn_info_menu" type="button" value="栏目新增"/>&nbsp;&nbsp;｜&nbsp;
+                <input id="btn_list_news" type="button" value="信息管理"/>&nbsp;&nbsp;
+                <input id="btn_info_news" type="button" value="信息新增"/>&nbsp;&nbsp;
+            </div>
+        </div>
+        <!--结束__基本功能区-->
+        <!--开始__信息内容区-->
+        <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">一、基本信息</td>
+                </tr>
+                <tr id="tr1" class="tr_0">
+                    <td>发布时间：</td>
+                    <td><input id="d_atime" type="text" /></td>
+                    <td>修改时间：</td>
+                    <td><input id="d_etime" type="text" /></td>
+                    <td>浏览次数：</td>
+                    <td><input id="d_hits" type="text" /></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>网站名称：</td>
+                    <td colspan="3">
+                        <input id="d_name" type="text" />
+                    </td>
+                    <td>网站简称：</td>
+                    <td><input id="d_name_s" type="text" /></td>
+                </tr>
+                <tr class="tr_0">      
+                    <td>网站域名：</td>
+                    <td><input id="d_domain" type="text" /></td>
+                    <td>访问网址：</td>
+                    <td><input id="d_url" type="text" /></td>
+                    <td>备 案 号：</td>
+                    <td><input id="d_beian" type="text" /></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>负 责 人：</td>
+                    <td><input id="d_linkman" type="text" /></td>
+                    <td>联系电话：</td>
+                    <td><input id="d_tel" type="text" /></td>
+                    <td>网站编号：</td>
+                    <td><input id="d_id" type="text" /></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>联系手机：</td>
+                    <td><input id="d_mobile" type="text" /></td>
+                    <td>邮箱地址：</td>
+                    <td><input id="d_email" type="text" /></td>
+                    <td>发 布 者：</td>
+                    <td><input id="d_u_name" type="text" /></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>网站描述：</td>
+                    <td colspan="5"><textarea id="d_intro" rows="3"></textarea></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>备 注：</td>
+                    <td colspan="5"><textarea id="d_remark" rows="3"></textarea></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>SEO关键字：</td>
+                    <td colspan="5"><textarea id="d_seo_keys" rows="3"></textarea></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>SEO描述：</td>
+                    <td colspan="5"><textarea id="d_seo_desc" rows="3"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息内容区-->
+        <!--开始__保存操作区-->
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr id="box_act_url"  class="tr_1">
+                <td>
+                    保存后操作：&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input name="act_url" type="radio" value="add"/>继续新增网站</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input name="act_url" type="radio" value="view" checked />查看该网站</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input name="act_url" type="radio" value="close"/>关闭</label>
+                </td>
+            </tr>
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button" value="保存信息">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="btn_cancel" type="button" value="取消保存">
+                </td>
+            </tr>
+        </table>
+        <!--结束__保存操作区-->
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_ws" />
+<script type="text/javascript" src="../js/common.js"></script>

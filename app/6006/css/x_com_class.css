@@ -1,0 +1,34 @@
+/* Resume s*/
+#com_class {
+    margin: 0 auto;
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+#com_class ul {
+    float:left;
+    width:630px;
+}
+
+#com_class li {
+    float:left;
+    width: 188px;
+    height: 20px;
+    overflow: hidden;
+    border:#999999 1px solid;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    line-height: 21px;
+    list-style: none;
+    background: url('../img/dot.gif') no-repeat 5px;
+    background-color: #FFFFCC;
+    text-indent: 20px;
+    cursor: pointer;
+}
+
+.com_class_over {
+    background-color: #FFCCCC !important;
+    font-size: 14px;
+    font-weight: 800;
+}

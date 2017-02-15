@@ -1,0 +1,33 @@
+<div id="dy_cen" class="dy_960_cen">
+    <!--{include file="lefter`$ws.mk`.htm"}-->
+    <div id="dy_list_cen">
+        <div id="dy_wshds">
+            <h1><!--{$ws.list.name}--></h1>
+            <!--{section name=loop loop=$ws.news}-->
+            <!--{if $smarty.section.loop.index eq "0"}--><ul><!--{/if}-->
+                <!--{if $smarty.section.loop.index>=0 && $smarty.section.loop.index<4}-->
+                <li><img src="../img/right_ph.gif" width="130" /><br />
+                    <a href="<!--{$ws.news[loop].url}-->"><!--{$ws.news[loop].name}--><br />时长：30分钟</a>
+                </li>
+                <!--{/if}-->
+            <!--{if $smarty.section.loop.index eq "3"}--></ul><div class="dy_list"><!--{/if}-->
+                <!--{if $smarty.section.loop.index>=4}-->
+		 <span><!--{$ws.news[loop].atime|date_format:"%m-%d"}--></span><a href="<!--{$ws.news[loop].url}-->"><!--{$ws.news[loop].name}--></a>
+                <!--{/if}-->
+            <!--{if $smarty.section.loop.index eq  ($smarty.section.loop.total-1)}--></div><!--{/if}-->
+            <!--{/section}-->
+        </div><div class="dy_page">
+            <a id="info_num" href="#">共12条</a>
+            <a id="page_num" href="#">共2页</a>
+            <a id="page_now" href="#">第1页</a>
+            <a id="page_first" href="<!--{$ws.page.first}-->">首页</a>
+            <a id="page_prev" href="<!--{$ws.page.prev}-->">上一页</a>
+            <!--{ foreach key=i item=tmp from=$ws.page.num }-->
+            <a id="page_<!--{$i}-->" href="<!--{$tmp}-->">1</a>
+            <!--{ /foreach }-->
+            <a id="page_next" href="<!--{$ws.page.next}-->">下一页</a>
+            <a id="page_last" href="<!--{$ws.page.last}-->">尾页</a>
+            </div>
+		</div>
+    </div>
+</div>

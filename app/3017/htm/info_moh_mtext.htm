@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>医疗保险系统--业务办理——办理/领取医保本</title>
+    </head>
+
+    <body>
+        <!--开始__信息内容-->
+        <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">业务办理——办理/领取医保本</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>业务名称：</td>
+                    <td>
+                        <input id="d_pid" type="hidden"/>
+                        <input id="d_pname" type="hidden"/>
+                        <input id="d_yname" type="text" readonly/>
+                        <input id="d_ytype" type="hidden"/>
+                        <input id="d_ytext" type="hidden"/>
+                    </td>
+                    <td>办理时间：</td>
+                    <td><input id="d_time" type="text" readonly/></td>
+                    <td>操作员：</td>
+                    <td>
+                        <input id="d_uname" type="text" readonly/>
+                        <input id="d_uid" type="hidden"/>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td>经办人：</td>
+                    <td><input id="d_bname" type="text"/></td>
+                    <td>经办人电话：</td>
+                    <td> <input id="d_btel" type="text"/> </td>
+                    <td>备注：</td>
+                    <td><input id="d_remark" type="text"/></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息内容-->
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button" value="业务办理"/>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="btn_cancels" type="button" value="取消办理">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_moh_mtext" />
+<script type="text/javascript" src="../js/common.js"></script>

@@ -1,0 +1,56 @@
+.msg h1 {
+    text-align:center;
+	font-size:16px;
+	line-height:30px;
+	border-bottom:1px dashed #CCCCCC;
+}
+
+
+.msg table {
+    border-collapse:collapse;
+	font-size:12px;
+	margin:5px auto;
+}
+.msg table td {
+    border:solid 1px #aaccef;
+	line-height:27px;
+}
+
+.msg_sr {
+    padding-left:10px;
+}
+
+.msg_sr input {
+    width:300px;
+	height:14px;
+}
+
+.msg_sr textarea {
+   width:300px;
+   margin:3px 0;
+}
+
+#info_tb {
+   width:800px;
+}
+
+.msg_tj input {
+   width:70px;
+   line-height:28px;
+   color:#FFFFFF;
+   font-weight:800;
+   margin:3px 10px;
+   background:#2073d1; 
+   border:1px solid #1c68ca;
+}
+
+.msg_tishi {
+  width:700px;
+  margin:0 auto;
+}
+
+.msg_tishi p{
+   color:#FF0000;
+   text-align:center;
+   line-height:35px;
+}

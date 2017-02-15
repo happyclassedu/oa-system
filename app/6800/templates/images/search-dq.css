@@ -1,0 +1,247 @@
+@import url(site.css );
+.ad1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 5px auto; OVERFLOW: hidden; WIDTH: 980px; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+.subNav {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 0px; BACKGROUND: url(subNav.jpg) repeat-x left top; PADDING-BOTTOM: 0px; MARGIN: auto; OVERFLOW: hidden; WIDTH: 968px; LINE-HEIGHT: 50px; PADDING-TOP: 0px; HEIGHT: 50px; TEXT-ALIGN: left
+}
+.subNav .dq-cs {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; LINE-HEIGHT: 41px; PADDING-TOP: 0px; HEIGHT: 41px
+}
+.subNav .dq-cs .ys-top {
+	BACKGROUND: url(dq-left.jpg) no-repeat; FLOAT: left; WIDTH: 19px; HEIGHT: 41px
+}
+.subNav .dq-cs .ys-bj {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(dq-bj.jpg) repeat-x; FLOAT: left; PADDING-BOTTOM: 0px; OVERFLOW: hidden; COLOR: #ffffff; PADDING-TOP: 0px; HEIGHT: 41px
+}
+.subNav .dq-cs .ys-foot {
+	BACKGROUND: url(dq-right.jpg) no-repeat; FLOAT: left; WIDTH: 10px; HEIGHT: 41px
+}
+.subNav .subnavContainer {
+	FLOAT: left; MARGIN-LEFT: 150px; OVERFLOW: hidden; WIDTH: 400px; PADDING-TOP: 6px
+}
+.subNav .subnavContainer UL LI {
+	FLOAT: left; WIDTH: 107px; MARGIN-RIGHT: 20px; LIST-STYLE-TYPE: none; TEXT-ALIGN: center
+}
+.subNav .subnavContainer UL LI A.tab1:link {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(dq-dh-2.jpg) no-repeat; COLOR: #0056bf; LINE-HEIGHT: 37px; HEIGHT: 44px; TEXT-DECORATION: none
+}
+.subNav .subnavContainer UL LI A.tab1:visited {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(dq-dh-2.jpg) no-repeat; COLOR: #0056bf; LINE-HEIGHT: 37px; HEIGHT: 44px; TEXT-DECORATION: none
+}
+.subNav .subnavContainer UL LI A.tab1:active {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(dq-dh-2.jpg) no-repeat; COLOR: #0056bf; LINE-HEIGHT: 37px; HEIGHT: 44px; TEXT-DECORATION: none
+}
+.subNav .subnavContainer UL LI A.tab1:hover {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(dq-dh-1.jpg) no-repeat; COLOR: #fff; LINE-HEIGHT: 37px; HEIGHT: 44px; TEXT-DECORATION: none
+}
+.subNav .subnavContainer UL LI A.tab-ed1:link {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(dq-dh-1.jpg) no-repeat; COLOR: #fff; LINE-HEIGHT: 37px; HEIGHT: 44px; TEXT-DECORATION: none
+}
+.subNav .subnavContainer UL LI A.tab-ed1:visited {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(dq-dh-1.jpg) no-repeat; COLOR: #fff; LINE-HEIGHT: 37px; HEIGHT: 44px; TEXT-DECORATION: none
+}
+.subNav .subnavContainer UL LI A.tab-ed1:active {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(dq-dh-1.jpg) no-repeat; COLOR: #fff; LINE-HEIGHT: 37px; HEIGHT: 44px; TEXT-DECORATION: none
+}
+.subNav .subnavContainer UL LI A.tab-ed1:hover {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(dq-dh-1.jpg) no-repeat; COLOR: #fff; LINE-HEIGHT: 37px; HEIGHT: 44px; TEXT-DECORATION: none
+}
+.leftsideBar {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 200px; PADDING-TOP: 0px
+}
+#zt_left {
+	BORDER-RIGHT: #013c5e 1px solid; BORDER-TOP: #013c5e 1px solid; BACKGROUND: #ecf3f9; BORDER-LEFT: #013c5e 1px solid; WIDTH: 198px; BORDER-BOTTOM: #013c5e 1px solid
+}
+
+ HTML #zt_left UL LI {
+	FLOAT: left; HEIGHT: 1%
+}
+ HTML #zt_left UL LI A {
+	HEIGHT: 1%
+}
+
+.rightContainer {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 770px; PADDING-TOP: 0px
+}
+.rightContainer .fl {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: #ecf3f9; FLOAT: left; PADDING-BOTTOM: 10px; MARGIN: 0px; WIDTH: 750px; COLOR: #b9b9b9; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+.rightContainer .fl #nav {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; Z-INDEX: 500; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial, verdana, sans-serif; LIST-STYLE-TYPE: none; POSITION: relative
+}
+.rightContainer .fl #nav LI.top {
+	DISPLAY: block; FLOAT: left; HEIGHT: 24px
+}
+.rightContainer .fl #nav LI A.top_link {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 40px; BACKGROUND: url(arrow.gif) no-repeat 7px 4px; FLOAT: left; PADDING-BOTTOM: 0px; CURSOR: pointer; LINE-HEIGHT: 24px; PADDING-TOP: 0px; HEIGHT: 24px
+}
+.rightContainer .fl #nav LI A.top_link:hover {
+	BACKGROUND: url(arrow_over.gif) no-repeat 7px 4px
+}
+UNKNOWN {
+	BACKGROUND: url(arrow_over.gif) no-repeat 7px 4px
+}
+.rightContainer .fl #nav LI:hover {
+	Z-INDEX: 200; POSITION: relative
+}
+.rightContainer .fl #nav UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LEFT: -9999px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; POSITION: absolute; TOP: -9999px; HEIGHT: 0px
+}
+.rightContainer .fl #nav LI:hover UL.sub {
+	BORDER-RIGHT: #3a93d2 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #3a93d2 1px solid; PADDING-LEFT: 3px; Z-INDEX: 300; BACKGROUND: #fff; LEFT: -40px; OVERFLOW-X: hidden; PADDING-BOTTOM: 3px; OVERFLOW: scroll; BORDER-LEFT: #3a93d2 1px solid; WIDTH: 145px; PADDING-TOP: 3px; BORDER-BOTTOM: #3a93d2 1px solid; TOP: 21px; HEIGHT: 200px
+}
+.rightContainer .fl #nav LI:hover UL.sub LI {
+	DISPLAY: block; FONT-WEIGHT: normal; FLOAT: left; OVERFLOW: hidden; WIDTH: 125px; WHITE-SPACE: nowrap; POSITION: relative; HEIGHT: 20px
+}
+#nav LI:hover UL.sub LI A {
+	DISPLAY: block; WIDTH: 150px; COLOR: #000; TEXT-INDENT: 5px; TEXT-DECORATION: none
+}
+.rightContainer .fl #nav LI:hover UL.sub LI A:hover {
+	BACKGROUND: #3a93d2; COLOR: #fff
+}
+.dqys-cs {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #12457a
+}
+.rightContainer .searchContainer {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; WIDTH: 560px; PADDING-TOP: 0px
+}
+.rightContainer .searchContainer .mapms {
+	BACKGROUND: url(mszh.gif) no-repeat; FLOAT: left; MARGIN: 10px 0px 0px; OVERFLOW: hidden; WIDTH: 560px; LINE-HEIGHT: 36px; HEIGHT: 36px
+}
+.rightContainer .searchContainer .mapms .xxl {
+	PADDING-LEFT: 10px; FONT-SIZE: 14px; FLOAT: left; COLOR: #333333; TEXT-ALIGN: left
+}
+.xxl-style {
+	FONT-SIZE: 14px; COLOR: #b20b02
+}
+.list-style {
+	FONT-SIZE: 12px; COLOR: #b20b02
+}
+.rightContainer .searchContainer .mapms .dtms {
+	PADDING-RIGHT: 10px; FLOAT: right; WIDTH: 100px; TEXT-ALIGN: right
+}
+.rightContainer .searchContainer .mapms .dtms .img-map {
+	FLOAT: left; WIDTH: 40px; LINE-HEIGHT: 36px; PADDING-TOP: 7px; HEIGHT: 36px
+}
+.rightContainer .searchContainer .mapms .dtms .wx-map {
+	FLOAT: right; TEXT-ALIGN: right
+}
+.rightContainer .searchContainer .listContainer {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 10px; MARGIN: 0px; OVERFLOW: hidden; WIDTH: 560px; PADDING-TOP: 10px; TEXT-ALIGN: left
+}
+.rightContainer .searchContainer .listContainer H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; WORD-BREAK: keep-all; LINE-HEIGHT: 24px; PADDING-TOP: 0px; WHITE-SPACE: nowrap; HEIGHT: 24px; TEXT-OVERFLOW: ellipsis
+}
+.rightContainer .searchContainer .listContainer .hover {
+	BACKGROUND: url(sy-jg-bj.gif) repeat-x
+}
+.rightContainer .searchContainer .listContainer .list-nr .listnr .tj {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 70px; PADDING-TOP: 0px; HEIGHT: 24px
+}
+.rightContainer .searchContainer .listContainer .list-nr .listnr .sc {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 60px; LINE-HEIGHT: 24px; PADDING-TOP: 0px; HEIGHT: 24px
+}
+.rightContainer .searchContainer .listContainer .bmy {
+	OVERFLOW: hidden; WIDTH: 540px; LINE-HEIGHT: 24px; HEIGHT: 24px; TEXT-ALIGN: center
+}
+.rightContainer .rightnr {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; MARGIN: 10px 0px 0px; OVERFLOW: hidden; WIDTH: 200px; PADDING-TOP: 0px
+}
+.rightContainer .rightnr .zthy-top {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 15px; BACKGROUND: url(zthy-title.gif) no-repeat; PADDING-BOTTOM: 0px; WIDTH: 175px; LINE-HEIGHT: 40px; PADDING-TOP: 0px; HEIGHT: 40px; TEXT-ALIGN: left
+}
+.rightContainer .rightnr .zthy-top H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #333333; LINE-HEIGHT: 40px; HEIGHT: 40px; TEXT-ALIGN: left
+}
+.rightContainer .rightnr .zthy-bj {
+	BORDER-RIGHT: #cecece 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 15px; BACKGROUND: url(zthy-bj.gif) #ffffff repeat-x; PADDING-BOTTOM: 10px; OVERFLOW: hidden; BORDER-LEFT: #cecece 1px solid; WIDTH: 173px; PADDING-TOP: 10px
+}
+.rightContainer .rightnr .zthy-bj .tw {
+	FLOAT: left; PADDING-BOTTOM: 10px; WIDTH: 173px; BORDER-BOTTOM: #cecece 1px solid; TEXT-ALIGN: left
+}
+.rightContainer .rightnr .zthy-bj .tw IMG {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 3px; FLOAT: left; PADDING-BOTTOM: 3px; BORDER-LEFT: #cccccc 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.rightContainer .rightnr .zthy-bj .tw .ztnr {
+	PADDING-LEFT: 10px; FLOAT: left
+}
+.rightContainer .rightnr .zthy-bj UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; WIDTH: 173px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.rightContainer .rightnr .zthy-bj UL LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; WIDTH: 173px; WORD-BREAK: keep-all; LINE-HEIGHT: 24px; PADDING-TOP: 0px; BORDER-BOTTOM: #cccccc 1px solid; WHITE-SPACE: nowrap; HEIGHT: 24px; TEXT-OVERFLOW: ellipsis; TEXT-ALIGN: left
+}
+.rightContainer .rightnr .zthy-foot {
+	BACKGROUND: url(zthy-bottom.gif) no-repeat; WIDTH: 200px; HEIGHT: 4px
+}
+.rightContainer .rightnr .zthy-top1 {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 15px; BACKGROUND: url(right-top-1.gif) no-repeat; PADDING-BOTTOM: 0px; WIDTH: 175px; LINE-HEIGHT: 40px; PADDING-TOP: 0px; HEIGHT: 40px; TEXT-ALIGN: left
+}
+.rightContainer .rightnr .zthy-top1 H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #333333; LINE-HEIGHT: 40px; HEIGHT: 40px; TEXT-ALIGN: left
+}
+.rightContainer .rightnr .zthy-bj1 {
+	BORDER-RIGHT: #fec866 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 15px; BACKGROUND: url(right-bj-1.gif) #ffffff repeat-x; PADDING-BOTTOM: 10px; OVERFLOW: hidden; BORDER-LEFT: #fec866 1px solid; WIDTH: 173px; PADDING-TOP: 10px
+}
+.rightContainer .rightnr .zthy-foot1 {
+	BACKGROUND: url(right-foot-1.gif) no-repeat; WIDTH: 200px; HEIGHT: 4px
+}
+.rightContainer .searchContainer .listContainer .fy {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; WIDTH: 540px; LINE-HEIGHT: 50px; PADDING-TOP: 0px; HEIGHT: 50px; TEXT-ALIGN: center
+}
+
+.xgtj-lm {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; MARGIN: auto; OVERFLOW: hidden; BORDER-LEFT: #cccccc 1px solid; WIDTH: 978px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.xgtj-lm .xg-top {
+	BACKGROUND: url(ltqy-top-bj.gif) repeat-x left top; FLOAT: left; WIDTH: 978px; LINE-HEIGHT: 29px; HEIGHT: 29px
+}
+.xgtj-lm .xg-top H2 {
+	PADDING-LEFT: 34px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(ltqy-title.gif) no-repeat; FLOAT: left; COLOR: #333333; TEXT-ALIGN: left
+}
+.xgtj-lm .xg-top .wzgd {
+	PADDING-RIGHT: 10px; FLOAT: right; WIDTH: 400px; TEXT-ALIGN: right
+}
+.xgtj-lm .xglist {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FLOAT: left; PADDING-BOTTOM: 10px; WIDTH: 958px; LINE-HEIGHT: 29px; PADDING-TOP: 10px; TEXT-ALIGN: left
+}
+.ad2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 10px auto 0px; OVERFLOW: hidden; WIDTH: 980px; PADDING-TOP: 0px
+}
+.bor-3 {
+	BACKGROUND: url(tj-imgbj.gif) no-repeat 11px 10px
+}
+
+
+
+#left_nav { width:198px; line-height: 30px; list-style-type: none; text-align:left; /*定义整个ul菜单的行高和背景色*/
+}
+/*==================一级目录===================*/
+#left_nav a { width: 178px; display: block; padding-left:20px; /*Width(一定要)，否则下面的Li会变形*/
+}
+#left_nav li { border-bottom:#FFF 1px solid; /*下面的一条白边*/ float:left; background-color:#ecf3f9; }
+#left_nav li a:hover { background:#F85B78; /*一级目录onMouseOver显示的背景色*/ }
+#left_nav a:link { text-decoration:none; }
+#left_nav a:visited { text-decoration:none; }
+#left_nav a:hover { color:#FFF; text-decoration:none; font-weight:bold; }
+/*==================二级目录===================*/
+#left_nav li ul { list-style:none; text-align:left; }
+#left_nav li ul li { background:#fff; /*二级目录的背景色*/ font-weight:normal; }
+#left_nav li ul a { padding-left:20px; width:178px;/* padding-left二级目录中文字向右移动，但Width必须重新设置=(总宽度-padding-left)*/
+}
+/*下面是二级目录的链接样式*/
+#left_nav li ul a:link { color:#666; text-decoration:none; }
+#left_nav li ul a:visited { color:#666; text-decoration:none; }
+#left_nav li ul a:hover { color:#F3F3F3; text-decoration:none; font-weight:normal; background:#FFAA1C;/* 二级onmouseover的字体颜色、背景色*/
+}
+/*==============================*/
+#left_nav li:hover ul { left: auto; }
+#left_nav li.sfhover ul { left: auto; }
+#left_nav ul.collapsed { display: none; }
+-->
+#PARENT { width:198px;  margin:0 auto; }
+
+.page{padding:2px;font-weight:bolder;font-size:12px;}
+.page a{border:1px solid #ccc;padding:0 5px 0 5px;margin:2px;text-decoration:none;color:#333; }
+.page span{padding:0 5px 0 5px;margin:2px;background:#ccc;color:#fff;border:1px solid #ccc;}

@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>信息--机构管理--综合人事管理系统</title>
+    </head>
+    <body>
+        <div id="box_title">
+            <span id="sys_title">综合人事管理系统--机构管理--<span id="sys_state"></span>信息</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_add" type="button"  value="新增部门"/>&nbsp;&nbsp;
+                <input id="btn_edit" type="button" value="修改部门"/>&nbsp;&nbsp;
+                <input id="btn_del" type="button" value="删除部门"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_del" type="button" value="查看部门员工"/>&nbsp;&nbsp;
+            </div>
+        </div>
+        <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">一、基本信息</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>部门名称</td>
+                    <td><input id="d_name" type="text" /></td>
+                    <td>上级部门</td>
+                    <td>
+                        <input id="d_fname" type="text" />
+                        <select id="d_fid" style="display: none;">
+                            <option value="1"></option>
+                        </select>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr class="tr_1">
+                    <td>部门介绍</td>
+                    <td colspan="5"><textarea id="d_intro" rows="4"></textarea></td>
+                </tr>
+                <tr class="tr_0">
+                    <td>主要职责</td>
+                    <td colspan="5"><textarea id="d_remark" rows="6"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr id="box_act_url"  class="tr_1">
+                <td>
+                    保存后操作：&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input name="act_url" type="radio" value="add"/>继续新增信息</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input name="act_url" type="radio" value="view" checked />查看该信息</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input name="act_url" type="radio" value="close"/>关闭</label>
+                </td>
+            </tr>
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button" value="保存信息">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="btn_cancel" type="button" value="取消保存">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_org" />
+<script type="text/javascript" src="../js/common.js"></script>

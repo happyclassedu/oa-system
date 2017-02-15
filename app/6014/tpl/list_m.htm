@@ -1,0 +1,14 @@
+<div id="dy_cen" class="dy_960_cen">
+    <!--{include file="lefter0`$ws.mk`.htm"}-->
+    <div id="dy_list_cen">
+        <!--{ foreach item=index_news from=$ws.list_m }-->
+        <div class="dy_szyw">
+            <h1><a href="<!--{$index_news.url}-->"><!--{$index_news.name}--></a></h1>
+            <!--{ foreach item=tmp from=$index_news.news name=arr_index }-->
+            <span><!--{$tmp.atime|date_format:"%m-%d"}--></span><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+            <!--{ foreachelse }-->
+            <!--{ /foreach}-->
+        </div>
+        <!--{ /foreach }-->
+    </div>
+</div>

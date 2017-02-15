@@ -1,0 +1,178 @@
+
+#dy_list_cen {
+   width:750px;
+   float:right;
+   overflow:hidden;
+}
+
+#dy_wshds {
+  margin-bottom:5px;
+  float:left;
+  width:740px;
+  margin-right:5px;
+  border:1px solid #c6c6c6;
+}
+
+#dy_wshds h1 {
+  font-size:14px;
+  line-height:35px;
+  color:#FFFFFF;
+  padding-left:10px;
+  background:url(../img/list_title_bg.jpg) left top no-repeat;
+}
+
+/* 换页 s */
+.dy_page {
+	float:left;
+    margin-top: 10px;
+    height: 35px;
+    text-align: center;
+}
+
+.dy_page a {
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    line-height: 21px;
+    margin: 0 4px;
+    padding: 0 6px;
+    border: #DBDBDB 1px solid;
+    color: #333333;
+    font-size: 12px;
+}
+
+.dy_page a:hover {
+    background:#DEF1FF;
+    color: #FF0000;
+    text-decoration:none;
+}
+
+
+.dy_page .page_now {
+    background:#DEF1FF;
+    color: #FF0000;
+    font-weight: 700;
+}
+
+
+/* 换页 e */
+/* 时政要闻 s */
+
+.dy_szyw {
+  margin-bottom:5px;
+  float:left;
+   width:740px;
+  margin-right:5px;
+  border:1px solid #c6c6c6;
+}
+
+.dy_szyw h1 {
+  line-height:35px;
+  background:url(../img/list_title_bg.jpg) left top no-repeat;
+}
+
+.dy_szyw h1 a {
+  font-size:14px;
+  color:#FFFFFF;
+  line-height:35px;
+  padding-left:20px!important;
+  background:none!important;
+}
+
+.dy_szyw a {
+  display:block;
+  line-height:30px;
+  color:#333333;
+  margin:0 15px;
+  padding-left:25px;
+  text-decoration:none;
+  background:url(../img/line1.bmp) left center no-repeat;
+}
+
+.dy_szyw span {
+  float:right;
+  margin-top:3px;
+  padding-right:25px;
+}
+
+
+/* 时政要闻 e */
+
+/* 会员管理 s */
+
+.dy_hygl{
+  margin-bottom:5px;
+  float:left;
+   width:740px;
+  margin-right:5px;
+  border:1px solid #c6c6c6;
+}
+
+.dy_hygl h1 {
+  line-height:35px;
+  background:url(../img/list_title_bg.jpg) left top no-repeat;
+}
+
+.dy_hygl h1 a {
+  font-size:14px;
+  color:#FFFFFF;
+  line-height:35px;
+  text-decoration:none;
+  padding-left:20px!important;
+  background:none!important;
+}
+
+
+.dy_hygl ul {
+   margin:5px 20px;
+}
+
+.dy_hygl ul li {
+   list-style:none;
+   line-height:28px;
+}
+
+.dy_hygl img {
+   border:none;
+   width:80px;
+   margin:0 10px;
+}
+
+.ts {
+   color:#FF0000;
+   font-weight:800;
+   font-size:13px;
+}
+/* 会员管理 e */
+
+/*left_menu s*/
+.dygl_left {
+   overflow:hidden;
+   border:1px solid #c6c6c6;
+}
+
+.dygl_left img {
+   border:none;
+}
+
+.dygl_left ul {
+   width:160px;
+   margin:0 auto;
+}
+
+.dygl_left ul li {
+   list-style:none;
+   text-align:center;
+   margin:8px 0;
+   border:1px solid #c6c6c6;
+   background:#fcefbf;
+}
+
+.dygl_left ul li a {
+   color:#f15129;
+   font-size:14px;
+   font-weight:800;
+   line-height:35px;
+   text-decoration:none;
+}
+/*left_menu e*/

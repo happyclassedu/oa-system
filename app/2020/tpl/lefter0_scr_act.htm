@@ -1,0 +1,29 @@
+<div id="rcw_list_left">
+    <h5><a href="#">文章搜索</a></h5>
+    <ul style="padding:8px 10px;">
+        <li><select style="width:153px; margin:3px 0;">
+                <option>请选择类别</option>
+            </select></li>
+        <li><input style="width:150px; margin:3px 0;" name="textfield" type="text" value="请输入关键字" /></li>
+        <li><input type="button" value="开始搜索" /></li>
+    </ul>
+    <h5><a href="<!--{$ws.lefter0_news_1.url}-->"><!--{$ws.lefter0_news_1.name}--></a></h5>
+    <ul>
+        <!--{ foreach item=tmp from=$ws.lefter0_news }-->
+        <li><a href="<!--{$tmp.url_act}-->"><!--{$tmp.name}--></a></li>
+        <!--{ /foreach }-->
+    </ul>
+    <h5><a href="#">推荐文章</a></h5>
+    <ul>
+      <li><a href="http://www.zhaopin.com" target="_blank">智联招聘网</a> <a href="#"></a></li>
+      <li><a href="http://www.zhaopin.com" target="_blank">智联招聘网</a> <a href="#"></a></li>
+      <li><a href="http://www.zhaopin.com" target="_blank">智联招聘网</a> <a href="#"></a></li>
+      <li><a href="http://www.zhaopin.com" target="_blank">智联招聘网</a> <a href="#"></a></li>
+    </ul>
+    <h5><a href="#">合作伙伴</a></h5>
+    <ul>
+        <!--{ foreach item=tmp from=$ws.lefter0_link }-->
+        <li><a href="<!--{$tmp.url_act}-->"><!--{$tmp.name}--></a></li>
+        <!--{ /foreach }-->
+    </ul>
+</div>

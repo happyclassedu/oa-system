@@ -1,0 +1,155 @@
+/*
+ * 文件名称：common.css
+ * 功能描述：自定义的公用css文件。
+ * 代码作者：孙振强
+ * 创建日期：2010-01-28
+ * 修改日期：2010-07-10
+ * 当前版本：V3.0
+*/
+
+* {
+   /* margin: 0;
+    padding: 0;*/
+   margin:0px auto; 
+}
+
+body {
+    font-size: 12px;
+    background-color: #FFFFFF;
+}
+
+table {
+    font-size: 12px;
+}
+
+input {
+    cursor: expression(this.type=="button"?'pointer':'');
+}
+
+.cursor_p {
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.tb_title0,
+.tb_title1,
+.tb_title2,
+.tb_title3,
+.tb_title4 {
+    height: 35px;
+    background-repeat: repeat-x;
+}
+
+.tb_title0 td,
+.tb_title1 td,
+.tb_title2 td,
+.tb_title3 td,
+.tb_title4 td {
+    color: #000000;
+    line-height:30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 40px;
+    letter-spacing: 4px;
+}
+
+.tb_title1 {
+    background-image: url('../img/tb_title1.png');
+}
+
+.tb_title2 {
+    background-image: url('../img/tb_title2.png');
+}
+
+.tb_title3 {
+    background-image: url('../img/tb_title3.png');
+}
+
+.tb_title4 {
+    background-image: url('../img/tb_title4.png');
+}
+
+/*.tr_0,
+.tr_1,
+.tr_over {
+    height: 30px;
+}*/
+
+.tr_0 {
+    background-color: #E5E5E5;
+}
+
+.tr_1 {
+    background-color: #D5D5D5;
+}
+
+.tr_over {
+    background-color: #CCFFCC;
+    color: #CC0000;
+    /*cursor: pointer;*/
+    /*font-weight: bold;*/
+}
+
+#box_title {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#box_tools {
+    width: 800px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#box_tools input {
+    margin-top: 5px;
+}
+
+#box_search {
+    float: right;
+    position: relative;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#val_search {
+    text-align: left;
+    background: #e5e5e5;
+    padding: 2px 5px;
+}
+
+.val_search {
+    color:black;background-color:#ffff66;
+}
+
+#sys_title {
+    color: #000066;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#sys_state {
+    color : #000066;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#jpage_box{
+    width: 100%;
+}

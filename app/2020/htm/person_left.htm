@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+        <META http-equiv=Content-Type content="text/html; charset=utf-8">
+        <TITLE>招聘中心 - 系统树形侧边栏 - 人才网站管理系统PHP1.0地区版</TITLE>
+        <LINK href="../css/www.css" type="text/css" rel=stylesheet>
+    <STYLE>
+        .a101 {
+            BORDER-RIGHT: #aaccef 1px solid; BORDER-TOP: #aaccef 1px solid; FONT-WEIGHT: bold; BORDER-LEFT: #aaccef 1px solid; CURSOR: hand; COLOR: #255ba5; PADDING-TOP: 2px
+        }
+        .a102 {
+            FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(../img/user_left1_bg.jpg); CURSOR: hand; COLOR: #255ba5; PADDING-TOP: 2px
+        }
+    </STYLE>
+    </HEAD>
+    <BODY>
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=left border=0>
+            <TR vAlign=top>
+                <td width=188><!--菜单-->
+
+                    <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+                        <TBODY>
+                            <TR>
+                                <td width=5 height=28><IMG height=28  src="../img/user_left_left.jpg"  width=5></td>
+                                <td width=3 background="../img/user_left_bg.jpg"><STRONG></STRONG></td>
+                                <td style="PADDING-TOP: 2px" align=middle width=70
+                                    background="../img/user_left_bg.jpg"
+                                    bgColor=#ffffff><B><font color=#ffffff><A id="a_person_usercenter"  href="" class=white>管理首页</A></font></B></td>
+                                <td background="../img/user_left_bg.jpg">&nbsp;</td>
+                                <td width=5><IMG height=28  src="../img/user_left_right.jpg"  width=5></td>
+                            </TR>
+                        </TBODY>
+                    </TABLE>
+                    <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                        <TBODY>
+                            <TR><td height=5></td></TR>
+                        </TBODY>
+                    </TABLE>
+                    <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                        <TBODY>
+                            <TR>
+                                <td width=3 height=28><IMG height=28 src="../img/user_left1_left.jpg" width=3></td>
+                                <td width=5  background="../img/user_left1_bg.jpg"><STRONG></STRONG></td>
+                                <td class=a102 id=al01 onclick=asecBoard(1); align=middle  width=70>简历管理</td>
+                                <td background="../img/user_left1_bg.jpg">&nbsp;</td>
+                                <td width=3><IMG height=28   src="../img/user_left1_right.jpg"   width=3></td></TR>
+                        </TBODY>
+                    </TABLE>
+                    <DIV id=abx01 style="DISPLAY: none">
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="BORDER-RIGHT: #aaccef 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; BORDER-LEFT: #aaccef 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #aaccef 1px solid"><!--简历管理-->
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 8px; BORDER-BOTTOM: #dddddd 1px solid"
+                                                        height=27><IMG height=9  src="../img/icon2.gif" width=9>
+                                                        <A id="a_resume_list" href="#" target="_parent" class=blue20>我的简历</A> </td>
+                                                </TR>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 8px; BORDER-BOTTOM: #dddddd 1px solid"
+                                                        height=27><IMG height=9  src="../img/icon2.gif"   width=9>
+                                                        <A id="a_resume_create" href="res_create_resume.html" target="_parent" class=blue20>新建简历</A>                </td>
+                                                </TR>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 8px; BORDER-BOTTOM: #dddddd 1px solid"
+                                                        height=27><IMG height=9  src="../img/icon2.gif"  width=9> <A  id="a_resume_letter" href="#" target="_parent" class=blue20>求 职  信</A> </td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                            </TBODY>
+                        </TABLE>
+                    </DIV>
+                    <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                        <TBODY>
+                            <TR><td height=5></td></TR>
+                        </TBODY>
+                    </TABLE>
+                    <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                        <TBODY>
+                            <TR>
+                                <td width=3 height=28><IMG height=28  src="../img/user_left1_left.jpg"   width=3></td>
+                                <td width=5 background="../img/user_left1_bg.jpg"><STRONG></STRONG></td>
+                                <td class=a102 id=al02 onclick=asecBoard(2); align=middle
+                                    width=70><B>我的职位</B></td>
+                                <td background="../img/user_left1_bg.jpg">&nbsp;</td>
+                                <td width=3><IMG height=28 src="../img/user_left1_right.jpg"  width=3></td></TR>
+                        </TBODY>
+                    </TABLE>
+                    <DIV id=abx02 style="DISPLAY: none">
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="BORDER-RIGHT: #aaccef 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; BORDER-LEFT: #aaccef 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #aaccef 1px solid"><!--我的职位-->
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                 <TR>
+                                                    <td style="PADDING-LEFT: 8px; BORDER-BOTTOM: #dddddd 1px solid"
+                                                        height=27><IMG height=9  src="../img/icon2.gif"  width=9> <A id="a_job_list" href="" class=blue20   target="_parent" class=blue20>职位列表</A>                </td>
+                                                </TR>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 8px; BORDER-BOTTOM: #dddddd 1px solid"
+                                                        height=27><IMG height=9  src="../img/icon2.gif"
+                                                                   width=9> <A id="a_job_favorite"  class=blue20   href="" target="_parent" class=blue20>职位收藏</A>                </td>
+                                                </TR>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 8px; BORDER-BOTTOM: #dddddd 1px solid"  height=27><IMG height=9
+                                                                                                                                    src="../img/icon2.gif" width=9> 
+                                                        <A id="a_job_applist" class=blue20  href="" target="_parent" class=blue20>应聘记录</A>                </td>
+                                                </TR>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 8px; BORDER-BOTTOM: #dddddd 1px solid"  height=27><IMG height=9
+                                                                                                                                    src="../img/icon2.gif" width=9>
+                                                        <A id="a_job_invite" class=blue20  href="" target="_parent" class=blue20>面试通知</A>                </td>
+                                                </TR>     
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                            </TBODY>
+                        </TABLE>
+                    </DIV>
+                    <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                        <TBODY>
+                            <TR><td height=5></td></TR>
+                        </TBODY>
+                    </TABLE>
+                    <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                        <TBODY>
+                            <TR>
+                                <td width=3 height=28><IMG height=28 src="../img/user_left1_left.jpg" width=3></td>
+                                <td width=5
+                                    background="../img/user_left1_bg.jpg"><STRONG></STRONG></td>
+                                <td class=a102 id=al03 onclick=asecBoard(3); align=middle  width=70>职位搜索</td>
+                                <td background="../img/user_left1_bg.jpg">&nbsp;</td>
+                                <td width=3><IMG height=28   src="../img/user_left1_right.jpg" width=3></td>
+                            </TR>
+                        </TBODY>
+                    </TABLE>
+                    <DIV id=abx03 style="DISPLAY: none">
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="BORDER-RIGHT: #aaccef 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; BORDER-LEFT: #aaccef 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #aaccef 1px solid"><!--职位订阅-->
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 8px; BORDER-BOTTOM: #dddddd 1px solid"
+                                                        height=27><IMG height=9  src="../img/icon2.gif"  width=9>
+                                                        <A class=blue20 id="a_info_person" href="" target="_parent" class=blue20>快速搜索</A>
+                                                    </td>
+                                                </TR>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 8px; BORDER-BOTTOM: #dddddd 1px solid" height=27>
+                                                        <IMG height=9 src="../img/icon2.gif" width=9>
+                                                        <A class=blue20  id="a_info_adsearch" href="" target="_parent" class=blue20>高级搜索</A>
+                                                    </td>
+                                                </TR>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 8px; BORDER-BOTTOM: #dddddd 1px solid" height=27>
+                                                        <IMG height=9 src="../img/icon2.gif" width=9>
+                                                        <A id="a_info_clsearch" class=blue20 href="" target="_parent" class=blue20>分类搜索</A>
+                                                    </td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                    </DIV>
+                    <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                        <TBODY>
+                            <TR>  <td height=5></td></TR>
+                        </TBODY>
+                    </TABLE>
+                    <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                        <TBODY>
+                            <TR>
+                                <td width=3 height=28><IMG height=28
+                                                           src="../img/user_left1_left.jpg"
+                                                           width=3></td>
+                                <td width=5 background="../img/user_left1_bg.jpg"><STRONG></STRONG></td>
+                                <td class=a102 id=al04 onclick=asecBoard(4); align=middle   width=70>帐户管理</td>
+                                <td background="../img/user_left1_bg.jpg">&nbsp;</td>
+                                <td width=3><IMG height=28
+                                                 src="../img/user_left1_right.jpg"
+                                                 width=3></td></TR>
+                        </TBODY>
+                    </TABLE>
+                    <DIV id=abx04 style="DISPLAY: none">
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="BORDER-RIGHT: #aaccef 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; BORDER-LEFT: #aaccef 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #aaccef 1px solid">
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 8px; BORDER-BOTTOM: #dddddd 1px solid" height=27>
+                                                        <IMG height=9 src="../img/icon2.gif" width=9>
+                                                        <A id="a_person_account" class=blue20 href="#" target="_parent">我的帐户</A>
+                                                    </td>
+                                                </TR>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 8px; BORDER-BOTTOM: #dddddd 1px solid" height=27>
+                                                        <IMG height=9 src="../img/icon2.gif"  width=9>
+                                                        <A id="a_person_basic" class=blue20 href="#" target="_parent">基本信息</A>
+                                                    </td>
+                                                </TR>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 8px; BORDER-BOTTOM: #dddddd 1px solid" height=27>
+                                                        <IMG height=9 src="../img/icon2.gif"  width=9>
+                                                        <A id="a_person_password" class=blue20 href="#" target="_parent">修改密码</A>
+                                                    </td>
+                                                </TR>
+                                                <TR>
+                                                    <td style="PADDING-LEFT: 8px; BORDER-BOTTOM: #dddddd 1px solid" height=27>
+                                                        <IMG height=9= src="../img/icon2.gif"  width=9>
+                                                        <A id="a_person_email" class=blue20 href="#" target="_parent">修改邮箱</A>
+                                                    </td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE><!--帐户管理-->
+                                    </td></TR>
+                            </TBODY>
+                        </TABLE>
+                    </DIV>
+                    <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                        <TBODY>
+                            <TR> <td height=5></td></TR>
+                        </TBODY>
+                    </TABLE>
+                    <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                        <TBODY>
+                            <TR>
+                                <td width=3 height=28><IMG height=28 src="../img/user_left1_left.jpg" width=3></td>
+                                <td width=5  background="../img/user_left1_bg.jpg"><STRONG></STRONG></td>
+                                <td style="PADDING-TOP: 2px" align=middle width=70 background="../img/user_left1_bg.jpg" bgColor=#ffffff>
+                                    <B><A id="a_person_loginout" class=blue12 href="" target="_parent">安全退出</A></B>
+                                </td>
+                                <td background="../img/user_left1_bg.jpg">&nbsp;</td>
+                                <td width=3><IMG height=28  src="../img/user_left1_right.jpg" width=3></td>
+                            </TR>
+                        </TBODY>
+                    </TABLE>
+                </td>
+            </TR>
+        </TBODY>
+    </TABLE>
+</BODY>
+</HTML>
+<input type="hidden" id="g_id" value="person_left" />
+<script type="text/javascript" src="../js/common.js"></script>

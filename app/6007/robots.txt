@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /ac
+Disallow: /ap
+Disallow: /doc/
+Disallow: /css/
+Disallow: /htm/
+Disallow: /img/
+Disallow: /tpl/
+Disallow: /js/

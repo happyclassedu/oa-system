@@ -1,0 +1,51 @@
+
+#list {
+     float:right;
+	 width:700px;
+     margin:0 5px 0 0;
+	 overflow:hidden;
+	 vertical-align:top;
+	 background:#fff;
+}
+
+#list h1 {
+	  line-height:27px;
+	  padding-left:70px;
+	  font-size:14px;
+	  border-bottom:1px solid #CCCCCC;
+	  color:#FFFFFF;
+	  background:url(../img/bj_03.gif) left bottom no-repeat;
+}
+
+#list ul {
+    float:left;
+    width: 680px;
+	padding:0 20px;
+}
+
+#list ul li{
+    height:27px;
+    overflow: hidden;
+    list-style: none;
+    line-height:28px;
+	border-bottom:1px dashed #CCCCCC;
+	}
+
+#list ul a {
+    color: #000000;
+    text-decoration: none;
+
+}
+
+#list ul span {
+      float:right;
+	  
+}
+
+#list h6 {
+      text-align:center;
+	  font-size:12px;
+	  font-weight:normal;
+	  text-align:center;
+	  line-height:30px;
+}

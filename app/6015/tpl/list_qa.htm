@@ -1,0 +1,21 @@
+<div class="msg">
+    <h1>留言回复</h1>
+    <p><input id="btn_qa" type="button" value="我要留言" />
+    </p>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr class="msg_title">
+            <td>留言标题</td>
+            <td>留言类型</td>
+            <td>留言时间</td>
+            <td>状态</td>
+        </tr>
+        <!--{ foreach item=tmp from=$ws.qa }-->
+        <tr>
+            <td><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a></td>
+            <td><!--{$tmp.i_type}--></td>
+            <td><!--{$tmp.atime}--></td>
+            <td><!--{if '2' eq $tmp.drwx}-->已处理<!--{ elseif '3' eq $tmp.drwx }-->已隐藏<!--{ else }-->未处理<!--{ /if }--></td>
+        </tr>
+        <!--{ /foreach }-->
+    </table>
+</div>

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>列表--帐套管理--综合人事管理系统</title>
+    </head>
+    <body>
+        <div id="box_title">
+            <span id="sys_title">综合人事管理系统--帐套管理--列表</span>
+            <div id="box_tools">
+                <span id="box_search">
+                    <input id="val_search" type="text" />
+                    &nbsp;
+                    <input id="btn_search" type="button" value="搜索"/>
+                </span>
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_add" type="button"  value="新增帐套"/>
+            </div>
+        </div>
+        <table id="list_tb" width="2000" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="20" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="40" align="center" />
+            <col width="50" align="center" />
+            <col width="50" align="center" />
+            <col width="50" align="center" />
+            <col width="50" align="center" />
+            <col width="120" align="center" />
+            <thead>
+                <tr>
+                    <td rowspan="2">序<br>号</td>
+                    <td rowspan="2">工<br>号</td>
+                    <td rowspan="2">姓<br>名</td>
+                    <td rowspan="2">职<br>务</td>
+                    <td rowspan="2">帐<br>套</td>
+                    <td colspan="5">考勤情况</td>
+                    <td colspan="3">标准工资</td>
+                    <td colspan="7">其他</td>
+                    <td rowspan="2">收入合计</td>
+                    <td colspan="4">扣除项</td>
+                    <td rowspan="2">扣款<br>合计</td>
+                    <td rowspan="2">应发<br>工资</td>
+                    <td rowspan="2">个税<br>扣款</td>
+                    <td rowspan="2">实发<br>工资</td>
+                    <td rowspan="2">管<br>理</td>
+                </tr>
+                <tr>
+                    <td>全勤天数</td>
+                    <td>事假</td>
+                    <td>病假</td>
+                    <td>矿工</td>
+                    <td>实际出勤</td>
+                    <td>基本工资</td>
+                    <td>岗位工资</td>
+                    <td>学历工资</td>
+                    <td>工龄工资</td>
+                    <td>午餐补助</td>
+                    <td>岗位津贴</td>
+                    <td>全勤奖</td>
+                    <td>奖金</td>
+                    <td>交通补贴</td>
+                    <td>其它</td>
+                    <td>事假</td>
+                    <td>病假</td>
+                    <td>矿工</td>
+                    <td>其它</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td class="btn_box" align="center">
+                        <input class="btn_view" type="button" value="查看" />
+                        &nbsp;&nbsp;
+                        <input class="btn_edit" type="button" value="修改" />
+                        &nbsp;&nbsp;
+                        <input class="btn_del" type="button" value="删除" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="jpage_box" style="display: none;"></div>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="stat_pay_i" />
+<script type="text/javascript" src="../js/common.js"></script>

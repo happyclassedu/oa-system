@@ -1,0 +1,59 @@
+<div id="index_banner" class="div_center">
+    <div id="index_banner_swf"></div>
+</div>
+<div id="index_menuer" class="div_center">
+    <!--{ foreach item=tmp from=$ws.sub_menu }-->
+    <a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><!--{$tmp.name}--></a>
+    <!--{ /foreach }-->
+</div>
+<div id="index_box" class="div_center">
+    <div id="index_l_box">
+        <div id="index_pics_box">
+            <h2 class="index_title"><a href="<!--{$ws.index_news0_m.url}-->"><!--{$ws.index_news0_m.name}--></a></h2>
+            <ul id="index_pics">
+                <!--{ foreach item=tmp from=$ws.link_pics }-->
+                <li><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><img src="doc::<!--{$tmp.img}-->"/></a><p><!--{$tmp.name}--></p></li>
+                <!--{ /foreach }-->
+            </ul>
+        </div>
+        <div id="index_ads_box">
+            <!--{ include file="links1`$ws.mk`.htm" }-->
+            <!--{ include file="links2`$ws.mk`.htm" }-->
+        </div>
+    </div>
+    <div id="index_c_box">
+        <div id="index_news1">
+            <h2 class="index_title"><a href="#"><!--{$ws.index_news1_m.name}--></a><a class="more" href="<!--{$ws.index_news1_m.url}-->"><img src="../img/more.jpg" /></a></h2>
+            <!--{ foreach item=tmp from=$ws.index_news1 }-->
+            <a class="w250" href="<!--{$tmp.url}-->"><!--{$tmp.name|truncate_i:23:"…"}--><span>[<!--{$tmp.atime|truncate:5:""}-->]</span></a>
+            <!--{ /foreach }-->
+        </div>
+        <div id="index_news2">
+            <h2 class="index_title"><a href="#"><!--{$ws.index_news2_m.name}--></a><a class="more" href="<!--{$ws.index_news1_m.url}-->"><img src="../img/more.jpg" /></a></h2>
+            <!--{ foreach item=tmp from=$ws.index_news2 }-->
+            <a class="w250" href="<!--{$tmp.url}-->"><!--{$tmp.name|truncate_i:23:"…"}--><span>[<!--{$tmp.atime|truncate:5:""}-->]</span></a>
+            <!--{ /foreach }-->
+        </div>
+    </div>
+    <div id="index_r_box">
+        <div id="index_login_box">
+            <h2 class="index_title"><a href="#">用户登录</a></h2>
+            <ul>
+                <li class="user">用户名：<input id="d_loginid" type="text" /></li>
+                <li class="pass">密　码：<input id="d_loginpw" type="password" /></li>
+                <li class="bt1"><input id="btn_login" type="button" /><input id="btn_reg" type="button" /></li>
+            </ul>
+        </div>
+        <div id="index_linkus_box">
+            <h2 class="index_title lxwm"><a href="#">联系我们</a></h2>
+            <ul>
+                <li class="map"><img src="../img/map.jpg" /></li>
+                <li>地址：中国西安市东大街233号</li>
+                <li>邮编：710001</li>
+                <li>电话：029-87415000</li>
+                <li>传真：029-87459897</li>
+                <li>Email:luckyking@luckyking.com.cn</li>
+            </ul>
+        </div>
+    </div>
+</div>

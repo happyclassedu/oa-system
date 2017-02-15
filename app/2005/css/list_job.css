@@ -1,0 +1,26 @@
+/**
+ * 文件名称：list_job.css
+ * 功能描述：招聘会职位列表界面样式。
+ * 代码作者：王争强（创建）
+ * 创建日期：2010-06-12
+ * 修改日期：2010-06-12
+ * 当前版本：V2.0
+*/
+
+body {
+    background:url(../img/bg.gif) repeat top left;
+}
+
+#val_search {
+    text-align:left;
+    background:#e5e5e5;
+    padding:2px 5px;
+}
+
+.val_search {
+    color:black;background-color:#ffff66;
+}
+
+#jpage_box{
+    width:100%
+}

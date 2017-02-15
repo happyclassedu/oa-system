@@ -1,0 +1,18 @@
+.tb_title5 {
+    height: 35px;
+    background-repeat: repeat-x;
+}
+
+.tb_title5 td {
+    color: #000000;
+    line-height:30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 40px;
+    letter-spacing: 4px;
+}
+
+.tb_title5 {
+    background-image: url('../img/tb_title5.png');
+}

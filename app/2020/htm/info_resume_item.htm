@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>我的简历 - 项目经验 - 人才网站管理系统PHP1.0地区版</title>
+       <LINK rel=stylesheet type="text/css" href="../css/www.css"/>
+    </head>
+    <body>
+ <!--页面顶部-->
+        <IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=188><!--菜单-->
+                        <IFRAME align=left src="resume_left.htm" frameBorder=0 scrolling=no width="100%" height=500></IFRAME></td>
+                    <td width=10></td>
+                    <td bgColor=#ffffff><!--右侧-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom background="../img/title1_bg.gif" height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width=80  background="../img/title1_bg2.jpg" height=28><font color=#ffffff><B>项目经验</B></font></td>
+                                                    <td>&nbsp;</td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE></td>
+                                </TR>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR><td style="PADDING-LEFT: 5px"><font color=#777777>请在本页添加/修改项目经验信息；</font></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=1 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR><td bgColor=#aaccef height=1></td></TR>
+                            </TBODY>
+                        </TABLE>
+                          <TABLE id="list_tb" cellSpacing=1 cellPadding=4 width="100%" border=0>
+                            <col width="20%" align="center"/>
+                            <col width="30%" align="center"/>
+                            <col width="20%" align="center"/>
+                            <col width="30%" align="center"/>
+                            <thead>
+                                <TR bgColor=#dbedfb>
+                                    <td><STRONG>序号</STRONG></td>
+                                    <td><STRONG>起止时间</STRONG></td>
+                                    <td><STRONG>项目名称</STRONG></td>
+                                    <td><STRONG>操 作</STRONG></td>
+                                </TR>
+                            </thead>
+                            <TBODY>
+                                <TR>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td class="btn_box">
+                                        <input class="btn_edit" type="button" value="修改" />
+                                        <input class="btn_del" type="button" value="删除" />
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td id="jpage_box"></td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                      <!--新增/修改项目经验-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR> <td height=5></td></TR>
+                                <TR>
+                                    <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid"
+                                        height=28><STRONG><span id=lbl_Operate>新增项目经验</span></STRONG> (<font color=#ff3300>*</font> 为必填项)</td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE  id="info_tb" cellSpacing=1 cellPadding=4 width="100%" bgColor=#dddddd  border=0>
+                            <TBODY>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff0000>*</font> 起止时间：</td>
+                                    <td>
+                                        <input id="d_b_time" style="width: 100px" maxLength=50 type="text"/>-<input id="d_e_time" style="width: 100px" maxLength=50 type="text"/>
+                                        <input id="d_r_id" type="hidden"/>
+                                        <input id="d_i_type" type="hidden" value=""/>
+                                        <span id="d_error_time">(后两项不填表示至今)</span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff0000>*</font> 项目名称：</td>
+                                    <td>
+                                        <input id="d_name" style="width: 210px" maxLength=50 type="text"/>
+                                        <span id="d_error_name"></span>
+                                    </td>
+                                </TR>
+                                 <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px"> 是否是ＩＴ项目：</td>
+                                    <td>
+                                        <select id="d_i_txt0" style="width: 210px">
+                                            <option value="" selected>请选择</option>
+                                            <option value="1" selected>是</option>
+                                            <option value="0" selected>否</option>
+                                        </select>
+                                      </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100>软件环境：</td>
+                                    <td><input id="d_i_txt1" style="width: 210px" maxLength=100 type="text"/></td>
+                                </TR>
+
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100>硬件环境：</td>
+                                    <td><input id="d_i_txt2" style="width: 210px" maxLength=100 type="text"/> </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100>开发工具：</td>
+                                    <td><input id="d_i_txt3" style="width: 210px" maxLength=100 type="text"/></td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff0000>*</font> 项目描述：</td>
+                                    <td><font color=#777777>请详细填写该项目的描述 (限500字 <A href="javascript:" onclick="javascript:alert('您输入了'+ document.all.d_i_txt4.value.length +'个字');"><font color=#777777>计算字数</font></A>) </font><BR>
+                                        <TEXTAREA id="d_i_txt4" style="width: 500px" rows=5></TEXTAREA>
+                                        <BR><span id="d_error_i_txt4"></span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 12px" width=100><font color=#ff0000>*</font> 责任描述：</td>
+                                    <td><font color=#777777>请详细填写项目责任描述 (限300字 <A href="javascript:" onclick="javascript:alert('您输入了'+ document.all.d_intor.value.length +'个字');"><font color=#777777>计算字数</font></A>) </font><BR>
+                                        <TEXTAREA id="d_intor" style="width: 500px" rows=5></TEXTAREA>
+                                        <BR><span id="d_error_intor"></span>
+                                    </td>
+                                </TR>
+                                <TR bgColor=#ffffff>
+                                    <td style="PADDING-LEFT: 24px" width=100>是否显示在简历中</td>
+                                    <td><!--<input id="i_major_desc" type=checkbox/> -->
+                                        <select id="d_open" style="width: 100px">
+                                            <option value="" >请选择</option>
+                                            <option value="1">是</option>
+                                            <option value="0">否</option>
+                                        </select>
+                                     </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                       <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                <TBODY>
+                                    <TR>
+                                        <td style="PADDING-LEFT: 24px" width=100>&nbsp;</td>
+                                        <td align=left>
+                                            <input id="btn_save" style="width: 60px; HEIGHT: 30px"  type="button" value="保存" name="btn_save"/>
+                                        </td>
+                                    </TR>
+                                </TBODY>
+                        </TABLE>
+                      <!--页面左侧 结束-->
+                    </td>
+                </TR>
+            </TBODY>
+        </TABLE><!--页面底部-->
+        <IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=220></IFRAME>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_resume_item" />
+<script type="text/javascript" src="../js/common.js"></script>

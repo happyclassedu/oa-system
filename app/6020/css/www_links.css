@@ -1,0 +1,35 @@
+
+/* 成功案例 s */
+
+.image_carousel {
+  margin-top:8px;
+  /*padding:8px 0;*/
+  background:url(../img/cgal.jpg) left top repeat-x;
+}
+.image_carousel img {  
+  border: 1px solid #ccc;  
+  background-color: white;    
+  margin: 0px 10px; 
+  width:100px;
+  height:100px;
+  display: block;  
+  float: right;  
+}  
+
+.clearfix {  
+  float: none;  
+  clear: both;  
+} 
+ 
+#foo1 {
+  float:right;
+  right:0;
+  padding-right:30px;
+}
+
+#foo1 ul li {
+  float:left;
+}
+
+
+/* 成功案例 e */

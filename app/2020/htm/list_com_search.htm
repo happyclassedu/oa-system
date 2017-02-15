@@ -1,0 +1,282 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>简历搜索--职位列表--人才网站管理系统php1.0地区版</title>
+        <LINK href="../css/www.css" type="text/css" rel=stylesheet>
+    </head>
+    <body>
+        <!--页面顶部-->
+        <IFRAME align=middle src="com_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+        <TABLE border=0 cellSpacing=0 cellPadding=0 width=980 align=center>
+            <TBODY>
+                <TR vAlign=top>
+                    <td bgColor=#ffffff width=770><!--页面左侧-->
+                        <!--简历列表-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 8px" height=28 background="../img/left2_bg.gif">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="PADDING-TOP: 5px" height=28 background="../img/left2_t1.gif" width=85 align=middle><B><font color=#ff6600>快速搜索</B></td>
+                                                    <td width=5>&nbsp;</td>
+                                                    <td style="PADDING-TOP: 5px" background="../img/left2_t2.jpg" width=85 align=middle><B><A id="a_info_adsearch" href="" target="_parent">全能搜索</A></B></td>
+                                                    <td>&nbsp;</td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                                <TR>
+                                 <td style="BORDER-LEFT: #027bc5 2px solid; PADDING-LEFT: 5px; BORDER-RIGHT: #027bc5 2px solid; PADDING-TOP: 8px">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td>
+                                                                        <TABLE id="search_tb" border=0 cellSpacing=0 cellPadding=2 width="100%">
+                                                                            <TBODY>
+                                                                                <TR vAlign=top>
+                                                                                    <td height=30 width=50 align=right>职 能：</td>
+                                                                                    <td height=30>
+                                                                                        <select style="width: 300px" id="d_big_classification" class="search">
+                                                                                            <option selected value="">请选择</option>
+                                                                                        </select> &nbsp;
+                                                                                        职 位：
+                                                                                        <select style="width: 240px" id="d_small_classification" class="search">
+                                                                                            <option selected value="">请选择</option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </TR>
+                                                                                <TR vAlign=top>
+                                                                                    <td height=30 width=50 align=right>省 份：</td>
+                                                                                    <td height=30>
+                                                                                        <select style="width: 300px" id="d_addr1" class="search">
+                                                                                            <option selected value="">请选择</option>
+                                                                                       </select>
+                                                                                        &nbsp;地 区：
+                                                                                        <select style="width: 240px" id="d_addr2"  class="search">
+                                                                                              <option selected value="">请选择</option>
+                                                                                        </select>
+                                                                                     </td>
+                                                                                </TR>
+                                                                                <TR vAlign=top>
+                                                                                    <td height=30 width=50 align=right>行 业：</td>
+                                                                                    <td height=30>
+                                                                                        <select style="width: 300px" id="d_trade" class="search">
+                                                                                            <option selected value="">请选择</option>
+                                                                                         </select>
+                                                                                        &nbsp;日 期：
+                                                                                        <select style="width: 240px" id="d_atime" class="search">
+                                                                                            <option selected value="0">日期不限</option>
+                                                                                            <option value="1">近一天</option>
+                                                                                            <option value="2">近两天</option>
+                                                                                            <option value="3">近三天</option>
+                                                                                            <option value="7">近一周</option>
+                                                                                            <option value="14">近两周</option>
+                                                                                            <option value="30">近一月</option>
+                                                                                            <option value="60">近两月</option>
+                                                                                            <option value="90">近三月</option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </TR>
+                                                                                <TR vAlign=top>
+                                                                                    <td style="PADDING-TOP: 3px" height=30 width=50 align=right>名 称：</td>
+                                                                                    <td height=30>
+                                                                                        <input style="width: 528px" id="d_key"  class="search"   value="请输入关键字" onClick="this.value='';" maxLength=100/>
+                                                                                        <A id="a_list_search"><IMG border=0 align="absMiddle" src="../img/Button_Search.gif" width=59 height=18></A>
+                                                                                    </td>
+                                                                                </TR>
+                                                                            </TBODY>
+                                                                        </TABLE>
+                                                                    </td>
+                                                                </TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR><td><IMG src="../img/left2_bottom.gif" width=770 height=12></td></TR>
+                            </TBODY>
+                         </TABLE>
+                       <!--明细列表-->
+                        <TABLE id="list_tb" cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <col width="5%" align="center"/>
+                            <col width="15%" align="center"/>
+                            <col width="6%" align="center"/>
+                            <col width="8%" align="center"/>
+                            <col width="28%" align="center"/>
+                            <col width="14%" align="center"/>
+                            <col width="13%" align="center"/>
+                            <col width="10%" align="center"/>
+                            <thead>
+                                <TR bgColor=#dbedfb>
+                                    <td>
+                                        <input id="d_checkbox_all" name="d_checkbox_all" type="checkbox"/>
+                                    </td>
+                                    <td><STRONG>姓 名</STRONG></td>
+                                    <td><STRONG>性别</STRONG></td>
+                                    <td><STRONG>学历</STRONG></td>
+                                    <td><STRONG>从事职业</STRONG></td>
+                                    <td><STRONG>居住地区</STRONG></td>
+                                    <td><STRONG>工作经验</STRONG></td>
+                                    <td><STRONG>更新日期</STRONG></td>
+                                </TR>
+                            </thead>
+                            <TBODY>
+                                <TR>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td id="jpage_box"></td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <!--分页控制-->
+
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE><!--全选和操作按扭-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=2 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 9px" width="10%" align=left></td>
+                                    <td style="PADDING-RIGHT: 5px" align=right><!--邀请面试-->
+                                        <A id="btn_resume_interview"><IMG border=0 src="../img/button3_1.gif" width=80 height=20></A> <!--邀请面试-->
+                                        <A id="btn_resume_fav"><IMG border=0 src="../img/button3_2.gif" width=80 height=20></A> <!--收藏简历-->
+                                        <A id="btn_browse"><IMG border=0 src="../img/button3_3.gif" width=80 height=20></A> <!--浏览简历-->
+                                    </td>
+                                </TR>
+                            </TBODY></TABLE>
+                    </td>
+                    <td width=10>&nbsp;</td>
+                    <td><!--开始-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5 height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B>会员中心</B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right.jpg" width=5 height=30></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; BORDER-RIGHT: #a4cbee 1px solid; PADDING-TOP: 3px"><!--企业会员信息-->
+                                        <DIV id="d_pan_login"> 
+                                        </DIV>
+                                        <!--会员登录-->
+                                    </td>
+                                </TR>
+                            </TBODY></TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE><!--结束-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5 height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B>英才自荐</B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right.jpg" width=5 height=30></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; PADDING-BOTTOM: 3px; PADDING-LEFT: 10px; BORDER-RIGHT: #a4cbee 1px solid; PADDING-TOP: 3px">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR height=22>
+                                                    <td width="27%"><B>姓名</B></td>
+                                                    <td><B>现职位</B></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                        <DIV style="HEIGHT: 132px; OVERFLOW: hidden" id=demo>
+                                            <DIV id=demo1>
+                                                <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=Showme1_lit_Person_Showme border=0 cellSpacing=0 cellPadding=0>
+                                                    <TBODY>
+                                                        <TR>
+                                                            <td>
+                                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                    <TBODY>
+                                                                        <TR height=22>
+                                                                            <td width="27%"><A href="../2021/htm/info_resume_look.htm" target=_blank>wangzq</A></td>
+                                                                            <td><span id=Showme1_lit_Person_Showme__ctl0_lbl_CurrentJobName>技工</span></td>
+                                                                        </TR>
+                                                                    </TBODY></TABLE>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td>
+                                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                    <TBODY>
+                                                                        <TR height=22>
+                                                                            <td width="27%"><A href="/info_resume_look.htm" target=_blank>欣欣</A></td>
+                                                                            <td><span id=Showme1_lit_Person_Showme__ctl1_lbl_CurrentJobName>硬件工程师</span></td>
+                                                                        </TR>
+                                                                    </TBODY></TABLE>
+                                                            </td></TR>
+                                                    </TBODY></TABLE>
+                                            </DIV>
+                                            <DIV id=demo2>
+                                                <TABLE style="width: 100%; BORDER-COLLAPSE: collapse"
+                                                       id=Showme1_lit_Person_Showme border=0 cellSpacing=0 cellPadding=0>
+                                                    <TBODY>
+                                                        <TR>
+                                                            <td>
+                                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                    <TBODY>
+                                                                        <TR height=22>
+                                                                            <td width="27%"><A href="/info_resume_look.htm" target=_blank>wangzq</A></td>
+                                                                            <td><span id=Showme1_lit_Person_Showme__ctl0_lbl_CurrentJobName>技工</span></td>
+                                                                        </TR>
+                                                                    </TBODY>
+                                                                </TABLE>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td>
+                                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                    <TBODY>
+                                                                        <TR height=22>
+                                                                            <td width="27%"><A href="http://job5.fdkjgz.com/Html/Resume/10149.html" target=_blank>欣欣</A></td>
+                                                                            <td><span id=Showme1_lit_Person_Showme__ctl1_lbl_CurrentJobName>硬件工程师</span></td>
+                                                                        </TR>
+                                                                    </TBODY></TABLE>
+                                                            </td></TR>
+                                                    </TBODY></TABLE>
+                                            </DIV></DIV>
+
+                                    </td></TR>
+                            </TBODY></TABLE>
+                    </td></TR>
+            </TBODY>
+        </TABLE><!--页面底部-->
+        <IFRAME align=middle src="com_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_com_search" />
+<script type="text/javascript" src="../js/common.js"></script>

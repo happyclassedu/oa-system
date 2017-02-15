@@ -1,0 +1,90 @@
+
+#dy_list_cen {
+   width:740px;
+   float:right;
+   margin-right:5px;
+   margin-bottom:5px;
+   overflow:hidden;
+   border:1px solid #c6c6c6;
+}
+
+#dy_wshds {
+  float:left;
+  width:740px;
+}
+
+#dy_wshds h1 {
+  font-size:14px;
+  line-height:35px;
+  color:#FFFFFF;
+  padding-left:10px;
+  background:url(../img/list_title_bg.jpg) left top no-repeat;
+}
+
+/* 换页 s */
+.dy_page {
+	float:left;
+	margin-top:10px;
+	margin-left:180px;
+    height: 35px;
+    text-align: center;
+}
+
+.dy_page a {
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    line-height: 21px;
+    margin: 0 4px;
+    padding: 0 6px;
+    border: #DBDBDB 1px solid;
+    color: #333333;
+    font-size: 12px;
+}
+
+.dy_page a:hover {
+    background:#DEF1FF;
+    color: #FF0000;
+    text-decoration:none;
+}
+
+
+.dy_page .page_now {
+    background:#DEF1FF;
+    color: #FF0000;
+    font-weight: 700;
+}
+
+/* 换页 e */
+/* 时政要闻 s */
+
+#dy_szyw {
+  float:left;
+   width:740px;
+}
+
+#dy_szyw h1 {
+  font-size:14px;
+  line-height:35px;
+  color:#FFFFFF;
+  padding-left:20px;
+  background:url(../img/list_title_bg.jpg) left top no-repeat;
+}
+
+#dy_szyw a {
+  display:block;
+  line-height:30px;
+  color:#333333;
+  margin:0 15px;
+  padding-left:25px;
+  text-decoration:none;
+  background:url(../img/line1.bmp) left center no-repeat;
+}
+
+#dy_szyw span {
+  float:right;
+  margin-top:3px;
+  padding-right:25px;
+}
+
+/* 时政要闻 e */

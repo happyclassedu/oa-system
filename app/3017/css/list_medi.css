@@ -1,0 +1,11 @@
+#d_name {
+    width: 100px;
+}
+
+#stat_tb tr {
+    line-height : 28px;
+}
+
+#stat_tb td {
+    border : solid #F5F5F5 1px;
+}

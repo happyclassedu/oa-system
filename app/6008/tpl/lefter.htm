@@ -1,0 +1,34 @@
+
+<!--lefter s-->
+<div id="login_box">
+    <h2><a href="#">党员登录</a></h2>
+    <ul>
+        <li>用户名：<input id="login_id" type="text" /></li>
+        <li>密　码：<input id="login_pw" type="text" /></li>
+        <li><input id="btn_login" type="button" value="登录"  /><input id="btn_reg" type="button" value="注册"  /></li>
+    </ul>
+</div>
+<div id="notice_box">
+    <h2><a href="#"><!--{$ws.index_menu6.name}--></a></h2>
+    <ul>
+        <!--{ foreach item=tmp from=$ws.index_news6 }-->
+        <li><a href="<!--{$tmp.url}-->" target="_blank"><!--{$tmp.name|truncate_i:20:"…"}--></a></li>
+        <!--{ /foreach }-->
+    </ul>
+</div>
+<div id="pics_box">
+    <a href="#"><img src="../img/pics1.jpg" alt="" /></a>
+    <a href="#"><img src="../img/pics2.jpg" alt="" /></a>
+    <a href="#"><img src="../img/pics3.jpg" alt="" /></a>
+</div>
+<div id="linkus_box">
+    <h2><a href="#">联系我们</a></h2>
+    <ul>
+        <li>曲江人才交流中心联系方式：</li>
+        <li>电话：029-83155622</li>
+        <li>地址：西安市曲江人才交流中心</li>
+        <li>邮编：710061</li>
+        <li>ＱＱ：1622838255</li>
+    </ul>
+</div>
+<!--lefter e-->

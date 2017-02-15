@@ -1,0 +1,755 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>文章列表--职业指导 - 人才网管理系统PHP1.0地区版</title>
+        <link href="../css/Style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <!--页面顶部-->
+        <IFRAME align=middle src="./header_info_employment.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+        <!--页面主体-->
+        <TABLE border=0 cellSpacing=0 cellPadding=0 width=980 align=center>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=200><!--左侧-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5 height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B><font color=#ffffff>会员登录</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right2.jpg" width=5 height=30></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; BORDER-RIGHT: #a4cbee 1px solid"><!--个人会员信息--><!--会员登录-->
+                                        <DIV id=Login1_pan_UserLogin>
+                                            <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                                                <TBODY>
+                                                    <TR><td height=4></td></TR>
+                                                </TBODY>
+                                            </TABLE>
+                                            <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                <TBODY>
+                                                    <TR>
+                                                        <td height=27 width=64 align=right><font color=#848484>用户名：</font></td>
+                                                        <td height=27><input style="width: 115px" id=Login1_txt_Username class=input_login name=Login1:txt_Username> <span style="DISPLAY: none; COLOR: red" id=Login1_rfv_Username
+                                                                controltovalidate="Login1_txt_Username" focusOnError="t" display="Dynamic"
+                                                                initialvalue="" isvalid="true"></span></td></TR>
+                                                    <TR>
+                                                        <td height=27 width=64 align=right><font color=#848484>密&nbsp;&nbsp;码：</font></td>
+                                                        <td height=27><input style="width: 115px" id=Login1_txt_Password
+                                                                             class=input_login value="" type=password name=Login1:txt_Password> <span style="DISPLAY: none; COLOR: red" id=Login1_rfv_Password
+                                                                             controltovalidate="Login1_txt_Password" focusOnError="t" display="Dynamic"
+                                                                             initialvalue="" isvalid="true"></span></td></TR>
+                                                    <TR align=middle>
+                                                        <td height=30 colSpan=2><input style="width: 50px; HEIGHT: 20px"
+                                                                                       id=Login1_ibn_Login language=javascript                                                                                       onclick='javascript:WebForm_DoPostBackWithoptions(new WebForm_PostBackoptions("Login1:ibn_Login", "", true, "", "", false, false))'
+                                                                                       border=0 src="../img/Button_Login.gif" type=image
+                                                                                       name=Login1:ibn_Login>&nbsp;<A
+                                                                                       href=""><IMG border=0
+                                                                                                                    src="../img/Button_Reg.gif" width=50 height=20></A> </td></TR>
+                                                    <TR align=middle>
+                                                        <td height=21 colSpan=2><IMG src="../img/Icon1.gif" width=5 height=9> <A
+                                                                class=blue20 href="http://job5.fdkjgz.com/Resume/Register.aspx">注册个人用户</A> <IMG
+                                                                src="../img/Icon1.gif" width=5 height=9> <A class=blue20
+                                                                href="http://job5.fdkjgz.com/Public/GetPassword.aspx">找回密码</A></td></TR></TBODY></TABLE>
+                                            <DIV style="DISPLAY: none; COLOR: red" id=Login1_vas_Login
+                                                 headertext="请输入用户名和密码！" showmessagebox="True"
+                                                 showsummary="False"></DIV></DIV></td>
+                                </TR>
+                            </TBODY></TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5 height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B><font color=#ffffff>文章搜索</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right2.jpg" width=5
+                                                                     height=30></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; PADDING-BOTTOM: 3px; BORDER-RIGHT: #a4cbee 1px solid; PADDING-TOP: 3px"><!--文章搜索-->
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=27 width=18 align=middle>&nbsp;</td>
+                                                    <td align=left><select style="width: 160px" id=ddl_Classid name=ddl_Classid>
+                                                            <option selected value=0>请选择类别</option> <option value=1011>简历指导</option> <option
+                                                                value=1012>面试宝典</option> <option value=1013>职业规划</option> <option
+                                                                value=1014>求职实录</option> <option value=1015>薪酬福利</option> <option
+                                                                value=1016>职场观察</option> <option value=1017>劳动法规</option> <option
+                                                                value=1018>职场八卦</option></select></td></TR>
+                                                <TR>
+                                                    <td height=27 align=middle>&nbsp;</td>
+                                                    <td align=left><input style="width: 160px" id=txt_Key onClick="this.value='';" value=请输入关键字></td></TR>
+                                                <TR>
+                                                    <td height=27 align=middle>&nbsp;</td>
+                                                    <td align=left><input style="width: 80px" id=btn_Search onclick=Search_Employment(); value=开始搜索 type=button></td></TR></TBODY></TABLE></td></TR></TBODY></TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5 height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B><font color=#ffffff>热门信息</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right2.jpg" width=5 height=30></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; PADDING-LEFT: 5px; BORDER-RIGHT: #a4cbee 1px solid; PADDING-TOP: 3px"><!--热门信息-->
+                                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Info_Hot border=0
+                                               cellSpacing=0 cellPadding=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/284.html"
+                                                                                  target=_blank><font color=#333333>招聘网推搜索引擎等方案 欲洗</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/348.html"
+                                                                                  target=_blank><font color=#333333>劳动关系中的“六期”和“四金</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/347.html"
+                                                                                  target=_blank><font color=#333333>竞业限制是把“双刃剑”</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/346.html"
+                                                                                  target=_blank><font color=#333333>诠释：加班应当特别注意的几个</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/328.html"
+                                                                                  target=_blank><font color=#333333>互联网招聘——行业“血拼”提</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/325.html"
+                                                                                  target=_blank><font color=#333333>互联网成为就业新红娘　网络招</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/324.html"
+                                                                                  target=_blank><font color=#333333>Web3.0：下一个传媒投资</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/323.html"
+                                                                                  target=_blank><font color=#333333>创投2007：互联网的投机取</font></A>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5 height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B><font color=#ffffff>推荐文章</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right2.jpg" width=5 height=30></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; PADDING-LEFT: 5px; BORDER-RIGHT: #a4cbee 1px solid; PADDING-TOP: 3px"><!--推荐信息-->
+                                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Info_Best border=0
+                                               cellSpacing=0 cellPadding=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/311.html"
+                                                                                  target=_blank><font color=#333333>营销技巧：“杯子理论”的四个</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/299.html"
+                                                                                  target=_blank><font color=#333333>选择职业需要先要评价一下自己</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/294.html"
+                                                                                  target=_blank><font color=#333333>办公室面试礼仪</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/340.html"
+                                                                                  target=_blank><font color=#333333>试用期≠白用期 应聘者须知三</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/339.html"
+                                                                                  target=_blank><font color=#333333>假文凭没真本事 失诚信者法律</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/338.html"
+                                                                                  target=_blank><font color=#333333>劳动合同立法“提速”呼声高</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img\icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/337.html"
+                                                                                  target=_blank><font color=#333333>突破职业发展之瓶颈 2007</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px"><IMG align=absMiddle
+                                                                                  src="../img/icon11.gif"
+                                                                                  width=3 height=5> <A href="http://job5.fdkjgz.com/Html/Info/336.html"
+                                                                                  target=_blank><font color=#333333>别让“年终奖”发成“留人奖”</font></A>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE><!--开始-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5 height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B><font color=#ffffff>合作伙伴</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right2.jpg" width=5 height=30></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                        <!--结束--></td>
+                    <td width=10></td>
+                    <td width=770><!--右侧-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR vAlign=top>
+                            <td width=380>
+                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                    <TBODY>
+                                        <TR>
+                                            <td>
+                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                    <TBODY>
+                                                        <TR>
+                                                            <td width=25><IMG src="../img/Right1_left1.jpg" width=25 height=30></td>
+                                                            <td background="../img/Right1_bg1.jpg"><STRONG>职场热点</STRONG></td>
+                                                            <td width=25><IMG src="../img/Right1_right1.jpg" width=25 height=30></td>
+                                                        </TR>
+                                                    </TBODY></TABLE>
+                                            </td></TR>
+                                        <TR>
+                                            <td style="PADDING-LEFT: 2px"><!--职场热点-->
+                                                <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Info_HotTop border=0 cellSpacing=0 cellPadding=0>
+                                                    <TBODY>
+                                                        <TR>
+                                                            <td>
+                                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                    <TBODY>
+                                                                        <TR>
+                                                                            <td height=30><A href="Info/963.html" target=_blank><font color=#ff0000><U><B>博客网：坚持草根路线 数字</B></U></font></A></td>
+                                                                        </TR>
+                                                                    </TBODY></TABLE>
+                                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                    <TBODY>
+                                                                        <TR vAlign=top>
+                                                                            <td width=100 align=left><IMG src="../img/Employment1.gif" width=93 height=80></td>
+                                                                            <td><span id=lit_Info_HotTop__ctl0_lbl_Content>不管是主动选择的结果，还是新浪名人博客效应下的被迫转移，BLOGCN（中国博客网）走的是一条博客的原初性道路——草根，并将一直走下去。在日前举行的BLOGCN四周年庆典上，总裁胡之光面对众多媒体的疑...</span>
+                                                                                <A href="http://job5.fdkjgz.com/Html/Info/290.html" target=_blank>[阅读全文]</A></td>
+                                                                        </TR>
+                                                                    </TBODY></TABLE>
+                                                            </td></TR>
+                                                    </TBODY></TABLE>
+                                            </td></TR>
+                                    </TBODY></TABLE>
+                            </td>
+                            <td width=10>&nbsp;</td>
+                            <td>
+                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                    <TBODY>
+                                        <TR>
+                                            <td>
+                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                    <TBODY>
+                                                        <TR>
+                                                            <td width=25><IMG src="../img/Right1_left1.jpg" width=25 height=30></td>
+                                                            <td background="../img/Right1_bg1.jpg"><STRONG><A href="http://job5.fdkjgz.com/Info/Public.aspx?Classid=1044">职场快讯</A></STRONG></td>
+                                                            <td width=25><IMG src="../img/Right1_right1.jpg" width=25 height=30></td>
+                                                        </TR>
+                                                    </TBODY></TABLE>
+                                            </td></TR>
+                                        <TR><!--最新资讯-->
+                                            <td style="PADDING-LEFT: 2px; PADDING-TOP: 4px">
+                                                <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Info_1044 border=0 cellSpacing=0 cellPadding=0>
+                                                    <TBODY>
+                                                        <TR>
+                                                            <td style="HEIGHT: 22px">·<A href="http://job5.fdkjgz.com/Html/Info/358.html"
+                                                                                         target=_blank><font color=#333333>正确辞职的四种做法</font> <font color=#666666
+                                                                                                                         size=1>[<span id=lit_Info_1044__ctl0_lbl_Update>1.23</span>]</font></A>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 22px">·<A href="http://job5.fdkjgz.com/Html/Info/357.html"
+                                                                                         target=_blank><font color=#333333>传统媒体走下坡路 对应网站的访客却增长两位数</font> <font color=#666666 size=1>[<span id=lit_Info_1044__ctl1_lbl_Update>1.23</span>]</font></A> </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 22px">·<A href="http://job5.fdkjgz.com/Html/Info/356.html"
+                                                                                         target=_blank><font color=#333333>我们需要什么样的网络营销？</font> <font color=#666666
+                                                                                                                             size=1>[<span id=lit_Info_1044__ctl2_lbl_Update>1.23</span>]</font></A>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 22px">·<A href="http://job5.fdkjgz.com/Html/Info/355.html"
+                                                                                         target=_blank><font color=#0000ff>离职要先签保密协议？</font> <font color=#666666
+                                                                                                                          size=1>[<span id=lit_Info_1044__ctl3_lbl_Update>1.23</span>]</font></A>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 22px">·<A href="http://job5.fdkjgz.com/Html/Info/354.html"
+                                                                                         target=_blank><font color=#333333>互联网无界　商业有国界</font> <font color=#666666
+                                                                                                                           size=1>[<span id=lit_Info_1044__ctl4_lbl_Update>1.23</span>]</font></A>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td style="HEIGHT: 22px">·<A href="http://job5.fdkjgz.com/Html/Info/353.html"
+                                                                                         target=_blank><font color=#333333>互联网领域的创意生活五大潮流</font> <font color=#666666
+                                                                                                                              size=1>[<span id=lit_Info_1044__ctl5_lbl_Update>1.23</span>]</font></A>
+                                                            </td>
+                                                        </TR>
+                                                    </TBODY></TABLE>
+                                            </td></TR>
+                                    </TBODY></TABLE>
+                            </td></TR>
+            </TBODY></TABLE>
+        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+            <TBODY>
+                <TR><td height=5></td></TR>
+            </TBODY></TABLE>
+        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=380>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="BORDER-BOTTOM: #1a72cc 2px solid; PADDING-LEFT: 2px; PADDING-TOP: 4px"
+                                                        height=25 width=70><STRONG><IMG align=absMiddle src="../img/icon2.gif"
+                                                                                    width=12 height=14><STRONG></STRONG>简历指导</STRONG> </td>
+                                                    <td style="BORDER-BOTTOM: #a0caf3 2px solid; PADDING-RIGHT: 2px; PADDING-TOP: 4px"
+                                                        align=right><font color=#cccccc>|</font> <A href="http://job5.fdkjgz.com/Info/Employment_List.aspx?Classid=1011">更多</A></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR><!--简历指导-->
+                                    <td style="PADDING-TOP: 4px">
+                                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Info_1011 border=0
+                                               cellSpacing=0 cellPadding=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href="http://job5.fdkjgz.com/Html/Info/953.html"
+                                                                                 target=_blank><font color=#333333>北京发布13类行业工资指导线</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href="h"
+                                                                                 target=_blank><font color=#333333>索爱全球裁员2000人 占员工总数17%</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>谷歌中国拟今年新增200名员工 半数为应届生</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>IT人，你有农民兄弟活得潇洒吗</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>HR为何“看不见”你的简历</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>一大四女生“狂妄”求职　是张扬还是自信</font></A>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                    </td>
+                    <td width=10>&nbsp;</td>
+                    <td>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="BORDER-BOTTOM: #1a72cc 2px solid; PADDING-LEFT: 2px; PADDING-TOP: 4px"
+                                                        height=25 width=70><STRONG><IMG align=absMiddle src="../img/icon2.gif"
+                                                                                    width=12 height=14><STRONG></STRONG>面试宝典</STRONG></td>
+                                                    <td style="BORDER-BOTTOM: #a0caf3 2px solid; PADDING-RIGHT: 2px; PADDING-TOP: 4px"
+                                                        align=right><font color=#cccccc>|</font> <A
+                                                            href="">更多</A></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR><!--面试宝典-->
+                                    <td style="PADDING-TOP: 4px">
+                                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Info_1012 border=0
+                                               cellSpacing=0 cellPadding=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>三十年职场之三千字心得</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>职场新人如何融入新环境</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>企业面试小故事</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>技术人才吃香 办公文员过剩</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>公务员面试：克服紧张焦虑四要素</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>毕业生客串招聘官收获巨大</font></A>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                    </td></TR>
+            </TBODY></TABLE>
+        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+            <TBODY>
+                <TR><td height=5></td></TR>
+            </TBODY></TABLE>
+        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=380>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="BORDER-BOTTOM: #1a72cc 2px solid; PADDING-LEFT: 2px; PADDING-TOP: 4px"
+                                                        height=25 width=70><STRONG><IMG align=absMiddle src="../img/icon2.gif"
+                                                                                    width=12 height=14><STRONG></STRONG>职业规划</STRONG></td>
+                                                    <td style="BORDER-BOTTOM: #a0caf3 2px solid; PADDING-RIGHT: 2px; PADDING-TOP: 4px"
+                                                        align=right><font color=#cccccc>|</font> <A
+                                                            href="">更多</A></td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR><!--职业规划-->
+                                    <td style="PADDING-TOP: 4px">
+                                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Info_1013 border=0 cellSpacing=0 cellPadding=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>阿文美驰：用培训缩短从“脑”到“手”的距离</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>一英里赛跑</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>有效的绩效管理（精彩重现）</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>[特别节目2]如何保障工资和奖金权益？</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>后奥运时代 人才流动增大成必然</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>大学生总裁吴莹莹：我不是个花瓶</font></A>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                    </td>
+                    <td width=10>&nbsp;</td>
+                    <td>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="BORDER-BOTTOM: #1a72cc 2px solid; PADDING-LEFT: 2px; PADDING-TOP: 4px"
+                                                        height=25 width=70><STRONG><IMG align=absMiddle src="../img/icon2.gif"
+                                                                                    width=12 height=14><STRONG></STRONG>求职技巧</STRONG></td>
+                                                    <td style="BORDER-BOTTOM: #a0caf3 2px solid; PADDING-RIGHT: 2px; PADDING-TOP: 4px"
+                                                        align=right><font color=#cccccc>|</font> <A
+                                                            href="">更多</A></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR><!--求职实录-->
+                                    <td style="PADDING-TOP: 4px">
+                                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Info_1014 border=0
+                                               cellSpacing=0 cellPadding=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>营销技巧：“杯子理论”的四个应用</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>艾瑞黄嘉骊：2007年网络营销潜力巨大</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>虚拟商街比现实更“贴心” 带来商业利润和酷营销</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href="h"
+                                                                                 target=_blank><font color=#333333>网上营销的五大层次</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>网猎出手 传统猎头认为需要专业性</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>求职依赖症：三成人求职离不开招聘网</font></A>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                    </td></TR>
+            </TBODY></TABLE>
+        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+            <TBODY>
+                <TR>
+                    <td height=5></td></TR></TBODY></TABLE>
+        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=380>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="BORDER-BOTTOM: #1a72cc 2px solid; PADDING-LEFT: 2px; PADDING-TOP: 4px"
+                                                        height=25 width=70><STRONG><IMG align=absMiddle src="../img/icon2.gif"
+                                                                                    width=12 height=14><STRONG></STRONG>薪酬福利</STRONG></td>
+                                                    <td style="BORDER-BOTTOM: #a0caf3 2px solid; PADDING-RIGHT: 2px; PADDING-TOP: 4px"
+                                                        align=right><font color=#cccccc>|</font> <A
+                                                            href="">更多</A></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR><!--薪酬福利-->
+                                    <td style="PADDING-TOP: 4px">
+                                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Info_1015 border=0
+                                               cellSpacing=0 cellPadding=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>跨媒体时代：中国还没有环环相扣的营销体系</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>评论中国网站Alexa排名的集体下滑</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>见面“无言以对” 网络依赖应止步</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>“网络同居”日渐流行　疑为“绿色毒品”</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>白领迷恋网络同居　多数源于巨大心理压力</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>MSN高层：互联网公司只需足够而非最好的技术</font></A>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                    </td>
+                    <td width=10>&nbsp;</td>
+                    <td>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="BORDER-BOTTOM: #1a72cc 2px solid; PADDING-LEFT: 2px; PADDING-TOP: 4px"
+                                                        height=25 width=70><STRONG><IMG align=absMiddle src="../img/icon2.gif"
+                                                                                    width=12 height=14><STRONG></STRONG>职场观察</STRONG></td>
+                                                    <td style="BORDER-BOTTOM: #a0caf3 2px solid; PADDING-RIGHT: 2px; PADDING-TOP: 4px"
+                                                        align=right><font color=#cccccc>|</font> <A
+                                                            href="">更多</A></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR><!--职场观察-->
+                                    <td style="PADDING-TOP: 4px">
+                                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Info_1016 border=0 cellSpacing=0 cellPadding=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>雅虎中国的新出路</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>雅虎是否就此滑落　详解近期的收购和新战略</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>互联网招聘——行业“血拼”提前到来</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>动荡的2006网络招聘市场　风雨欲来</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>网络招聘市场呈现细化服务趋势</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>互联网成为就业新红娘　网络招聘异军突起</font></A>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                    </td></TR>
+            </TBODY></TABLE>
+        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+            <TBODY>
+                <TR><td height=5></td></TR>
+            </TBODY></TABLE>
+        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=380>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="BORDER-BOTTOM: #1a72cc 2px solid; PADDING-LEFT: 2px; PADDING-TOP: 4px"
+                                                        height=25 width=70><STRONG><IMG align=absMiddle src="../img/icon2.gif"
+                                                                                    width=12 height=14><STRONG></STRONG>劳动法规</STRONG></td>
+                                                    <td style="BORDER-BOTTOM: #a0caf3 2px solid; PADDING-RIGHT: 2px; PADDING-TOP: 4px"
+                                                        align=right><font color=#cccccc>|</font> <A
+                                                            href="">更多</A></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR><!--劳动法规-->
+                                    <td style="PADDING-TOP: 4px">
+                                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Info_1017 border=0 cellSpacing=0 cellPadding=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>劳动合同立法“提速”呼声高</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>突破职业发展之瓶颈 2007年必做的十件事</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>别让“年终奖”发成“留人奖”</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>八小时应完成的工作有多少？</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>最低工资的法律规定</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>网络营销分析的七个途径</font></A>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                    </td>
+                    <td width=10>&nbsp;</td>
+                    <td>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="BORDER-BOTTOM: #1a72cc 2px solid; PADDING-LEFT: 2px; PADDING-TOP: 4px"
+                                                        height=25 width=70><STRONG><IMG align=absMiddle src="../img/icon2.gif"
+                                                                                    width=12 height=14><STRONG></STRONG>职场八卦</STRONG></td>
+                                                    <td style="BORDER-BOTTOM: #a0caf3 2px solid; PADDING-RIGHT: 2px; PADDING-TOP: 4px"
+                                                        align=right><font color=#cccccc>|</font> <A
+                                                            href="">更多</A></td></TR></TBODY></TABLE></td></TR>
+                                <TR><!--职场八卦-->
+                                    <td style="PADDING-TOP: 4px">
+                                        <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Info_1018 border=0 cellSpacing=0 cellPadding=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>劳动关系中的“六期”和“四金”指哪些</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>竞业限制是把“双刃剑”</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>诠释：加班应当特别注意的几个问题</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>跳槽的三大纪律八项注意</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>为年底少发年终奖部分企业酝酿年末"裁人计划</font></A> </td></TR>
+                                                <TR>
+                                                    <td style="HEIGHT: 22px">·<A href=""
+                                                                                 target=_blank><font color=#333333>寒假实习生甘做廉价劳动力</font></A>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                    </td></TR>
+            </TBODY></TABLE>
+        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+            <TBODY>
+                <TR><td height=5></td></TR>
+            </TBODY>
+        </TABLE>
+    </td></TR>
+</TBODY></TABLE><!--页面底部-->
+<IFRAME height=117 src="index_footer.htm" frameBorder=0 width="100%" scrolling=no align=middle></IFRAME>
+</body>
+</html>

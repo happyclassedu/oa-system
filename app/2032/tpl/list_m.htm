@@ -1,0 +1,21 @@
+
+<!--{include file="listnav_bg.htm"}-->
+
+<!--list_m centent s-->
+<div id="list_cen">
+    <!--list s-->
+    <div id="list">
+        <!--{ foreach item=index_news from=$ws.list_m }-->
+        <h2><!--{$index_news.name}--><a href="<!--{$index_news.url}-->">更多>></a></h2>
+        <ul>
+            <!--{ foreach item=tmp from=$index_news.news name=arr_index }-->
+            <li><span><!--{$tmp.atime|truncate:5:""}--></span><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a></li>
+            <!--{ foreachelse }-->
+            <!--{ /foreach}-->
+        </ul>
+        <!--{ /foreach }-->
+    </div>
+    <!--list e-->
+    <!--{include file="lefter.htm"}-->
+</div>
+<!--list_m centent e-->

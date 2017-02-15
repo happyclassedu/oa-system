@@ -1,0 +1,137 @@
+{include file="header.htm"}
+<!--当前位置-->
+<DIV class=ad1>
+<SCRIPT 
+src="templates/images/ad.htm"></SCRIPT>
+</DIV>
+<DIV class=subNav>
+<DIV class=dq-cs>
+<DIV class=ys-top></DIV>
+<DIV class=ys-bj>厦门企业黄页主题</DIV>
+<DIV class=ys-foot></DIV></DIV>
+</DIV>
+<DIV class=mainbox-a>
+<DIV class=leftsideBar>
+<DIV><IMG height=34 alt=城市分类 
+src="templates/images/all.gif" 
+width=200></DIV><!--行业分类 on-->
+<div id="PARENT">
+<ul id="left_nav">
+{section name=left loop=$qyhycat}
+  <li><a href="?catid={$qyhycat[left].qyhyid}">{$qyhycat[left].qyhyname}</a></li>
+{/section}
+ </ul>
+</div>
+
+<!--广告位-->
+<!--行业分类 off--></DIV>
+<DIV class=rightContainer>
+<DIV class=fl>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD height=40>
+      <UL id=nav>
+        <LI class="top dqys-cs">地区： </LI>
+		{section name=l loop=$qyhyarea}
+        <LI class=top><A class=lj5 href="?areaid={$qyhyarea[l].areaid}">{$qyhyarea[l].areaname}</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</LI>
+		{/section}
+        </UL></TD></TR>
+  <TR>
+    <TD>{section name=local loop=$local}
+    <A class=lj4 href="?country={$local[local].id}">{$local[local].name}</A>| {/section}
+  </TD></TR></TBODY></TABLE><!--广告位-->
+<DIV style="CLEAR: both; PADDING-TOP: 5px">
+<SCRIPT 
+src="E:\黄页模板\templates/images\ad(2).htm"></SCRIPT>
+</DIV></DIV>
+<DIV class=searchContainer><!--广告位-->
+<DIV>
+<SCRIPT 
+src="E:\黄页模板\templates/images\ad(3).htm"></SCRIPT>
+</DIV>
+
+<DIV class=listContainer>
+<TABLE style="MARGIN: 10px 0px" height=30 cellSpacing=0 cellPadding=0 
+width="100%" bgColor=#f6f6f6 border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle>
+     <div id="ad_1">加载中...</div>
+    </TD></TR>
+    </TBODY></TABLE><!-- 公司循环 -->
+    {section name=company loop=$list_qy}
+<TABLE id=one1
+style="BORDER-BOTTOM: #cccccc 1px dashed" cellSpacing=0 cellPadding=0 width=560 
+border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=0 width=540 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top>
+            <TABLE style="MARGIN-TOP: 10px" cellSpacing=0 cellPadding=0 
+            width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A class=tt 
+                  href="qyinfo.php?id={$list_qy[company].id}" 
+                  target=_blank>{$list_qy[company].tname}</A> </TD></TR>
+              <TR>
+                <TD align=left colSpan=2>
+                  <P class=list-style>企业性质：{$list_qy[company].nature} &nbsp;&nbsp;注册资金：{$list_qy[company].capital}&nbsp;&nbsp;成立时间：{$list_qy[company].setup}</P>
+                  <P class=list-style>公司地址：{$list_qy[company].add}</P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD height=10>
+      </TD></TR></TBODY></TABLE>{/section}
+<DIV class=fy>{$pgcode}</DIV>
+
+</DIV></DIV>
+<!--主题黄页-->
+<DIV class=rightnr><!--公司列表页使用-->
+<DIV class=zthy-top>
+<H2>主题黄页</H2></DIV>
+<DIV class=zthy-bj>
+<div id="ad_2">
+加载中...
+</div>
+</DIV>
+<DIV class=zthy-foot></DIV>
+<DIV class=rightnr></DIV><!--广告位-->
+<DIV class=rightnr>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=bottom align=middle height=60><A href="" 
+      target=_blank><IMG height=55 alt=Thorn 
+      src="templates/images/tjqy1.gif" 
+      width=95 border=0></A></TD>
+    <TD vAlign=bottom align=middle height=60><A href="" 
+      target=_blank><IMG height=55 alt=威鹏集团 
+      src="templates/images/tjqy2.gif" 
+      width=95 border=0></A></TD></TR>
+  <TR>
+    <TD vAlign=bottom align=middle height=60><A href="" 
+      target=_blank><IMG height=55 alt=博大包装 
+      src="templates/images/tjqy3.gif" 
+      width=95 border=0></A></TD>
+    <TD vAlign=bottom align=middle height=60><A 
+      href="" target=_blank><IMG height=55 alt=松凯电子 
+      src="templates/images/tjqy4.gif" 
+      width=95 border=0></A></TD></TR>
+  <TR>
+    <TD vAlign=bottom align=middle height=60><A 
+      href="" target=_blank><IMG height=55 alt=硕美科数码 
+      src="templates/images/tjqy5.gif" 
+      width=95 border=0></A></TD>
+    <TD vAlign=bottom align=middle height=60><A href="" 
+      target=_blank><IMG height=55 alt=步步高电子 
+      src="templates/images/tjqy6.gif" 
+      width=95 border=0></A></TD></TR></TBODY></TABLE>
+
+</DIV>
+<DIV class=rightnr>
+
+</DIV></DIV></DIV></DIV><!--底部文件-->
+{include file="foot.htm"}

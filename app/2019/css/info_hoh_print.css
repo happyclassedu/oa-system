@@ -1,0 +1,40 @@
+/**
+body {
+    background-image: none;
+}
+
+#tb_print {
+    margin-top: 50px;
+}
+
+.title {
+    font-size:25px;
+    font-weight:bold;
+    padding:20px auto;
+}
+
+.content {
+    padding-top: 50px;
+}
+
+
+#tb_print ul li,
+#tb_print span,
+#tb_print p {
+    font-size:20px;
+    font-weight:bold;
+    list-style:none;
+    line-height:30px;
+    overflow:hidden;
+    position:relative;
+}*/
+*{ font-size:22px;
+   font:"黑体",Arial;
+}
+.title{ font-size:32px;
+        padding:50px 0 40px 0 ;}
+ul li{ list-style:none;
+       line-height:45px;
+       overflow:hidden;
+       position:relative;}
+table{ line-height:30px;font-family: "黑体"}

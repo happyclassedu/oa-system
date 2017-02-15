@@ -1,0 +1,110 @@
+/* CSS Document */
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-image: url(../img/login_bg.gif);
+    margin: 0px;
+    padding:0px;
+}
+
+#login_content_bg {
+    width: 1000px;
+    height: 660px;
+    overflow: hidden;
+    position:absolute;
+    top: 0px;
+    margin-left: -500px;
+    background-image: url("../img/login_content_bg.jpg");
+}
+
+#sys_name {
+    position: absolute;
+    top: 217px;
+    margin-left: -258px;
+}
+
+#web_site {
+    position: absolute;
+    top: 267px;
+    margin-left: 144px;
+}
+
+#web_site a {
+    font-size: 12px;
+    color: #003567;
+    text-decoration: none;
+}
+
+#web_site a:hover {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #000000;
+    text-decoration: underline;
+}
+
+#pic_show {
+    position: absolute;
+    top: 301px;
+    margin-left: -416px;
+    height: 85px;
+    overflow: hidden;
+}
+
+#login_content_line {
+    position:absolute;
+    top: 411px;
+    margin-left: -500px;
+}
+
+#login_box {
+    position:absolute;
+    top:423px;
+    margin-left: -313px;
+    font-size:14px;
+    font-weight:bold;
+    color:#000000;
+}
+
+#user_name {
+    width: 155px;
+    height: 25px;
+    font-size:18px;
+    font-weight:bold;
+    line-height: 19px;
+    color:#000000;
+    top: 3px;
+    position:relative;
+}
+
+#user_pass {
+    width: 155px;
+    height: 25px;
+    font-size:18px;
+    font-weight:bold;
+    line-height: 18px;
+    color:#000000;
+    top: 3px;
+    position:relative;
+}
+
+.input_lable {
+    font-size:18px;
+    font-weight:bold;
+    color:#000000;
+    text-align: right;
+    top: 4px;
+    position:relative;
+}
+
+#btn_login {
+    top: 5px;
+    position: relative;
+}
+
+#btn_register {
+    top: 5px;
+    position: relative;
+}

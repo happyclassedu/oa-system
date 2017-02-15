@@ -1,0 +1,20 @@
+
+<!--header s-->
+<div id="topbar">
+    <div id="topbar_data">2010年11月12日 星期五 庚寅年九月十五</div>
+    <div id="topbar_menu">
+        <!--{ foreach item=tmp from=$ws.topbar_menu }-->
+        | <a href="<!--{$tmp.url_act}-->"><!--{$tmp.name}--></a>
+        <!--{ /foreach }-->
+        |
+    </div>
+</div>
+<div id="header_banner"><div id="header_bg"></div></div>
+<div id="menuer">
+    <ul>
+        <!--{ foreach item=tmp from=$ws.menuer }-->
+        <li><a href="<!--{$tmp.url_act}-->"><!--{$tmp.name}--></a></li>
+        <!--{ /foreach }-->
+    </ul>
+</div>
+<!--header e-->

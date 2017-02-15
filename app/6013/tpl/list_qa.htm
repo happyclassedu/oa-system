@@ -1,0 +1,36 @@
+
+<div class="msg">
+    <h1>留言回复</h1>
+    <p><input id="btn_qa" type="button" value="我要留言" />
+    </p>
+    <div class="msg_list">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr class="msg_title">
+                <td>留言标题</td>
+                <td>留言者</td>
+                <td>留言时间</td>
+                <td>状态</td>
+            </tr>
+            <!--{ foreach item=tmp from=$ws.qa }-->
+            <tr>
+                <td><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a></td>
+                <td><!--{$tmp.q_name}--></td>
+                <td><!--{$tmp.atime}--></td>
+                <td><!--{if '2' eq $tmp.drwx}-->已处理<!--{ elseif '3' eq $tmp.drwx }-->已隐藏<!--{ else }-->未处理<!--{ /if }--></td>
+            </tr>
+            <!--{ /foreach }-->
+        </table>
+    </div>
+        <div id="page_box">
+            <a id="info_num" href="#">共 <!--{$ws.page.info_num}--> 条</a>
+            <a id="page_num" href="#">共 <!--{$ws.page.page_num}--> 页</a>
+            <a id="page_now" href="#">第 <!--{$ws.page.page_now}--> 页</a>
+            <a id="page_first" href="<!--{$ws.page.first}-->">首页</a>
+            <a id="page_prev" href="<!--{$ws.page.prev}-->">上一页</a>
+            <!--{ foreach key=i item=tmp from=$ws.page.num }-->
+            <a id="page_<!--{$i}-->" href="<!--{$tmp}-->"><!--{$i}--></a>
+            <!--{ /foreach }-->
+            <a id="page_next" href="<!--{$ws.page.next}-->">下一页</a>
+            <a id="page_last" href="<!--{$ws.page.last}-->">尾页</a>
+        </div>
+</div>

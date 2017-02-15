@@ -1,0 +1,52 @@
+
+
+#list_right1 {
+   float:right;
+}
+
+/*内容 s*/
+
+#list_right1 a {
+   display:block;
+   padding-left:30px;
+   color:#2a3748;
+   line-height:35px;
+   text-decoration:none;
+   font-size:14px;
+   font-weight:800;
+   background:url(../img/cen_rig_title.jpg) left center no-repeat;
+
+}
+
+#cen_nr {
+   float:right;
+   width:770px;
+   height:100%;
+   border-top:1px solid #e8e9ec;
+}
+
+#cen_nr h1 {
+   font-size:14px;
+   font-weight:800;
+   color:#090d9b;
+   line-height:30px;
+   text-align:center;
+   font:"华文行楷", Arial;
+}
+
+#cen_nr h3 {
+   font-size:12px;
+   text-align:center;
+   line-height:35px;
+   border:1px dashed #999999;
+   border-width:1px 0;
+   margin-bottom:10px;
+}
+
+#cen_nr  p{
+   text-indent:2em;
+   padding:0 20px;
+   line-height:23px;
+}
+/*内容 e*/
+

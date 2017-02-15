@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>招聘中心 - 招聘统计 - 人才网管理系统地php1.0</title>
+        <LINK href="css/www.css" type="text/css" rel=stylesheet>
+    </head>
+    <body>
+        <!--页面顶部-->
+        <IFRAME align=middle  src="com_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=188><!--菜单-->
+                        <IFRAME align=middle src="com_left.htm" frameBorder=0 width="100%" scrolling=no height=500 name="comright"></IFRAME>
+                    </td>
+                    <td width=10></td>
+                    <td bgColor=#ffffff><!--右侧-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom  background="../img/title1_bg.gif" height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width=80   background="../img/title1_bg2.jpg" height=28><font color=#ffffff><B>招聘统计</B></font></td>
+                                                    <td>&nbsp;</td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR> <td height=5></td></TR>
+                            </TBODY>
+                        </TABLE><!--分页控制-->
+                        <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td width="50%"><span id=lbl_Page>职位：0 条，共 1 页</span></td>
+                                    <td align=right width="50%"><A id=hyl_First>首页</A> <A
+                                            id=hyl_Prev>前页</A> <span id=lbl_CutPage>&lt;<B>1</B>&gt;</span> <A
+                                            id=hyl_Next>后页</A> <A id=hyl_Last>尾页</A></td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=1 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td bgColor=#aaccef height=1></td></TR></TBODY></TABLE><!--统计列表-->
+                        <TABLE id=lit_JobList style="width: 100%; BORDER-COLLAPSE: collapse"  cellSpacing=0 cellPadding=0 border=0>
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR bgColor=#dbedfb>
+                                                    <td align=middle width="5%"></td>
+                                                    <td><STRONG>招聘职位</STRONG></td>
+                                                    <td align=middle width="9%"><STRONG>浏览次数</STRONG></td>
+                                                    <td align=middle width="9%"><STRONG>应聘次数</STRONG></td>
+                                                    <td align=middle width="9%"><STRONG>收到简历</STRONG></td>
+                                                    <td align=middle width="9%"><STRONG>面试通知</STRONG></td>
+                                                    <td align=middle width="9%"><STRONG>参加面试</STRONG></td>
+                                                    <td align=middle width="9%"><STRONG>录取人数</STRONG></td>
+                                                    <td align=middle   width="12%"><STRONG>发布日期</STRONG></td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td align=middle height=40><input id="seave_add"  type=button value=" 新增 "> <input id ="" type=button value=" 打印 ">
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                    </td></TR>
+            </TBODY>
+        </TABLE><!--页面底部-->
+        <IFRAME align=middle src="../com_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_job_report" />
+<script type="text/javascript" src="../js/common.js"></script>

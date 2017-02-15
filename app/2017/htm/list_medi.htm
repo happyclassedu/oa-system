@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>医疗保险管理</title>
+    </head>
+    <body>
+        <div id="box_title">
+            <span id="sys_title">医疗保险参保人员--列表</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_add" type="button"  value="新增参保人员"/>&nbsp;&nbsp;
+                <input id="btn_oh" type="button" value="业务操作管理" />&nbsp;&nbsp;
+                <input id="btn_bill" type="button" value="工作日结清单" />&nbsp;&nbsp;
+                <input id="btn_report" type="button" value="医疗缴费报表" />&nbsp;&nbsp;
+                <input id="btn_stat" type="button" value="缴费统计" />&nbsp;&nbsp;
+                <input id="btn_nopay" type="button" value="未缴费统计" />&nbsp;&nbsp;
+            </div>
+        </div>
+         <table id="search_tb"  width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td>姓名：</td>
+                <td><input id="d_name" class="search" type="text"></td>
+                <td>身份证号：</td>
+                <td><input id="d_idcard" class="search" type="text"></td>
+                <td>医保编号：</td>
+                <td><input id="d_medi_code" class="search" type="text"></td>
+                <td>&nbsp;</td>
+                <td>医保状态：</td>
+                <td>
+                    <select id="d_medi_state" class="search">
+                        <option value="">请选择</option>
+                        <option value="在库">在库</option>
+                        <option value="转出">转出</option>
+                    </select>
+                </td>
+                <td><input id="btn_search" type="button" value="搜索"/>&nbsp;&nbsp;<input id="btn_reset" type="button" value="清空"/></td>
+            </tr>
+        </table>
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="60" align="center" />
+            <col width="80" align="center" />
+            <col width="100" />
+            <col width="80" />
+            <col width="80" />
+            <col width="100" />
+            <col width="100" />
+            <col width="100" />
+            <col width="100" />
+            <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>姓名</td>
+                    <td>出生年月</td>
+                    <td>医保编号</td>
+                    <td>医保状态</td>
+                    <td>身份证号</td>
+                    <td>档案号</td>
+                    <td>参保时间</td>
+                    <td width="80">截止缴费时间</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>文本</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td id="jpage_box"></td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_medi" />
+<script type="text/javascript" src="../js/common.js"></script>

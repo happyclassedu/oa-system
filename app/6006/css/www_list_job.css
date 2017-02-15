@@ -1,0 +1,25 @@
+/* Resume s*/
+#tb_list_job {
+    line-height:30px;
+    width:98%;
+}
+
+#tb_list_job tr {
+    height: 30px;;
+}
+
+#tb_list_job td {
+    border-bottom:1px dashed #89a8d1;
+    padding-left:25px;
+}
+
+#tb_list_job thead {
+    background:#f3f6ff;
+    font-weight: 800;
+}
+
+#tb_list_job a {
+    color:#154692;
+    FONT-SIZE: 13px;
+    text-decoration:none;
+}

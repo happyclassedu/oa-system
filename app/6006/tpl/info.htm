@@ -1,0 +1,21 @@
+
+<!-- info begin-->
+<div class="div_976_center">
+    <div class="info_box">
+        <h2 class="info_box_h2">
+            <span>
+                当前位置：
+                <!--{ foreach item=tmp from=$ws.nav }-->
+                <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>&nbsp;&gt;&gt;&nbsp;
+                <!--{ foreachelse }-->
+                <!--{ /foreach }-->
+            </span>
+        </h2>
+        <h1 class="info_title"><!--{$ws.info.name}--></h1>
+        <div class="info_attribute">发布时间：<!--{$ws.info.atime}-->　　信息来源：<!--{$ws.info.source}-->　　访问次数：<span id="hits"><!--{$ws.info.hits}--></span></div>
+        <div class="info_content"><!--{$ws.info.remark}--></div>
+        <div id="xid" style="display: none;"><!--{$ws.info.id}--></div>
+    </div>
+    <!--{ include file="lefter.htm" }-->
+</div>
+<!-- info begin-->

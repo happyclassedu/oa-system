@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>创建简历 - 自我评价/职业目标 - 人才网站管理系统PHP1.0地区版</title>
+        <LINK rel=stylesheet type="text/css" href="../css/www.css"/>
+    </head>
+    <body>
+        <!--页面顶部-->
+   <IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+        <TABLE border=0 cellSpacing=0 cellPadding=0 width=980 align=center>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=188><!--菜单-->
+		  <IFRAME align=left src="resume_left.htm" frameBorder=0 scrolling=no width="100%" height=500></IFRAME>
+                  </td>
+                    <td width=10></td>
+        <td bgColor=#ffffff><!--右侧-->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td height="28" valign="bottom" background="../img/title1_bg.gif" style="padding-left:5px;padding-right:5px;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width="180" height="28" align="center" background="../img/title3_bg2.jpg"><font color="#ffffff"><b>自我评价/职业目标</b></font></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table></td>
+            </tr>
+            <tr>
+                <td height="5"></td>
+            </tr>
+        </table>
+           <!--自我评价-->
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <TBODY>
+                    <TR>
+                        <td style="BORDER-BOTTOM: #d3d3d3 1px solid; PADDING-LEFT: 12px; PADDING-TOP: 3px"
+                            height=25><STRONG>自我评价/职业目标</STRONG> (<font color=#ff3300>*</font>  为必填项)
+                        </td>
+                    </TR>
+                </TBODY></TABLE>
+            <TABLE cellSpacing=1 cellPadding=4 width="100%" bgColor=#dddddd>
+                <TBODY>
+                    <TR bgColor=#ffffff>
+                        <td style="PADDING-LEFT: 12px" width=100><font color=#ff3300>*</font> 自我评价：</td>
+                        <td><font color=#777777>
+                                概述您的职业优势，如：3年销售经验、5年软件开发经验，(限500字
+                                <A  onclick="javascript:alert('您输入了'+ document.all.d_selfvalue.value.length +'个字');" href="javascript:">
+                                    <font color=#777777>计算字数</font></A>)</font><BR>
+                                    <TEXTAREA style="width: 390px" id="d_selfvalue" rows=6></TEXTAREA>
+                                    <BR>
+                                    <span id="d_error_selfvalue"></span>
+                        </td></TR>
+                    <TR bgColor=#ffffff>
+                        <td style="PADDING-LEFT: 24px" width=100>职业目标：</td>
+                        <td>
+                            <font color=#777777>概述您的职业目标，让招聘企业了解您的职业发展方向，(限500字
+                                <A onclick="javascript:alert('您输入了'+ document.all.d_jobgoal.value.length +'个字');"  href="javascript:"><font color=#777777>计算字数</font></A>)</font><BR>
+                                    <TEXTAREA style="width: 390px" id="d_jobgoal" rows=6 ></TEXTAREA><BR>
+                                    <span id="d_error_jobgoal"></span>
+                        </td></TR>
+                </TBODY></TABLE><!--提交按扭-->
+            <TABLE border=0 cellSpacing=1 cellPadding=4 width="100%">
+                <TBODY>
+                    <TR bgColor=#ffffff>
+                        <td style="PADDING-LEFT: 24px" width=100>&nbsp;</td>
+                        <td><input style="width: 60px; HEIGHT: 30px" id="btn_save"  value=保存 type="button"></td>
+                    </TR>
+                </TBODY></TABLE><!--页面左侧 结束--></td></TR>
+            </TBODY></TABLE><!--页面底部-->
+  <IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=220></IFRAME>
+</body>
+</html>
+<input type="hidden" id="g_id" value="info_resume_appraise" />
+<script type="text/javascript" src="../js/common.js"></script>

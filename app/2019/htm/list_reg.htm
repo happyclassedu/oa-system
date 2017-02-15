@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>XXX户籍信息登记表</title>
+        <style type="text/css">
+<!--
+.STYLE1 {color: #FF0000}
+-->
+        </style>
+</head>
+    <body>
+        <div id="box_title">
+            <span id="sys_title">XXX户籍信息登记表</span>
+            <div id="box_tools">
+              <span id="box_search">&nbsp;</span>
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input name="button" type="button" id="btn_add"  value="新增户籍信息"/>
+                <input name="button2" type="button" id="button"  value="修改户籍信息"/>
+                <input name="button3" type="button" id="button2"  value="删除户籍信息"/>
+                <input name="button4" type="button" id="button3"  value="迁入户籍关系（迁出户籍关系）"/>
+                <input name="button5" type="button" id="button4"  value="借出户籍卡（归还户籍卡）"/>
+                <input name="button6" type="button" id="button5"  value="办理户籍证明"/>
+                <input name="button7" type="button" id="button6"  value="办理婚育证明"/>
+                <input name="button6" type="button" id="button5"  value="办理独生子女证明"/>
+                <input name="button7" type="button" id="button6"  value="办理申领生育"/>
+            </div>
+        </div>
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="60"/>
+            <col width="100"/>
+            <col width="60" />
+            <col width="100" />
+            <col width="60" />
+            <col width="100" />
+            <thead>
+                <tr>
+                    <td class="tb_title0" colspan="6">基本信息</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="STYLE1">*</span>姓名</td>
+                    <td><input type="text"/></td>
+                    <td>性别</td>
+                    <td><table>
+                        <tr>
+                          <td><label>
+                            <input type="radio" name="RadioGroup1" value="单选">
+                            男</label></td>
+                          <td><label>
+                            <input type="radio" name="RadioGroup1" value="单选">
+                            女</label></td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td>民族</td>
+                    <td>
+                    <input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>户口</td>
+                  <td><input type="text"/></td>
+                  <td>身份证号</td>
+                  <td><input type="text"/></td>
+                  <td>出生年月</td>
+                  <td><input type="text"/></td>
+                </tr>
+                <tr>
+                  <td>政治面貌</td>
+                  <td><select name="select2">
+                    <option>普通群众</option>
+                                    </select></td>
+                  <td>婚姻状况</td>
+                  <td><table>
+                    <tr>
+                      <td><label>
+                        <input type="radio" name="RadioGroup1" value="单选">
+                        未婚</label></td>
+                      <td><label>
+                        <input type="radio" name="RadioGroup1" value="单选">
+                        已婚</label></td>
+                    </tr>
+                  </table></td>
+                  <td>身份</td>
+                  <td><select name="select3">
+                    <option>其他</option>
+                                    </select></td>
+                </tr>
+                <tr>
+                  <td>职称</td>
+                  <td><input type="text"/></td>
+                  <td>本地生源</td>
+                  <td><table>
+                    <tr>
+                      <td><label>
+                        <input type="radio" name="RadioGroup1" value="单选">
+                        是</label></td>
+                      <td><label>
+                        <input type="radio" name="RadioGroup1" value="单选">
+                        否</label></td>
+                    </tr>
+                  </table></td>
+                  <td>文化程度</td>
+                  <td><input type="text"/></td>
+                </tr>
+                <tr>
+                  <td>毕业院校</td>
+                  <td><input type="text"/></td>
+                  <td>专业方向</td>
+                  <td><input type="text"/></td>
+                  <td>毕业时间</td>
+                  <td><select name="select4">
+                    <option>2010</option>
+                    <option>2009</option>
+                                    </select>
+                    <select name="select5">
+                      <option selected>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                                                            </select></td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+          <col width="80"/>
+          <col width="100"/>
+          <col width="80" />
+          <col width="100" />
+          <col width="80" />
+          <col width="100" />
+          <thead>
+            <tr>
+              <td class="tb_title0" colspan="6">公共信息</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>档案号</td>
+              <td>&nbsp;</td>
+              <td>档案状态</td>
+              <td>&nbsp;</td>
+              <td>档案年份</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>报到号</td>
+              <td>&nbsp;</td>
+              <td>报到状态</td>
+              <td>未报到</td>
+              <td>干部介绍信</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>户籍号</td>
+              <td>&nbsp;</td>
+              <td>户籍状态</td>
+              <td>&nbsp;</td>
+              <td>就业介绍信</td>
+              <td>未到</td>
+            </tr>
+            <tr>
+              <td>协议号</td>
+              <td>101904</td>
+              <td>协议状态</td>
+              <td>未签署</td>
+              <td>财务状态</td>
+              <td>0000-00-00</td>
+            </tr>
+          </tbody>
+        </table>
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+          <col width="80"/>
+          <col width="100"/>
+          <col width="80" />
+          <col width="100" />
+          <col width="80" />
+          <col width="100" />
+          <thead>
+            <tr>
+              <td class="tb_title0" colspan="4">户籍信息</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="STYLE1">*</span>户籍编号</td>
+              <td><input type="text"/></td>
+              <td><span class="STYLE1">*</span>户籍证状态</td>
+              <td><select >
+                <option>借出</option>
+                <option>在库</option>
+                <option>迁出</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>户籍备注</td>
+              <td colspan="3"><textarea></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+          <col width="60"/>
+          <col width="100"/>
+          <col width="60" />
+          <col width="100" />
+          <col width="60" />
+          <col width="100" />
+          <thead>
+            <tr>
+              <td class="tb_title0" colspan="6">联系信息</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>手机</td>
+              <td><input type="text"/></td>
+              <td>固定电话</td>
+              <td><input type="text"/></td>
+              <td>电子邮件</td>
+              <td><input name="text2" type="text" /></td>
+            </tr>
+            <tr>
+              <td>住址</td>
+              <td><input type="text"/></td>
+              <td>QQ号</td>
+              <td><input type="text"/></td>
+              <td>邮政编码</td>
+              <td><input type="text"/></td>
+            </tr>
+            <tr>
+              <td>紧急联系人</td>
+              <td><input type="text"/></td>
+              <td>紧急联系电话</td>
+              <td><input type="text"/></td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tb_title0" colspan="6"><input id="button7" type="button"  value="保存"/></td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="div"> <span id="sys_title">操作日志</span>
+            <div id="div2">
+              <input name="button9" type="button" id="button10"  value="档案管理"/>
+              <input name="button22" type="button" id="button22"  value="户籍管理"/>
+              <input name="button32" type="button" id="button32"  value="协议报到"/>
+              <input name="button42" type="button" id="button42"  value="财务结算"/>
+              <input name="button52" type="button" id="button52"  value="基本业务"/>
+              <input name="button62" type="button" id="button62"  value="全部业务"/>
+            </div>
+        </div>
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+          <col width="100"/>
+          <col width="100"/>
+          <col width="100"/>
+          <col width="100"/>
+          <col width="100"/>
+          <col width="100"/>
+          <col width="100"/>
+          <col width="100"/>
+          <thead>
+            <tr>
+              <td>序号</td>
+              <td>时间</td>
+              <td>操作员</td>
+              <td>业务类型</td>
+              <td>事件</td>
+              <td>内容</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>2010-06-28</td>
+              <td>张彬</td>
+              <td>户籍管理</td>
+              <td>XX业务</td>
+              <td>&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+        <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td id="jpage_box"></td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_job" />
+<script type="text/javascript" src="../js/common.js"></script>

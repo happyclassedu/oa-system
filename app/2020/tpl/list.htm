@@ -1,0 +1,25 @@
+<div id="rcw_login" class="div_rcw_cen">
+    <!--{ include file="lefter0`$ws.mk`.htm" }-->
+    <div id="rcw_list_rig">
+        <h3><!--{$ws.fmenu.name}--></h3>
+        <div class="rcw_list_rignr">
+            <ul>
+                <!--{ foreach item=tmp from=$ws.news }-->
+                <li><span>[<!--{$tmp.atime|date_format:"%Y-%m-%d"}-->]</span><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a></li>
+                <!--{ /foreach }-->
+            </ul>
+        </div>
+        <div id="rcw_list_box">
+            <a id="info_num" href="#">共<!--{$ws.page.info_num}-->条</a>
+            <a id="page_num" href="#">分<!--{$ws.page.page_num}-->页</a> |
+            <a id="page_now" href="#">当前第<!--{$ws.page.page_now}-->页</a>
+            <a id="page_first" href="<!--{$ws.page.first}-->">首页</a>
+            <a id="page_prev" href="<!--{$ws.page.prev}-->">前页</a>
+            <a id="page_next" href="<!--{$ws.page.next}-->">后页</a>
+            <a id="page_last" href="<!--{$ws.page.last}-->">尾页</a> |
+            <a href="#">跳到</a>
+            <input type="text" style="width:20px;" value="2" />
+            <input type="button" value="go" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>医疗保险系统--业务办理--打印缴费单</title>
+    </head>
+
+    <body>
+        <!--开始__信息内容-->
+        <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">业务办理--打印缴费单 </td>
+                </tr>
+                <tr class="tr_0">
+                    <td>业务名称：</td>
+                    <td>
+                        <input id="d_pid" type="hidden"/>
+                        <input id="d_pname" type="hidden"/>
+                        <input id="d_yname" type="text" readonly/>
+                        <input id="d_ytype" type="hidden"/>
+                        <input id="d_ytext" type="hidden"/>
+                    </td>
+                    <td>办理时间：</td>
+                    <td><input id="d_time" type="text" readonly/></td>
+                    <td>操作员：</td>
+                    <td>
+                        <input id="d_uname" type="text" readonly/>
+                        <input id="d_uid" type="hidden"/>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td>缴费起止时间：</td>
+                    <td>
+                        <input id="d_fee_begin" type="text" /></td>
+                    <td>
+                        &nbsp;&nbsp;至&nbsp;&nbsp;</td>
+                    <td>  <input id="d_fee_end"  type="text"/>
+                    </td>
+                    <td>基数比率：</td>
+                    <td>
+                        <select id="d_base_rate">
+                            <option value="">不限</option>
+                            <option value="0.6">60%</option>
+                            <option value="1">100%</option>
+                        </select>
+                    </td>  
+                </tr>
+                <tr class="tr_0">
+                    <td>当年基数：</td>
+                    <td>
+                        <input id="d_now_base" type="text"  readonly>
+                    </td>
+                     <td>缴费类型：</td>
+                    <td>
+                        <select id="d_fee_type">
+                            <option value="">请选择</option>
+                            <option value="新增">新增</option>
+                            <option value="新增">续缴</option>
+                            <option value="转入">转入</option>
+                            <option value="补缴">补缴</option>
+                        </select>
+                    </td>
+                    <td>缴费比率：</td>
+                    <td>
+                        <select id="d_fee_rate">
+                            <option value="">不限</option>
+                            <option value="0.00">无</option>
+                            <option value="0.02">2%</option>
+                            <option value="0.05">5%</option>
+                            <option value="0.09">9%</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td>大病保险：</td>
+                    <td><input id="d_ill_insurance" type="text" value="8" readonly></td>
+                    <td>利息：</td>
+                    <td><input id="d_interest" type="text"></td>
+                    <td>缴费金额：</td>
+                    <td>
+                        <input id="d_fee_num" type="text">
+                    </td>
+                </tr>
+                <tr class="tr_0">
+                    <td>计入比例：</td>
+                    <td>
+                        <select id="d_reckon_rate">
+                            <option value="">不限</option>
+                            <option value="0.027">2.7%</option>
+                            <option value="0.030">3.0%</option>
+                            <option value="0.036">3.6%</option>
+                            <option value="0.050">5.0%</option>
+                        </select>
+                    </td>
+                    <td>计入金额：</td>
+                    <td><input id="d_reckon_num" type="text"></td>
+                    <td>备注：</td>
+                    <td><input id="d_remark" type="text"></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息内容-->
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button"  value="业务办理"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="btn_cancels" type="button" value="取消办理">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_moh_print" />
+<script type="text/javascript" src="../js/common.js"></script>

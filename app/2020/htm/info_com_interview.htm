@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <META http-equiv=Content-Type content="text/html;charset=utf-8">
+        <title>招聘中心 - 面试管理夹 - 人才网管理系统php1.0地区版</title>
+        <LINK href="../css/www.css" type="text/css" rel=stylesheet>
+    </head>
+    <body>
+        <!--页面顶部-->
+        <IFRAME align=middle src="com_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=188><!--菜单-->
+                        <IFRAME align=middle src="com_left.htm" frameBorder=0 width="100%" scrolling=no height=500 name="comright"></IFRAME>
+                    </td>
+                    <td width=10></td>
+                    <td bgColor=#ffffff><!--右侧-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom  background="../img/title1_bg.gif" height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width=100   background="../img/title2_bg2.jpg" height=28><font color=#ffffff><B>面试管理夹</B></font></td>
+                                                    <td>&nbsp;</td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                                <TR> <td height=2></td></TR>
+                            </TBODY>
+                        </TABLE><!--页码-->
+                        <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td width="50%"><font color=#777777><span id=lbl_Page>面试邀请： 0 份，共 1 页</span></font></td>
+                                    <td align=right width="50%">&nbsp;</td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=1 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR> <td bgColor=#aaccef height=1></td></TR>
+                            </TBODY>
+                        </TABLE><!--邀请列表-->
+                        <TABLE id=lit_Interview style="width: 100%; BORDER-COLLAPSE: collapse"
+                               cellSpacing=0 cellPadding=0 border=0>
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR bgColor=#dbedfb>
+                                                    <td align=middle width="5%">&nbsp;</td>
+                                                    <td width="13%"><STRONG>姓名</STRONG></td>
+                                                    <td align=middle width="6%"><STRONG>性别</STRONG></td>
+                                                    <td align=middle width="8%"><STRONG>学历</STRONG></td>
+                                                    <td align=left width="25%"><STRONG>面试职位</STRONG></td>
+                                                    <td align=left width="11%"><STRONG>面试时间</STRONG></td>
+                                                    <td align=middle width="10%"><STRONG>参加面试</STRONG></td>
+                                                    <td align=middle width="10%"><STRONG>面试结果</STRONG></td>
+                                                    <td align=middle><STRONG>邀请时间</STRONG></td></TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                            </TBODY>
+                        </TABLE>
+                        <!--分页控制-->
+                        <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 9px" width="15%"><input id=chk_All  type=checkbox name=chk_All> 全选</td>
+                                    <td align=right><A id=hyl_First>首页</A> <A id=hyl_Prev>前页</A> <span id=lbl_CutPage>&lt;<B>1</B>&gt;</span> <A id=hyl_Next>后页</A> <A
+                                            id=hyl_Last>尾页</A></td></TR>
+                            </TBODY>
+                        </TABLE><!--操作按扭-->
+                        <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td align=middle height=40>
+                                        <input id="btn_Browse"  type="button" value=查看简历 name=btn_Browse>
+                                        <input id="btn_Already" type="button" value=已经面试 name=btn_Already>
+                                        <input id="btn_Succeed" type="button" value=面试成功 name=btn_Succeed>
+                                        <input id="btn_Lost" type="button" value=面试失败 name=btn_Lost>
+                                        <input id="btn_Delete"  type="button" value=删除记录 name=btn_Delete>
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="BORDER-TOP: #d3d3d3 1px solid; PADDING-LEFT: 5px; PADDING-TOP: 3px"
+                                        vAlign=bottom height=28><STRONG>操作说明</STRONG><BR><font color=#777777>面试管理夹用于保存企业向求职者邀请参加面试的记录；<BR>面试结果中的<font color=#009900>√</font>表示该求职者通过本次面试，<font color=#ff0000>×</font>表示没有通过面试；</font>
+                                    </td></TR>
+                            </TBODY>
+                        </TABLE>
+                    </td></TR>
+            </TBODY>
+        </TABLE><!--页面底部-->
+        <IFRAME align=middle src="com_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_com_interview"/>
+<script type="text/javascript" src="../js/common.js"></script>

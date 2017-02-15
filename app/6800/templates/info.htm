@@ -1,0 +1,81 @@
+{include file="header.htm"}
+<DIV class=subMenu>
+    <DIV class=sybj><A href="index.php" target=_blank><IMG alt=首页
+                                                           src="templates/images/wz-sy.jpg" border=0></A></DIV>
+    <DIV class=sydh><A href="index.php">首页</A>&nbsp;&gt;&gt;&nbsp;<A
+            class=lj3
+            href="index.php">三秦品牌网</A>&nbsp;&gt;&gt;&nbsp;<a href="list.php?city={$loc_city.id}">{$loc_city.name}</a>&nbsp;&gt;&gt;&nbsp;<a href="list.php?country={$loc_county.id}">{$loc_county.name}</a></DIV></DIV>
+<DIV class=containe style="PADDING-TOP: 5px">
+    <DIV class=Framework-L><!--当前公司-->
+        <!--公司介绍-->
+        <DIV class=gsjj>
+            <DIV class=bt>
+                <H2>{$company.cname}-[公司简介]</H2>
+                <DIV class=gx></DIV></DIV>
+            <DIV class=nrwz>
+                <DIV align=left>
+                    <DIV>
+
+                        <DIV style="padding-top:15px; padding-bottom:10px;">{$company.brief|indent:4:"&nbsp;"}</DIV></DIV></DIV></DIV></DIV>
+        <DIV class=ywjs>
+            <DIV class=yw>
+                <H2>{$company.cname}-[主营项目]</H2>
+                <DIV class=ywgd></DIV></DIV>
+            <DIV class=ywnr align="left">
+                {$company.products}
+            </DIV></DIV>
+    </DIV>
+    <DIV class=Framework-R>
+        <DIV class=jbxx><!--公司基本信息-->
+            <DIV class=btbj>
+                <H2>公司基本信息</H2>
+                <DIV class=gx></DIV></DIV>
+            <DIV class=gsnr>
+                <UL>
+                    <LI class=gkys>所属行业：<A class=bs1
+                                           href="list.php?city={$loc_city.id}&amp;industry={$industry.id}" target=_blank>{$industry.name}</A></LI>
+                    <LI class=gkys>所在区域：<a class="bs1" href="list.php?city={$loc_city.id}">{$loc_city.name}</a>/<a class="bs1" href="list.php?city={$loc_county.id}">{$loc_county.name}</a> </LI>
+                    <LI class=gkys>办公地址：{$company.cadd}</LI>
+                    <LI class=gkys>联系电话：{$company.ctel}</LI>
+                    <LI class=gkys>电子邮箱：{$company.cmail}</LI>
+                    <LI class=gkys>公司网站：{$company.cweb}</LI>
+                </UL>
+            </DIV>
+            <DIV class=right1-foot><IMG
+                    src="templates/images/right-foot-1.gif"></DIV></DIV>
+        <DIV class=xgxy>
+            <DIV class=xgbj>
+                <H2>相关企业黄页</H2></DIV>
+            <DIV class=xgbjnr>
+                <UL>
+                    {section name=rel loop=$rel}
+                    <LI><A class=bs3 title={$rel[rel].name}
+                           href="info.php?id={$rel[rel].id}"
+                           target=_blank>{$rel[rel].name}</A> </LI>
+                    {/section}
+
+                </UL></DIV>
+            <DIV class=xgbjnr-foot><IMG
+                    src="templates/images/right-foot-2.gif"></DIV></DIV>
+        <DIV class=xgxy>
+            <DIV class=xgbj>
+                <H2>您查看过的企业信息</H2></DIV>
+            <DIV class=xgbjnr>
+                <UL>
+                    {section name=rec loop=$rec}
+                    <LI><A class=bs3 title={$rec[rec].name}
+                           href="info.php?id={$rec[rec].id}"
+                           target=_blank>{$rec[rec].name}</A> </LI>
+                    {/section}
+
+                </UL>
+            </DIV>
+            <DIV class=xgbjnr-foot><IMG src="templates/images/right-foot-2.gif"></DIV></DIV>
+        <DIV class=foot1></DIV>
+    </DIV><div style="clear:both"></div></DIV>
+<DIV></DIV><!--底部搜索-->
+<DIV class=containe>
+
+</DIV>
+<!--底文件-->
+{include file="foot.htm"}

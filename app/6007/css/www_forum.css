@@ -1,0 +1,192 @@
+ul li {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+
+.div_lt_center {
+  width:960px;
+  margin:4px auto;
+  overflow:hidden;
+}
+
+/* #lt_dh s */
+
+#lt_dh {
+  line-height:35px;
+  background:#f2f2f2;
+}
+
+#lt_dh a {
+  color:#666666;
+  margin:0 8px;
+  font-weight:800;
+  text-decoration:none;
+}
+
+/* #lt_dh e */
+
+/* lt_search s */
+
+#lt_search {
+  line-height:40px;
+  border:1px solid #DBDBDB;
+  background:url(../img/search_bg.jpg) left top repeat-x;
+}
+
+#val_search {
+  width:200px;
+  margin-left:20px;
+  margin-bottom:15px;
+}
+
+#lt_search span {
+  float:right;
+  padding-right:30px;
+  margin-bottom:15px;
+}
+
+#lt_search span a {
+  color:#f26c4f;
+  margin-left:8px;
+  font-size:13px;
+  font-weight:800;
+  text-decoration:none;
+}
+
+#btn_exit {
+  width:45px;
+  line-height:25px;
+  margin:0 10px;
+  border:1px solid #DBDBDB;
+  background:#eeeeee;
+}
+
+#btn_search {
+  border:0;
+  width:68px;
+  line-height:33px;
+  margin-left:10px;
+  background:url(../img/search_bt.jpg) left top no-repeat;
+}
+
+/* lt_search e */
+
+/* btn_replies s */
+
+.btn_replies {
+  width:80px;
+  line-height:33px;
+  border:0;
+  background:url(../img/pn_post.png) left top no-repeat;
+}
+
+/* btn_replies e */
+
+/* 换页 s */
+.dy_page {
+	float:right;
+	margin-top:5px;
+    height: 35px;
+    text-align: center;
+}
+
+.dy_page a {
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    line-height: 21px;
+    margin: 0 4px;
+    padding: 0 6px;
+    border: #DBDBDB 1px solid;
+    color: #333333;
+    font-size: 12px;
+}
+
+.dy_page a:hover {
+    background:#DEF1FF;
+    color: #FF0000;
+    text-decoration:none;
+}
+
+
+.dy_page .page_now {
+    background:#DEF1FF;
+    color: #FF0000;
+    font-weight: 700;
+}
+
+/* 换页 e */
+
+/* plate s */
+
+#lt_plate {
+  border:1px solid #235994;
+}
+
+#lt_plate h2 {
+  line-height:30px;
+  font-size:13px;
+  font-weight:800;
+  color:#ffffff;
+  padding-left:15px;
+  border-bottom:1px solid #235994;
+  background:url(../img/nv.png) left top repeat-x;
+}
+
+#lt_plate table {
+  width:95%;
+  margin:8px auto;
+  border-collapse:collapse;
+}
+
+#lt_plate table a {
+  color:#666666;
+  text-decoration:none;
+}
+
+#lt_plate table tr {
+  line-height:30px;
+  border-bottom:1px dashed #cdcdcd;
+}
+
+.lt_title_top {
+  padding-left:30px;
+  background:url(../img/Parked.gif) center left no-repeat;
+}
+
+.lt_title {
+  padding-left:30px;
+  background:url(../img/mark.gif) center left no-repeat;
+}
+
+
+
+/* plate e */
+
+/* lt_huiyuan s */
+
+#lt_huiyuan {
+  border:1px solid #cdcdcd;
+}
+
+#lt_huiyuan h1 {
+  line-height:30px;
+  padding-left:15px;
+  font-size:13px;
+  background:#f2f2f2;
+  border-bottom:1px solid #cdcdcd;
+}
+
+#lt_huiyuan span {
+  line-height:30px;
+  padding-left:15px;
+}
+
+/* lt_huiyuan e */
+
+/* lt_linking s */
+
+#lt_linking {
+  border:1px solid #cdcdcd;
+}
+
+/* lt_linking e */

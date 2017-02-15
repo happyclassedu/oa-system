@@ -1,0 +1,36 @@
+.msg {
+    width:960px;
+	margin:0 auto;
+}
+
+.msg h1 {
+    text-align:center;
+	font-size:16px;
+	line-height:30px;
+	border-bottom:1px dashed #CCCCCC;
+}
+
+
+.msg table {
+    border-collapse:collapse;
+	font-size:12px;
+	width:800px;
+	margin:5px auto;
+}
+.msg table td {
+    border:solid 1px #aaccef;
+	line-height:27px;
+}
+
+.msg_sr {
+    padding-left:10px;
+}
+
+.msg_title {
+    text-align:center;
+	line-height:35px;
+	font-size:13px;
+	font-weight:800;
+	color:#FFFFFF;
+	background:url(../img/tb_title_bg.gif) left top repeat-x;
+}

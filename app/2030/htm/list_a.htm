@@ -1,0 +1,73 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>回复列表--留言信息管理</title>
+    </head>
+    <body>
+        <!--开始__基本功能区-->
+        <div id="box_title">
+            <span id="sys_title">留言信息管理--回复列表</span>
+            <div id="box_tools">
+                <span id="box_search">
+                    <input id="val_search" type="text" />
+                    &nbsp;
+                    <input id="btn_search" type="button" value="搜索" />
+                </span>
+                <input id="btn_refresh" type="button" value="刷新" />&nbsp;&nbsp;
+                <input id="btn_close" type="button" value="关闭" />&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_list_q" type="button" value="回复留言" />&nbsp;&nbsp;
+                <input id="btn_list_all" type="button" value="查看全部" />&nbsp;&nbsp;
+                <input id="btn_list_a" type="button" value="已经回复" />&nbsp;&nbsp;
+                <input id="btn_list_y" type="button" value="隐藏显示" />
+            </div>
+        </div>
+        <!--结束__基本功能区-->
+        <!--开始__信息列表区-->
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="50" align="center" />
+            <col width="200" align="center" />
+            <col width="100" align="center" />
+            <col width="100" align="center" />
+            <col width="100" align="center" />
+            <col width="100" align="center" />
+            <col width="150" align="center" />
+            <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>问答标题</td>
+                    <td>留言者</td>
+                    <td>留言时间</td>
+                    <td>状态</td>
+                    <td>回复者</td>
+                    <td>操作</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td class="btn_box">
+                        <input class="btn_info_a" type="button" value="回复" title="回复问题" />&nbsp;
+                        <input class="btn_del" type="button" value="删除" title="删除" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息列表区-->
+        <!--开始__列表排序区-->
+        <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td id="jpage_box"></td>
+            </tr>
+        </table>
+        <!--开始__结束排序区-->
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_a" />
+<script type="text/javascript" src="../js/common.js"></script>

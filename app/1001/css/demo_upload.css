@@ -1,0 +1,45 @@
+#control_table {
+
+    text-align: center;
+    width: 750px;
+}
+
+/*#control_table input {
+    float:left;
+    width: 150px;
+    cursor: pointer;
+    display: none;
+    margin-left: 30px;
+}*/
+
+#result {
+    text-align: center;
+}
+
+#result_title {
+    width: 750px;
+    text-align: left;
+    text-indent: 10px;
+}
+
+#result_content {
+    width: 750px;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #FFFFCC;
+    border-width: 1px;
+    border-color: #666666;
+    border-style: solid;
+    text-align: left;
+}
+
+.down {
+    width: 150px;
+    cursor: pointer;
+}
+
+.apply {
+    width: 50px;
+    cursor: pointer;
+}

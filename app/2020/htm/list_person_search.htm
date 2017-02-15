@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+    <HEAD>
+        <META http-equiv=Content-Type content="text/html; charset=utf-8">
+        <TITLE>最新职位 - 人才网管理系统PHP1.0地区版</TITLE>
+        <LINK href="../css/www.css" type="text/css" rel=stylesheet>
+    </HEAD>
+<BODY>
+ <!--页面顶部-->
+<IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+<TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <td width=770>
+         <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 8px" height=28 background="../img/left2_bg.gif">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="PADDING-TOP: 5px" height=28 background="../img/left2_t1.gif" width=85 align=middle><B><font color=#ff6600>快速搜索</font></B></td>
+                                                    <td width=5>&nbsp;</td>
+                                                    <td style="PADDING-TOP: 5px" background="../img/left2_t2.jpg" width=85 align=middle>全能搜索</td>
+                                                    <td>&nbsp;</td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-LEFT: #027bc5 2px solid; PADDING-LEFT: 5px; BORDER-RIGHT: #027bc5 2px solid; PADDING-TOP: 8px">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td>
+                                                                        <TABLE border=0 cellSpacing=0 cellPadding=2 width="100%">
+                                                                            <TBODY>
+                                                                                <TR vAlign=top>
+                                                                                    <td height=30 width=50 align=right>职 能：</td>
+                                                                                    <td height=30>
+                                                                                        <select style="width: 300px" id="d_big_classification">
+                                                                                            <option selected value="">职位不限</option>
+                                                                                        </select>
+                                                                                        &nbsp;职 位：
+                                                                                        <select style="width: 240px" id="d_small_classification">
+                                                                                            <option selected value="">不限</option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </TR>
+                                                                                <TR vAlign=top>
+                                                                                    <td height=30 width=50 align=right>省 份：</td>
+                                                                                    <td height=30>
+                                                                                        <select style="width: 300px" id="d_addr1">
+                                                                                            <option selected value="">地区不限</option>
+                                                                                        </select>
+                                                                                        &nbsp;地 区：
+                                                                                        <select style="width: 240px" id="d_addr2" >
+                                                                                            <option selected value="">不限</option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </TR>
+                                                                                <TR vAlign=top>
+                                                                                    <td height=30 width=50 align=right>行 业：</td>
+                                                                                    <td height=30>
+                                                                                        <select style="width: 300px" id="d_trade">
+                                                                                            <option selected value="">行业不限</option>
+                                                                                        </select>
+                                                                                        &nbsp;日 期：
+                                                                                        <select style="width: 240px" id="d_job_day">
+                                                                                            <option selected value="0">日期不限</option>
+                                                                                            <option value="1">近一天</option>
+                                                                                            <option value="2">近两天</option>
+                                                                                            <option value="3">近三天</option>
+                                                                                            <option value="7">近一周</option>
+                                                                                            <option value="14">近两周</option>
+                                                                                            <option value="30">近一月</option>
+                                                                                            <option  value="60">近两月</option>
+                                                                                            <option value="90">近三月</option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </TR>
+                                                                                <TR>
+                                                                                    <td height=30 width=55 align=right>名 称：</td>
+                                                                                    <td height=30>
+                                                                                        <input style="width: 514px" id="d_key" onclick="this.value='';" value="请输入关键字" maxLength="100" >
+                                                                                        <input name="d_key_class"  value="name" CHECKED type="radio" />职位
+                                                                                        <input name="d_key_class"  value="fname" type="radio" />公司
+                                                                                    </td>
+                                                                                </TR>
+
+                                                                                <TR>
+                                                                                    <td width=55 align=right>&nbsp;</td>
+                                                                                    <td height=24 vAlign=bottom>
+                                                                                        <A id="a_list_search"><IMG border=0 src="../img/Button_Search.gif" width=100 height=18></A>
+                                                                                    </td>
+                                                                                </TR>
+                                                                            </TBODY></TABLE>
+                                                                    </td>
+
+                                                                </TR>
+                                                            </TBODY></TABLE>
+                                                    </td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                 <td>
+                                   <IMG src="../img/left2_bottom.gif" width=770 height=12></td>
+                                </TR>
+                         </TBODY>
+          </TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td style="PADDING-LEFT: 5px" width="50%"><span id="">显示<font color=#ff3300>127</font>条，第<font color=#ff3300>1-30</font>条，共<font color=#ff3300>5</font>页</span></td>
+          <td style="PADDING-RIGHT: 5px" align=right height=24>
+            <TABLE cellSpacing=0 cellPadding=0 width=90 border=0>
+              <TBODY>
+              <TR>
+                <td width=5 height=24><IMG height=24
+                  src="../img/left3_left.jpg"
+                  width=5></td>
+                <td style="PADDING-TOP: 4px" align=middle
+                background="../img/left3_bg.jpg"><!--列表/明细--><span id=lbl_JobListStyle><font color=#ff3300>列表</font> <font color=#999999>|</font> <A
+                  href="#">明细</A></span></td>
+                <td width=5><IMG height=24 src="../img/left3_right.jpg" width=5></td></TR></TBODY>
+            </TABLE>
+          </td>
+        </TR>
+        </TBODY>
+      </TABLE>
+        <TABLE id="list_tb" cellSpacing=1 cellPadding=4 width="100%" border=0>
+            <col width="5%" align="center"/>
+            <col width="28%" align="center"/>
+            <col width="28%" align="center"/>
+            <col width="12%" align="center"/>
+            <col width="12%" align="center"/>
+            <col width="12%" align="center"/>
+            <thead>
+                <TR bgColor=#1a72cc>
+                    <td>
+                        <input id="d_checkbox_all" name="d_checkbox_all" type="checkbox"/>
+                    </td>
+                    <td><STRONG><font color=#ffffff>职位名称</font></STRONG></td>
+                    <td><STRONG><font color=#ffffff>公司名称</font></STRONG></td>
+                    <td><STRONG><font color=#ffffff>工作地区</font></STRONG></td>
+                    <td><STRONG><font color=#ffffff>职位月薪</font></STRONG></td>
+                    <td><STRONG><font color=#ffffff>更新日期</font></STRONG></td>
+                </TR>
+            </thead>
+            <TBODY>
+                <TR>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </TR>
+            </TBODY>
+        </TABLE>
+        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+            <TBODY>
+                <TR>
+                    <td id="jpage_box"></td>
+                </TR>
+            </TBODY>
+        </TABLE>
+     <!--分页控制-->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <td height=5></td></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td style="PADDING-LEFT: 9px" align=left width="10%"></td>
+          <td style="PADDING-RIGHT: 5px" align=right>
+            <!--申请职位-->
+            <A id="btn_app_job"><IMG height=20 src="../img/Button1_1.gif" width=80 border=0></A>
+            <!--收藏职位-->
+            <A id="btn_favorite_job"><IMG height=20 src="../img/Button1_2.gif" width=80 border=0></A>
+            <!--浏览职位-->
+            <A id="btn_veiw_job"><IMG height=20 src="../img/Button1_3.gif" width=80 border=0></A>
+          </td>
+        </TR>
+        </TBODY>
+      </TABLE>
+    </td>
+    <td width=10>&nbsp;</td>
+    <td>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <td width=5 height=30><IMG height=30 src="../img/right1_left.jpg" width=5></td>
+                <td align=middle width=75
+                background="../img/right1_t1.jpg"><B><font color=#ffffff>会员登录</font></B></td>
+                <td background="../img/right1_bg.jpg">&nbsp;</td>
+                <td width=5><IMG height=30
+                  src="../img/right1_right.jpg"
+                  width=5></td></TR></TBODY></TABLE></td></TR>
+        <TR>
+          <td style="BORDER-RIGHT: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; BORDER-BOTTOM: #a4cbee 1px solid">
+              <!--个人会员信息-->
+              <DIV id="d_pan_login">
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                      <TBODY>
+                          <TR>
+                              <td height=4></td>
+                          </TR>
+                      </TBODY>
+                  </TABLE>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                      <TBODY>
+                          <TR>
+                              <td align=right width=64 height=27><font color=#848484>用户名：</font></td>
+                              <td height=27><input class=input_login id="d_username"  style="width: 115px"/><BR><span id="d_error_username" ></span></td>
+                          </TR>
+                          <TR>
+                              <td align=right width=64 height=27><font color=#848484>密&nbsp;&nbsp;码：</font></td>
+                              <td height=27><input class=input_login id="d_password" style="width: 115px" type="password"><BR><span id="d_error_password"></span></td>
+                          </TR>
+                          <TR align=middle>
+                              <td colSpan=2 height=30><input id="btn_login" style="width: 50px; HEIGHT: 20px" type="image"  src="../img/button_login.gif"  border="0" onclick="m_info_login()"/>&nbsp;<input id="btn_reg" style="width: 50px; HEIGHT: 20px" type="image"  src="../img/Button_Reg_2.gif"  border="0">&nbsp;</td>
+                          </TR>
+                          <TR align=middle>
+                              <td colSpan=2 height=21><IMG height=9  src="../img/Icon1_2.gif" width=5><A class=blue20  href="./info_person_register.htm?a=add">注册个人用户</A><IMG height=9 src="../img/Icon1_2.gif" width=5><A class=blue20   href="#">找回密码</A></td>
+                          </TR>
+                      </TBODY>
+                  </TABLE>
+              </DIV>
+              <!--会员登录-->
+          </td>
+        </TR>
+        </TBODY>
+      </TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <td height=5></td></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <td width=5 height=30><IMG height=30
+                  src="../img/right1_left.jpg"
+                  width=5></td>
+                <td align=middle width=75
+                background="../img/right1_t1.jpg"><B><font color=#ffffff>热门职位</font></B></td>
+                <td background="../img/right1_bg.jpg">&nbsp;</td>
+                <td width=5><IMG height=30
+                  src="../img/right1_right.jpg"
+                  width=5></td></TR></TBODY></TABLE></td></TR>
+        <TR>
+          <td style="BORDER-RIGHT: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #a4cbee 1px solid"><!--热门职位-->
+            <DIV id=demo style="OVERFLOW: hidden; HEIGHT: 176px">
+            <DIV id=demo1>
+            <TABLE id=HotJob1_lit_HotJobList
+            style="width: 100%; BORDER-COLLAPSE: collapse" cellSpacing=0
+            cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+                <td style="HEIGHT: 22px">·<A
+                  href="http://job5.fdkjgz.com/Html/JobDetail/10757.html"
+                  target=_blank>电路板维修员</A> </td></TR>
+              <TR>
+                <td style="HEIGHT: 22px">·<A
+                  href="http://job5.fdkjgz.com/Html/JobDetail/10761.html"
+                  target=_blank>设施部经理</A> </td></TR>
+              <TR>
+                <td style="HEIGHT: 22px">·<A
+                  href="http://job5.fdkjgz.com/Html/JobDetail/10782.html"
+                  target=_blank>人力资源部经理</A> </td></TR>
+              <TR>
+                <td style="HEIGHT: 22px">·<A
+                  href="http://job5.fdkjgz.com/Html/JobDetail/10781.html"
+                  target=_blank>财务主管</A> </td></TR>
+              <TR>
+                <td style="HEIGHT: 22px">·<A
+                  href="http://job5.fdkjgz.com/Html/JobDetail/10760.html"
+                  target=_blank>电气工程师</A> </td></TR>
+              <TR>
+                <td style="HEIGHT: 22px">·<A
+                  href="http://job5.fdkjgz.com/Html/JobDetail/10752.html"
+                  target=_blank>行政助理</A> </td></TR>
+              <TR>
+                <td style="HEIGHT: 22px">·<A
+                  href="http://job5.fdkjgz.com/Html/JobDetail/10751.html"
+                  target=_blank>销售工程师</A> </td></TR></TBODY></TABLE></DIV>
+            <DIV id=demo2></DIV></DIV>
+          </td></TR></TBODY></TABLE></td></TR></TBODY></TABLE><!--页面底部-->
+<IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+</BODY>
+</HTML>
+<input type="hidden" id="g_id" value="list_person_search" />
+<script type="text/javascript" src="../js/common.js"></script>

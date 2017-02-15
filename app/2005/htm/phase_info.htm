@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>招聘会期次管理</title>
+    </head>
+
+    <body>
+        <div id="sys_title_box">
+            <span id="sys_state"></span><span id="sys_title">招聘会期次管理--内容页面</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="btn_add" type="button" value="新增"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="btn_refresh" type="button" value="刷新"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <table id="info_table" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="300" />
+            <col width="100" align="center" />
+            <col width="300" />
+            <tbody>
+                <tr>
+                    <td class="itb_title" colspan="6">一、基本信息</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>序　　号</td>
+                    <td><input id="i_id" style="width:200px; height:20px;" type="text" readonly/></td>
+                    <td>期次名称</td>
+                    <td><input id="i_phase_name" style="width:200px; height:20px;" type="text"/></td>
+                </tr>
+                <tr class="tr_1">
+                    <td>招聘类型</td>
+                    <td>
+                        <select id="i_phase_type" style="width:200px; height:18px;">
+                            <option value="">请选择</option>
+                            <option value="0">酒店、物管、商超、房产、装饰、服务类</option>
+                            <option value="1">IT通讯、机械电子、文职营销、行政财务类</option>
+                            <option value="2">综合类招聘会</option>
+                            <option value="3">逢六招聘会</option>
+                        </select>
+                    </td>
+                    <td>地　　点</td>
+                    <td>
+                        <select id="i_adress" style="width:200px;" >
+                            <option value="">请选择</option>
+                            <option value="莲湖区人力资源服务中心后一楼">莲湖区人力资源服务中心后一楼</option>
+                            <option value="莲湖区人力资源服务中心后三楼">莲湖区人力资源服务中心后三楼</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="tr_0">
+                    <td>日　　期</td>
+                    <td><input id="i_date_s" type="text" style="width:130px; height:20px;"/>
+                     <!--   至
+                        <input id="i_date_e" type="text" style="width:130px; height:20px;"/>
+                    </td>-->
+                    <td>状　　态</td>
+                    <td>
+                        <select id="i_state" style="width:200px;" >
+                            <option value="">请选择</option>
+                            <option value="1">公  开</option>
+                            <option value="0">不公开</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td>会讯内容</td>
+                    <td colspan="3"><textarea id="i_content" rows="6" style="width:650px; margin-left:5px;"></textarea></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="btn_box" colspan="6">
+                        <input id="btn_recruit" type="button" value="本期招聘会" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_edit" type="button" value="修改信息" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_save" type="button" value="保存信息" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_cancel" type="button" value="取消修改" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_del" type="button" value="删除信息" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_close" type="button" value="关闭信息" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btn_list" type="button" value="返回列表" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="phase_info" />
+<script type="text/javascript" src="../js/common.js"></script>

@@ -1,0 +1,199 @@
+/**
+ * 文件名称：www.css
+ * 功能描述：网站公用样式。
+ * 代码作者：孙振强（创建）、郭娟（优化）、王争强（优化）
+ * 创建日期：2010-12-09
+ * 修改日期：2010-12-11
+ * 当前版本：V2.0
+ */
+ 
+/*全局样式 s*/
+* {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url(../img/bg.jpg) repeat-x;
+    margin-top: 25px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #FF0000;
+}
+
+img {
+    border: 0;
+}
+
+#bg_border {
+    position: absolute;
+    z-index:-1;
+    top: 25px;
+    left: 50%;
+    width: 1004px;
+    margin-left: -502px;
+    background: url(../img/bg_border.gif) repeat-y;
+}
+/*全局样式 e*/
+
+/*header s*/
+/*topbar s*/
+#topbar {
+    width: 978px;
+    height: 30px;
+    overflow: hidden;
+    margin: 0 auto;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    background-image: url('../img/topbar.gif');
+}
+
+#topbar_data {
+    float: left;
+    margin-left: 40px;
+}
+
+#topbar_menu {
+    float: right;
+    margin-right: 20px;
+}
+
+#topbar_menu a {
+    margin: 0 10px;
+}
+/*topbar e*/
+
+/*header_banner s*/
+#header_banner {
+    width: 980px;
+    height: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-top:none;
+    background: url(../img/header_banner.gif) no-repeat;
+}
+/*header_banner e*/
+
+/*menuer s*/
+#menuer {
+    width: 978px;
+    height: 46px;
+    overflow: hidden;
+    margin: 0 auto;
+    line-height:45px;
+    text-align:center;
+    border: 1px solid #ccc;
+    background: url(../img/menuer_bg.gif) repeat-x;
+}
+
+#menuer li {
+    width: 100px;
+    margin: 0 15px;
+    display: inline;
+}
+
+#menuer a {
+    font-size:16px;
+    font-weight: 200;
+    font-family: "黑体";
+}
+/*menuer e*/
+/*header e*/
+
+/*footer s*/
+#footer {
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border: 1px solid #999999;
+    border-width: 0 1px;
+}
+
+/*footer_menuer s*/
+#flinks_txt {
+    width: 980px;
+    margin:0px auto;
+    line-height:30px;
+    text-align: center;
+    background: url(../img/flinks_txt_bg.gif) repeat-x;
+}
+
+#flinks_txt a {
+    margin: 0 10px;
+    color: #FFFFFF;
+}
+/*footer_menuer e*/
+
+/*footer_menuer s*/
+#footer_menuer {
+    margin:0px auto;
+    line-height:30px;
+    text-align: center;
+}
+
+#footer_menuer a {
+    margin: 0 10px;
+}
+/*footer_menuer e*/
+
+/*flinks_img s*/
+#flinks_img {
+    width: 980px;
+    overflow: hidden;
+    margin:0px auto;
+    margin-bottom: 5px;
+}
+
+#flinks_img ul {
+    float:left;
+    width:985px;
+    margin-left: 5px;
+}
+
+#flinks_img li {
+    float:left;
+    margin-bottom:4px;
+    margin-right:4px;
+    list-style: none;
+}
+
+#flinks_img img {
+    width: 156px;
+    height: 45px;
+    overflow: hidden;
+    border: #DDDDDD 1px solid;
+}
+/*flinks_img e*/
+/*footer e*/
+
+/*listnav s*/
+
+#listnav_bg {
+    width: 980px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 8px;
+    background: url(../img/list_top_bg.gif) no-repeat center;
+    background-color: #FFFFFF;
+}
+
+#listnav_bg h2 {
+    display: block;
+    float: right;
+    margin: 65px 20px 0 0;
+    font-weight: bold;
+}
+
+#listnav_bg h2 a {
+    color: #000000;
+}
+
+/*listnav e*/

@@ -1,0 +1,30 @@
+<!--{ include file="banner.htm" }-->
+<div id="cen_box" class="div_center">
+    <!--列面页面右侧开始-->
+    <div id="info_box" class="cen_box_r">
+        <h2 class="nav_box">
+            <span>
+                您目前的位置：
+                <!--{ foreach item=tmp from=$ws.nav }-->
+                <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>&nbsp;&gt;&gt;&nbsp;
+                <!--{ foreachelse }-->
+                <!--{ /foreach }-->
+            </span>
+        </h2>
+        <div class="list_m">
+            <!--{ foreach item=index_news from=$ws.list_m }-->
+            <ul>
+                <h6><a href="<!--{$index_news.url}-->"><!--{$index_news.name}--></a></h6>
+                 <!--{ foreach item=tmp from=$index_news.news name=arr_index }-->
+                <span><!--{$tmp.atime|date_format:"%Y-%m-%d"}--></span><li><a href="<!--{$tmp.url}-->"><!--{$tmp.name|truncate_i:16:"…"}--></a></li>
+                <!--{ foreachelse }-->
+                <!--{ /foreach}-->
+            </ul>
+            <!--{ /foreach }-->
+        </div>
+    </div>
+    <!--列面页面右侧结束-->
+    <!--{ include file="lefter.htm" }-->
+</div>
+
+

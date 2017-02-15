@@ -1,0 +1,55 @@
+<!--index s-->
+<div id="index_part1">
+    <div id="index_pics">
+        <img src="../img/photo.gif" />
+        <a>西安市召开双拥模范区（县）模范单位…</a>
+    </div>
+    <div id="index_news" class="index_news">
+        <h2 id="index_news_title">
+            <!--{ foreach item=tmp from=$ws.index_news1 }-->
+            <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+            <!--{ /foreach }-->
+        </h2>
+        <!--{ foreach item=index_news from=$ws.index_news1 }-->
+        <ul>
+            <!--{ foreach item=tmp from=$index_news.news name=arr_index }-->
+            <!--{ if $smarty.foreach.arr_index.index eq 0 }-->
+            <li><a class="top" href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><!--{$tmp.name}--></a></li>
+            <!--{ else }-->
+            <li><span><!--{$tmp.atime|truncate:5:""}--></span><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><!--{$tmp.name}--></a></li>            
+            <!--{ /if }-->
+            <!--{ foreachelse }-->
+            <!--{ /foreach }-->
+        </ul>
+        <!--{ /foreach }-->
+    </div>
+</div>
+
+<!--banner s-->
+<div id="banner"><a href="#" title="" target="_blank"><img src="../img/banner.gif"/></a></div>
+<!--banner e-->
+
+<div id="index_part2">
+    <div id="index_part2_1">
+        <!--{include file="index_part2_1`$ws.mk`.htm"}-->
+    </div>
+    <div id="index_part2_2" class="index_news">
+        <h2 id="index_part2_2_title">
+            <!--{ foreach item=tmp from=$ws.index_news2 }-->
+            <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+            <!--{ /foreach }-->
+        </h2>
+        <!--{ foreach item=index_news from=$ws.index_news2 }-->
+        <ul>
+            <!--{ foreach item=tmp from=$index_news.news name=arr_index }-->
+            <li><span><!--{$tmp.atime|truncate:5:""}--></span><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><!--{$tmp.name}--></a></li>
+            <!--{ foreachelse }-->
+            <!--{ /foreach }-->
+        </ul>
+        <!--{ /foreach }-->
+    </div>
+    <div id="index_part2_3">
+        <!--{include file="index_part2_3`$ws.mk`.htm"}-->
+    </div>
+</div>
+<!--index e-->

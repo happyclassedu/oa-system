@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+    <HEAD>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <TITLE>求职信 - 人才网站管理系统PHP1.0地区版</TITLE>
+        <LINK rel=stylesheet type="text/css" href="../css/www.css"/>
+    </HEAD>
+<BODY>
+<!--页面顶部-->
+<IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+<!--页面主体-->
+<TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <td width=188><!--菜单-->
+     <IFRAME align=left src="person_left.htm" frameBorder=0 scrolling=no width="100%" height=500></IFRAME></td>
+    <td width=10></td>
+    <td bgColor=#ffffff><!--右侧-->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom
+          background="../img/title1_bg.gif" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <td align=middle width=80 background="../img/title1_bg3.jpg" height=28>
+                    <A id="a_resume_list" href="" target="_parent">我的简历</A>
+                </td>
+                <td width=5></td>
+                <td align=middle width=80 background="../img/title1_bg3.jpg">
+                    <A id="a_resume_create"  href="" target="_parent">新建简历</A>
+                </td>
+                <td width=5></td>
+                <td align=middle width=80 background="../img/title1_bg2.jpg">
+                    <A class=white id="a_resume_letter"  href="" target="_parent"><B>求 职 信</B></A>
+                </td>
+                <td>&nbsp;</td></TR></TBODY></TABLE></td></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td style="PADDING-LEFT: 5px"><font color=#777777>您可以保存 5
+            份不同内容的求职信，以适应不同职位的需求；</font>
+          </td>
+        </TR>
+        </TBODY>
+      </TABLE>
+      <TABLE cellSpacing=1 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td bgColor=#aaccef height=1></td>
+        </TR>
+        </TBODY>
+      </TABLE>
+        <!--求职信列表-->
+        <TABLE id="list_tb" cellSpacing=1 cellPadding=4 width="100%" border=0>
+            <col width="10%" align="center"/>
+            <col width="30%" align="center"/>
+            <col width="30%" align="center"/>
+            <col width="30%" align="center"/>
+            <thead>
+                <TR bgColor=#dbedfb>
+                    <td><STRONG>序号</STRONG></td>
+                    <td><STRONG>标题</STRONG></td>
+                    <td><STRONG>创建时间</STRONG></td>
+                    <td><STRONG>操 作</STRONG></td>
+                </TR>
+            </thead>
+            <TBODY>
+                <TR>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td class="btn_box">
+                        <input class="btn_edit" type="button" value="修改" />
+                        <input class="btn_del" type="button" value="删除" />
+                    </td>
+                </TR>
+            </TBODY>
+        </TABLE>
+        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+            <TBODY>
+                <TR>
+                    <td id="jpage_box"></td>
+                </TR>
+            </TBODY>
+        </TABLE>
+     <!--新增/修改求职信-->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td height=5></td></TR>
+        <TR>
+          <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid" height=28>
+              <STRONG><span id=lbl_Operate>新增求职信</span></STRONG> (<font color=#ff3300>*</font> 为必填项)
+          </td>
+        </TR>
+        </TBODY>
+      </TABLE>
+      <TABLE id="info_tb" cellSpacing=1 cellPadding=4 width="100%" bgColor=#dddddd border=0>
+        <TBODY>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff0000>*</font> 标 题：</td>
+          <td>
+              <input id="d_name" style="width: 200px" maxLength=50 />
+              <input id="d_p_id" type="hidden"/>
+              <input id="d_i_type" type="hidden"/>
+          </td>
+        </TR>
+        <TR bgColor=#ffffff>
+          <td style="PADDING-LEFT: 12px" width=100><font color=#ff0000>*</font> 内 容：</td>
+          <td><font color=#777777>请详细填写相关内容 (限2000字 <A  href="#"><font color=#777777>计算字数</font></A>) </font><BR>
+            <textarea id="d_intor" style="width: 400px"  rows=10></textarea>
+</td>
+        </TR>
+        </TBODY>
+      </TABLE>
+     <!--新增-->
+      <TABLE id="act_tb"cellSpacing=1 cellPadding=4 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td style="PADDING-LEFT: 12px" width=100>&nbsp;</td>
+          <td align=left>
+              <input id="btn_save" style="width: 60px; HEIGHT: 30px"  type="button" value="保存"/>
+           </td>
+        </TR>
+        </TBODY>
+      </TABLE>
+     <!--修改-->
+     <!--页面左侧 结束-->
+    </td>
+  </TR>
+  </TBODY>
+</TABLE>
+<!--页面底部-->
+<IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+</BODY>
+</HTML>
+<input type="hidden" id="g_id" value="info_resume_letter" />
+<script type="text/javascript" src="../js/common.js"></script>
+

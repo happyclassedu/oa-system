@@ -1,0 +1,124 @@
+
+<!-- content begin-->
+<div id="index_con" class="div_976_center">
+    <div class="login">
+        <h2><a href="#">会员登录</a></h2>
+        <div class="login-content">
+            <ul id="box_login" class="box_login">
+                <li class="txt_box">
+                    <input id="btn_login" type="button" />
+                    <div>账 号：<input id="txt_username" type="text" /></div>
+                    <div>密 码：<input id="txt_password" type="password" /></div>
+                </li>
+                <li>
+                    <input id="btn_r_login" name="btn_r_login" type="radio" checked="checked" value="p" />
+                    <label for="btn_r_login">个人会员</label>
+                    <input id="btn_r_login_c" name="btn_r_login" type="radio" value="c" />
+                    <label for="btn_r_login_c">企业会员</label>
+                </li>
+                <li class="txt_2"><a href="./info_600.htm">会员注册须知</a><a href="./x_pass_find.htm">忘记密码</a></li>
+                <li><input id="btn_reg_p" type="button" /><input id="btn_reg_c" type="button" /></li>
+            </ul>
+            <ul id="box_login_p" style="display: none;" class="box_login">
+                <li><span id="user_title"></span>欢迎您的访问！</li>
+                <li><input id="btn_ucenter_p" type="button" value="进入我的个人用户中心" /></li>
+                <li><input id="btn_resume_view" type="button" value="查看我的简历" />&nbsp;&nbsp;<input id="btn_resume_edit" type="button" value="修改我的简历" /></li>
+                <li><input class="btn_passwd_edit" type="button" value="修改登陆密码" />&nbsp;&nbsp;<input class="btn_logout" type="button" value="退出本次登录" /></li>
+                <li class="txt_2"><a href="./info_600.htm">会员注册须知</a><a href="./x_pass_find.htm">忘记密码</a></li>
+                <li><input id="btn_reg_p" type="button" /><input id="btn_reg_c" type="button" /></li>
+            </ul>
+            <ul id="box_login_c" style="display: none;" class="box_login">
+                <li><span id="user_title"></span>欢迎您的访问！</li>
+                <li><input id="btn_ucenter_c" type="button" value="进入企业用户中心" /></li>
+                <li><input id="btn_com_view" type="button" value="查看我的简历" />&nbsp;&nbsp;<input id="btn_com_edit" type="button" value="修改我的简历" /></li>
+                <li><input class="btn_passwd_edit" type="button" value="修改登陆密码" />&nbsp;&nbsp;<input class="btn_logout" type="button" value="退出本次登录" /></li>
+                <li class="txt_2"><a href="./info_600.htm">会员注册须知</a><a href="./x_pass_find.htm">忘记密码</a></li>
+                <li><input id="btn_reg_p" type="button" /><input id="btn_reg_c" type="button" /></li>
+            </ul>
+            <ul id="box_search">
+                <li><input id="txt_s_job_class" class="btn_s" type="button" value="请选择职位类别" /></li>
+                <li><input id="txt_s_job_title" class="btn_s" type="button" value="请选择职位名称" /></li>
+                <li><input id="txt_s_com_class" class="btn_s" type="button" value="请选择行业类别" /></li>
+                <li><input id="txt_s_job_addr" class="btn_s" type="button" value="请选择工作城市" /></li>
+                <li><input id="txt_s_diy" type="text" value="请输入公司或职位" /><input id="btn_search" type="button" /></li>
+            </ul>
+        </div>
+    </div>
+    <div id="index_news1">
+        <h2 id="index_news1_title">
+            <!--{ foreach item=tmp from=$ws.index_news1 }-->
+            <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+            <!--{ /foreach }-->
+        </h2>
+        <!--{ foreach item=index_news from=$ws.index_news1 }-->
+        <ul>
+            <!--{ foreach item=tmp from=$index_news.news name=arr_index }-->
+            <li><span><!--{$tmp.atime|date_format:"%m-%d"}--></span><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><!--{$tmp.name}--></a></li>
+            <!--{ foreachelse }-->
+            <!--{ /foreach }-->
+        </ul>
+        <!--{ /foreach }-->
+    </div>
+    <div id="index_con3">
+        <div id="index_pics_box">
+            <ul id="index_pics">
+                <!--{ foreach item=tmp from=$ws.link_pics }-->
+                <li><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><img src="doc::<!--{$tmp.img}-->" /><p><!--{$tmp.name}--></p></a></li>
+                <!--{ /foreach }-->
+            </ul>
+        </div>
+        <h1 id="index_notice" title="<!--{$ws.cfg.name}-->,<!--{$ws.cfg.name_s}-->,<!--{$ws.cfg.seo_keys}-->"><a href="#">欢迎您光临曲江人才新版网站！</a></h1>
+    </div>
+</div>
+<!--{ include file="link4`$ws.mk`.htm" }-->
+<!--{ include file="index_coms.htm" }-->
+<!--{ include file="link0`$ws.mk`.htm" }-->
+<!--{ include file="banner2`$ws.mk`.htm" }-->
+<div id="index_cnt2_box" class="div_976_center">
+    <div id="index_cnt2">
+        <h2><a class="re" href="<!--{$ws.index_news2.5.url}-->"><!--{$ws.index_news2.5.name}--></a>
+            <span id="index_news2_title">
+                <!--{ foreach item=tmp from=$ws.index_news2 }-->
+                <a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a>
+                <!--{ /foreach }-->
+            </span>
+        </h2>
+        <div id="index_cnt2_1">
+            <ul>
+                <!--{ foreach item=tmp from=$ws.index_news2.5.news name=arr_index }-->
+                <!--{ if $smarty.foreach.arr_index.index eq 0 }-->
+                <li class="photo"><a href="<!--{$tmp.url}-->"><img align="left" style="margin:4px;" src="../img/re-pic.jpg" /><!--{$tmp.name}-->……［全文］</a></li>
+                <!--{ else }-->
+                <li><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><!--{$tmp.name}--></a></li>
+                <!--{ /if }-->
+                <!--{ foreachelse }-->
+                <!--{ /foreach }-->
+            </ul>
+        </div>
+        <div id="index_news2_cnt">
+            <!--{ foreach item=index_news from=$ws.index_news2 }-->
+            <ul>
+                <!--{ foreach item=tmp from=$index_news.news name=arr_index }-->
+                <li><span><!--{$tmp.atime|date_format:"%m-%d"}--></span><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><!--{$tmp.name}--></a></li>
+                <!--{ foreachelse }-->
+                <!--{ /foreach }-->
+            </ul>
+            <!--{ /foreach }-->
+        </div>
+    </div>
+    <div id="index_cnt3">
+        <h2><a href="list_resume_1_1.htm">推荐简历</a></h2>
+        <ul>
+            <li class="hei"><span class="s1">姓名</span><span class="s2">性别</span><span class="s3">学历</span><span class="s4">毕业学校</span></li>
+            <!--{ foreach item=tmp from=$ws.index_resume name=arr_index }-->
+            <li><a href="<!--{$tmp.url}-->" title="<!--{$tmp.name}-->"><span class="s1"><!--{$tmp.name}--></span> <span class="s2"><!--{$tmp.sex}--></span> <span class="s3"><!--{$tmp.degree}--></span> <span class="s4"><!--{$tmp.univ|truncate_i:8:"…"}--></span></a></li>
+            <!--{ foreachelse }-->
+            <!--{ /foreach }-->
+
+        </ul>
+    </div>
+</div>
+<!-- content end-->
+
+<!--{ include file="link1`$ws.mk`.htm" }-->
+<!--{ include file="link2`$ws.mk`.htm" }-->

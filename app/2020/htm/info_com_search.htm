@@ -1,0 +1,592 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>简历搜索--人才网站管理系统php1.0地区版</title>
+        <LINK href="../css/www.css" type="text/css" rel=stylesheet>
+    </head>
+    <body>
+        <!--页面顶部-->
+        <IFRAME align=middle src="com_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+        <!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width="770"><!--左侧-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28 background="../img/left2_bg.gif" style="PADDING-LEFT: 8px">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="PADDING-TOP: 5px" height=28 background="../img/left2_t1.gif" width=85 align=middle><B><font color=#ff6600>快速搜索</font></B></td>
+                                                    <td width=5>&nbsp;</td>
+                                                    <td style="PADDING-TOP: 5px" background="../img/left2_t2.jpg" width=85 align=middle><B><A id="a_info_adsearch" href="" target="_parent">全能搜索</A></B></td>
+                                                    <td>&nbsp;</td>
+                                                </TR>
+                                            </TBODY>
+                                    </TABLE>                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-LEFT: #027bc5 2px solid; PADDING-LEFT: 5px; BORDER-RIGHT: #027bc5 2px solid; PADDING-TOP: 8px">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td>
+                                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                            <TBODY>
+                                                                <TR>
+                                                                    <td>
+                                                                        <TABLE border=0 cellSpacing=0 cellPadding=2 width="100%">
+                                                                            <TBODY>
+                                                                                <TR vAlign=top>
+                                                                                    <td height=30 width=50 align=right>职 能：</td>
+                                                                                    <td height=30>
+                                                                                        <select style="width: 300px" id="d_big_classification">
+                                                                                            <option selected value="">请选择</option>
+                                                                                        </select> &nbsp;
+                                                                                        职 位：
+                                                                                        <select style="width: 240px" id="d_small_classification">
+                                                                                            <option selected value="">请选择</option>
+                                                                                        </select>                                                                                    </td>
+                                                                                </TR>
+                                                                                <TR vAlign=top>
+                                                                                    <td height=30 width=50 align=right>省 份：</td>
+                                                                                    <td height=30>
+                                                                                        <select style="width: 300px" id="d_addr1">
+                                                                                            <option selected value="">请选择</option>
+                                                                                        </select>
+                                                                                        &nbsp;地 区：
+                                                                                        <select style="width: 240px" id="d_addr2" >
+                                                                                            <option selected value="">请选择</option>
+                                                                                        </select>                                                                                    </td>
+                                                                                </TR>
+                                                                                <TR vAlign=top>
+                                                                                    <td height=30 width=50 align=right>行 业：</td>
+                                                                                    <td height=30>
+                                                                                        <select style="width: 300px" id="d_trade">
+                                                                                            <option selected value="">请选择</option>
+                                                                                        </select>
+                                                                                        &nbsp;日 期：
+                                                                                        <select style="width: 240px" id="d_atime">
+                                                                                            <option selected value="0">日期不限</option>
+                                                                                            <option value="1">近一天</option>
+                                                                                            <option value="2">近两天</option>
+                                                                                            <option value="3">近三天</option>
+                                                                                            <option value="7">近一周</option>
+                                                                                            <option value="14">近两周</option>
+                                                                                            <option value="30">近一月</option>
+                                                                                            <option  value="60">近两月</option>
+                                                                                            <option value="90">近三月</option>
+                                                                                        </select>                                                                                    </td>
+                                                                                </TR>
+                                                                                <TR vAlign=top>
+                                                                                    <td style="PADDING-TOP: 3px" height=30 width=50 align=right>名 称：</td>
+                                                                                    <td height=30>
+                                                                                        <input style="width: 528px" id="d_key"   value="请输入关键字" onClick="this.value='';" maxLength=100/>
+                                                                                        <A id="btn_search"><IMG border=0 align="absMiddle" src="../img/Button_Search.gif" width=59 height=18></A>                                                                                    </td>
+                                                                                </TR>
+                                                                            </TBODY>
+                                                                        </TABLE>                                                                    </td>
+                                                                </TR>
+                                                    </TBODY></TABLE>                                                    </td></TR>
+                                    </TBODY></TABLE>                                    </td></TR>
+                                <TR><td><img src="../img/left2_bottom.gif" width="770" height="12"></td>
+                                </TR>
+                            </TBODY></TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR><td height=8></td></TR>
+                            </TBODY>
+                        </TABLE><!--分类搜索-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td width=5><IMG src="../img/left1_left.gif" width=5 height=28></td>
+                                    <td style="PADDING-LEFT: 5px" background="../img/left1_bg2.gif">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td id="al01" class=a101  height=28 width=85 align=middle onClick="asecBoard(1);">职能搜索</td>
+                                                    <td width=5></td>
+                                                    <td id="al02" class=a102  width=85 align=middle onClick="asecBoard(2);">行业搜索</td>
+                                                    <td width=5></td>
+                                                    <td id="al03" class=a102  width=85 align=middle onClick="asecBoard(3);">地区搜索</td>
+                                                    <td>&nbsp;</td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                    <td width=5><IMG src="../img/left1_right.gif" width=5 height=28></td>
+                                </TR>
+                            </TBODY></TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #dddddd 1px solid; BORDER-LEFT: #dddddd 1px solid; PADDING-BOTTOM: 2px; BORDER-RIGHT: #dddddd 1px solid; PADDING-TOP: 5px">
+                                        <!--职能搜索-->
+                                        <DIV id=abx01>
+                                            <table style="width: 99%; BORDER-COLLAPSE: collapse" id="lit_Search_jobtype" border=0 cellspacing=0 cellpadding=2 align=center>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif">
+                                                            <a href="./list_com_search.htm?a=search&jobtype=1000,0" target=_blank>计算机硬件</a>
+                                                        </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif">
+                                                            <a href="./list_com_search.htm?a=search&jobtype=1001,0" target=_blank>计算机软件</a>
+                                                        </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1003,0" target=_blank>互联网开发及应用</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1004,0" target=_blank>IT-管理</a> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1005,0" target=_blank>IT-品管/技术支持</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1006,0" target=_blank>通信技术</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1007,0" target=_blank>电子/电器/半导体/仪器仪表</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1008,0" target=_blank>销售管理</a> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1009,0" target=_blank>销售人员</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1010,0" target=_blank>销售行政及商务</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1011,0" target=_blank>客服及技术支持</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1012,0" target=_blank>财务/审计/税务</a> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1013,0" target=_blank>证券/金融/投资</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1014,0" target=_blank>银行</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1015,0" target=_blank>保险</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1016,0" target=_blank>生产/营运</a> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1017,0" target=_blank>质量/安全管理</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1018,0" target=_blank>工程/机械/能源</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1019,0" target=_blank>汽车</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1020,0" target=_blank>技工</a> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1021,0" target=_blank>服装/纺织/皮革</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1022,0" target=_blank>采购</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1023,0" target=_blank>贸易</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1024,0" target=_blank>物流/仓储</a> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1025,0" target=_blank>生物/制药/医疗器械</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1026,0" target=_blank>化工</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1027,0" target=_blank>医院/医疗/护理</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1028,0" target=_blank>广告</a> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1029,0" target=_blank>公关/媒介</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1030,0" target=_blank>市场/营销</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1031,0" target=_blank>影视/媒体</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1032,0" target=_blank>写作/出版/印刷</a> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1033,0" target=_blank>艺术/设计</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1034,0" target=_blank>建筑工程</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1035,0" target=_blank>房地产</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1036,0" target=_blank>物业管理</a> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1037,0" target=_blank>人力资源</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1038,0" target=_blank>高级管理</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1039,0" target=_blank>行政/后勤</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1040,0" target=_blank>咨询/顾问</a> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1041,0" target=_blank>律师/法务</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1042,0" target=_blank>教师</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1043,0" target=_blank>科研人员</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1044,0" target=_blank>餐饮/娱乐</a> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1045,0" target=_blank>酒店/旅游</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1046,0" target=_blank>美容/健身</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1047,0" target=_blank>百货/连锁/零售服务</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1048,0" target=_blank>交通运输服务</a> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1049,0" target=_blank>保安/家政/其他服务</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1050,0" target=_blank>公务员</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1051,0" target=_blank>翻译</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1052,0" target=_blank>在校学生</a> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1053,0" target=_blank>储备干部/培训生/实习生</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1054,0" target=_blank>兼职</a> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><img src="../img/Icon3.gif"><a
+                                                                href="./list_com_search.htm?a=search&jobtype=1055,0" target=_blank>其他</a> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </DIV>
+                                        <!--行业搜索-->
+                                        <DIV style="DISPLAY: none" id=abx02>
+                                            <TABLE style="width: 99%; BORDER-COLLAPSE: collapse" id=lit_Search_trade
+                                                   border=0 cellSpacing=0 cellPadding=2 align=center>
+                                                <TBODY>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif">
+                                                            <A href="./list_com_search.htm?a=search&trade=1001,0" target=_blank>互联网·电子商务</A>
+                                                        </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1002,0" target=_blank>计算机软件</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1003,0" target=_blank>计算机硬件·网络设备</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1004,0" target=_blank>IT服务·系统集成</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1005,0" target=_blank>电子·微电子</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1006,0" target=_blank>通信(设备·运营·增值服务)</A>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1007,0" target=_blank>家电业</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1008,0" target=_blank>批发·零售</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1009,0" target=_blank>贸易·商务·进出口</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1010,0" target=_blank>仪器·仪表·工业自动化·电气</A>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1011,0" target=_blank>能源(电力·石油)·水利</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1012,0" target=_blank>石化·化工·采掘·冶炼·矿产</A>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1013,0" target=_blank>制药·生物工程</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1014,0" target=_blank>环保</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1015,0" target=_blank>机械制造·机电·重工</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1016,0" target=_blank>汽车·摩托车(制造·维护·配件·销售·服务)</A>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1017,0" target=_blank>广告·会展·公关</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1018,0" target=_blank>媒体·出版·影视制作</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1019,0" target=_blank>艺术·文化传播</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1020,0" target=_blank>快速消费品(食品·饮料·粮油·日化·烟酒…)</A>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1021,0" target=_blank>耐用消费品(服饰·纺织·家具…)</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1022,0" target=_blank>专业服务(顾问·咨询·财会·法律·审计)</A>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1023,0" target=_blank>金融业(银行·保险·证券·基金·期货·投资)</A>
+                                                        </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1024,0"
+                                                                target=_blank>房地产开发·建筑与工程·服务(中介·物业·监理·设计)</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1025,0" target=_blank>家居·室内设计·装潢</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1026,0" target=_blank>旅游·酒店·餐饮服务</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1027,0" target=_blank>交通·运输·物流</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1028,0" target=_blank>娱乐·运动·休闲</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1029,0" target=_blank>办公设备·用品</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1030,0" target=_blank>印刷·包装·造纸</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1031,0"
+                                                                target=_blank>生产·制造·加工(金属·建材·塑胶·玻璃·陶瓷…)</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1032,0" target=_blank>教育·培训·科研·院校</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1033,0" target=_blank>医卫·保健·美容</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1034,0" target=_blank>中介服务(人才·商标·专利·留学)</A>
+                                                        </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1035,0" target=_blank>政府·非营利机构</A> </td>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1036,0" target=_blank>农·林·牧·副·渔业</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 50%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&trade=1037,0" target=_blank>其他</A> </td>
+                                                        <td></td>
+                                                    </TR>
+                                                </TBODY></TABLE>
+                                        </DIV><!--地区搜索-->
+                                        <DIV style="DISPLAY: none" id=abx03>
+                                            <TABLE style="width: 99%; BORDER-COLLAPSE: collapse" id=lit_Search_Place
+                                                   border=0 cellSpacing=0 cellPadding=2 align=center>
+                                                <TBODY>
+                                                    <TR>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1000,0" target=_blank>北京</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1001,0" target=_blank>天津</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1002,0" target=_blank>上海</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1003,0" target=_blank>重庆</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1004,0" target=_blank>河南</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1005,0" target=_blank>山西</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1006,0" target=_blank>内蒙</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1007,0" target=_blank>辽宁</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1008,0" target=_blank>吉林</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1009,0" target=_blank>黑龙江</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1010,0" target=_blank>江苏</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1011,0" target=_blank>浙江</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1012,0" target=_blank>安徽</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1013,0" target=_blank>福建</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1014,0" target=_blank>江西</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1015,0" target=_blank>山东</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1016,0" target=_blank>广东</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1017,0" target=_blank>广西</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1018,0" target=_blank>海南</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1019,0" target=_blank>河南</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1020,0" target=_blank>湖北</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1021,0" target=_blank>湖南</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1023,0" target=_blank>陕西</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1024,0" target=_blank>甘肃</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1025,0" target=_blank>青海</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1026,0" target=_blank>宁夏</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1027,0" target=_blank>新疆</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1028,0" target=_blank>四川</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1029,0" target=_blank>贵州</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1030,0" target=_blank>云南</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1031,0" target=_blank>西藏</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1032,0" target=_blank>台湾</A> </td></TR>
+                                                    <TR>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1033,0" target=_blank>香港</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif"><A
+                                                                href="./list_com_search.htm?a=search&workplace=1034,0" target=_blank>澳门</A> </td>
+                                                        <td style="width: 25%; HEIGHT: 26px"><IMG src="../img/Icon3.gif">
+                                                            <A href="./list_com_search.htm?a=search&workplace=1035,0" target=_blank>国外</A> </td>
+                                                        <td></td>
+                                                    </TR>
+                                                </TBODY></TABLE>
+                                        </DIV>
+                                    </td></TR>
+                            </TBODY></TABLE>
+
+                        <!--分类搜索--></td>
+                    <td width=10>&nbsp;</td>
+                      <td><!--开始-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5 height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B><font color=#ffffff>会员中心</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right.jpg" width=5 height=30></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; BORDER-RIGHT: #a4cbee 1px solid; PADDING-TOP: 3px">
+                                        <!--企业会员信息-->
+                                        <DIV id="d_pan_login">
+                                        </DIV>
+                                        <!--会员登录-->
+                                    </td>
+                                </TR>
+                            </TBODY></TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE><!--结束-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5 height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B><font color=#ffffff>英才自荐</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right.jpg" width=5 height=30></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; PADDING-BOTTOM: 3px; PADDING-LEFT: 10px; BORDER-RIGHT: #a4cbee 1px solid; PADDING-TOP: 3px">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR height=22>
+                                                    <td width="27%"><B>姓名</B></td>
+                                                    <td><B>现职位</B></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                        <DIV style="HEIGHT: 132px; OVERFLOW: hidden" id=demo>
+                                            <DIV id=demo1>
+                                                <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=Showme1_lit_Person_Showme border=0 cellSpacing=0 cellPadding=0>
+                                                    <TBODY>
+                                                        <TR>
+                                                            <td>
+                                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                    <TBODY>
+                                                                        <TR height=22>
+                                                                            <td width="27%"><A href="../2021/htm/info_resume_look.htm" target=_blank>wangzq</A></td>
+                                                                            <td><span id=Showme1_lit_Person_Showme__ctl0_lbl_CurrentJobName>技工</span></td>
+                                                                        </TR>
+                                                                    </TBODY></TABLE>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td>
+                                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                    <TBODY>
+                                                                        <TR height=22>
+                                                                            <td width="27%"><A href="/info_resume_look.htm" target=_blank>欣欣</A></td>
+                                                                            <td><span id=Showme1_lit_Person_Showme__ctl1_lbl_CurrentJobName>硬件工程师</span></td>
+                                                                        </TR>
+                                                                    </TBODY></TABLE>
+                                                            </td></TR>
+                                                    </TBODY></TABLE>
+                                            </DIV>
+                                            <DIV id=demo2>
+                                                <TABLE style="width: 100%; BORDER-COLLAPSE: collapse"
+                                                       id=Showme1_lit_Person_Showme border=0 cellSpacing=0 cellPadding=0>
+                                                    <TBODY>
+                                                        <TR>
+                                                            <td>
+                                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                    <TBODY>
+                                                                        <TR height=22>
+                                                                            <td width="27%"><A href="/info_resume_look.htm" target=_blank>wangzq</A></td>
+                                                                            <td><span id=Showme1_lit_Person_Showme__ctl0_lbl_CurrentJobName>技工</span></td>
+                                                                        </TR>
+                                                                    </TBODY>
+                                                                </TABLE>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td>
+                                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                    <TBODY>
+                                                                        <TR height=22>
+                                                                            <td width="27%"><A href="" target=_blank>欣欣</A></td>
+                                                                            <td><span id=Showme1_lit_Person_Showme__ctl1_lbl_CurrentJobName>硬件工程师</span></td>
+                                                                        </TR>
+                                                                    </TBODY></TABLE>
+                                                            </td></TR>
+                                                    </TBODY></TABLE>
+                                            </DIV></DIV>
+
+                                    </td></TR>
+                            </TBODY></TABLE>
+            </TBODY>
+        </TABLE><!--页面底部-->
+            <IFRAME align=middle src="com_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_com_search" />
+<script type="text/javascript" src="../js/common.js"></script>

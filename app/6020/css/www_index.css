@@ -1,0 +1,132 @@
+
+
+/* center s */
+
+#el_cen_cen {
+  z-index:0;
+  width:980px;
+  overflow:hidden;
+}
+
+.el_cen_left {
+  float:left;
+  width:300px;
+}
+
+.el_cen_left h2 {
+  color:#ff7e11;
+  line-height:28px;
+  border-bottom:1px solid #CCCCCC;
+}
+
+.el_cen_left a {
+  display:block;
+  line-height:28px;
+  padding:0 8px;
+  color:#666666;
+  text-decoration:none;
+  border-bottom:1px dashed #CCCCCC;
+}
+
+.el_cen_left a:hover {
+  color:#ff7e11;
+}
+
+.el_cen_left span {
+  float:right;
+  color:#666666;
+  margin:5px 10px 0 0 ;
+}
+
+.el_cen_cen {
+  float:left;
+  width:400px;
+  margin-left:20px;
+}
+
+.el_cen_cen h2 {
+  line-height:28px;
+  margin-left:30px;
+  margin-bottom:3px;
+}
+
+.el_cen_cen img {
+  background:url(../img/cpzx_bg.gif) left center no-repeat;
+}
+
+.el_cen_cen ul li {
+  line-height:23px;
+  list-style:none;
+}
+
+.el_cen_right {
+  float:right;
+  width:240px;
+  height:125px;
+  padding-top:40px;
+  background:url(../img/icon_1.gif) 80% 100% no-repeat;
+}
+
+.el_cen_right a {
+  display:block;
+  padding:0 10px;
+  color:#666666;
+  text-decoration:none;
+  line-height:28px;
+  border-bottom:1px solid #eaeaea;
+  background:url(../img/icon.gif) 90% 50% no-repeat;
+}
+
+.el_cen_right a:hover {
+  line-height:26px;
+  color:#000000;
+  border:1px solid #ff7e11;
+  background:url(../img/icon_2.gif) 90% 50% no-repeat;
+}
+
+/* center e */
+
+#el_cgal {
+  padding-top:10px;
+  height:130px;
+  background:#ffffff url(../img/cgal.jpg) left center no-repeat;
+}
+
+#el_cgal img {
+  border:none;
+  float:right;
+  padding:10px 10px;
+  vertical-align:middle;
+}
+
+#colee_left {
+  overflow:hidden; 
+  width:830px; 
+  float:right;
+  margin-right:20px;
+  
+}
+
+/* 成功案例 s */
+
+.div_auto_1 {
+  margin-top:8px;
+  /*padding:8px 0;*/
+  background:url(../img/cgal.jpg) left top repeat-x;
+}
+.div_auto_1 img {
+  border: 1px solid #ccc;
+  background-color: white;
+  margin: 0px 10px;
+  width:100px;
+  height:100px;
+  display: block;
+  float:left;
+}
+
+.div_jcarousel_1 {
+  float:right;
+  margin:10px 20px;
+}
+
+/* 成功案例 e */

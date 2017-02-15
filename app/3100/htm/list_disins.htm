@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>退保管理--退保记录--列表</title>
+    </head>
+    <body>
+        <div id="box_title">
+            <span id="sys_title">退保管理--退保记录--列表</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>
+            </div>
+        </div>
+         <table id="search_tb"  width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td>公民身份证号：</td>
+                <td><input id="d_idcard" class="search" type="text"></td>
+                <td>姓名：</td>
+                <td><input id="d_name" class="search" type="text"></td>
+                <td>参保编号：</td>
+                <td><input id="d_ins_code" class="search" type="text"></td>
+                <td>&nbsp;</td>
+                <td><input id="btn_search" type="button" value="搜索"/></td>
+            </tr>
+        </table>
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="50"  align="center"/>
+            <col width="60"  align="center"/>
+            <col width="50"  align="center"/>
+            <col width="50"  align="center"/>
+            <col width="60"  align="center"/>
+            <col width="100" align="center"/>
+            <col width="100" align="center"/>
+            <col width="110" align="center"/>
+            <col width="60" align="center"/>
+            <col width="60" align="center"/>
+            <col width="50" align="center"/>
+            <col width="60" align="center"/>
+            <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>退保业务</td>
+                    <td>姓名</td>
+                    <td>性别</td>
+                    <td>参保编号</td>
+                    <td>身份证号</td>
+                    <td>退款金额</td>
+                    <td>受益人</td>
+                    <td>参保状态</td>
+                    <td>发放状态</td>
+                    <td>备注</td>
+                    <td>发布时间</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>文本</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td id="jpage_box"></td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_disins" />
+<script type="text/javascript" src="../js/common.js"></script>

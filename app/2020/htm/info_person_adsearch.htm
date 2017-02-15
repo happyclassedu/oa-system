@@ -1,0 +1,409 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>简历全能搜索-人才网站管理系统php1.0地区版</title>
+         <LINK href="../css/www.css" type="text/css" rel=stylesheet>
+    </head>
+    <body>
+      <!--页面顶部-->
+  <IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+        <!--页面主体-->
+        <TABLE border=0 cellSpacing=0 cellPadding=0 width=980 align=center>
+            <TBODY>
+                <TR vAlign=top>
+                    <td><!--左侧-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 8px" height=28 background="../img/left2_bg.gif">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td style="PADDING-TOP: 5px" height=28 background="../img/left2_t2.jpg"  width=85 align=middle><A id="a_info_person" href="" target="_parent">快速搜索</A></td>
+                                                    <td width=5>&nbsp;</td>
+                                                    <td style="PADDING-TOP: 5px" background="../img/left2_t1.gif" width=85  align=middle><B><font color=#ff6600>全能搜索</font></B></td>
+                                                    <td>&nbsp;</td></TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-LEFT: #027bc5 2px solid; PADDING-LEFT: 5px; BORDER-RIGHT: #027bc5 2px solid; PADDING-TOP: 8px">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=2 width="100%">
+                                            <TBODY>
+                                                <TR vAlign=top>
+                                                    <td height=28 width=75 align=right>期望职位：</td>
+                                                    <td height=28>
+                                                        <select style="width: 300px" id="d_big_classification">
+                                                            <option selected value="0">职位不限</option>
+                                                        </select>
+                                                    </td>
+                                                </TR>
+                                                <TR vAlign=top>
+                                                    <td height=28 width=75 align=right>&nbsp;</td>
+                                                    <td height=28>
+                                                        <select style="width: 300px" id="d_small_classification">
+                                                            <option selected value="0">不限</option>
+                                                        </select>
+                                                    </td>
+                                                </TR>
+                                                <TR vAlign=top>
+                                                    <td height=28 width=75 align=right>期望地区：</td>
+                                                    <td height=28>
+                                                        <select style="width: 300px" id="d_addr1">
+                                                            <option selected value="0">地区不限</option>
+                                                        </select>
+                                                    </td>
+                                                </TR>
+                                                <TR vAlign=top>
+                                                    <td height=28 width=75 align=right>&nbsp;</td>
+                                                    <td height=28>
+                                                        <select style="width: 300px" id="d_addr2">
+                                                            <option selected value="0">不限</option>
+                                                        </select>
+                                                     </td>
+                                                </TR>
+                                                <TR vAlign=top>
+                                                    <td height=28 width=75 align=right>行&nbsp;&nbsp;&nbsp;&nbsp;业：</td>
+                                                    <td height=28>
+                                                        <select style="width: 300px" id="d_trade">
+                                                            <option selected value="0">行业不限</option>
+                                                        </select>
+                                                    </td>
+                                                </TR>
+                                                <TR vAlign=top>
+                                                    <td height=28 width=75 align=right>求职性质：</td>
+                                                    <td height=28>
+                                                        <select style="width: 140px" id="d_type2">
+                                                            <option selected value="">不限</option>
+                                                            <option value="全职">全职</option>
+                                                            <option value="兼职">兼职</option>
+                                                            <option value="临时">临时</option>
+                                                            <option value="实习">实习</option>
+                                                            <option value="见习">见习</option>
+                                                        </select>
+                                                    </td>
+                                                </TR>
+                                                <TR vAlign=top>
+                                                    <td height=28 width=75 align=right>学&nbsp;&nbsp;&nbsp;&nbsp;历：</td>
+                                                    <td height=28>
+                                                        <select style="width: 140px" id="d_degree">
+                                                            <option selected value="">不限</option>
+                                                            <option value="博士">博士</option>
+                                                            <option value="MBA">MBA</option>
+                                                            <option value="本科">本科</option>
+                                                            <option value="大专">大专</option>
+                                                            <option value="中专">中专</option>
+                                                            <option value="中技">中技</option>
+                                                            <option value="高中">高中</option>
+                                                            <option value="初中">初中</option>
+                                                        </select>
+                                                    </td>
+                                                </TR>
+                                                <TR vAlign=top>
+                                                    <td height=28 width=75 align=right>工作经验：</td>
+                                                    <td height=28>
+                                                        <select style="width: 140px" id="d_history">
+                                                            <option selected value=''>不限</option>
+                                                            <option value="在校学生">在校学生</option>
+                                                            <option value="应届毕业生">应届毕业生</option>
+                                                            <option value="1年以上">1年以上</option>
+                                                            <option value="2年以上">2年以上</option>
+                                                            <option value="3年以上">3年以上</option>
+                                                            <option value="4年以上">4年以上</option>
+                                                            <option value="5年以上">5年以上</option>
+                                                            <option value="8年以上">8年以上</option>
+                                                            <option value="10年以上">10年以上</option>
+                                                        </select>
+                                                    </td>
+                                                </TR>
+                                                <TR vAlign=top>
+                                                    <td height=28 width=75 align=right>性&nbsp;&nbsp;&nbsp;&nbsp;别：</td>
+                                                    <td height=28>
+                                                        <select style="width: 140px" id="d_sex">
+                                                            <option selected value="">不限</option>
+                                                            <option value="男">男</option>
+                                                            <option value="女">女</option>
+                                                        </select>
+                                                    </td>
+                                                </TR>
+                                                <TR vAlign=top>
+                                                    <td height=28 width=75 align=right>年&nbsp;&nbsp;&nbsp;&nbsp;龄：</td>
+                                                    <td height=28>
+                                                        <select style="width: 141px" id="d_age_1">
+                                                            <option selected value="">不限</option>
+                                                            <option value=18>18</option>
+                                                            <option value=19>19</option>
+                                                            <option value=20>20</option>
+                                                            <option value=21>21</option>
+                                                            <option value=22>22</option>
+                                                            <option value=23>23</option>
+                                                            <option value=24>24</option>
+                                                            <option value=25>25</option>
+                                                            <option value=26>26</option>
+                                                            <option value=27>27</option>
+                                                            <option value=28>28</option>
+                                                            <option value=29>29</option>
+                                                            <option value=30>30</option>
+                                                            <option value=31>31</option>
+                                                            <option value=32>32</option>
+                                                            <option value=33>33</option>
+                                                            <option value=34>34</option>
+                                                            <option value=35>35</option>
+                                                            <option value=36>36</option>
+                                                            <option value=37>37</option>
+                                                            <option value=38>38</option>
+                                                            <option value=39>39</option>
+                                                            <option value=40>40</option>
+                                                            <option value=41>41</option>
+                                                            <option value=42>42</option>
+                                                            <option value=43>43</option>
+                                                            <option value=44>44</option>
+                                                            <option value=45>45</option>
+                                                            <option value=46>46</option>
+                                                            <option value=47>47</option>
+                                                            <option value=48>48</option>
+                                                            <option value=49>49</option>
+                                                            <option value=50>50</option>
+                                                            <option value=51>51</option>
+                                                            <option value=52>52</option>
+                                                            <option value=53>53</option>
+                                                            <option value=54>54</option>
+                                                            <option value=55>55</option>
+                                                            <option value=56>56</option>
+                                                            <option value=57>57</option>
+                                                            <option value=58>58</option>
+                                                            <option value=59>59</option>
+                                                            <option value=60>60</option>
+                                                        </select>
+                                                        -
+                                                        <select style="width: 140px" id="d_age_2">
+                                                            <option selected value="">不限</option>
+                                                            <option value=18>18</option>
+                                                            <option value=19>19</option>
+                                                            <option value=20>20</option>
+                                                            <option value=21>21</option>
+                                                            <option value=22>22</option>
+                                                            <option value=23>23</option>
+                                                            <option value=24>24</option>
+                                                            <option value=25>25</option>
+                                                            <option value=26>26</option>
+                                                            <option value=27>27</option>
+                                                            <option value=28>28</option>
+                                                            <option value=29>29</option>
+                                                            <option value=30>30</option>
+                                                            <option value=31>31</option>
+                                                            <option value=32>32</option>
+                                                            <option value=33>33</option>
+                                                            <option value=34>34</option>
+                                                            <option value=35>35</option>
+                                                            <option value=36>36</option>
+                                                            <option value=37>37</option>
+                                                            <option value=38>38</option>
+                                                            <option value=39>39</option>
+                                                            <option value=40>40</option>
+                                                            <option value=41>41</option>
+                                                            <option value=42>42</option>
+                                                            <option value=43>43</option>
+                                                            <option value=44>44</option>
+                                                            <option value=45>45</option>
+                                                            <option value=46>46</option>
+                                                            <option value=47>47</option>
+                                                            <option value=48>48</option>
+                                                            <option value=49>49</option>
+                                                            <option value=50>50</option>
+                                                            <option value=51>51</option>
+                                                            <option value=52>52</option>
+                                                            <option value=53>53</option>
+                                                            <option value=54>54</option>
+                                                            <option value=55>55</option>
+                                                            <option value=56>56</option>
+                                                            <option value=57>57</option>
+                                                            <option value=58>58</option>
+                                                            <option value=59>59</option>
+                                                            <option value=60>60</option>
+                                                          </select>
+                                                    </td></TR>
+                                                <TR vAlign=top>
+                                                    <td height=28 width=75 align=right>薪金类型</td>
+                                                    <td height=28>
+                                                        <select style="width: 300px" id="d_pay_type">
+                                                            <option selected value="">不限</option>
+                                                            <option value="元/日">按日</option>
+                                                            <option value="元/月">按月</option>
+                                                            <option value="元/季">按季</option>
+                                                            <option value="元/年">按年</option>
+                                                        </select>
+                                                    </td>
+                                                </TR>
+                                                <TR vAlign=top>
+                                                    <td height=28 width=75 align=right>薪资金额</td>
+                                                    <td height=28>
+                                                        <input id="d_pay" style="width: 230px" />人民币
+                                                    </td>
+                                                </TR>
+                                                <TR vAlign=top>
+                                                    <td height=28 width=75 align=right>更新日期：</td>
+                                                    <td height=28>
+                                                        <select style="width: 240px" id="d_job_day">
+                                                            <option selected value="0">日期不限</option>
+                                                            <option value="1">近一天</option>
+                                                            <option value="2">近两天</option>
+                                                            <option value="3">近三天</option>
+                                                            <option value="7">近一周</option>
+                                                            <option value="14">近两周</option>
+                                                            <option value="30">近一月</option>
+                                                            <option  value="60">近两月</option>
+                                                            <option value="90">近三月</option>
+                                                        </select>
+                                                    </td>
+                                                </TR>
+                                                <TR vAlign=top>
+                                                    <td style="PADDING-TOP: 3px" height=28 width=75 align=right>关键字：</td>
+                                                    <td height=28>
+                                                        <input style="width: 514px" id="d_key" onclick="this.value='';" value="请输入关键字">
+                                                        <input name="d_key_class"  value="name" CHECKED type="radio" />职位
+                                                        <input name="d_key_class"  value="fname" type="radio" />公司
+                                                    </td>
+                                                </TR>
+                                                <TR>
+                                                    <td height=28 width=75 align=right>&nbsp;</td>
+                                                    <td height=28><input id="btn_search"  value=" 开始搜索 " type="button"></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td><IMG src="../img/left2_bottom.gif" width=770   height=12></td>
+                                </TR>
+                            </TBODY></TABLE>
+                    </td>
+                    <td width=10>&nbsp;</td>
+                    <td width=200><!--开始-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5   height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B><font color=#ffffff><span id=Mark>会员中心</span></font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right.jpg" width=5 height=30></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; BORDER-RIGHT: #a4cbee 1px solid; PADDING-TOP: 3px"><!--企业会员信息-->
+                                        <DIV id=Login1_pan_UserInfo>
+                                            <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                <TBODY>
+                                                    <TR>
+                                                        <td height=27 align=middle>欢迎您『 <span style="COLOR: red" id=Login2_lbl_Username>ak_qbw</span> 』</td></TR>
+                                                    <TR>
+                                                        <td height=27 align=middle><IMG src="../img/Icon3.gif" width=7 height=7> <A
+                                                                href="list_search.htm">职位管理</A>&nbsp;&nbsp;&nbsp;<IMG
+                                                                src="../img/Icon3.gif" width=7 height=7> <A
+                                                                href="list_resume_accept.htm">招聘管理</A></td></TR>
+                                                    <TR>
+                                                        <td height=27 align=middle><IMG src="../img/Icon3.gif" width=7
+                                                                                        height=7> <A href="info_com_account.htm">服务管理</A>&nbsp;&nbsp;&nbsp;<IMG
+                                                                                        src="../img/Icon3.gif" width=7 height=7> <A
+
+                                                                                        href="info_com_basic.htm">帐号管理</A></td></TR>
+                                                    <TR>
+                                                        <td height=27 align=middle><IMG src="../img/Icon3.gif" width=7 height=7> 视频招聘&nbsp;&nbsp;&nbsp;<IMG
+                                                                src="../img/Icon3.gif" width=7 height=7> <A   href="info_com_login.htm">安全退出</A></td>
+                                                    </TR>
+                                                </TBODY></TABLE>
+                                      </DIV><!--会员登录-->
+                                    </td></TR>
+                            </TBODY></TABLE>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+                            <TBODY>
+                                <TR>
+                                    <td height=5></td>
+                                </TR>
+                            </TBODY></TABLE><!--结束--><!--开始-->
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                            <TBODY>
+                                <TR>
+                                    <td height=28>
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR>
+                                                    <td height=30 width=5><IMG src="../img/right1_left.jpg" width=5   height=30></td>
+                                                    <td background="../img/right1_t1.jpg" width=75 align=middle><B><font color=#ffffff>英才自荐</font></B></td>
+                                                    <td background="../img/right1_bg.jpg">&nbsp;</td>
+                                                    <td width=5><IMG src="../img/right1_right.jpg" width=5   height=30></td>
+                                                </TR>
+                                            </TBODY></TABLE>
+                                    </td></TR>
+                                <TR>
+                                    <td style="BORDER-BOTTOM: #a4cbee 1px solid; BORDER-LEFT: #a4cbee 1px solid; PADDING-BOTTOM: 3px; PADDING-LEFT: 10px; BORDER-RIGHT: #a4cbee 1px solid; PADDING-TOP: 3px">
+                                        <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                            <TBODY>
+                                                <TR height=22>
+                                                    <td width="27%"><B>姓名</B></td>
+                                                    <td><B>现职位</B></td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                        <DIV style="HEIGHT: 176px; OVERFLOW: hidden" id=demo>
+                                            <DIV id=demo1>
+                                                <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Person_Showme   border=0 cellSpacing=0 cellPadding=0>
+                                                    <TBODY>
+                                                        <TR>
+                                                            <td>
+                                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                    <TBODY>
+                                                                        <TR height=22>
+                                                                            <td width="27%"><A href="../Html/Resume/10148.html"  target=_blank>wangzq</A></td>
+                                                                            <td><span id=lit_Person_Showme__ctl0_lbl_CurrentJob><span id=Mark>技工</span></span></td>
+                                                                        </TR>
+                                                                    </TBODY></TABLE>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td>
+                                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                    <TBODY>
+                                                                        <TR height=22>
+                                                                            <td width="27%"><A href="../Html/Resume/10149.html" target=_blank>欣欣</A></td>
+                                                                            <td><span id=lit_Person_Showme__ctl1_lbl_CurrentJob>硬件工程师</span></td>
+                                                                        </TR>
+                                                                    </TBODY></TABLE>
+                                                            </td></TR>
+                                                    </TBODY></TABLE></DIV>
+                                            <DIV id=demo2>
+                                                <TABLE style="width: 100%; BORDER-COLLAPSE: collapse" id=lit_Person_Showme    border=0 cellSpacing=0 cellPadding=0>
+                                                    <TBODY>
+                                                        <TR>
+                                                            <td>
+                                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                    <TBODY>
+                                                                        <TR height=22>
+                                                                            <td width="27%"><A href="http://job5.fdkjgz.com/Html/Resume/10148.htm"  target=_blank>wangzq</A></td>
+                                                                            <td><span id=lit_Person_Showme__ctl0_lbl_CurrentJob><span id=Mark>技工</span></span>
+                                                                            </td></TR>
+                                                                    </TBODY></TABLE>
+                                                            </td></TR>
+                                                        <TR>
+                                                            <td>
+                                                                <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                    <TBODY>
+                                                                        <TR height=22>
+                                                                            <td width="27%"><A href="http://job5.fdkjgz.com/Html/Resume/10149.html"   target=_blank>欣欣</A></td>
+                                                                            <td><span id=lit_Person_Showme__ctl1_lbl_CurrentJob>硬件工程师</span></td></TR>
+                                                                    </TBODY></TABLE>
+                                                            </td></TR>
+                                                    </TBODY></TABLE>
+                                            </DIV></DIV>
+                                    </td></TR>
+                            </TBODY></TABLE>
+                    </td>
+                </TR>
+            </TBODY>
+        </TABLE><!--页面底部-->
+       <IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_person_adsearch" />
+<script type="text/javascript" src="../js/common.js"></script>

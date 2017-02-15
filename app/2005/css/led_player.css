@@ -1,0 +1,68 @@
+/**
+ * 文件名称：phase_list.css
+ * 功能描述：期次信息列表界面样式。
+ * 代码作者：王争强（创建）
+ * 创建日期：2010-06-12
+ * 修改日期：2010-06-12
+ * 当前版本：V2.0
+*/
+
+body {
+    background-image: none;
+    background-color: #000000;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.Title1 {
+    color: #FF0000;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.Title2 {
+    color: #FFFF00;
+    font-size: 14px;
+    font-weight:bolder;
+    text-align:center;
+}
+
+.Title3 {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align:left;
+}
+
+.Title4 {
+    color: #FF0000;
+    font-size: 14px;
+    text-align:left;
+    margin-top:5px;
+}
+
+#notice_box {
+    color: #FFFFFF;
+    background-color: #0033CC;
+    z-index: 100;
+    position: absolute;
+    font-size: 14px;
+    margin-top: 220px;
+    padding-top: 4px;
+    width: 512px;
+}
+
+#diy_box {
+    color: #FFFFFF;
+    text-align: center;
+    width: 512px;
+}
+
+
+
+#info_box tbody {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align:left;
+    text-indent: 4px;
+}

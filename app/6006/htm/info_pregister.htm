@@ -1,0 +1,175 @@
+<table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+    <col width="200" align="center" />
+    <col width="210" />
+    <col width="390" />
+    <tbody>
+        <tr id="tr_title" class="tb_title0">
+            <td colspan="3">个人会员注册</td>
+        </tr>
+        <tr class="tr_0">
+            <td align="right"><font color=#ff0000>*</font> 用户帐号：</td>
+            <td>
+                <input id="d_loginid" style="width: 200px" type="text" />
+            </td>
+            <td id="d_error_loginid"></td>
+        </tr>
+        <tr class="tr_1">
+            <td align="right"><font color=#ff0000>*</font> 登录密码：</td>
+            <td>
+                <input style="width: 200px" id="d_loginpw" type="password"/>
+            </td>
+            <td id="d_error_loginpw"></td>
+        </tr>
+        <tr class="tr_0">
+            <td align="right"><font color=#ff0000>*</font> 确认密码：</td>
+            <td>
+                <input style="width: 200px" id="d_loginpw_qr" type="password"/>
+            </td>
+            <td id="d_error_loginpw_qr"></td>
+        </tr>
+        <tr class="tr_1">
+            <td align="right"><font color=#ff0000>*</font> 姓　　名：</td>
+            <td>
+                <input id="d_name" style="width: 200px"  type="text"/>
+            </td>
+            <td id="d_error_name"></td>
+        </tr>
+        <tr class="tr_0">
+            <td align="right">性　　别：</td>
+            <td>
+                <input id="d_sex" name="d_sex" type="radio" value="男" />
+                <label for="d_sex">男</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input id="d_sex2" name="d_sex" type="radio" value="女" />
+                <label for="d_sex2">女</label>
+            </td>
+            <td id="d_error_sex"></td>
+        </tr>
+        <tr class="tr_1">
+            <td align="right">出生日期：</td>
+            <td>
+                <input style="width: 50px" id="d_birth_y" type="text"/>年
+                <select style="width: 40px" id="d_birth_m">
+                    <option value="" selected></option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>月
+                <select style="width: 40px" id="d_birth_d">
+                    <option value="" selected></option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>日
+                <input id="d_birth" type="hidden"/>年
+            </td>
+            <td id="d_error_birth"></td>
+        </tr>
+        <tr class="tr_0">
+            <td align="right"><font color=#ff0000>*</font>毕业院校：</td>
+            <td>
+                <input style="width: 200px" id="d_univ" type="text"/>
+            </td>
+            <td id="d_error_univ"></td>
+        </tr>
+        <tr class="tr_1">
+            <td align="right"><font color=#ff0000>*</font>专业方向：</td>
+            <td>
+                <input style="width: 200px" id="d_major" type="text"/>
+            </td>
+            <td id="d_error_major"></td>
+        </tr>
+        <tr class="tr_0">
+            <td align="right"><font color=#ff0000>*</font>学历学位：</td>
+            <td>
+                <select style="width: 80px" id="d_degree">
+                    <option value="" selected></option>
+                    <option value="04">高中</option>
+                    <option value="04">中专</option>
+                    <option value="02">大专</option>
+                    <option value="01">本科</option>
+                    <option value="03">硕士</option>
+                    <option value="03">博士</option>
+                </select>
+            </td>
+            <td id="d_error_degree"></td>
+        </tr>
+        <tr class="tr_1">
+            <td align="right"><font color=#ff0000>*</font> 手　　机：</td>
+            <td>
+                <input style="width: 200px" id="d_mobile" type="text"/>
+            </td>
+            <td id="d_error_mobile"></td>
+        </tr>
+        <tr class="tr_0">
+            <td align="right">电　　话：</td>
+            <td>
+                <input style="width: 200px" id="d_tel" type="text"/>
+            </td>
+            <td id="d_error_tel"></td>
+        </tr>
+        <tr class="tr_1">
+            <td align="right"><font color=#ff0000>*</font> 电子邮箱：</td>
+            <td>
+                <input style="width: 200px" id="d_email" type="text"/>
+            </td>
+            <td id="d_error_email"></td>
+        </tr>
+        <tr class="tr_0">
+            <td align="right">现在住址：</td>
+            <td>
+                <input style="width: 200px" id="d_addr" type="text"/>
+            </td>
+            <td id="d_error_addr"></td>
+        </tr>
+        <tr class="tr_1">
+            <td colspan="3" align="center">
+                <input id="d_agree" type="checkbox" checked style="width: 15px"/>&nbsp;我已认真阅读并同意<a href="./info_600.htm" target=_blank>&nbsp;<u>曲江人才网用户协议</u></a>
+            </td>
+        </tr>
+        <tr id="tr_act" class="tb_title0">
+            <td colspan="3" align="center">
+                <input id="btn_save" type="button" value="确认注册">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<input type="hidden" id="g_id" value="info_pregister" />
+<script type="text/javascript" src="../js/common.js"></script>

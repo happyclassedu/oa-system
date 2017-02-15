@@ -1,0 +1,55 @@
+<!--lefter s-->
+<div id="gd_cen_left">
+    <div id="gd_left_login">
+        <h1>会员登录</h1>
+        <ul>
+            <li>会员名:
+                <label>
+                    <input type="text" name="textfield" />
+                </label>
+            </li>
+            <li>密　码:
+                <input type="text" name="textfield2" />
+            </li>
+        </ul>
+        <input type="button" class="login_bot" value="登录" />
+        <input type="button" class="login_bot" value="注册" />
+    </div>
+<!--    <div id="gd_cpjs">
+        <h2>产品简介</h2>
+        <a href="#">美术品系列</a>
+        <a href="#">实用品系列</a>
+        <a href="#">装饰品系列</a>
+        <a href="#">宗教品系列</a>
+    </div>
+    <div class="left_fl">
+        <a href="#">家具收藏</a>
+        <a href="#">茶文化</a>
+        <a href="#">宗教文化</a>
+    </div>-->
+    <div id="gd_left_djph">
+        <h1>产品简介</h1>
+        <ul>
+            <!--{ foreach item=tmp from=$ws.lefter_menu }-->
+            <li><a href="<!--{$tmp.url_act}-->"><!--{$tmp.name}--></a></li>
+            <!--{ /foreach }-->
+        </ul>
+    </div>
+    <div id="gd_left_zxzx">
+        <h1>最新资讯</h1>
+        <ul>
+            <!--{ foreach item=tmp from=$ws.lefter_news }-->
+            <li><a href="<!--{$tmp.url_act}-->"><!--{$tmp.name|truncate_i:12:"…"}--></a></li>
+            <!--{ /foreach }-->
+        </ul>
+    </div>
+    <div id="gd_left_lxwm">
+        <h1>联系我们</h1>
+        <ul>
+            <li>联系电话：13571994071</li>
+            <li>联系人：唐先生</li>
+            <li>地址：文艺南路28号科技一号楼副2号</li>
+        </ul>
+    </div>
+</div>
+<!--lefter e-->

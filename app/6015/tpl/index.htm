@@ -1,0 +1,18 @@
+<div id="gd_cen" class="div_gd_center">
+    <!--{include file="lefter`$ws.mk`.htm"}-->
+    <div id="gd_cen_rig">
+        <img src="../img/gsjj.gif" />
+        <h5>产品展示</h5>
+         <ul id="gd_cpzs">
+             <!--{ foreach item=tmp from=$ws.index_news1 }-->
+            <li><a href="<!--{$tmp.url}-->"><img src="doc::<!--{$tmp.img}-->" width="150" /></a><br /><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a></li>
+            <!--{ /foreach }-->
+	</ul>
+        <h5>详细分类</h5>
+        <ul id="gd_xxfl">
+            <!--{ foreach item=tmp from=$ws.index_news2 }-->
+            <li><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a></li>
+            <!--{ /foreach }-->
+        </ul>
+    </div>
+</div>

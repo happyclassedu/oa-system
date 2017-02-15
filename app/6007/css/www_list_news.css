@@ -1,0 +1,26 @@
+#list_tb {
+  padding-top:30px;
+}
+
+#list_tb tr {
+  line-height:30px;
+  text-align:left;
+}
+
+#val_search {
+  margin-bottom:10px;
+}
+
+#list_tb tr a {
+  text-align:left!important;
+}
+
+#box_title {
+  float:right;
+  padding-right:20px;
+}
+
+#box_title p {
+  line-height:35px;
+  width:100%!important;
+}

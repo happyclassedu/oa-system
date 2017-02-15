@@ -1,0 +1,157 @@
+#tab_bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 29px;
+    background-image: url('../img/tab_bg.png');
+    background-repeat: repeat-x;
+}
+
+#tab_bar div {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-left: -10px;
+    width: 150px;
+    height: 29px;
+    float: left;
+    text-indent: 20px;
+    line-height: 32px;
+    font-size: 12px;
+    color: #333333;
+    z-index: 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.tab_show {
+    background-image: url(../img/tab_show_bg.gif);
+    z-index: 100;
+    font-weight: 800;
+}
+
+.tab_hide {
+    color: #333333;
+    background-image: url(../img/tab_hide_bg.gif);
+    z-index: 0;
+}
+
+.tab_over {
+    background-image: url(../img/tab_over_bg.gif);
+    color: #FF0000 !important;
+    font-weight: 800;
+}
+
+#tab_bar .close{
+    top: 8px;
+    right: 10px;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    float: left;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-image: url('../img/tab_del.gif');
+}
+
+#tab_bar .close_over {
+    background-image: url('../img/tab_del_over.gif');
+}
+
+#tab_control {
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    width: 110px;
+    height: 20px;
+}
+
+#tab_control span {
+    margin-left: 2px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+#tab_move_left {
+    background-image: url('../img/tab_move_left.gif');
+}
+
+.tab_move_left_over {
+    background-image: url('../img/tab_move_left_over.gif') !important;
+}
+
+#tab_move_right {
+    background-image: url('../img/tab_move_right.gif');
+}
+
+.tab_move_right_over {
+    background-image: url('../img/tab_move_right_over.gif') !important;
+}
+
+#tab_del_all {
+    background-image: url('../img/tab_del_all.gif');
+}
+
+.tab_del_all_over {
+    background-image: url('../img/tab_del_all_over.gif') !important;
+}
+
+#tab_max {
+    background-image: url('../img/tab_max.gif');
+}
+
+.tab_max_over {
+    background-image: url('../img/tab_max_over.gif') !important;
+}
+
+#tab_list {
+    background-image: url('../img/tab_list.gif');
+}
+
+.tab_list_over {
+    background-image: url('../img/tab_list_over.gif') !important;
+}
+
+#tab_list_con {
+    display: none;
+    position: absolute;
+    top: 23px;
+    right: 0px;
+    width: 250px;
+    height: auto;
+    border: 1px dashed #5C82C1;
+    background-color: #F7FDFF;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+#tab_list_con a {
+    display: block;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+}
+
+#tab_list_con a:hover {
+    border: 1px solid #8FB9EB;
+    background-color: #C2DBF5;
+}
+
+#tab_con {
+    position: absolute;
+    top: 29px;
+    left: 0px;
+    width: 100%;
+    height: 80%;
+    z-index: 0;
+}
+
+#tab_con iframe {
+    width: 100%;
+    height: 100%;
+}

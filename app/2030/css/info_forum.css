@@ -1,0 +1,60 @@
+/**
+ * 文件名称：info_forum.css
+ * 功能描述：列表样式。
+ * 代码作者：孙振强（创建）
+ * 创建日期：2010-06-10
+ * 修改日期：2010-07-10
+ * 当前版本：V2.0
+*/
+
+#info_answer {
+    border: 0px;
+}
+
+#info_answer tbody tr {
+    line-height: 30px;
+}
+
+#info_answer tbody td {
+    border: solid #F5F5F5 1px;
+}
+
+#info_answer tbody input,
+#info_answer tbody textarea {
+    width: 100%;
+    text-indent: 4px;
+    padding-top: 2px;
+}
+
+#list_answer {
+    line-height : 25px;
+    border : 1px solid #d5d5d5;
+    border-collapse : collapse;
+/*    border : none;*/
+    background-color : #FFFFFF;
+}
+
+#list_answer thead tr {
+    text-align : center;
+    line-height : 35px;
+    font-size : 16px;
+    font-weight : bold;
+    background : url('../img/tb_title4.png');
+}
+
+#list_answer tbody tr {
+    line-height : 28px;
+}
+
+#list_answer td {
+    border : solid #F5F5F5 1px;
+}
+
+.list_td_click {
+    cursor: pointer;
+    /*color: blue;*/
+    font-weight: bolder;
+    font-size: 13px;
+    /*text-decoration: underline;*/
+}
+

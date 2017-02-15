@@ -1,0 +1,56 @@
+/**
+ * 文件名称：info.css
+ * 功能描述：info页面公用CSS文件。
+ * 代码作者：孙振强（创建）
+ * 创建日期：2010-06-10
+ * 修改日期：2010-07-10
+ * 当前版本：V2.0
+*/
+
+#info_tb {
+    border: 0px;
+}
+
+#info_tb tbody tr {
+    line-height: 30px;
+}
+
+#info_tb tbody td {
+    border: solid #F5F5F5 1px;
+}
+
+#info_tb tbody input,
+#info_tb tbody textarea {
+    width: 100%;
+    text-indent: 4px;
+    padding-top: 2px;
+}
+
+#info_tb tbody select {
+    width: 100%;
+    text-indent: 4px;
+    padding-top: 2px;
+}
+
+.info_must {
+    border-color: red;
+    border-width: 1px;
+}
+
+#act_tb {
+    border: none;
+}
+
+#act_tb tr {
+    height: 30px;
+}
+
+#act_tb td {
+    text-align: center;
+}
+
+#btn_save,
+#btn_cancel {
+    width: 120px;
+    letter-spacing: 4px;
+}

@@ -1,0 +1,59 @@
+{include file="header.htm"}
+<div class="mainbox" style="margin:10px auto;text-align:left">
+{if $tq!=""}<iframe src="http://m.weather.com.cn/m/pn11/weather.htm?id=101230{$tq}01T " width="490" height="50" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>{/if}
+</div>
+<div class="mainbox">
+<div class="v_left">
+	<div class="left_block">
+		<div class="img"><img src="{$xm_global.cfg_basehost}{$brief.pic}"  width="250px" height="180px" /></div>
+		<div class="ad">
+			<div class="code"><strong>区号</strong>：{$brief.code} <strong>邮编</strong>：{$brief.post}</div>
+			
+			<div id="ad_1">加载中...</div>
+		
+		</div>
+	
+	</div>
+	
+	
+	
+	
+	<div class="left_block1">
+		<div class="title"><h3>{$local_name.name}简介</h3></div>
+	<p>{$brief.brief}</p>
+	
+	</div>
+	
+
+
+</div>
+
+
+
+
+
+<div class="v_right">
+	<div class="list1">
+		<div><h3>{$local_name.name}景点排行</h3></div>
+		<ul>
+		{section name=v loop=$view}
+			<LI><IMG src="templates/images/num{$smarty.section.v.index+1}.gif"><A   href="scenic.php?id={$view[v].id}" target=_blank>{$view[v].vname}</A> <SPAN class=first>{$view[v].vclick}次</SPAN> </LI>
+		{/section}	
+		
+		</ul>
+	</div>
+	
+		<div class="list1">
+		<div><h3>{$local_name.name}旅行社</h3></div>
+		<ul>
+		{section name=h loop=$hotel}
+			<LI><IMG src="templates/images/num{$smarty.section.h.index+1}.gif"><A   href="info.php?id={$hotel[h].id}" title="电话:{$hotel[h].ctel}" target=_blank>{$hotel[h].cname|truncate:36:"..."}</A> </LI>
+		{/section}	
+		
+		</ul>
+	</div>
+
+
+</div>
+</div>
+{include file="foot_v.htm"}

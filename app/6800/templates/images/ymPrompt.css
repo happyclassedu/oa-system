@@ -1,0 +1,75 @@
+#ym-window {
+	FONT-SIZE: 12px; BACKGROUND: #fff7ea; FILTER: progid:DXImageTransform.Microsoft.Shadow(Color=#ff6666, Strength=5, Direction=135); OVERFLOW: hidden; FONT-FAMILY: 'ËÎÌו'
+}
+.ym-tl {
+	PADDING-LEFT: 3px; BACKGROUND: url(title_bg_left.gif) #ffc677 no-repeat 0px 0px
+}
+.ym-tr {
+	PADDING-RIGHT: 3px; BACKGROUND: url(title_bg_right.gif) #ffc677 no-repeat right 0px
+}
+.ym-tc {
+	BACKGROUND: url(title_bg_center.gif) #ffc677 repeat-x 0px 0px; OVERFLOW: hidden; LINE-HEIGHT: 25px; HEIGHT: 25px
+}
+.ym-ttc {
+	HEIGHT: 3px
+}
+.ym-header-text {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FLOAT: left; MARGIN-LEFT: 5px; COLOR: #fff
+}
+.ym-header-tools {
+	MARGIN-TOP: 5px; FLOAT: right
+}
+.ym-ml {
+	PADDING-LEFT: 3px; BACKGROUND: url(win_l.gif) repeat-y 0px 0px
+}
+.ym-mr {
+	PADDING-RIGHT: 3px; BACKGROUND: url(win_r.gif) repeat-y right 0px
+}
+.ym-mc {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #fff7ea; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.ym-body {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.ym-btn {
+	BACKGROUND: #fff7ea; TEXT-ALIGN: center
+}
+.ym-bl {
+	PADDING-LEFT: 3px; BACKGROUND: url(win_lb.gif) no-repeat 0px bottom
+}
+.ym-br {
+	PADDING-RIGHT: 3px; BACKGROUND: url(win_rb.gif) no-repeat right bottom
+}
+.ym-bc {
+	FONT-SIZE: 3px; BACKGROUND: url(win_b.gif) repeat-x 0px bottom; HEIGHT: 3px
+}
+.ymPrompt_alert {
+	PADDING-LEFT: 90px; BACKGROUND: url(info.gif) no-repeat 20px 50%
+}
+.ymPrompt_succeed {
+	PADDING-LEFT: 90px; BACKGROUND: url(right.gif) no-repeat 20px 50%
+}
+.ymPrompt_error {
+	PADDING-LEFT: 90px; BACKGROUND: url(err.gif) no-repeat 20px 50%
+}
+.ymPrompt_confirm {
+	PADDING-LEFT: 90px; BACKGROUND: url(ask.gif) no-repeat 20px 50%
+}
+.ymPrompt_alert .ym-content {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 50px
+}
+.ymPrompt_succeed .ym-content {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 50px
+}
+.ymPrompt_error .ym-content {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 50px
+}
+.ymPrompt_confirm .ym-content {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 50px
+}
+.ymPrompt_close {
+	BACKGROUND: url(close.gif) no-repeat 0px 0px; WIDTH: 16px; CURSOR: pointer; HEIGHT: 16px
+}
+INPUT.btnStyle {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BACKGROUND: url(btn_bg.gif) no-repeat; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 10px 0px; WIDTH: 80px; COLOR: #183c94; LINE-HEIGHT: 21px; HEIGHT: 21px; BORDER-RIGHT-WIDTH: 0px
+}

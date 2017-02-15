@@ -1,0 +1,73 @@
+/* CSS Document */
+*{
+   font-size:12px;}
+ul li{
+	list-style:none;}
+body{
+	 background-repeat:no-repeat;
+	 background-image:url(../img/bg.jpg);}
+#header{
+     margin:25px auto 0px auto;}
+#center{
+     width:980px;
+	 margin: 0 auto;
+	 background-color:#FFFFFF;
+	 border:1px solid #999999;
+	 border-width:0 1px;
+	 margin-top:-13px;}
+#nav{
+     background:url(../img/list_top_bg.gif) left top no-repeat; 
+	 height:83px;
+	 border:1px solid #f6de92;} 
+#nav ul {
+     float:right;
+	 margin-right:30px;}
+#nav ul li{
+     font-weight:bold;}
+#content table{
+     line-height:27px;}
+#content ul{
+     text-align:center;
+	 line-height:35px;
+	 margin-left:-20px;}
+#content p{
+	 text-align:left;}
+#content .title{
+	 color:#01609a;
+	 font-size:18px;
+	 font-weight:bold;
+}
+#content .time{
+     border-bottom:1px solid #f47e0b;}
+#content ul li a{
+     margin-left:500px;}
+	 
+<!--
+#content ul li a:link,#content ul li a:visited,#content ul li a:hover,#content ul li a:active {
+	color: #ff0000;
+	text-decoration: none;}
+
+-->
+.left_middle{
+    background:url(../img/left_middle_bg.gif) top left repeat-y;}
+.left_middle ul{
+	margin-top:-10px;
+	text-align:center;
+	margin-left:-50px;}
+.left_middle ul li{
+    line-height:35px;
+	font-weight:bold;
+	 background:url(../img/left_middle_bg1.gif) center bottom no-repeat;}	
+<!--
+a:link,a:visited {
+	color: #000000;
+	text-decoration: none;}
+a:hover,a:active {
+	color: #FF0000;
+	text-decoration: none;}
+-->
+
+.photo{ background:url(../img/ju/photo_bg.gif) 22px 10px no-repeat;
+        text-align:center;
+		height:165px;
+		}

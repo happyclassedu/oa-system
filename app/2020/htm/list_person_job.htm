@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+    <HEAD>
+        <META http-equiv=Content-Type content="text/html; charset=utf-8">
+        <TITLE>职位列表 - 人才网站管理系统PHP1.0地区版</TITLE>
+        <LINK href="../css/www.css" type="text/css" rel=stylesheet>
+    </HEAD>
+    <BODY>
+        <!--页面顶部-->
+        <IFRAME align=middle src="person_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME><!--页面主体-->
+        <TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+            <TBODY>
+                <TR vAlign=top>
+                    <td width=188><!--菜单-->
+                        <IFRAME align=left src="person_left.htm" frameBorder=0 scrolling=no width="100%" height=500></IFRAME>
+                    </td>
+                    <td width=10></td>
+                    <td bgColor=#ffffff><!--右侧-->
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom   background="../img/title1_bg.gif"    height=28>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle width=80 background="../img/title1_bg2.jpg" height=28><A id="a_job_list" class=white  href="" target="_parent" ><B>职位列表</B></A></td>
+                                                    <td width=5></td>
+                                                    <td align=middle width=80  background="../img/title1_bg3.jpg"><A id="a_job_favorite"  href="" target="_parent" >职位收藏</A></td>
+                                                    <td width=5></td>
+                                                    <td align=middle width=80 background="../img/title1_bg3.jpg"><A id="a_job_applist"  href="" target="_parent" >申请记录</A></td>
+                                                    <td width=5></td>
+                                                     <td align=middle width=80 background="../img/title1_bg3.jpg"><A id="a_job_invite"  href="" target="_parent" >面试通知</A></td>
+                                                    <td>&nbsp;</td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                                <TR><td height=5></td></TR>
+                            </TBODY>
+                        </TABLE>
+                       <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+                            <TBODY>
+                                <TR>
+                                    <td style="PADDING-LEFT: 5px"><font color=#777777>现有职位 <span id="d_info_num"></span> 份，共 <span id="d_page_num"></span> 页</font></td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                        <!--职位列表-->
+                        <TABLE  style="width: 100%; BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 border=0>
+                            <TBODY>
+                                <TR>
+                                    <td>
+                                        <TABLE id="list_tb" cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <col width="5%" align="center"/>
+                                            <col width="10%" align="center"/>
+                                            <col width="15%" align="center"/>
+                                            <col width="15%" align="center"/>
+                                            <col width="15%" align="center"/>
+                                            <col width="15%" align="center"/>
+                                            <col width="15%" align="center"/>
+                                            <col width="10%" align="center"/>
+                                            <thead>
+                                                <TR bgColor=#dbedfb>
+                                                    <td>
+                                                        <input id="d_checkbox_all" name="d_checkbox_all" type="checkbox"/>
+                                                    </td>
+                                                    <td><STRONG>序号</STRONG></td>
+                                                    <td><STRONG>职位名称</STRONG></td>
+                                                    <td><STRONG>公司名称</STRONG></td>
+                                                    <td><STRONG>公司地点</STRONG></td>
+                                                    <td><STRONG>职位薪资</STRONG></td>
+                                                    <td><STRONG>更新时间</STRONG></td>
+                                                    <td><STRONG>操作</STRONG></td>
+                                                </TR>
+                                            </thead>
+                                            <TBODY>
+                                                <TR>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td class="btn_box">
+                                                        <input class="btn_veiw_jobs" type="button" value="查看" />
+                                                    </td>
+                                                </TR>
+                                            </TBODY>
+                                      </TABLE>
+                                        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td id="jpage_box"></td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                            <TBODY>
+                                                <TR>
+                                                    <td align=middle height=40>
+                                                        <input id="btn_app_job" type="button" value="申请职位"/>
+                                                        <input id="btn_favorite_job" type="button" value="收藏职位">
+                                                        <input id="btn_veiw_job" type="button" value="浏览职位">
+                                                    </td>
+                                                </TR>
+                                            </TBODY>
+                                        </TABLE>
+                                    </td>
+                                </TR>
+                            </TBODY>
+                        </TABLE>
+                </TR>
+            </TBODY>
+        </TABLE><!--页面底部-->
+        <IFRAME align=middle src="person_footer.htm" frameBorder=0 width="100%" scrolling=no height=220></IFRAME>
+    </BODY>
+</HTML>
+<input type="hidden" id="g_id" value="list_person_job" />
+<script type="text/javascript" src="../js/common.js"></script>
+

@@ -1,0 +1,89 @@
+/*
+ * 文件名称：common.css
+ * 功能描述：自定义的公用css文件。
+ * 代码作者：孙振强
+ * 创建日期：2010-01-28
+ * 修改日期：2010-03-05
+ * 当前版本：V2.0
+*/
+
+* {
+    margin:0;
+    padding:0;
+    font-size: 12px;
+}
+
+#title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 30px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.tb_title0,
+.tb_title1,
+.tb_title2,
+.tb_title3,
+.tb_title4,
+.tb_title5 {
+    font-weight:        bold;
+    color:              #000000;
+    text-align:center;
+    height:25px;
+    font-size:14px;
+    letter-spacing: 2px;
+}
+
+.tb_title0 {
+    background-image:   url("../img/tb_title0.png");
+}
+
+.tb_title1 {
+    background-image:   url("../img/tb_title1.png");
+}
+
+.tb_title2 {
+    background-image:   url("../img/tb_title2.png");
+}
+
+.tb_title3 {
+    background-image:   url("../img/tb_title3.png");
+}
+
+.tb_title4 {
+    background-image:   url("../img/tb_title4.png");
+}
+
+.tb_title5 {
+    background-image:   url("../img/tb_title5.png");
+}
+
+
+.tr_0,
+.tr_1,
+.tr_over {
+    height: 40px;
+}
+
+.tr_0 {
+    background-color: #E5E5E5;
+}
+
+.tr_1 {
+    background-color: #D5D5D5;
+}
+
+.tr_over {
+    background-color: #CCFFCC;
+    color: #CC0000;
+    cursor: pointer;
+    /*font-weight: bold;*/
+}

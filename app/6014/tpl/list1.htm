@@ -1,0 +1,26 @@
+<div id="dy_cen" class="dy_960_cen">
+  <!--{include file="lefter`$ws.mk`.htm"}-->
+  <div id="dy_sxhb_cen">
+    <div id="dy_sxhb">
+      <h1><!--{$ws.list.name}--></h1>
+	    <p><input type="text" />
+	    <input id="btn_search" class="dy_sear" type="button" value="搜索" /><input id="btn_release" class="dy_fb" type="button" value="发布" />
+	    </p>
+            <!--{section name=loop loop=$ws.news}-->
+            <span><!--{$ws.news[loop].atime|date_format:"%m-%d"}--></span><a href="<!--{$ws.news[loop].url}-->"><!--{$ws.news[loop].name}--></a>
+            <!--{/section}-->
+	</div>
+        <div class="dy_page">
+            <a id="info_num" href="#">共12条</a>
+            <a id="page_num" href="#">共2页</a>
+            <a id="page_now" href="#">第1页</a>
+            <a id="page_first" href="<!--{$ws.page.first}-->">首页</a>
+            <a id="page_prev" href="<!--{$ws.page.prev}-->">上一页</a>
+            <!--{ foreach key=i item=tmp from=$ws.page.num }-->
+            <a id="page_<!--{$i}-->" href="<!--{$tmp}-->">1</a>
+            <!--{ /foreach }-->
+            <a id="page_next" href="<!--{$ws.page.next}-->">下一页</a>
+            <a id="page_last" href="<!--{$ws.page.last}-->">尾页</a>
+        </div>
+  </div>
+</div>

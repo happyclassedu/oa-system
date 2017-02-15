@@ -1,0 +1,79 @@
+body {
+    margin: 0px;
+    padding:0px;
+    background-image:url('../img/bg_yun.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#login_box {
+    position: relative;
+    width: 539px;
+    height: 524px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-image:url('../img/login_box.jpg');
+    background-repeat: no-repeat;
+}
+
+#login_ws,
+#login_id,
+#login_pw {
+    position: absolute;
+    width: 200px;
+    height: 28px;
+    overflow: hidden;
+    border: solid 1px #999;
+    line-height: 28px;
+    color: #030;
+    font-weight: 400;
+    text-indent: 4px;
+}
+
+#login_ws {
+    top: 217px;
+    left: 232px;
+    font-size: 18px;
+}
+
+#login_id {
+    top: 267px;
+    left: 232px;
+    font-size: 24px;
+}
+
+#login_pw {
+    top: 317px;
+    left: 232px;
+}
+
+#btn_login {
+    display: block;
+    position: absolute;
+    top: 372px;
+    left: 208px;
+    width: 126px;
+    height: 40px;
+    overflow: hidden;
+    background-image: url('../img/btn_0.gif');
+}
+
+#btn_login:hover {
+    background-image: url('../img/btn_1.gif');
+}
+
+#bg_lan {
+    position: absolute;
+    z-index: -1;
+    top: 222px;
+    left: 0;
+    width: 100%;
+    height: 191px;
+    overflow: hidden;
+    background-color: #75CDFF;
+}
+
+.input_focus {
+    border: #FF6600 1px solid !important;
+    background: #FFFFE1 !important;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>信息--调动管理-综合人事管理系统</title>
+    </head>
+    <body>
+        <div id="box_title">
+            <span id="sys_title">综合人事管理系统--调动管理--<span id="sys_state"></span>信息</span>
+            <div id="box_tools">
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_add" type="button"  value="新增调动"/>&nbsp;&nbsp;
+                <input id="btn_edit" type="button" value="修改调动"/>&nbsp;&nbsp;
+                <input id="btn_del" type="button" value="删除调动"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+                <input id="btn_view_hm" type="button" value="查看员工基本信息"/>&nbsp;&nbsp;
+                <input id="btn_view_hm_w" type="button" value="查看员工工作信息"/>&nbsp;&nbsp;
+            </div>
+        </div>
+        <!--开始__信息内容-->
+        <table id="info_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center" />
+            <col width="165" />
+            <col width="100" align="center"/>
+            <col width="165" />
+            <tbody>
+                <tr class="tb_title0">
+                    <td colspan="6">一、员工信息</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>员工编号</td>
+                    <td>
+                        <input id="d_hm_code" type="text" />
+                    </td>
+                    <td>姓名</td>
+                    <td>
+                        <input id="d_hm_name" type="text" />
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr class="tb_title0">
+                    <td colspan="6">一、调动信息</td>
+                </tr>
+                <tr class="tr_0">
+                    <td>部门</td>
+                    <td>
+                        <input id="d_org_0_name" type="text" />
+                        <select id="d_org_0_id" style="display: none;">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                    <td>科室</td>
+                    <td>
+                        <input id="d_org_1_name" type="text" />
+                        <select id="d_org_1_id" style="display: none;">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                    <td>岗位</td>
+                    <td>
+                        <input id="d_job_name" type="text" />
+                        <select id="d_job_id" style="display: none;">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td>职务</td>
+                    <td>
+                        <input id="d_post_name" type="text" />
+                        <select id="d_post_id" style="display: none;">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                    <td>职务等级</td>
+                    <td>
+                        <select id="d_post_level">
+                            <option value=""></option>
+                            <option value="一级">一级</option>
+                            <option value="二级">二级</option>
+                            <option value="三级">三级</option>
+                            <option value="四级">四级</option>
+                        </select>
+                    </td>
+                    <td>直接上级</td>
+                    <td>
+                        <input id="d_report_to" type="text" />
+                    </td>
+                </tr>
+                <tr class="tr_0">
+                    <td>生效日期</td>
+                    <td>
+                        <input id="d_down_time" type="text" />
+                    </td>
+                    <td>状态</td>
+                    <td>
+                        <select id="d_state">
+                            <option value=""></option>
+                            <option value="一级">等待</option>
+                            <option value="二级">正常</option>
+                            <option value="三级">暂停</option>
+                            <option value="四级">失效</option>
+                        </select>
+                    </td>
+                    <td>业务名称</td>
+                    <td>
+                        <select id="d_event_name">
+                            <option value=""></option>
+                            <option value="员工入职">员工入职</option>
+                            <option value="员工转正">员工转正</option>
+                            <option value="员工转见习">员工转见习</option>
+                            <option value="员工变动">员工变动</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td>备注</td>
+                    <td colspan="5">
+                        <textarea id="d_remark" cols="50" rows="3"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--结束__信息内容-->
+        <table id="act_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col align="center" />
+            <tr class="tb_title0">
+                <td>
+                    <input id="btn_save" type="button" value="保存信息">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="btn_cancel" type="button" value="取消保存">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="info_hm_t" />
+<script type="text/javascript" src="../js/common.js"></script>

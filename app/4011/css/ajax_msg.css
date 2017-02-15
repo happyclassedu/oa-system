@@ -1,0 +1,71 @@
+.ajax_msg_box {
+    text-align:center;
+}
+.ajax_msg_title_box, .ajax_msg_title_box_left, .ajax_msg_title_box_right, .ajax_msg_content {
+    background-image:url("../img/ajax_msg.gif");
+}
+.ajax_msg_title_box {
+    width:350px;
+    height:28px;
+    margin-top:10px;
+    background-position:0 -68px;
+    background-repeat:repeat-x;
+    text-align:left;
+    overflow:hidden;
+}
+.ajax_msg_title_box_left {
+    width:4px;
+    height:28px;
+    background-position:0 0;
+    background-repeat:no-repeat;
+    float: left;
+    position: relative;
+}
+.ajax_msg_title_box_right {
+    width:4px;
+    height:28px;
+    background-position:0 -34px;
+    background-repeat:no-repeat;
+    float: right;
+    position: relative;
+}
+
+.ajax_msg_title{
+    height:22px;
+    padding-top: 6px;
+    padding-left: 10px;
+    color:#FFFFFF;
+    font-size:13px;
+    font-weight:bolder;
+    text-align:left;
+    position: absolute;
+    overflow:hidden;
+}
+
+.ajax_msg_content{
+    width:350px;
+    height:110px;
+    border:1px solid #7998b7;
+    background-position:0 -96px;
+    background-repeat:repeat-x;
+    background-color: white;
+    text-align:left;
+}
+.ajax_msg_content span{
+    height:90px;
+    padding-top:40px;
+    padding-left:80px;
+    background-image:url("../img/ajax_loading.gif");
+    background-repeat:no-repeat;
+    background-position:30px 30px;
+    color:red;
+    font-size: 15px;
+    font-weight: bolder;
+    line-height:150%;
+}
+.ajax_msg_footer{
+    margin-top: 5px;
+    width:350px;
+    height:42px;
+    background-image:url("../img/ajax_msg_footer.gif");
+}

@@ -1,0 +1,19 @@
+.a101 {
+	BORDER-TOP: #aaccee 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 14px; BORDER-LEFT: #aaccee 1px solid; CURSOR: hand; COLOR: #2b64b8; PADDING-TOP: 2px; BACKGROUND-COLOR: #ffffff
+}
+.a102 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; BORDER-LEFT: #aaccee 1px solid; CURSOR: hand; COLOR: #2b64b8; PADDING-TOP: 2px
+}
+.b101 {
+	BORDER-TOP: #aaccee 1px solid; FONT-WEIGHT: bold; COLOR: #2b64b8; BACKGROUND-COLOR: #ffffff
+}
+.b102 {
+	FONT-WEIGHT: bold; COLOR: #2b64b8
+}
+
+#lit_JobList_Hot td{ padding-left:20px; width:30%}
+
+/**最新求职简历*/
+.resum{ line-height:20px; padding-right:10px;}
+.resum tr td{ border-top:1px solid #aaccee;}
+.resum01{ background:#e6f0fa; text-align:center}

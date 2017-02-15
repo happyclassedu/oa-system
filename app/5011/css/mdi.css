@@ -1,0 +1,12 @@
+/* CSS Document */
+* {
+    margin:0;
+    padding:0;
+}
+
+#header {
+    width: 1000px;
+    height: 660px;
+    background-color: blue;
+    overflow: hidden;
+}

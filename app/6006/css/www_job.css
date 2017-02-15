@@ -1,0 +1,71 @@
+
+
+#sys_title {
+        height : 31px;
+        position : relative;
+        text-align : left;
+        line-height : 31px;
+		color : #000;
+		font-size : 14px;
+		font-weight : bold;
+        width:976px;
+		margin:0 auto;
+		background:url(../img/34.jpg) repeat-x;
+		border:1px #aaccef solid;
+		border-width:1px 0;
+      }
+#box_title {
+        width:976px;
+		margin:0 auto;
+		border:1px #aaccef solid;
+		border-width:0 1px;
+      }
+#box_tools {
+        text-align:center;
+		line-height:40px;
+      }
+.info_com_center {
+		border : 1px #aaccef solid;
+		border-top : none;
+      }
+
+#info_tb tr td,#act_tb tr td {
+        line-height : 35px;
+		border-bottom : 1px #aaccef dashed;
+		padding-left : 40px;
+	 }
+.com_title_bg {
+        color : #2b64b8;
+		font-weight : bold;
+		text-align : left;
+     }
+.job_title sys_title {
+        width:100%;
+		color:#000000!important;
+     }
+	 
+#d_cname , #sys_state , #box_search {
+      display:inline;
+ }
+ 
+#list_j {
+      line-height:30px;
+	  border:none;
+	  border-collapse:collapse;
+	  margin-bottom:10px;
+     }
+#list_j .list_title {
+      text-align:center;
+	  font-weight:bold;
+     }	 
+
+#list_j td {
+      border:1px #aaccef solid;
+     }
+
+.tb_align {
+      text-align:right;
+     }
+#box_act_url {
+      text-align:center;
+     }

@@ -1,0 +1,10 @@
+
+<!-- menuer begin-->
+<div class="div_976_center">
+    <ul id="menuer">
+        <!--{ foreach item=tmp from=$ws.menuer }-->
+        <li<!--{ if $tmp.name eq "职业技能鉴定" }--> class="w112"<!--{ /if }-->><a href="<!--{$tmp.url}-->"><!--{$tmp.name}--></a></li>
+        <!--{ /foreach }-->
+    </ul>
+</div>
+<!-- menuer end-->

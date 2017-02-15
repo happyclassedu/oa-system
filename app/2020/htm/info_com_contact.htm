@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+    <HEAD>
+        <META http-equiv=Content-Type content="text/html;charset=utf-8">
+        <TITLE>招聘中心 - 联系方式 - 人才网管理系统php1.0地区版</TITLE>
+        <LINK href="../css/www.css" type="text/css" rel="stylesheet">
+    </HEAD>
+<BODY>
+ <!--页面顶部-->
+<IFRAME align=middle src="com_header.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+<!--页面主体-->
+<TABLE cellSpacing=0 cellPadding=0 width=980 align=center border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <td width=188><!--菜单-->
+        <IFRAME align=middle src="com_left.htm" frameBorder=0 width="100%" scrolling=no height=500></IFRAME>
+      </td>
+    <td width=10></td>
+    <td bgColor=#ffffff><!--右侧-->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <td style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px" vAlign=bottom
+          background="../img/title1_bg.gif" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR height=28>
+                <td align=middle width=80
+                background="../img/title1_bg3.jpg">
+                    <A id="a_com_basic">基本信息</A>
+                </td>
+                <td width=5></td>
+                <td align=middle width=80
+                background="../img/title1_bg2.jpg">
+                    <A id="a_com_contact" class="white"><B><font color="#ffffff">联系方式</font></B></A>
+                </td>
+                <td>&nbsp;</td>
+              </TR>
+              </TBODY>
+            </TABLE>
+          </td>
+        </TR>
+        <TR>
+          <td height=5></td>
+        </TR>
+        </TBODY>
+      </TABLE><!--注册信息-->
+       <!---联系方式-->
+       <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+           <TBODY>
+               <TR>
+                   <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px; BORDER-BOTTOM: #d3d3d3 1px solid" height=28>
+                       <STRONG>联系方式</STRONG> (<font color=#ff3300>*</font> 为必填项)
+                   </td>
+               </TR>
+               <TR>
+                   <td style="PADDING-LEFT: 12px; PADDING-TOP: 3px" height=25>
+                       <font color=#777777>为保证求职者能联系到贵公司，请务必正确的注册信息与联系方式</font>
+                   </td>
+               </TR>
+           </TBODY>
+       </TABLE>
+       <TABLE id="info_tb" cellSpacing=1 cellPadding=4 width="100%" bgColor=#dddddd border=0>
+           <TBODY>
+               <TR bgColor=#ffffff>
+                   <td style="PADDING-LEFT: 24px">是否公开：</td>
+                   <td>
+                       <select id="d_relation_state" style="width:100px;">
+                           <option value="">请选择</option>
+                           <option value="1">公开</option>
+                           <option value="0">不公开</option>
+                       </select>
+                       <span id="d_error_relation_state"></span>
+                   </td>
+               </TR>
+               <TR bgColor=#ffffff>
+                   <td style="PADDING-LEFT: 12px" width=100>
+                       <font color=#ff3300>*</font> 联 系 人：
+                   </td>
+                   <td>
+                       <input id="d_linkman" type="text" style="width: 230px" maxLength=30/>
+                       <span id="d_error_linkman"></span>
+                   </td>
+               </TR>
+                <TR bgColor=#ffffff>
+                   <td style="PADDING-LEFT: 24px"><font color=#ff3300>*</font> 手机：</td>
+                   <td><input id="d_tel2" type="text" style="width: 230px" maxLength=30/>
+                       <span id="d_error_tel2"></span>
+                   </td>
+               </TR>
+               <TR bgColor=#ffffff>
+                   <td style="PADDING-LEFT: 12px" width=100>
+                       <font color=#ff3300>*</font> 联系电话：
+                   </td>
+                   <td>
+                       <input id="d_tel1" type="text" style="width: 230px" maxLength=30 value="029-"/>
+                       <span id="d_error_tel1"></span>
+                   </td>
+               </TR>
+               <TR bgColor=#ffffff>
+                   <td style="PADDING-LEFT: 24px" width=100>  传真号码：</td>
+                   <td>
+                       <input id="d_fax" type="text" style="width: 230px" maxLength=30 value="029-"/>
+                       <span id="d_error_fax"></span>
+                   </td>
+               </TR>
+               <TR bgColor=#ffffff>
+                   <td style="PADDING-LEFT: 12px" width=100>
+                       <font color=#ff3300>*</font> 电子邮箱：
+                   </td>
+                   <td>
+                       <input id="d_email"  type="text" style="width: 230px" maxLength=100/>
+                       <span id="d_error_email"></span>
+                   </td>
+               </TR>
+               <TR bgColor=#ffffff>
+                   <td style="PADDING-LEFT: 24px"><font color=#ff3300>*</font>邮政编码：</td>
+                   <td>
+                       <input id="d_postid"  type="text" style="width: 230px" maxLength=6>
+                       <span id="d_error_postid"></span>
+                   </td>
+               </TR>
+               <TR bgColor=#ffffff>
+                   <td style="PADDING-LEFT: 12px" width=100>
+                       <font color=#ff3300>*</font> 通讯地址：
+                   </td>
+                   <td>
+                       <input id="d_postaddr"  type="text" style="width: 230px" maxLength=100/>
+                       <span id="d_error_postaddr"></span>
+                   </td>
+               </TR>     
+           </TBODY>
+       </TABLE>
+      <TABLE id="act_tb" cellSpacing=1 cellPadding=4 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <td style="PADDING-LEFT: 24px" width=100>&nbsp;</td>
+          <td>
+             <input id="btn_save" style="width: 60px; HEIGHT: 30px" type="button" value="保存"/>
+          </td>
+        </TR>
+        </TBODY>
+      </TABLE>
+    </td>
+  </TR>
+  </TBODY>
+</TABLE>
+<!--页面底部-->
+<IFRAME align=middle src="com_footer.htm" frameBorder=0 width="100%" scrolling=no height=117></IFRAME>
+</BODY>
+</HTML>
+<input type="hidden" id="g_id" value="info_com_contact" />
+<script type="text/javascript" src="../js/common.js"></script>

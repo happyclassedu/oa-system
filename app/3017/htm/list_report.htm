@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>医疗保险——医保中心报表</title>
+    </head>
+    <body>
+        <div id="box_title"> <span id="sys_title">医疗保险——医疗缴费统计表</span>
+            <div id="box_tools">
+                 <span id="box_search">
+                    查看日清单&nbsp;&nbsp;
+                    <input id="d_fee_s" class="search" type="text">日 至
+                    <input id="d_fee_e" class="search" type="text">日 &nbsp;&nbsp;
+                    <input id="btn_search" type="button" value="搜索"/>&nbsp;&nbsp;<input id="btn_reset" type="button" value="清空"/>
+                </span>
+                <input id="btn_refresh" type="button"  value="刷新"/>&nbsp;&nbsp;
+                <input id="btn_close" type="button"  value="关闭"/>&nbsp;&nbsp;｜&nbsp;&nbsp;
+              </div>
+        </div>
+        <table id="list_tb" width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <col width="50" align="center" />
+            <col width="60" align="center" />
+            <col width="60" />
+            <col width="60" />
+            <col width="50" />
+            <col width="50" />
+            <col width="50" />
+            <col width="60" />
+            <col width="60" />
+            <col width="60" />
+            <col width="60" />
+            <col width="60" />
+            <col width="60" />
+            <col width="60" />
+            <thead>
+                <tr>
+                <td>序号</td>
+                <td>参保时间</td>
+                <td>退保时间</td>
+                <td>医保编号</td>
+                <td>姓名</td>
+                <td>性别</td>
+                <td>类别</td>
+                <td>身份证号</td>
+                <td>年份</td>
+                <td>缴费基数</td>
+                <td>原缴费截止月</td>
+                <td>新缴费起始月</td>
+                <td>缴费截止月</td>
+                <td>变更原因</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>文本</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td id="jpage_box"></td>
+            </tr>
+        </table>
+    </body>
+</html>
+<input type="hidden" id="g_id" value="list_report" />
+<script type="text/javascript" src="../js/common.js"></script>

@@ -1,0 +1,49 @@
+body {
+    background-image: url(../img/login_bg.gif);
+}
+
+#login_content_bg {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 660px;
+    background: url("../img/login_content_bg.jpg") no-repeat center;
+}
+
+#login_box {
+    position:absolute;
+    top:423px;
+    width: 100%;
+    text-align: center;
+    color:#000000;
+    font-size:14px;
+    font-weight:bold;
+}
+
+#login_id,
+#login_pw {
+    width: 155px;
+    height: 25px;
+    font-size:18px;
+    font-weight:bold;
+    color:#000000;
+    border: #AACCEE 1px solid;
+}
+
+#login_id {
+    line-height: 24px;
+}
+
+#login_pw {
+    line-height: 20px;
+}
+
+#btn_login {
+    position: relative;
+    top: 9px;
+}
+
+.input_focus {
+    border: #FF6600 1px solid !important;
+    background: #FFFFE1 !important;
+}
